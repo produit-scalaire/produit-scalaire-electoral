@@ -6,12 +6,13 @@ here = os.path.dirname(os.path.abspath(__file__))
 QP = os.path.join(here, 'questions.json')
 d = json.load(open(QP)); V = json.load(open(os.path.join(here, 'votes_groupes.json')))
 GROUPES = {'RE':'REN','EPR':'REN','RN':'RN','LFI-NUPES':'LFI','LFI-NFP':'LFI','LR':'LR','DR':'LR','DEM':'MODEM',
-           'SOC':'PS','SOC-A':'PS','HOR':'HOR','ECOLO':'ECO','ECOS':'ECO','LIOT':'LIOT','GDR':'PCF','GDR-NUPES':'PCF','UDR':'UDR'}
+           'SOC':'PS','SOC-A':'PS','HOR':'HOR','ECOLO':'ECO','ECOS':'ECO','LIOT':'LIOT','GDR':'PCF','GDR-NUPES':'PCF','UDR':'UDR',
+           'SOC-NUPES':'PS','ECOLO-NUPES':'ECO','LAREM':'REN','MODEM':'MODEM','FI':'LFI'}  # + groupes de la 15e législature (filiation directe)
 done = 0
 for q in d['questions']:
     q.pop('split', None)
     if q['id'] not in V or len(q['options']) != 2: continue
-    v = {GROUPES[g]: c for g, c in V[q['id']].items()}
+    v = {GROUPES[g]: c for g, c in V[q['id']].items() if g in GROUPES}  # groupes disparus (UDI, Agir, LT…) ignorés
     # quelle option correspond au « pour » ? on la déduit des groupes majoritairement pour ou contre
     pour_opt = set()
     for p, pos in q['positions'].items():

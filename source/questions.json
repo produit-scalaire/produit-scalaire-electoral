@@ -7071,6 +7071,414 @@
      3
     ]
    }
+  },
+  {
+   "id": "demarchage-conseil",
+   "theme": "probite",
+   "date": "1er février 2024",
+   "situation": "Les cabinets de conseil démarchent les administrations pour obtenir des contrats. Déclarer tous ces contacts à la Haute autorité pour la transparence rend ce lobbying visible ; ses opposants jugent l'obligation trop lourde pour être utile.",
+   "question": "Ces démarches :",
+   "options": [
+    "Toutes déclarées à la HATVP",
+    "Seulement celles qui aboutissent à un contrat"
+   ],
+   "positions": {
+    "LR": 0,
+    "RN": 0,
+    "LFI": 0,
+    "PCF": 0,
+    "ECO": 0,
+    "REN": 1,
+    "MODEM": 1,
+    "HOR": 1
+   },
+   "actor": "Amendement à la loi encadrant les cabinets de conseil, adopté le 1er février 2024 (40 pour, 36 contre).",
+   "nuance": "Peu de députés présents. LIOT n'a pas voté ; le PS n'avait qu'un votant.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_3324"
+    }
+   ],
+   "contexte": "Après des révélations en 2022 sur le recours de l'État aux cabinets de conseil, une proposition de loi a voulu encadrer leurs missions. La version de la commission n'imposait de déclarer que le démarchage ayant abouti à un contrat ; l'amendement étend l'obligation à toutes les démarches.",
+   "split": {
+    "LR": [
+     4,
+     0,
+     0
+    ],
+    "RN": [
+     9,
+     0,
+     0
+    ],
+    "LFI": [
+     15,
+     0,
+     0
+    ],
+    "PCF": [
+     5,
+     0,
+     0
+    ],
+    "ECO": [
+     6,
+     0,
+     0
+    ],
+    "REN": [
+     28,
+     0,
+     0
+    ],
+    "MODEM": [
+     6,
+     0,
+     0
+    ],
+    "HOR": [
+     2,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "nucleaire-relance",
+   "theme": "environnement",
+   "date": "21 mars 2023",
+   "situation": "Le nucléaire produit l'essentiel de l'électricité française. Accélérer la construction de réacteurs assure une électricité bas carbone et pilotable ; ses opposants soulignent le coût, les déchets et les risques.",
+   "question": "De nouveaux réacteurs nucléaires :",
+   "options": [
+    "Oui, en accélérant les procédures",
+    "Non"
+   ],
+   "positions": {
+    "REN": 0,
+    "RN": 0,
+    "LR": 0,
+    "MODEM": 0,
+    "HOR": 0,
+    "LIOT": 0,
+    "LFI": 1,
+    "PS": 1,
+    "ECO": 1
+   },
+   "actor": "Projet de loi d'accélération du nucléaire, adopté le 21 mars 2023 (402 pour, 130 contre).",
+   "nuance": "Le PCF était partagé (10 pour, 4 contre, 4 abstentions) : il n'est pas placé.",
+   "reliability": 3,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_1243"
+    }
+   ],
+   "contexte": "La loi simplifie les procédures pour construire de nouveaux réacteurs près des centrales existantes, alors que le gouvernement prévoit six réacteurs EPR2. Elle supprime l'objectif de ramener le nucléaire à 50 % de l'électricité en 2035 et durcit les peines en cas d'intrusion dans une centrale.",
+   "split": {
+    "REN": [
+     161,
+     0,
+     1
+    ],
+    "RN": [
+     81,
+     0,
+     0
+    ],
+    "LR": [
+     59,
+     0,
+     0
+    ],
+    "MODEM": [
+     45,
+     1,
+     0
+    ],
+    "HOR": [
+     29,
+     0,
+     0
+    ],
+    "LIOT": [
+     14,
+     1,
+     3
+    ],
+    "LFI": [
+     70,
+     0,
+     0
+    ],
+    "PS": [
+     31,
+     0,
+     0
+    ],
+    "ECO": [
+     22,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "aide-fioul",
+   "theme": "consommer",
+   "date": "25 juillet 2022",
+   "situation": "En 2022, le bouclier tarifaire couvrait le gaz et l'électricité, pas le fioul. Aider tous les foyers chauffés au fioul soutient leur pouvoir d'achat ; ses opposants préféraient cibler les ménages modestes.",
+   "question": "L'aide au chauffage au fioul :",
+   "options": [
+    "Pour tous les foyers concernés (230 M€)",
+    "Pour les ménages modestes (50 M€)"
+   ],
+   "positions": {
+    "LR": 0,
+    "RN": 0,
+    "LFI": 0,
+    "LIOT": 0,
+    "PS": 0,
+    "PCF": 0,
+    "REN": 1,
+    "MODEM": 1,
+    "HOR": 1
+   },
+   "actor": "Amendement au budget rectificatif 2022, adopté le 25 juillet 2022 (164 pour, 153 contre) contre l'avis du gouvernement.",
+   "nuance": "Les Écologistes se sont surtout abstenus (4 pour, 6 abstentions). Le PCF n'avait que 2 votants.",
+   "reliability": 3,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_126"
+    }
+   ],
+   "contexte": "Environ 3 millions de foyers se chauffent au fioul selon l'auteur de l'amendement. La majorité proposait une aide de 50 millions d'euros réservée aux ménages modestes. L'installation de nouvelles chaudières au fioul est interdite depuis juillet 2022.",
+   "split": {
+    "LR": [
+     17,
+     0,
+     0
+    ],
+    "RN": [
+     69,
+     0,
+     0
+    ],
+    "LFI": [
+     46,
+     0,
+     1
+    ],
+    "LIOT": [
+     6,
+     0,
+     0
+    ],
+    "PS": [
+     17,
+     0,
+     0
+    ],
+    "PCF": [
+     2,
+     0,
+     0
+    ],
+    "REN": [
+     109,
+     0,
+     0
+    ],
+    "MODEM": [
+     28,
+     0,
+     0
+    ],
+    "HOR": [
+     16,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "pma",
+   "theme": "societe",
+   "date": "29 juillet 2020",
+   "situation": "La PMA était réservée aux couples homme-femme. L'ouvrir aux couples de femmes et aux femmes seules met fin à cette différence ; ses opposants estiment qu'un enfant doit pouvoir avoir un père.",
+   "question": "La PMA :",
+   "options": [
+    "Ouverte à toutes les femmes",
+    "Réservée aux couples homme-femme"
+   ],
+   "positions": {
+    "REN": 0,
+    "MODEM": 0,
+    "PS": 0,
+    "PCF": 0,
+    "LR": 1
+   },
+   "actor": "Article 1 de la loi de bioéthique, adopté en deuxième lecture le 29 juillet 2020 (66 pour, 27 contre). La loi a été promulguée en août 2021.",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN n'avait pas de groupe et n'est pas placé. Peu de députés présents ce jour-là ; le PS et le PCF n'avaient que 2 votants chacun.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_2830"
+    }
+   ],
+   "contexte": "Depuis la loi de bioéthique du 2 août 2021, les couples de femmes et les femmes non mariées peuvent recourir à la PMA, remboursée par l'Assurance maladie. Les enfants nés d'un don peuvent aussi, à leur majorité, accéder à l'identité du donneur.",
+   "split": {
+    "REN": [
+     52,
+     4,
+     2
+    ],
+    "MODEM": [
+     5,
+     1,
+     0
+    ],
+    "PS": [
+     2,
+     0,
+     0
+    ],
+    "PCF": [
+     2,
+     0,
+     0
+    ],
+    "LR": [
+     17,
+     2,
+     0
+    ]
+   }
+  },
+  {
+   "id": "identite-reseaux",
+   "theme": "societe",
+   "date": "11 février 2021",
+   "situation": "On peut publier sous pseudonyme sur les réseaux sociaux. Exiger une pièce d'identité faciliterait les poursuites contre la haine en ligne ; ses opposants répondent que la justice peut déjà identifier les auteurs.",
+   "question": "Pour s'inscrire sur un réseau social :",
+   "options": [
+    "Fournir une pièce d'identité",
+    "Pas de pièce d'identité"
+   ],
+   "positions": {
+    "LR": 0,
+    "MODEM": 0,
+    "REN": 1,
+    "PS": 1,
+    "PCF": 1,
+    "LFI": 1
+   },
+   "actor": "Amendement au projet de loi sur le respect des principes de la République, rejeté le 11 février 2021 (25 pour, 72 contre).",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN n'avait pas de groupe et n'est pas placé. Le MoDem a voté pour avec des abstentions (7 pour, 3 contre, 5 abstentions) ; le PS, le PCF et LFI avaient 2 ou 3 votants.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_3389"
+    }
+   ],
+   "contexte": "L'amendement imposait aux grandes plateformes de recueillir un document d'identité à la création d'un compte, avec une déclaration de responsabilité sur les contenus publiés. Le débat sur la fin de l'anonymat en ligne est revenu plusieurs fois depuis, sans aboutir.",
+   "split": {
+    "LR": [
+     11,
+     0,
+     0
+    ],
+    "MODEM": [
+     7,
+     3,
+     5
+    ],
+    "REN": [
+     60,
+     1,
+     4
+    ],
+    "PS": [
+     3,
+     0,
+     0
+    ],
+    "PCF": [
+     2,
+     0,
+     0
+    ],
+    "LFI": [
+     2,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "medecins-scolaires",
+   "theme": "sante",
+   "date": "28 octobre 2020",
+   "situation": "Les médecins scolaires manquent et gagnent environ 30 % de moins que leurs confrères de santé publique. Les augmenter de 30 % rendrait le métier attractif ; ses opposants jugent que le salaire n'explique pas tout.",
+   "question": "Le salaire des médecins scolaires :",
+   "options": [
+    "Augmenté de 30 %",
+    "Pas de hausse spécifique"
+   ],
+   "positions": {
+    "LR": 0,
+    "PS": 0,
+    "LFI": 0,
+    "PCF": 0,
+    "REN": 1,
+    "MODEM": 1
+   },
+   "actor": "Amendement au budget 2021, rejeté le 28 octobre 2020 (53 pour, 68 contre).",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN n'avait pas de groupe et n'est pas placé. Une partie de LaREM (13 députés) a voté pour.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_3062"
+    }
+   ],
+   "contexte": "La mesure coûtait environ 3 millions d'euros, pris sur un autre programme du budget de l'Éducation nationale. La Cour des comptes avait recommandé de revaloriser ces postes.",
+   "split": {
+    "LR": [
+     21,
+     0,
+     0
+    ],
+    "PS": [
+     4,
+     0,
+     0
+    ],
+    "LFI": [
+     5,
+     0,
+     0
+    ],
+    "PCF": [
+     2,
+     0,
+     0
+    ],
+    "REN": [
+     48,
+     13,
+     2
+    ],
+    "MODEM": [
+     19,
+     0,
+     2
+    ]
+   }
   }
  ]
 }
