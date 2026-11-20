@@ -599,7 +599,7 @@ function renderStart(){
   <div class="card">
     <h3>Combien de temps avez-vous ?</h3>
     <div class="lengths">
-      ${[[10,"5 minutes","10 questions"],[40,"20 minutes","40 questions"],[n,"Sans limite",`toutes les questions, ${n} aujourd’hui`]].filter(([k])=>k<=n).map(([k,a,b])=>`<button class="length" data-n="${k}"><strong>${a}</strong><span>${b}</span></button>`).join("")}
+      ${[[10,"5 minutes","10 questions"],[30,"20 minutes","30 questions"],[n,"Sans limite",`toutes les questions, ${n} aujourd’hui`]].filter(([k])=>k<=n).map(([k,a,b])=>`<button class="length" data-n="${k}"><strong>${a}</strong><span>${b}</span></button>`).join("")}
     </div>
     <p class="label"><a href="" download="produit-scalaire-electoral.html" onclick="this.href=location.href.split('#')[0]">Téléchargez la page</a> pour l’utiliser hors connexion.</p>
   </div>
