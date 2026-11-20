@@ -142,9 +142,9 @@ const AXES=[
  {id:"fin",short:"Légaliser l'aide à mourir",pour:"Créer un droit à l'aide à mourir, sous conditions strictes",date:"27 mai 2025",
   p:{LFI:1,PCF:1,ECO:1,PS:1,LIOT:1,MODEM:1,REN:1,HOR:1,LR:-1,UDR:-1,RN:-1},
   note:"La coupure se déplace : elle passe entre le centre et la droite. Renaissance vote avec la gauche.",src:"https://datan.fr/votes/legislature-17/vote_2107/explication_PA840665",srcName:"datan.fr"},
- {id:"ret",short:"Garder la retraite à 64 ans",pour:"Garder l'âge légal de départ à la retraite à 64 ans",date:"2024-2025",
-  p:{LFI:-1,PCF:-1,ECO:-1,PS:-1,LIOT:-1,RN:-1,MODEM:1,REN:1,HOR:1,LR:1},
-  note:"LFI, le PCF, le PS, les Écologistes, LIOT et le RN sont contre la retraite à 64 ans (suspension ou retour à 62 ans). Le bloc central et LR veulent la garder. Les deux bouts de la ligne se retrouvent du même côté.",src:"https://www.publicsenat.fr/actualites/politique/lassemblee-nationale-valide-la-suspension-de-la-reforme-des-retraites",srcName:"Public Sénat"},
+ {id:"ret",short:"Retraite à 62 ans",pour:"Ramener l'âge légal de départ à la retraite à 62 ans",date:"2024-2025",
+  p:{LFI:1,PCF:1,ECO:1,PS:1,LIOT:1,RN:1,MODEM:-1,REN:-1,HOR:-1,LR:-1},
+  note:"LFI, le PCF, le PS, les Écologistes, LIOT et le RN veulent revenir sur la retraite à 64 ans (suspension ou retour à 62 ans). Le bloc central et LR veulent garder 64 ans. Les deux bouts de la ligne se retrouvent du même côté.",src:"https://www.publicsenat.fr/actualites/politique/lassemblee-nationale-valide-la-suspension-de-la-reforme-des-retraites",srcName:"Public Sénat"},
  {id:"repas",short:"Repas étudiant à 1 €",pour:"Le repas à 1 € au restaurant universitaire pour tous les étudiants, pas seulement les boursiers",date:"23 janvier 2025",
   p:{LFI:1,PCF:1,ECO:1,PS:1,LIOT:1,RN:1,HOR:-1},
   note:"La gauche, LIOT et le RN votent pour. Renaissance, le MoDem et LR s'abstiennent, Horizons vote contre. Les deux bouts de la ligne votent ensemble, le centre reste à part.",src:"https://datan.fr/votes/legislature-17/vote_606",srcName:"datan.fr"},
@@ -156,7 +156,7 @@ const SHORTN={ECO:"Écolo",MODEM:"MoDem",REN:"Ren.",HOR:"Hor."}; /* sur téléph
 const N=AXES.length,vec=pid=>AXES.map(a=>a.p[pid]||0);
 
 /* rien n'est prérempli : chaque sujet attend une position et une importance */
-const state={step:0,subj:0,party:null,cmp:null,you:{pest:{v:1,w:2},fin:{v:1,w:3},ret:{v:-1,w:1},repas:{v:1,w:1},sup:{v:-1,w:2}}}; /* une personne d'exemple : l'animation explique, le questionnaire viendra ensuite */
+const state={step:0,subj:0,party:null,cmp:null,you:{pest:{v:1,w:2},fin:{v:1,w:3},ret:{v:1,w:1},repas:{v:1,w:1},sup:{v:-1,w:2}}}; /* une personne d'exemple : l'animation explique, le questionnaire viendra ensuite */
 const done=id=>state.you[id].v!==null&&state.you[id].w!==null;
 const U=id=>done(id)?state.you[id]:{v:0,w:0};
 const nDone=()=>AXES.filter(a=>done(a.id)).length;
