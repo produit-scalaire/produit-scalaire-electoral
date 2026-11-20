@@ -388,8 +388,8 @@
     "MODEM": 2,
     "LIOT": 0
    },
-   "actor": "Deux votes : en octobre 2024, la proposition du RN pour revenir à 62 ans est rejetée (119 pour, 197 contre). En novembre 2025, la suspension jusqu'en 2028 est adoptée (255 pour, 146 contre) : PS, Écologistes et RN votent pour ; LFI et PCF votent contre parce qu'ils veulent l'abrogation ; Horizons et la moitié de LR votent contre pour garder 64 ans.",
-   "nuance": "Renaissance s'est abstenu en majorité sur la suspension et un tiers du MoDem l'a votée. Le PS a voté contre la proposition du RN en 2024. LFI n'a pas pris part au vote de 2024. LIOT a porté en juin 2023 la proposition de loi d'abrogation du report à 64 ans.",
+   "actor": "Deux votes : en octobre 2024, la proposition du RN pour revenir à 62 ans est rejetée (119 pour, 197 contre). En novembre 2025, la suspension jusqu'en 2028 est adoptée (255 pour, 146 contre) : PS, Écologistes et RN votent pour ; LFI et PCF votent contre parce qu'ils veulent l'abrogation ; Horizons et la majorité de LR votent contre pour garder 64 ans.",
+   "nuance": "Renaissance s'est abstenu en majorité sur la suspension et un tiers du MoDem l'a votée. Le PS a voté contre la proposition du RN en 2024. LFI n'a pas pris part au vote de 2024. LIOT a porté en juin 2023 la proposition de loi d'abrogation du report à 64 ans. Sur la suspension de 2025 : le MoDem s'est surtout abstenu (11 pour, 18 abstentions) et l'UDR a voté contre ; l'UDR, qui s'était abstenue en 2024, n'est pas placée.",
    "reliability": 2,
    "sources": [
     {
@@ -450,12 +450,10 @@
     "PS": 0,
     "LFI": 0,
     "ECO": 0,
-    "PCF": 0,
-    "LR": 1,
-    "HOR": 1
+    "PCF": 0
    },
-   "actor": "Proposition de loi transpartisane Garot adoptée à l'Assemblée (99 pour, 9 contre). Le Sénat, à majorité LR, et le gouvernement défendent l'approche par incitations.",
-   "nuance": "Le texte Garot a aussi été soutenu par des députés MoDem, LIOT et LR. Renaissance s'est partagé et le RN s'est abstenu : ils ne sont pas placés.",
+   "actor": "Proposition de loi transpartisane adoptée à l'Assemblée le 7 mai 2025 (99 pour, 9 contre, 10 abstentions). Le Sénat et le gouvernement défendent plutôt l'approche par incitations.",
+   "nuance": "La source indique que la plupart des groupes ont voté pour ; le PS, LFI, les Écologistes et le PCF soutenaient le texte. Renaissance s'est partagé à égalité, le RN s'est abstenu, l'UDR n'a pas voté. Les autres groupes ne sont pas placés faute de détail du scrutin.",
    "reliability": 2,
    "sources": [
     {
@@ -472,7 +470,7 @@
   {
    "id": "zucman",
    "theme": "argent",
-   "date": "20 février 2025",
+   "date": "31 octobre 2025",
    "situation": "Une partie des plus grandes fortunes paie, en proportion de ses revenus, moins d'impôts que la moyenne. Un impôt minimum rapporterait des recettes ; ses opposants craignent des départs de capitaux.",
    "question": "Pour les fortunes de plus de 100 millions d'euros :",
    "options": [
@@ -480,24 +478,83 @@
     "Pas de nouvel impôt"
    ],
    "positions": {
-    "ECO": 0,
-    "PS": 0,
     "LFI": 0,
+    "PS": 0,
+    "ECO": 0,
     "PCF": 0,
+    "RN": 1,
     "REN": 1,
     "LR": 1,
-    "MODEM": 1
+    "MODEM": 1,
+    "HOR": 1,
+    "UDR": 1
    },
-   "actor": "« Taxe Zucman », adoptée en première lecture à l'Assemblée par 116 voix contre 39, portée par les Écologistes.",
-   "nuance": "Le RN a annoncé son abstention : il n'est pas placé. Position du bloc central et de LR d'après les interventions en séance.",
-   "reliability": 2,
+   "actor": "Amendement au budget 2026 instaurant la taxe Zucman, rejeté (172 pour, 228 contre). Une proposition de loi similaire avait été adoptée en première lecture en février 2025 (116 pour, 39 contre).",
+   "nuance": "LIOT était divisé (5 pour, 5 contre). En février 2025, le RN s'était abstenu ; en octobre 2025, il a voté contre.",
+   "reliability": 3,
    "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-17/vote_3300"
+    },
     {
      "name": "LCP, 21 février 2025",
      "url": "https://lcp.fr/actualites/fiscalite-en-premiere-lecture-l-assemblee-adopte-un-impot-plancher-de-2-sur-le"
     }
    ],
-   "contexte": "Inspirée de l'économiste Gabriel Zucman, la mesure crée un impôt plancher : les foyers dont le patrimoine dépasse 100 millions d'euros devraient payer au moins 2 % de ce patrimoine chaque année, impôts déjà payés compris. Environ 1 800 foyers seraient concernés."
+   "contexte": "Inspirée de l'économiste Gabriel Zucman, la mesure crée un impôt plancher : les foyers dont le patrimoine dépasse 100 millions d'euros devraient payer au moins 2 % de ce patrimoine chaque année, impôts déjà payés compris. Environ 1 800 foyers seraient concernés. Adoptée par l'Assemblée en février 2025 puis rejetée au Sénat, elle a de nouveau été rejetée lors du budget 2026.",
+   "split": {
+    "LFI": [
+     60,
+     0,
+     0
+    ],
+    "PS": [
+     61,
+     0,
+     0
+    ],
+    "ECO": [
+     33,
+     0,
+     0
+    ],
+    "PCF": [
+     12,
+     0,
+     0
+    ],
+    "RN": [
+     88,
+     0,
+     0
+    ],
+    "REN": [
+     60,
+     0,
+     3
+    ],
+    "LR": [
+     28,
+     0,
+     0
+    ],
+    "MODEM": [
+     18,
+     0,
+     2
+    ],
+    "HOR": [
+     21,
+     0,
+     1
+    ],
+    "UDR": [
+     5,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "zfe",
@@ -517,18 +574,70 @@
     "REN": 1,
     "MODEM": 1,
     "HOR": 1,
-    "PS": 1
+    "PS": 1,
+    "LIOT": 1
    },
    "actor": "Loi de simplification : l'amendement du gouvernement qui laissait les villes libres est rejeté (149 pour, 192 contre), et la suppression est confirmée.",
-   "nuance": "Le PCF s'est abstenu. La position des Écologistes sur cet amendement reste à vérifier.",
+   "nuance": "Le PCF s'est abstenu. Les Écologistes ont majoritairement voté contre (5 pour, 17 contre) car ils voulaient garder les ZFE obligatoires : ils ne sont pas placés.",
    "reliability": 2,
    "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-17/vote_6183"
+    },
     {
      "name": "LCP, 14 avril 2026",
      "url": "https://lcp.fr/actualites/la-suppression-des-zfe-confirmee-lors-de-l-ultime-vote-sur-la-loi-de-simplification-a-l"
     }
    ],
-   "contexte": "Les zones à faibles émissions (ZFE), créées par les lois de 2019 et 2021, interdisent progressivement l'accès des agglomérations aux véhicules les plus polluants, selon leur vignette Crit'Air. Une loi de simplification de 2026 les a supprimées, après le rejet d'une option qui les rendait facultatives."
+   "contexte": "Les zones à faibles émissions (ZFE), créées par les lois de 2019 et 2021, interdisent progressivement l'accès des agglomérations aux véhicules les plus polluants, selon leur vignette Crit'Air. Une loi de simplification de 2026 les a supprimées, après le rejet d'une option qui les rendait facultatives.",
+   "split": {
+    "RN": [
+     105,
+     0,
+     0
+    ],
+    "UDR": [
+     12,
+     0,
+     0
+    ],
+    "LR": [
+     28,
+     0,
+     3
+    ],
+    "LFI": [
+     16,
+     0,
+     0
+    ],
+    "REN": [
+     52,
+     2,
+     3
+    ],
+    "MODEM": [
+     19,
+     0,
+     4
+    ],
+    "HOR": [
+     16,
+     5,
+     1
+    ],
+    "PS": [
+     48,
+     2,
+     0
+    ],
+    "LIOT": [
+     8,
+     4,
+     0
+    ]
+   }
   },
   {
    "id": "energie",
@@ -547,7 +656,7 @@
     "MODEM": 1,
     "HOR": 1
    },
-   "actor": "Proposition de loi Gremillet, qui contenait un moratoire sur l'éolien et le solaire : rejetée par 377 voix contre 142. Seuls le RN et l'UDR ont voté pour. Le bloc central et la gauche ont voté contre.",
+   "actor": "Proposition de loi Gremillet, qui contenait un moratoire sur l'éolien et le solaire : rejetée par 377 voix contre 142. Le RN et l'UDR ont voté pour. Le bloc central et la gauche ont voté contre.",
    "nuance": "La gauche a voté contre, mais ses positions sur le nucléaire diffèrent (LFI veut en sortir, le PCF le défend) : elle n'est pas placée ici. LR s'est abstenu en majorité.",
    "reliability": 2,
    "sources": [
@@ -569,20 +678,83 @@
     "On attend des études plus complètes"
    ],
    "positions": {
-    "ECO": 0,
+    "REN": 0,
+    "LFI": 0,
     "PS": 0,
+    "LR": 0,
+    "ECO": 0,
+    "MODEM": 0,
+    "HOR": 0,
+    "LIOT": 0,
+    "PCF": 0,
     "RN": 1
    },
-   "actor": "Loi PFAS, adoptée définitivement par 213 voix contre 51. Le RN a voté contre en invoquant l'emploi et le manque d'études.",
-   "nuance": "« La plupart des groupes » ont voté pour, mais le détail n'est pas publié dans la source. LR s'est partagé et l'UDR s'est abstenue.",
-   "reliability": 2,
+   "actor": "Loi PFAS, adoptée définitivement le 20 février 2025 (231 pour, 51 contre). Le RN a voté contre en invoquant l'emploi et le manque d'études.",
+   "nuance": "L'UDR s'est abstenue. LR a voté pour (10 pour, 1 contre).",
+   "reliability": 3,
    "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-17/vote_852"
+    },
     {
      "name": "LCP, 20 février 2025",
      "url": "https://lcp.fr/actualites/polluants-eternels-l-assemblee-adopte-definitivement-un-texte-visant-a-reduire-l-usage"
     }
    ],
-   "contexte": "Les PFAS sont des milliers de substances chimiques très persistantes, utilisées pour leurs propriétés antiadhésives ou imperméables. La loi de février 2025 interdit leur usage dans les cosmétiques, le fart et la plupart des vêtements à partir de 2026, et crée une redevance sur les rejets industriels. Les ustensiles de cuisine ont été exclus."
+   "contexte": "Les PFAS sont des milliers de substances chimiques très persistantes, utilisées pour leurs propriétés antiadhésives ou imperméables. La loi de février 2025 interdit leur usage dans les cosmétiques, le fart et la plupart des vêtements à partir de 2026, et crée une redevance sur les rejets industriels. Les ustensiles de cuisine ont été exclus.",
+   "split": {
+    "REN": [
+     39,
+     0,
+     0
+    ],
+    "LFI": [
+     45,
+     0,
+     0
+    ],
+    "PS": [
+     46,
+     0,
+     0
+    ],
+    "LR": [
+     10,
+     1,
+     0
+    ],
+    "ECO": [
+     38,
+     0,
+     0
+    ],
+    "MODEM": [
+     22,
+     0,
+     0
+    ],
+    "HOR": [
+     20,
+     0,
+     0
+    ],
+    "LIOT": [
+     2,
+     0,
+     0
+    ],
+    "PCF": [
+     8,
+     0,
+     0
+    ],
+    "RN": [
+     50,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "fastfashion",
@@ -931,7 +1103,7 @@
      "url": "https://montpellier3m.fr/sites/default/files/2024-12/dp_1_an_gratuite.pdf"
     }
    ],
-   "contexte": "Depuis décembre 2023, la métropole de Montpellier a rendu bus et tram gratuits pour tous ses habitants. La recette des tickets est compensée par le versement mobilité payé par les employeurs et par le budget de la métropole. D'autres villes préfèrent investir dans l'offre."
+   "contexte": "Depuis le 21 décembre 2023, une grande métropole du sud de la France a rendu bus et tram gratuits pour tous ses habitants, en l'accompagnant d'un programme d'investissement dans le réseau. La recette des tickets disparaît et doit être compensée par la collectivité. D'autres villes préfèrent garder un ticket et investir dans l'offre."
   },
   {
    "id": "police-municipale",
@@ -955,7 +1127,7 @@
      "url": "https://www.yahoo.com/news/articles/perpignan-french-far-tests-tough-080534713.html"
     }
    ],
-   "contexte": "Les maires peuvent créer une police municipale et installer de la vidéoprotection, ou consacrer leur budget à la prévention, à la rénovation urbaine et à l'emploi. Perpignan a fortement augmenté ses effectifs de police municipale et ses caméras depuis 2020."
+   "contexte": "Les maires peuvent créer une police municipale et installer de la vidéoprotection, ou consacrer leur budget à la prévention, à la rénovation urbaine et à l'emploi. La ville prise en exemple a fortement augmenté ses effectifs de police municipale et ses caméras depuis 2020."
   },
   {
    "id": "publicite",
@@ -979,7 +1151,7 @@
      "url": "https://3dvf.com/actualite-11490-grenoble-met-fin-a-ses-panneaux-publicitaires-html/"
     }
    ],
-   "contexte": "En 2015, Grenoble a été la première grande ville européenne à ne pas renouveler son contrat d'affichage publicitaire : 326 panneaux ont été retirés et remplacés par des arbres ou de l'affichage associatif, au prix de la redevance que versait l'afficheur."
+   "contexte": "Fin 2014, une grande ville française a décidé de ne pas renouveler son contrat d'affichage publicitaire : 326 panneaux ont été retirés début 2015, remplacés par des arbres et des panneaux d'affichage libre, au prix de la redevance que versait l'afficheur."
   },
   {
    "id": "franchises",
@@ -1011,7 +1183,7 @@
      "url": "https://lcp.fr/actualites/franchises-medicales-les-deputes-s-opposent-au-gouvernement-sur-l-extension-et-l"
     }
    ],
-   "contexte": "Les franchises médicales sont des sommes laissées à la charge des patients : par boîte de médicaments, par consultation ou par transport sanitaire, avec un plafond annuel. Le budget de la Sécurité sociale 2026 proposait de les doubler pour réduire le déficit de l'Assurance maladie."
+   "contexte": "Les franchises médicales sont des sommes laissées à la charge des patients : par boîte de médicaments, par consultation ou par transport sanitaire, avec un plafond annuel. Le gouvernement voulait les doubler par décret, plafonds compris ; l'article 18 du budget de la Sécurité sociale 2026 en préparait la mise en œuvre."
   },
   {
    "id": "tva-gaz",
@@ -1315,7 +1487,8 @@
     "HOR": 0,
     "LR": 0,
     "UDR": 0,
-    "RN": 0
+    "RN": 0,
+    "LIOT": 0
    },
    "actor": "Amendement LR au budget de la Sécurité sociale 2026, adopté avec les voix de Renaissance, Horizons, LR, l'UDR, le RN et LIOT.",
    "nuance": "Le vote de la gauche et du MoDem n'est pas détaillé dans la source.",
@@ -4242,6 +4415,1113 @@
      2,
      0,
      0
+    ]
+   }
+  },
+  {
+   "id": "parite-municipales",
+   "theme": "societe",
+   "date": "7 avril 2025",
+   "situation": "Dans les communes de moins de 1 000 habitants, on pouvait rayer ou ajouter des noms sur les bulletins, et la parité femmes-hommes n'était pas imposée. Des listes paritaires partout équilibrent les conseils municipaux ; elles retirent aux électeurs le choix nom par nom et peuvent compliquer la constitution des listes dans les petits villages.",
+   "question": "Dans toutes les communes :",
+   "options": [
+    "Listes paritaires obligatoires, sans panachage",
+    "On garde le panachage dans les petites communes"
+   ],
+   "positions": {
+    "REN": 0,
+    "LFI": 0,
+    "PS": 0,
+    "ECO": 0,
+    "MODEM": 0,
+    "PCF": 0,
+    "RN": 1,
+    "LR": 1,
+    "LIOT": 1,
+    "UDR": 1
+   },
+   "actor": "Proposition de loi adoptée à l'Assemblée le 7 avril 2025 (204 pour, 180 contre), appliquée aux municipales de 2026.",
+   "nuance": "Horizons s'est abstenu. LIOT était partagé (4 pour, 8 contre, 3 abstentions).",
+   "reliability": 3,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-17/vote_1304"
+    }
+   ],
+   "contexte": "Jusqu'en 2026, dans les communes de moins de 1 000 habitants, on votait pour des candidats individuellement et on pouvait panacher. La réforme impose dans toutes les communes des listes alternant femmes et hommes, avec quelques aménagements pour les plus petites.",
+   "split": {
+    "REN": [
+     57,
+     2,
+     1
+    ],
+    "LFI": [
+     57,
+     0,
+     0
+    ],
+    "PS": [
+     35,
+     0,
+     0
+    ],
+    "ECO": [
+     18,
+     0,
+     0
+    ],
+    "MODEM": [
+     20,
+     2,
+     1
+    ],
+    "PCF": [
+     6,
+     0,
+     1
+    ],
+    "RN": [
+     114,
+     0,
+     0
+    ],
+    "LR": [
+     41,
+     2,
+     0
+    ],
+    "LIOT": [
+     8,
+     4,
+     3
+    ],
+    "UDR": [
+     9,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "capillaire",
+   "theme": "societe",
+   "date": "28 mars 2024",
+   "situation": "Certaines personnes disent être écartées d'un emploi à cause de leur coiffure ou de la texture de leurs cheveux. Inscrire ce critère dans la liste légale des discriminations le rend explicite ; ses opposants estiment que le droit le couvre déjà par l'apparence physique ou l'origine.",
+   "question": "La discrimination liée aux cheveux :",
+   "options": [
+    "L'inscrire explicitement dans la loi",
+    "Le droit actuel suffit"
+   ],
+   "positions": {
+    "REN": 0,
+    "LFI": 0,
+    "MODEM": 0,
+    "PS": 0,
+    "ECO": 0,
+    "LIOT": 0,
+    "PCF": 0
+   },
+   "actor": "Proposition de loi adoptée à l'Assemblée le 28 mars 2024 (44 pour, 2 contre, 4 abstentions).",
+   "nuance": "Seuls 50 députés ont voté. Le RN s'est abstenu ; LR n'avait qu'un votant (contre) et Horizons était partagé : ils ne sont pas placés.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_3624"
+    }
+   ],
+   "contexte": "Le texte ajoute la coupe, la couleur, la longueur et la texture des cheveux aux critères de discrimination du Code pénal et du Code du travail. Il s'inspire de lois adoptées dans plusieurs États américains.",
+   "split": {
+    "REN": [
+     12,
+     1,
+     0
+    ],
+    "LFI": [
+     15,
+     0,
+     0
+    ],
+    "MODEM": [
+     3,
+     0,
+     0
+    ],
+    "PS": [
+     3,
+     0,
+     0
+    ],
+    "ECO": [
+     4,
+     0,
+     0
+    ],
+    "LIOT": [
+     4,
+     0,
+     0
+    ],
+    "PCF": [
+     2,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "surete-nucleaire",
+   "theme": "environnement",
+   "date": "19 mars 2024",
+   "situation": "L'Autorité de sûreté nucléaire décide et contrôle, tandis qu'un institut séparé, l'IRSN, mène l'expertise technique. Les fusionner doit accélérer les décisions au moment où la France relance la construction de réacteurs ; ses opposants craignent une expertise moins indépendante et moins transparente.",
+   "question": "L'expertise et le contrôle de la sûreté nucléaire :",
+   "options": [
+    "Fusionnés en une seule autorité",
+    "Gardés séparés"
+   ],
+   "positions": {
+    "REN": 0,
+    "MODEM": 0,
+    "HOR": 0,
+    "LR": 0,
+    "RN": 1,
+    "LFI": 1,
+    "PS": 1,
+    "ECO": 1,
+    "PCF": 1,
+    "LIOT": 1
+   },
+   "actor": "Projet de loi du gouvernement, adopté le 19 mars 2024 à une voix près (260 pour, 259 contre).",
+   "nuance": "LR a voté pour avec des abstentions (42 pour, 3 contre, 12 abstentions), Horizons aussi (21 pour, 7 abstentions).",
+   "reliability": 3,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_3546"
+    }
+   ],
+   "contexte": "Jusqu'en 2024, l'ASN prenait les décisions et l'IRSN, établissement public distinct, publiait ses expertises. La loi les a réunis dans une Autorité de sûreté nucléaire et de radioprotection (ASNR), créée le 1er janvier 2025.",
+   "split": {
+    "REN": [
+     156,
+     4,
+     3
+    ],
+    "MODEM": [
+     38,
+     1,
+     8
+    ],
+    "HOR": [
+     21,
+     0,
+     7
+    ],
+    "LR": [
+     42,
+     3,
+     12
+    ],
+    "RN": [
+     84,
+     0,
+     0
+    ],
+    "LFI": [
+     74,
+     0,
+     0
+    ],
+    "PS": [
+     31,
+     0,
+     0
+    ],
+    "ECO": [
+     19,
+     0,
+     0
+    ],
+    "PCF": [
+     20,
+     0,
+     0
+    ],
+    "LIOT": [
+     21,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "pantouflage",
+   "theme": "probite",
+   "date": "1er février 2024",
+   "situation": "Des fonctionnaires partent travailler dans des cabinets de conseil privés, puis reviennent parfois dans l'administration. Seuls certains hauts fonctionnaires voient ces passages contrôlés par la Haute autorité pour la transparence (HATVP). Étendre ce contrôle limite les conflits d'intérêts ; le gouvernement estimait que les postes les plus sensibles sont déjà couverts.",
+   "question": "Ces passages entre administration et cabinets de conseil :",
+   "options": [
+    "Tous soumis à l'avis de la HATVP",
+    "Contrôle réservé aux postes les plus sensibles"
+   ],
+   "positions": {
+    "LR": 0,
+    "RN": 0,
+    "LFI": 0,
+    "PCF": 0,
+    "ECO": 0,
+    "PS": 0,
+    "REN": 1,
+    "MODEM": 1
+   },
+   "actor": "Amendement à la loi encadrant les cabinets de conseil, rejeté le 1er février 2024 (34 pour, 44 contre).",
+   "nuance": "Horizons n'avait qu'un votant (contre) et LIOT n'a pas voté : ils ne sont pas placés.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_3329"
+    }
+   ],
+   "contexte": "Après des révélations en 2022 sur le recours de l'État aux cabinets de conseil, une proposition de loi a voulu encadrer leurs missions. Cet amendement rétablissait un article supprimé par le Sénat, qui soumettait tous ces allers-retours à l'avis de la HATVP.",
+   "split": {
+    "LR": [
+     4,
+     0,
+     0
+    ],
+    "RN": [
+     7,
+     0,
+     0
+    ],
+    "LFI": [
+     11,
+     0,
+     0
+    ],
+    "PCF": [
+     3,
+     0,
+     0
+    ],
+    "ECO": [
+     6,
+     0,
+     0
+    ],
+    "PS": [
+     3,
+     0,
+     0
+    ],
+    "REN": [
+     33,
+     0,
+     0
+    ],
+    "MODEM": [
+     10,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "hauteur-plafond",
+   "theme": "logement",
+   "date": "23 janvier 2024",
+   "situation": "Selon les associations de lutte contre le mal-logement, un décret de 2023 permet de louer des logements dont le plafond descend à 1,80 m. Imposer 2,20 m minimum protège la santé des occupants ; le gouvernement voulait garder de la souplesse et jugeait que la question relève du décret.",
+   "question": "Pour louer un logement :",
+   "options": [
+    "Plafond d'au moins 2,20 m",
+    "Garder les règles actuelles, plus souples"
+   ],
+   "positions": {
+    "LFI": 0,
+    "PS": 0,
+    "ECO": 0,
+    "PCF": 0,
+    "LIOT": 0,
+    "REN": 1,
+    "LR": 1,
+    "MODEM": 1
+   },
+   "actor": "Amendement à la loi sur l'habitat dégradé, rejeté le 23 janvier 2024 (36 pour, 39 contre, 28 abstentions).",
+   "nuance": "Le RN s'est abstenu ; Horizons était partagé (2 pour, 3 contre).",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_3245"
+    }
+   ],
+   "contexte": "Le décret de 2023 sur la décence des logements fixe une hauteur de 2,20 m, mais admet des logements plus bas si leur volume ou leur surface est suffisant ; les parties sous 1,80 m ne comptent pas dans la surface. L'amendement voulait faire des 2,20 m un minimum absolu inscrit dans la loi.",
+   "split": {
+    "LFI": [
+     23,
+     0,
+     0
+    ],
+    "PS": [
+     4,
+     0,
+     0
+    ],
+    "ECO": [
+     3,
+     0,
+     0
+    ],
+    "PCF": [
+     2,
+     0,
+     0
+    ],
+    "LIOT": [
+     2,
+     0,
+     0
+    ],
+    "REN": [
+     27,
+     0,
+     2
+    ],
+    "LR": [
+     6,
+     0,
+     0
+    ],
+    "MODEM": [
+     3,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "greve-aerien",
+   "theme": "travail",
+   "date": "15 novembre 2023",
+   "situation": "Les contrôleurs aériens étaient les seuls salariés du transport aérien à ne pas devoir annoncer à l'avance leur participation à une grève. Faute de savoir qui sera présent, les autorités annulent des vols par précaution. Une déclaration 48 heures avant permet d'organiser le trafic ; ses opposants y voient une restriction du droit de grève.",
+   "question": "Les contrôleurs aériens :",
+   "options": [
+    "Déclarent leur grève 48 heures avant",
+    "Pas d'obligation de se déclarer"
+   ],
+   "positions": {
+    "LR": 0,
+    "RN": 0,
+    "REN": 0,
+    "MODEM": 0,
+    "LFI": 1,
+    "PS": 1,
+    "ECO": 1
+   },
+   "actor": "Proposition de loi venue du Sénat, adoptée à l'Assemblée le 15 novembre 2023 (85 pour, 30 contre).",
+   "nuance": "Horizons et le PCF n'avaient qu'un votant chacun, LIOT était partagé : ils ne sont pas placés.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_2988"
+    }
+   ],
+   "contexte": "Depuis une loi de 2012, la plupart des salariés du transport aérien doivent prévenir 48 heures avant de faire grève. Les contrôleurs aériens, agents de l'État, en étaient exemptés. Les grèves de 2023 avaient entraîné de nombreuses annulations préventives de vols.",
+   "split": {
+    "LR": [
+     13,
+     0,
+     0
+    ],
+    "RN": [
+     23,
+     0,
+     0
+    ],
+    "REN": [
+     38,
+     0,
+     0
+    ],
+    "MODEM": [
+     9,
+     0,
+     0
+    ],
+    "LFI": [
+     20,
+     0,
+     0
+    ],
+    "PS": [
+     6,
+     0,
+     0
+    ],
+    "ECO": [
+     2,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "algorithme-controles",
+   "theme": "travail",
+   "date": "29 septembre 2023",
+   "situation": "Pôle emploi, devenu France Travail, cible les contrôles des demandeurs d'emploi à l'aide de critères automatisés. Les publier permet de vérifier qu'ils ne discriminent personne ; le gouvernement répondait qu'il s'agit de simples requêtes de ciblage et que la loi impose déjà la transparence.",
+   "question": "Les critères de ciblage des contrôles :",
+   "options": [
+    "Rendus publics",
+    "Pas de publication supplémentaire"
+   ],
+   "positions": {
+    "RN": 0,
+    "LFI": 0,
+    "PS": 0,
+    "REN": 1,
+    "LR": 1,
+    "MODEM": 1,
+    "HOR": 1
+   },
+   "actor": "Amendement au projet de loi pour le plein emploi, rejeté le 29 septembre 2023 (25 pour, 30 contre).",
+   "nuance": "Les Écologistes n'avaient qu'un votant, le PCF s'est abstenu et LIOT n'a pas voté : ils ne sont pas placés.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_2583"
+    }
+   ],
+   "contexte": "La loi pour le plein emploi a transformé Pôle emploi en France Travail et renforcé les contrôles. Des associations demandaient la publication des critères utilisés pour cibler ces contrôles, sans l'obtenir malgré un recours devant la commission d'accès aux documents administratifs.",
+   "split": {
+    "RN": [
+     5,
+     0,
+     0
+    ],
+    "LFI": [
+     17,
+     0,
+     0
+    ],
+    "PS": [
+     2,
+     0,
+     0
+    ],
+    "REN": [
+     20,
+     0,
+     0
+    ],
+    "LR": [
+     2,
+     0,
+     0
+    ],
+    "MODEM": [
+     5,
+     0,
+     0
+    ],
+    "HOR": [
+     3,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "zan",
+   "theme": "environnement",
+   "date": "27 juin 2023",
+   "situation": "La loi prévoit de diviser par deux le bétonnage des terres naturelles et agricoles d'ici 2031, puis d'y mettre fin en 2050. L'assouplir, avec un hectare garanti à chaque commune, laisse aux villages la possibilité de construire ; ses critiques estiment que cela affaiblit la protection des sols.",
+   "question": "Ces règles contre l'artificialisation :",
+   "options": [
+    "Assouplies pour les communes",
+    "Appliquées sans assouplissement"
+   ],
+   "positions": {
+    "REN": 0,
+    "RN": 0,
+    "LR": 0,
+    "MODEM": 0,
+    "PS": 0,
+    "HOR": 0,
+    "PCF": 0,
+    "LIOT": 0
+   },
+   "actor": "Proposition de loi venue du Sénat, adoptée à l'Assemblée le 27 juin 2023 (437 pour, 4 contre, 94 abstentions).",
+   "nuance": "LFI et les Écologistes se sont abstenus : ils ne sont pas placés. Aucun groupe n'a voté contre.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_2046"
+    }
+   ],
+   "contexte": "L'objectif « zéro artificialisation nette » vient de la loi Climat et résilience de 2021. De nombreux élus locaux jugeaient le calendrier trop rigide. Le texte accorde à chaque commune une « garantie » d'un hectare constructible jusqu'en 2031 et assouplit certains décomptes.",
+   "split": {
+    "REN": [
+     164,
+     1,
+     0
+    ],
+    "RN": [
+     81,
+     0,
+     0
+    ],
+    "LR": [
+     55,
+     2,
+     4
+    ],
+    "MODEM": [
+     47,
+     0,
+     0
+    ],
+    "PS": [
+     30,
+     0,
+     0
+    ],
+    "HOR": [
+     27,
+     0,
+     2
+    ],
+    "PCF": [
+     17,
+     0,
+     0
+    ],
+    "LIOT": [
+     16,
+     0,
+     4
+    ]
+   }
+  },
+  {
+   "id": "ttf",
+   "theme": "argent",
+   "date": "8 juin 2023",
+   "situation": "La taxe sur les transactions financières (0,3 %) ne s'applique qu'aux achats d'actions de grandes entreprises françaises. L'étendre aux opérations achetées et revendues dans la journée et aux produits dérivés fait contribuer la spéculation ; le gouvernement craignait de fragiliser l'activité financière en France.",
+   "question": "Cette taxe :",
+   "options": [
+    "Étendue aux opérations dans la journée et aux dérivés",
+    "Limitée aux achats d'actions"
+   ],
+   "positions": {
+    "LFI": 0,
+    "LR": 0,
+    "PS": 0,
+    "ECO": 0,
+    "PCF": 0,
+    "LIOT": 0,
+    "REN": 1,
+    "MODEM": 1,
+    "HOR": 1
+   },
+   "actor": "Amendement à une proposition de loi sur la taxe sur les transactions financières, rejeté le 8 juin 2023 (123 pour, 197 contre).",
+   "nuance": "Le RN s'est surtout abstenu (8 pour, 48 abstentions). LR a voté pour à 10 contre 5.",
+   "reliability": 3,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_1785"
+    }
+   ],
+   "contexte": "Créée en 2012, la taxe touche les achats d'actions de sociétés françaises cotées valant plus d'un milliard d'euros ; son taux est passé de 0,2 % à 0,3 % en 2017. Les opérations dénouées dans la journée, environ 80 % des volumes selon les auteurs, y échappent car aucun transfert de propriété n'a lieu.",
+   "split": {
+    "LFI": [
+     54,
+     0,
+     0
+    ],
+    "LR": [
+     10,
+     5,
+     1
+    ],
+    "PS": [
+     12,
+     0,
+     0
+    ],
+    "ECO": [
+     11,
+     0,
+     0
+    ],
+    "PCF": [
+     9,
+     0,
+     1
+    ],
+    "LIOT": [
+     17,
+     0,
+     0
+    ],
+    "REN": [
+     138,
+     1,
+     3
+    ],
+    "MODEM": [
+     39,
+     0,
+     1
+    ],
+    "HOR": [
+     15,
+     0,
+     2
+    ]
+   }
+  },
+  {
+   "id": "edf",
+   "theme": "environnement",
+   "date": "4 mai 2023",
+   "situation": "L'État détient presque tout le capital d'EDF. Inscrire dans la loi qu'EDF reste un groupe public non découpé, et ouvrir les tarifs réglementés de l'électricité à davantage de petites entreprises et de collectivités, protège ce service ; le gouvernement jugeait la mesure coûteuse et estimait que la renationalisation suffisait.",
+   "question": "EDF :",
+   "options": [
+    "Son unité garantie par la loi, tarifs réglementés élargis",
+    "Pas de nouvelle contrainte dans la loi"
+   ],
+   "positions": {
+    "RN": 0,
+    "LFI": 0,
+    "LIOT": 0,
+    "PCF": 0,
+    "ECO": 0,
+    "PS": 0,
+    "LR": 0,
+    "REN": 1,
+    "MODEM": 1,
+    "HOR": 1
+   },
+   "actor": "Proposition de loi adoptée en deuxième lecture le 4 mai 2023 (127 pour, 89 contre), contre l'avis du gouvernement.",
+   "nuance": "LR n'avait que 2 votants, tous deux pour.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_1482"
+    }
+   ],
+   "contexte": "Entre 2019 et 2021, un projet de réorganisation d'EDF prévoyait de séparer le nucléaire des autres activités. L'État a racheté en 2023 les actions qu'il ne détenait pas. Le texte inscrit qu'EDF est une entreprise d'intérêt national à capital majoritairement public et fixe ses missions dans la loi.",
+   "split": {
+    "RN": [
+     22,
+     0,
+     0
+    ],
+    "LFI": [
+     51,
+     0,
+     0
+    ],
+    "LIOT": [
+     4,
+     0,
+     0
+    ],
+    "PCF": [
+     18,
+     0,
+     0
+    ],
+    "ECO": [
+     11,
+     0,
+     0
+    ],
+    "PS": [
+     16,
+     0,
+     0
+    ],
+    "LR": [
+     2,
+     0,
+     0
+    ],
+    "REN": [
+     72,
+     1,
+     1
+    ],
+    "MODEM": [
+     14,
+     0,
+     0
+    ],
+    "HOR": [
+     3,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "regimes-speciaux",
+   "theme": "travail",
+   "date": "10 février 2023",
+   "situation": "Certains salariés, à la RATP, dans les industries électriques et gazières ou à la Banque de France, ont un régime de retraite propre. Le fermer aux nouveaux embauchés rapproche tout le monde des mêmes règles ; ses opposants rappellent que ces régimes tiennent compte de la pénibilité et aident à recruter.",
+   "question": "Pour les nouveaux embauchés :",
+   "options": [
+    "Fin de ces régimes spéciaux",
+    "On garde ces régimes"
+   ],
+   "positions": {
+    "REN": 0,
+    "LR": 0,
+    "MODEM": 0,
+    "HOR": 0,
+    "RN": 1,
+    "LFI": 1,
+    "PS": 1,
+    "PCF": 1,
+    "ECO": 1
+   },
+   "actor": "Article 1 de la réforme des retraites de 2023, adopté le 10 février 2023 (181 pour, 163 contre).",
+   "nuance": "LIOT a voté contre en reprochant au texte de ne supprimer que cinq régimes sur plus de vingt : il n'est pas placé.",
+   "reliability": 3,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_947"
+    }
+   ],
+   "contexte": "La réforme de 2023 ferme cinq régimes spéciaux aux salariés embauchés à partir du 1er septembre 2023 : RATP, industries électriques et gazières, clercs et employés de notaire, Banque de France et Conseil économique, social et environnemental. Les salariés déjà en poste les conservent ; d'autres régimes, comme ceux des marins ou de l'Opéra de Paris, restent en place.",
+   "split": {
+    "REN": [
+     117,
+     0,
+     0
+    ],
+    "LR": [
+     14,
+     0,
+     0
+    ],
+    "MODEM": [
+     32,
+     0,
+     0
+    ],
+    "HOR": [
+     18,
+     0,
+     0
+    ],
+    "RN": [
+     61,
+     0,
+     0
+    ],
+    "LFI": [
+     59,
+     0,
+     0
+    ],
+    "PS": [
+     19,
+     0,
+     0
+    ],
+    "PCF": [
+     12,
+     0,
+     0
+    ],
+    "ECO": [
+     10,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "eoliennes-mer",
+   "theme": "environnement",
+   "date": "13 décembre 2022",
+   "situation": "Les parcs éoliens en mer sont installés à une vingtaine de kilomètres des côtes, parfois moins. Imposer 40 km minimum préserve la vue et le tourisme ; ses opposants répondent qu'à cette distance seules des éoliennes flottantes, encore peu déployées, seraient possibles, ce qui freinerait les projets.",
+   "question": "Les éoliennes en mer :",
+   "options": [
+    "À au moins 40 km des côtes",
+    "Pas de distance minimale dans la loi"
+   ],
+   "positions": {
+    "RN": 0,
+    "LR": 0,
+    "REN": 1,
+    "LFI": 1,
+    "MODEM": 1,
+    "PS": 1,
+    "HOR": 1,
+    "ECO": 1
+   },
+   "actor": "Amendement à la loi d'accélération des énergies renouvelables, rejeté le 13 décembre 2022 (54 pour, 103 contre).",
+   "nuance": "LIOT n'avait qu'un votant (pour) et le PCF n'a pas voté : ils ne sont pas placés.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_770"
+    }
+   ],
+   "contexte": "Les premiers parcs éoliens en mer français, mis en service à partir de 2022, sont posés sur le fond à quelques dizaines de kilomètres au plus des côtes. Plus loin, la mer est souvent trop profonde pour fixer les éoliennes au sol, d'où le recours à des éoliennes flottantes.",
+   "split": {
+    "RN": [
+     39,
+     0,
+     0
+    ],
+    "LR": [
+     12,
+     1,
+     1
+    ],
+    "REN": [
+     69,
+     0,
+     0
+    ],
+    "LFI": [
+     9,
+     0,
+     0
+    ],
+    "MODEM": [
+     12,
+     0,
+     0
+    ],
+    "PS": [
+     2,
+     0,
+     0
+    ],
+    "HOR": [
+     5,
+     0,
+     0
+    ],
+    "ECO": [
+     5,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "redevance",
+   "theme": "argent",
+   "date": "23 juillet 2022",
+   "situation": "La redevance audiovisuelle, 138 € par an, était payée par les foyers équipés d'une télévision et finançait France Télévisions, Radio France, Arte et l'INA. La supprimer allège les factures des ménages ; ses opposants craignent un audiovisuel public plus dépendant du budget de l'État et moins indépendant.",
+   "question": "Le financement de l'audiovisuel public :",
+   "options": [
+    "Sans redevance, par le budget de l'État",
+    "Par une contribution qui lui est réservée"
+   ],
+   "positions": {
+    "REN": 0,
+    "RN": 0,
+    "LR": 0,
+    "MODEM": 0,
+    "HOR": 0,
+    "LFI": 1,
+    "PS": 1,
+    "ECO": 1,
+    "PCF": 1,
+    "LIOT": 1
+   },
+   "actor": "Article de la loi de finances rectificative pour 2022, adopté le 23 juillet 2022 (170 pour, 57 contre).",
+   "nuance": "LIOT a voté contre à 3 voix contre 1.",
+   "reliability": 3,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_101"
+    }
+   ],
+   "contexte": "La redevance a été supprimée en 2022. L'audiovisuel public reçoit depuis une part de la TVA, un mécanisme d'abord temporaire puis prolongé.",
+   "split": {
+    "REN": [
+     77,
+     0,
+     0
+    ],
+    "RN": [
+     36,
+     0,
+     0
+    ],
+    "LR": [
+     9,
+     0,
+     0
+    ],
+    "MODEM": [
+     23,
+     0,
+     0
+    ],
+    "HOR": [
+     16,
+     0,
+     0
+    ],
+    "LFI": [
+     36,
+     0,
+     0
+    ],
+    "PS": [
+     4,
+     0,
+     0
+    ],
+    "ECO": [
+     7,
+     0,
+     0
+    ],
+    "PCF": [
+     6,
+     0,
+     0
+    ],
+    "LIOT": [
+     3,
+     1,
+     0
+    ]
+   }
+  },
+  {
+   "id": "renovation",
+   "theme": "logement",
+   "date": "31 octobre 2022",
+   "situation": "MaPrimeRénov' aide les ménages à isoler leur logement et à changer de chauffage. Ajouter 5 milliards d'euros au budget 2023 accélère les rénovations et réduit le reste à charge ; le gouvernement jugeait la dépense trop lourde et mal financée, en retirant des crédits à d'autres programmes.",
+   "question": "Les aides à la rénovation énergétique :",
+   "options": [
+    "5 milliards d'euros de plus",
+    "Le budget prévu par le gouvernement"
+   ],
+   "positions": {
+    "RN": 0,
+    "LFI": 0,
+    "PS": 0,
+    "ECO": 0,
+    "REN": 1,
+    "MODEM": 1,
+    "HOR": 1
+   },
+   "actor": "Amendement au budget 2023, adopté en séance le 31 octobre 2022 (88 pour, 51 contre) contre l'avis du gouvernement.",
+   "nuance": "LR et LIOT n'ont pas pris part au vote, le PCF n'avait qu'un votant : ils ne sont pas placés.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_490"
+    }
+   ],
+   "contexte": "MaPrimeRénov', créée en 2020, finance une partie des travaux selon les revenus du ménage. L'amendement voulait tripler ses crédits, financés en réduisant d'autres lignes du budget, pour viser un reste à charge nul pour les ménages modestes.",
+   "split": {
+    "RN": [
+     38,
+     0,
+     0
+    ],
+    "LFI": [
+     33,
+     0,
+     0
+    ],
+    "PS": [
+     3,
+     0,
+     0
+    ],
+    "ECO": [
+     12,
+     0,
+     0
+    ],
+    "REN": [
+     42,
+     0,
+     0
+    ],
+    "MODEM": [
+     5,
+     0,
+     0
+    ],
+    "HOR": [
+     3,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "bilan-carbone",
+   "theme": "environnement",
+   "date": "2 novembre 2023",
+   "situation": "L'État soutient des entreprises innovantes avec le plan d'investissement France 2030. Conditionner ces aides à la publication d'un bilan carbone pousse les entreprises à mesurer leurs émissions ; le gouvernement répondait que la loi l'impose déjà aux grandes entreprises et qu'il faut d'abord la faire appliquer.",
+   "question": "Pour recevoir ces aides :",
+   "options": [
+    "Publier son bilan carbone",
+    "Pas de condition supplémentaire"
+   ],
+   "positions": {
+    "REN": 0,
+    "LFI": 0,
+    "ECO": 0,
+    "RN": 1
+   },
+   "actor": "Amendement au budget 2024, adopté en séance le 2 novembre 2023 (32 pour, 10 contre).",
+   "nuance": "Peu de députés présents : LR, le MoDem, Horizons, le PCF et le PS n'ont pas voté ou presque, LIOT s'est abstenu.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_2836"
+    }
+   ],
+   "contexte": "Depuis 2010, les entreprises de plus de 500 salariés doivent publier un bilan de leurs émissions de gaz à effet de serre ; selon l'ADEME, 41 % ne l'avaient pas fait en 2021. France 2030 est un plan de 54 milliards d'euros lancé en 2021.",
+   "split": {
+    "REN": [
+     16,
+     0,
+     0
+    ],
+    "LFI": [
+     11,
+     0,
+     0
+    ],
+    "ECO": [
+     2,
+     0,
+     0
+    ],
+    "RN": [
+     8,
+     0,
+     1
     ]
    }
   }
