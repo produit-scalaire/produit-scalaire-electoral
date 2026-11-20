@@ -25,6 +25,8 @@ def md(src):
 # ADRESSE DU DÉPÔT PUBLIC : à changer ici seulement (texte « Méthode » et pied de page)
 REPO_URL='https://github.com/produit-scalaire/produit-scalaire-electoral'
 PAGE_URL='https://produit-scalaire.github.io/produit-scalaire-electoral/'
+# Lien à partager : changer le numéro de version pour forcer les applications à recharger l'aperçu
+SHARE_URL=PAGE_URL+'?v=2'
 # Aperçu du lien (WhatsApp, iMessage, réseaux) : image preview.png à la racine du site, régénérée depuis apercu-lien.html
 DESC="Répondez aux vrais votes de l'Assemblée nationale et mesurez votre proximité avec chaque parti, sujet par sujet."
 FAV="data:image/svg+xml,"+__import__('urllib.parse').parse.quote('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><rect width="30" height="30" rx="6" fill="#0f1633"/><path d="M5 25 L25 21" stroke="#8ea2ff" stroke-width="3" stroke-linecap="round"/><path d="M5 25 L19 6" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>')
@@ -34,7 +36,7 @@ META=f'''<meta name="description" content="{html.escape(DESC)}">
 <meta property="og:site_name" content="Produit scalaire électoral">
 <meta property="og:title" content="Quel parti vote vraiment comme vous ?">
 <meta property="og:description" content="{html.escape(DESC)}">
-<meta property="og:url" content="{PAGE_URL}">
+<meta property="og:url" content="{SHARE_URL}">
 <meta property="og:image" content="{PAGE_URL}preview.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="L'hémicycle de l'Assemblée nationale et la question : quel parti vote vraiment comme vous ?">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Quel parti vote vraiment comme vous ?">
@@ -66,7 +68,7 @@ anim=a.replace('&','&amp;').replace('"','&quot;')
 
 dl_top='<a class="dl" href="" download="produit-scalaire-electoral.html" onclick="this.href=location.href.split(\'#\')[0]">Télécharger la page</a>'
 dl2='<p class="label"><a href="" download="produit-scalaire-electoral.html" onclick="this.href=location.href.split(\'#\')[0]">Téléchargez la page</a> pour l’utiliser hors connexion.</p>'
-base=t.replace('__REPO__',REPO_URL).replace('__DATA__',data).replace('__ABOUT__',about).replace('__ANIM__',anim)
+base=t.replace('__SHARE__',SHARE_URL).replace('__REPO__',REPO_URL).replace('__DATA__',data).replace('__ABOUT__',about).replace('__ANIM__',anim)
 std=base.replace('__DOWNLOAD_TOP__',dl_top).replace('__DOWNLOAD2__',dl2)
 art=base.replace('__DOWNLOAD_TOP__','').replace('__DOWNLOAD2__','')
 open(os.path.join(here,'produit-scalaire-electoral.html'),'w').write('<!doctype html>\n<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'+META+std.replace('<div class="shell"','</head><body>\n<div class="shell"',1)+'\n</body></html>\n')
