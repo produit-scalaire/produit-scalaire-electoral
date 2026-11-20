@@ -1,0 +1,330 @@
+<title>Une ligne ou un espace</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: une figure collante (la géométrie) à côté d'un récit en 6 étapes ; empilé sur téléphone. Mêmes jetons que « Au-delà de gauche et droite ». */
+:root{
+  --bg:#f3f5f9; --panel:#ffffff; --ink:#141a2b; --muted:#5b647a; --grid:#d9dee9; --faint:#e8ebf2;
+  --accent:#1b3fa6; --bleu:#1b3fa6; --blanc:#ffffff; --rouge:#e1000f; --you:#141a2b; --agree:#2f9a5a; --disagree:#c98500; --none:#b5bccb;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"Instrument Sans",ui-sans-serif,system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --p-LFI:#c4302b; --p-PCF:#8f1d21; --p-ECO:#2f9a4c; --p-PS:#e0559a; --p-MODEM:#ef8a1f;
+  --p-REN:#d9a90f; --p-LIOT:#1f9e9a; --p-HOR:#3e9bd8; --p-LR:#2c58ad; --p-UDR:#6a47a8; --p-RN:#1c2a58;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f131d; --panel:#171c29; --ink:#e8ecf5; --muted:#9aa3b8; --grid:#2a3142; --faint:#212839;
+  --accent:#8ea2ff; --bleu:#4a66e0; --blanc:#e9ecf7; --rouge:#ef4150; --you:#f4f6fb; --agree:#5cc184; --disagree:#f0b443; --none:#4a5266;
+  --p-PCF:#d04a4e; --p-LIOT:#4cc6c0; --p-RN:#7d93db; --p-LR:#5b86d8; --p-UDR:#a184da; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f131d; --panel:#171c29; --ink:#e8ecf5; --muted:#9aa3b8; --grid:#2a3142; --faint:#212839;
+  --accent:#8ea2ff; --bleu:#4a66e0; --blanc:#e9ecf7; --rouge:#ef4150; --you:#f4f6fb; --agree:#5cc184; --disagree:#f0b443; --none:#4a5266;
+  --p-PCF:#d04a4e; --p-LIOT:#4cc6c0; --p-RN:#7d93db; --p-LR:#5b86d8; --p-UDR:#a184da; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 48px}
+.wrap{max-width:1120px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+header h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,5vw,3.4rem);line-height:1.02;margin:0;letter-spacing:-.02em;text-wrap:balance}
+header h1 em{font-style:normal;color:var(--accent)}
+header p{margin:.6rem 0 0;color:var(--muted);max-width:62ch}
+.stage{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:28px;align-items:start}
+@media (max-width:860px){.stage{grid-template-columns:1fr}}
+figure .replay{position:absolute;top:12px;right:12px;z-index:1;font-family:var(--body);font-size:13px;font-weight:600;border:1px solid var(--grid);background:var(--panel);color:var(--ink);border-radius:999px;padding:5px 12px;cursor:pointer}
+figure{margin:0;background:var(--panel);border:1px solid var(--grid);border-radius:14px;padding:10px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px)}
+@media (max-width:860px){figure{position:relative}}
+svg{display:block;width:100%;height:auto}
+.lab{font-family:var(--mono);font-size:13.5px;fill:var(--muted);letter-spacing:.03em}
+.lab.pour{fill:var(--ink);font-weight:600}
+.axl{font-family:var(--body);font-size:15px;font-weight:600;fill:var(--ink)}
+.sign{font-family:var(--mono);font-size:15px;font-weight:600;fill:var(--muted)}
+.sign.pour{fill:var(--ink)}
+.big{font-family:var(--display);font-weight:800;font-size:34px;fill:var(--ink)}
+.plabel{font-family:var(--body);font-weight:600;font-size:14px;fill:var(--ink);paint-order:stroke;stroke:var(--panel);stroke-width:4px;stroke-linejoin:round}
+.cap{font-family:var(--mono);font-size:12.5px;fill:var(--muted);letter-spacing:.06em}
+.narr{display:flex;flex-direction:column;gap:18px;min-width:0}
+.stepnav{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.dots{display:flex;gap:6px}
+.dots button{width:28px;height:28px;border-radius:50%;border:1px solid var(--grid);background:var(--panel);color:var(--muted);font-family:var(--mono);font-size:12px;cursor:pointer}
+.dots button[aria-current="step"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn{font-family:var(--body);font-weight:600;font-size:14px;border:1px solid var(--ink);background:transparent;color:var(--ink);border-radius:999px;padding:7px 16px;cursor:pointer}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.btn:disabled{opacity:.35;cursor:default}
+button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.step h2{font-family:var(--display);font-weight:800;font-size:1.7rem;line-height:1.1;margin:0 0 .5rem;text-wrap:balance}
+.step p{margin:0 0 .7rem;max-width:62ch}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:.4rem}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:.4rem 0 .8rem}
+.chips button{font-family:var(--body);font-size:13px;border:1px solid var(--grid);background:var(--panel);color:var(--ink);border-radius:999px;padding:5px 11px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.chips button i{width:9px;height:9px;border-radius:50%;display:inline-block}
+.chips button[aria-pressed="true"]{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink);font-weight:600}
+.fact{background:var(--panel);border:1px solid var(--grid);border-radius:10px;padding:12px 14px;font-size:14.5px}
+.fact a,.sources a{color:var(--p-HOR)}
+.math{font-family:var(--mono);font-size:13px;background:var(--panel);border:1px solid var(--grid);border-radius:10px;padding:10px 12px;overflow-x:auto;line-height:1.7}
+.axes-list{margin:.2rem 0 .8rem;padding:0;list-style:none;display:flex;flex-direction:column;gap:4px;font-size:14px}
+.axes-list b{font-family:var(--mono);font-weight:600;font-size:12.5px}
+.quiz{display:flex;flex-direction:column;gap:10px;margin:.4rem 0}
+.q{display:flex;flex-direction:column;gap:5px;background:var(--panel);border:1px solid var(--grid);border-radius:10px;padding:9px 11px}
+.q .t{font-size:14px}
+.q .row{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
+.seg{display:inline-flex;border:1px solid var(--grid);border-radius:999px;overflow:hidden}
+.seg button{font-family:var(--body);font-size:13px;border:0;background:transparent;color:var(--ink);padding:4px 11px;cursor:pointer}
+.seg button+button{border-left:1px solid var(--grid)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg);font-weight:600}
+.imp{display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.imp button{width:24px;height:24px;border-radius:6px;border:1px solid var(--grid);background:transparent;color:var(--muted);font-family:var(--mono);font-size:12px;cursor:pointer}
+.imp button[aria-pressed="true"]{background:var(--bleu);border-color:var(--bleu);color:#fff}
+/* bandeau tricolore, décoratif : le rouge ne porte aucun sens */
+.tricolore{display:flex;height:6px;border-radius:3px;overflow:hidden;width:84px;margin-bottom:14px}
+.tricolore i{flex:1}.tricolore i:nth-child(1){background:var(--bleu)}.tricolore i:nth-child(2){background:var(--blanc);box-shadow:inset 0 0 0 1px var(--grid)}.tricolore i:nth-child(3){background:var(--rouge)}
+.rank{display:flex;flex-direction:column;gap:4px;margin:.4rem 0 .8rem}
+.rank button{display:grid;grid-template-columns:96px minmax(0,1fr) 52px;gap:8px;align-items:center;border:1px solid transparent;background:transparent;color:var(--ink);border-radius:8px;padding:3px 6px;cursor:pointer;font-family:var(--body);font-size:13.5px;text-align:left}
+.rank button[aria-pressed="true"]{border-color:var(--grid);background:var(--panel);font-weight:600}
+.bar{position:relative;height:12px}
+.bar::before{content:"";position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:var(--grid)}
+.bar span{position:absolute;top:0;bottom:0;border-radius:3px}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:12.5px;text-align:right}
+.muted{color:var(--muted)}
+.sources{font-size:13px;color:var(--muted);border-top:1px solid var(--grid);padding-top:16px}
+.sources ul{margin:.4rem 0 0;padding-left:1.1rem}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="tricolore" aria-hidden="true"><i></i><i></i><i></i></div>
+    <h1>Une ligne, <em>ou tout un espace ?</em></h1>
+    <p>On te classe à gauche ou à droite. Mais tes opinions ne tiennent pas sur une ligne : sur chaque sujet, tu as ton avis, et chaque sujet ajoute une direction. Ce que tu penses devient un vecteur. Les partis aussi, et on peut mesurer à quel point vous pointez dans le même sens.</p>
+  </header>
+
+  <div class="stage">
+    <figure>
+      <button class="replay" id="replay" type="button">↻ Rejouer</button>
+      <svg id="fig" viewBox="0 0 680 600" role="img" aria-label="Figure animée : tes opinions et celles des partis, d'un seul axe gauche-droite à plusieurs axes pour ou contre"></svg>
+    </figure>
+    <div class="narr">
+      <div class="stepnav">
+        <button class="btn" id="prev">Précédent</button>
+        <div class="dots" id="dots"></div>
+        <button class="btn primary" id="next">Suivant</button>
+      </div>
+      <div class="step" id="step" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <div class="sources">
+    <strong>Sources et méthode.</strong> Les 5 axes sont 5 votes réels de l'Assemblée. Un parti vaut +1 si son groupe a voté pour, −1 s'il a voté contre, 0 s'il s'est abstenu, s'est divisé ou n'a pas de position connue. L'hémicycle reprend les effectifs des groupes publiés par <a href="https://datan.fr/groupes" target="_blank" rel="noopener">datan.fr</a> (563 députés inscrits, sans les non-inscrits). Reconquête n'a pas de groupe à l'Assemblée et n'apparaît pas.
+    <ul id="srcs"></ul>
+  </div>
+</div>
+
+<script>
+const PARTIES=[
+ {id:"LFI",name:"LFI",x:0},{id:"PCF",name:"PCF",x:1},{id:"ECO",name:"Écologistes",x:2},{id:"PS",name:"PS",x:3},{id:"LIOT",name:"LIOT",x:4},
+ {id:"MODEM",name:"MoDem",x:5},{id:"REN",name:"Renaissance",x:6},{id:"HOR",name:"Horizons",x:7},
+ {id:"LR",name:"LR",x:8},{id:"UDR",name:"UDR",x:9},{id:"RN",name:"RN",x:10}];
+const AXES=[
+ {id:"pest",short:"Pesticides",pour:"Réautoriser l'acétamipride, un insecticide interdit depuis 2018 (loi Duplomb)",date:"8 juillet 2025",
+  p:{RN:1,UDR:1,LR:1,REN:1,MODEM:1,HOR:1,LIOT:1,LFI:-1,PS:-1,ECO:-1,PCF:-1},
+  note:"Ici, la ligne tient : toute la gauche vote contre, tous les autres pour.",src:"https://datan.fr/votes/legislature-17/vote_2957",srcName:"datan.fr"},
+ {id:"fin",short:"Aide à mourir",pour:"Créer un droit à l'aide à mourir, sous conditions strictes",date:"27 mai 2025",
+  p:{LFI:1,PCF:1,ECO:1,PS:1,LIOT:1,MODEM:1,REN:1,HOR:1,LR:-1,UDR:-1,RN:-1},
+  note:"La coupure se déplace : elle passe entre le centre et la droite. Renaissance vote avec la gauche.",src:"https://datan.fr/votes/legislature-17/vote_2107/explication_PA840665",srcName:"datan.fr"},
+ {id:"ret",short:"Revenir sur 64 ans",pour:"Revenir sur le passage à 64 ans (suspension ou retour à 62 ans)",date:"2024-2025",
+  p:{LFI:1,PCF:1,ECO:1,PS:1,LIOT:1,RN:1,MODEM:-1,REN:-1,HOR:-1,LR:-1},
+  note:"LFI, le PCF, le PS, les Écologistes, LIOT et le RN veulent revenir sur les 64 ans. Le bloc central et LR veulent les garder. Les deux bouts de la ligne se retrouvent du même côté.",src:"https://www.publicsenat.fr/actualites/politique/lassemblee-nationale-valide-la-suspension-de-la-reforme-des-retraites",srcName:"Public Sénat"},
+ {id:"zfe",short:"Supprimer les ZFE",pour:"Supprimer partout les zones à faibles émissions",date:"14 avril 2026",
+  p:{RN:1,UDR:1,LR:1,LFI:1,REN:-1,MODEM:-1,HOR:-1,PS:-1},
+  note:"LFI vote avec le RN, l'UDR et LR pour supprimer les ZFE. Le PS se range avec le bloc central. La ligne zigzague.",src:"https://lcp.fr/actualites/la-suppression-des-zfe-confirmee-lors-de-l-ultime-vote-sur-la-loi-de-simplification-a-l",srcName:"LCP"},
+ {id:"fra",short:"Doubler franchises",pour:"Doubler le reste à charge sur les médicaments et les consultations (franchises médicales)",date:"29 octobre 2025",
+  p:{REN:1,MODEM:1,LFI:-1,ECO:-1,PS:-1,HOR:-1,RN:-1},
+  note:"Renaissance et le MoDem défendent le doublement. Le RN vote avec le PS et les Écologistes pour le supprimer du budget, LFI demande la fin des franchises. Le centre est seul contre les deux bouts de la ligne.",src:"https://lcp.fr/actualites/franchises-medicales-les-deputes-s-opposent-au-gouvernement-sur-l-extension-et-l",srcName:"LCP"}];
+const LINE_SUBJ=["zfe","ret","fra"];
+const N=AXES.length,vec=pid=>AXES.map(a=>a.p[pid]||0);
+
+/* rien n'est prérempli : chaque sujet attend une position et une importance */
+const state={step:0,subj:0,party:"PS",cmp:null,you:{pest:{v:-1,w:2},fin:{v:1,w:3},ret:{v:1,w:1},zfe:{v:-1,w:1},fra:{v:-1,w:2}}}; /* une personne d'exemple : l'animation explique, le questionnaire viendra ensuite */
+const done=id=>state.you[id].v!==null&&state.you[id].w!==null;
+const U=id=>done(id)?state.you[id]:{v:0,w:0};
+const nDone=()=>AXES.filter(a=>done(a.id)).length;
+
+/* géométrie */
+const svg=document.getElementById("fig"),NS="http://www.w3.org/2000/svg",W=680,H=600,cx=340,cy=300,R=222;
+const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const el=(t,a={},p=svg)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);p.appendChild(e);return e;};
+const txt=(s,a,p)=>{const e=el("text",a,p);e.textContent=s;return e;};
+const DIR=AXES.map((_,k)=>{const th=-Math.PI/2+k*Math.PI/N,f=k%2?-1:1;return [f*Math.cos(th),f*Math.sin(th)];});
+/* longueur d'un pas : la chaîne la plus longue d'un parti remplit presque le cercle */
+const maxPartial=(v,len)=>{let x=0,y=0,m=0;v.forEach((c,k)=>{x+=c*len[k]*DIR[k][0];y+=c*len[k]*DIR[k][1];m=Math.max(m,Math.hypot(x,y));});return m;};
+const STEP=.88*R/Math.max(...PARTIES.map(p=>maxPartial(AXES.map(a=>a.p[p.id]||0),AXES.map(()=>1))));
+const ease=k=>k<.5?4*k*k*k:1-Math.pow(-2*k+2,3)/2,clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v)),lerp=(a,b,k)=>a+(b-a)*k;
+const seg=(t,a,b)=>ease(clamp((t-a)/(b-a)));
+function arrow(x1,y1,x2,y2,color,w=3,op=1,p=svg){const L=Math.hypot(x2-x1,y2-y1);if(L<1)return;
+  const ux=(x2-x1)/L,uy=(y2-y1)/L,h=Math.min(5+w*2.2,L*.6);
+  el("line",{x1,y1,x2:x2-ux*h*.7,y2:y2-uy*h*.7,stroke:color,"stroke-width":w,"stroke-linecap":"round",opacity:op},p);
+  el("path",{d:`M${x2},${y2} L${x2-ux*h-uy*h*.55},${y2-uy*h+ux*h*.55} L${x2-ux*h+uy*h*.55},${y2-uy*h-ux*h*.55} Z`,fill:color,opacity:op},p);}
+function chain(v,len){const f=Math.min(1,.92*R/((maxPartial(v,len)*STEP)||1)),st=STEP*f,pts=[[0,0]];v.forEach((c,k)=>{const l=pts[k];pts.push([l[0]+c*len[k]*st*DIR[k][0],l[1]+c*len[k]*st*DIR[k][1]]);});pts.st=st;return pts;}
+
+/* hémicycle : effectifs des groupes selon datan.fr (novembre 2026), sièges remplis de la gauche vers la droite */
+const SEATS_N={LFI:70,PCF:17,ECO:39,PS:67,LIOT:24,MODEM:37,REN:90,HOR:35,LR:46,UDR:17,RN:121};
+const HC={x:340,y:430,r0:120,r1:270,rows:11};
+const SEATS=(()=>{const tot=PARTIES.reduce((a,p)=>a+SEATS_N[p.id],0),rad=[];let sum=0;
+  for(let k=0;k<HC.rows;k++){const r=HC.r0+k*(HC.r1-HC.r0)/(HC.rows-1);rad.push(r);sum+=r;}
+  const pts=[];let left=tot;rad.forEach((r,k)=>{const n=k===HC.rows-1?left:Math.round(tot*r/sum);left-=n;
+    for(let j=0;j<n;j++){const a=Math.PI*(1-(j+.5)/n);pts.push({x:HC.x+r*Math.cos(a),y:HC.y-r*Math.sin(a),a});}});
+  pts.sort((p,q)=>q.a-p.a);let i=0;PARTIES.forEach((p,pi)=>{for(let j=0;j<SEATS_N[p.id];j++)Object.assign(pts[i++],{pi,pid:p.id});});return pts;})();
+
+/* positions sur la ligne */
+const LX0=80,LX1=600,lineX=PARTIES.map(p=>LX0+p.x/10*(LX1-LX0));
+let dotY=PARTIES.map(()=>cy),fromY=dotY.slice();
+function lineTargets(){if(state.step<1)return PARTIES.map(()=>cy);const a=AXES.find(x=>x.id===LINE_SUBJ[state.subj]);return PARTIES.map(p=>cy-(a.p[p.id]||0)*130);}
+
+/* animation */
+const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+let T=1,t0=0,dur=1200,raf=0,prevStep=0;
+function play(d=1200){fromY=dotY.slice();dur=d;cancelAnimationFrame(raf);if(reduce){T=1;draw();return;}t0=performance.now();T=0;
+  const f=now=>{T=clamp((now-t0)/dur);draw();if(T<1)raf=requestAnimationFrame(f);};raf=requestAnimationFrame(f);}
+
+function drawStar(grow=1,labels=true,color=null){const g=el("g");
+  el("circle",{cx,cy,r:R,fill:"none",stroke:css("--faint"),"stroke-width":1},g);
+  AXES.forEach((a,k)=>{const d=DIR[k],gk=seg(grow,k*.08,k*.08+.45),r=R*gk;
+    el("line",{x1:cx-d[0]*r,y1:cy-d[1]*r,x2:cx+d[0]*r,y2:cy+d[1]*r,stroke:color?color(k):css("--grid"),"stroke-width":color?3:1.5,"stroke-linecap":"round"},g);
+    if(!labels||gk<.98)return;
+    /* + et − au bout de l'axe, nom du sujet couché le long de la moitié « pour » */
+    [[1,"+"],[-1,"−"]].forEach(([s,t])=>{const bx=cx+s*d[0]*(R+13),by=cy+s*d[1]*(R+13);
+      el("circle",{cx:bx,cy:by,r:10,fill:css("--panel"),stroke:s>0?css("--ink"):css("--grid"),"stroke-width":1.5},g);
+      txt(t,{x:bx,y:by+5,class:"sign"+(s>0?" pour":""),"text-anchor":"middle"},g);});
+    const out=d[0]>=-1e-6,ang=Math.atan2(d[1],d[0])*180/Math.PI+(out?0:180),px=cx+d[0]*(R-14),py=cy+d[1]*(R-14);
+    fitText(txt(a.short,{x:px,y:py,class:"axl","text-anchor":out?"end":"start",transform:`rotate(${ang.toFixed(2)} ${px.toFixed(1)} ${py.toFixed(1)}) translate(0 -12)`},g),R-50);});
+  el("circle",{cx,cy,r:3.5,fill:css("--muted")},g);return g;}
+
+function draw(){svg.replaceChildren();const s=state.step,ink=css("--ink"),mut=css("--muted");
+  if(s<=1||(s===2&&T<1&&prevStep<2)){
+    const fade=s===2?1-seg(T,0,.4):1;const g=el("g",{opacity:fade});
+    const m0=s===0?seg(T,.5,.85):1;
+    if(s===0&&T<1){const hg=el("g");SEATS.forEach(q=>{const f=(Math.PI-q.a)/Math.PI,k=seg(T,f*.3,f*.3+.08);if(k<=0)return;
+        el("circle",{cx:lerp(q.x,lineX[q.pi],m0),cy:lerp(q.y,cy,m0),r:lerp(4.2,2.5,m0),fill:css("--p-"+q.pid),opacity:k*(1-seg(T,.85,.95))},hg);});
+      if(m0<.2)txt(`L'HÉMICYCLE · ${SEATS.length} DÉPUTÉS · 11 GROUPES`,{x:cx,y:H-110,class:"cap","text-anchor":"middle",opacity:seg(T,.25,.35)*(1-seg(T,.5,.6))},hg);}
+    g.setAttribute("opacity",fade*(s===0?seg(T,.55,.8):1));
+    el("line",{x1:LX0-36,y1:cy,x2:LX1+36,y2:cy,stroke:ink,"stroke-width":2},g);
+    txt("← GAUCHE",{x:LX0-36,y:cy+44,class:"cap"},g);txt("DROITE →",{x:LX1+36,y:cy+44,class:"cap","text-anchor":"end"},g);
+    const tg=lineTargets(),a=AXES.find(x=>x.id===LINE_SUBJ[state.subj]);
+    if(s>=1){const k=s===1?seg(T,0,.4):1;
+      el("line",{x1:cx,y1:cy-170*k,x2:cx,y2:cy+170*k,stroke:css("--grid"),"stroke-width":1.5,"stroke-dasharray":"4 5"},g);
+      if(k>.9){txt("POUR · "+a.short.toUpperCase(),{x:cx,y:cy-182,class:"cap","text-anchor":"middle",fill:ink});
+        txt("CONTRE",{x:cx,y:cy+196,class:"cap","text-anchor":"middle"},g);}}
+    const mv=s===1?seg(T,.25,1):1;
+    dotY=PARTIES.map((_,i)=>s===2?dotY[i]:lerp(fromY[i],tg[i],mv));
+    if(s>=1){el("polyline",{points:PARTIES.map((_,i)=>`${lineX[i]},${dotY[i]}`).join(" "),fill:"none",stroke:css("--accent"),"stroke-width":2,"stroke-linejoin":"round",opacity:.55*mv},g);}
+    PARTIES.forEach((p,i)=>{const x=lineX[i],y=dotY[i],pop=s===0?seg(T,.82,.95):1,v=s>=1?(a.p[p.id]||0):1;
+      if(v===0&&s>=1)el("circle",{cx:x,cy:y,r:8,fill:css("--panel"),stroke:css("--none"),"stroke-width":2,"stroke-dasharray":"3 2"},g);
+      else el("circle",{cx:x,cy:y,r:9*pop,fill:css("--p-"+p.id),stroke:css("--panel"),"stroke-width":2},g);
+      const up=i%2===0,dy=(s>=1&&v<0)?(up?24:40):(up?-16:-32);
+      if(pop>.6)txt(p.name,{x,y:y+dy,class:"plabel","text-anchor":"middle",opacity:v===0&&s>=1?.6:1},g);});
+    if(s===0)txt("UNE SEULE COORDONNÉE POUR TOUT CE QUE TU PENSES",{x:cx,y:H-30,class:"cap","text-anchor":"middle",opacity:seg(T,.85,1)});
+    if(s===1)txt("LA LIGNE BLEUE RELIE LES PARTIS DANS L'ORDRE GAUCHE → DROITE",{x:cx,y:H-14,class:"cap","text-anchor":"middle"});
+    if(s<2)return;}
+  if(s===2){drawStar(prevStep<2?seg(T,.25,1):1);
+    txt(`${N} SUJETS · ${N} AXES · UN SEUL POINT DE CROISEMENT`,{x:cx,y:H-14,class:"cap","text-anchor":"middle"});return;}
+  if(s===3)return drawRows(null,false);
+  if(s===4)return drawRows(state.party,false);
+  if(s===5)return drawRows(state.cmp||rankAll()[0].p.id,true);
+}
+
+/* tableau côte à côte : une ligne par sujet, ta position (anneau) et celle du parti (point), puis le produit */
+/* réduit un libellé trop long pour sa place (les polices de secours des téléphones sont plus larges) */
+function fitText(e,max){try{const l=e.getComputedTextLength();if(l>max){const fs=parseFloat(getComputedStyle(e).fontSize)||15;e.style.fontSize=(fs*max/l).toFixed(2)+"px";}}catch(_){}return e;}
+function drawRows(pid,prod){const ink=css("--ink"),mut=css("--muted"),X0=250,X1=470,XC=(X0+X1)/2,Y0=120,RH=84,PX=590;
+  const u=AXES.map(a=>U(a.id)),pv=pid?vec(pid):null,pc=pid?css("--p-"+pid):null,pname=pid?PARTIES.find(p=>p.id===pid).name:"";
+  [["−",X0],["0",XC],["+",X1]].forEach(([t,x])=>txt(t,{x,y:Y0-40,class:"sign","text-anchor":"middle"}));
+  if(prod)txt("PRODUIT",{x:PX,y:Y0-42,class:"cap","text-anchor":"middle"});
+  const lg=el("g",{transform:`translate(20,${Y0-46})`});
+  el("circle",{cx:6,cy:-4,r:6,fill:"none",stroke:css("--you"),"stroke-width":2.5},lg);txt("exemple",{x:18,y:0,class:"lab"},lg);
+  if(pid){el("circle",{cx:96,cy:-4,r:6,fill:pc},lg);txt(pname,{x:108,y:0,class:"lab"},lg);}
+  let sum=0;
+  AXES.forEach((a,k)=>{const y=Y0+k*RH,kk=seg(T,k*.07,k*.07+.4);
+    if(k)el("line",{x1:20,y1:y-RH/2,x2:660,y2:y-RH/2,stroke:css("--faint"),"stroke-width":1});
+    fitText(txt(a.short,{x:20,y:y+5,class:"axl"}),X0-48);
+    el("line",{x1:X0,y1:y,x2:X1,y2:y,stroke:css("--grid"),"stroke-width":2,"stroke-linecap":"round"});
+    [X0,XC,X1].forEach(x=>el("line",{x1:x,y1:y-5,x2:x,y2:y+5,stroke:css("--grid"),"stroke-width":2}));
+    const yy=y,ans=done(a.id);
+    if(pid){const py=y;if(pv[k])el("circle",{cx:lerp(XC,XC+pv[k]*(X1-XC),kk),cy:py,r:7,fill:pc,stroke:css("--panel"),"stroke-width":2});
+      else el("circle",{cx:XC,cy:py,r:6,fill:css("--panel"),stroke:css("--none"),"stroke-width":2,"stroke-dasharray":"3 2"});}
+    if(ans&&u[k].w>0)el("circle",{cx:lerp(XC,XC+u[k].v*(X1-XC),kk),cy:yy,r:9+u[k].w*1.6,fill:"none",stroke:css("--you"),"stroke-width":2.5});
+    else txt(ans?"importance 0":"?",{x:XC,y:yy-14,class:"lab","text-anchor":"middle"});
+    if(prod){const c=u[k].w*u[k].v*pv[k];sum+=c;const w=Math.abs(c)*14*kk;
+      el("line",{x1:PX-45,y1:y,x2:PX+45,y2:y,stroke:css("--faint"),"stroke-width":1});
+      if(c)el("rect",{x:c>0?PX:PX-w,y:y-7,width:w,height:14,rx:3,fill:c>0?css("--agree"):css("--disagree")});
+      txt(c>0?"+"+c:c<0?"−"+(-c):"0",{x:c>=0?PX+52:PX-52,y:y+5,class:"lab","text-anchor":c>=0?"start":"end",fill:c?ink:mut});}});
+  const yb=Y0+N*RH-8;
+  if(prod){const r=similarity(pid);el("line",{x1:20,y1:yb-22,x2:660,y2:yb-22,stroke:ink,"stroke-width":1});
+    txt(`SOMME ${sum>0?"+":sum<0?"−":""}${Math.abs(sum)}`,{x:PX,y:yb,class:"cap","text-anchor":"middle",fill:ink});
+    txt(r?"alignement "+fmt(r.cos):"—",{x:20,y:yb+4,class:"big",style:"font-size:26px"});}
+  else txt(pid?"LA PERSONNE ET LE PARTI, SUJET PAR SUJET":"UNE COORDONNÉE PAR SUJET, LA TAILLE = L'IMPORTANCE",{x:cx,y:H-14,class:"cap","text-anchor":"middle"});
+}
+
+/* produit scalaire pondéré */
+function similarity(pid){const pv=vec(pid);let dot=0,nu=0,np=0;
+  AXES.forEach((a,k)=>{const {v,w}=U(a.id);dot+=w*v*pv[k];nu+=w*v*v;np+=w*pv[k]*pv[k];});
+  if(!nu||!np)return null;return {dot,nu:Math.sqrt(nu),np:Math.sqrt(np),cos:dot/Math.sqrt(nu*np)};}
+const rankAll=()=>PARTIES.map(p=>({p,r:similarity(p.id)})).sort((a,b)=>(b.r?.cos??-9)-(a.r?.cos??-9));
+const fmt=x=>(x>0?"+":x<0?"−":"")+Math.abs(x).toFixed(2).replace(".",",");
+const sgn=x=>x>0?"+1":x<0?"−1":"0";
+
+/* récit */
+const partyChips=()=>`<div class="chips" role="group" aria-label="Choisir un parti">${PARTIES.map(p=>`<button data-party="${p.id}" aria-pressed="${p.id===state.party}"><i style="background:var(--p-${p.id})"></i>${p.name}</button>`).join("")}</div>`;
+const STEPS=[
+ {e:"Étape 1 · la ligne",h:"On te range sur une ligne",
+  html:()=>`<p>Gauche ou droite : c'est la question qu'on te pose depuis toujours. Les partis sont rangés de la même façon, de LFI au RN, dans l'hémicycle comme dans les sondages. Une seule coordonnée pour résumer tout ce que tu penses.</p><p>Mais toi, es-tu d'accord sur tout avec ton voisin de ligne ? Sur l'écologie, la fin de vie, les impôts, la santé ? Tes opinions tiennent-elles vraiment sur un seul axe ?</p>`},
+ {e:"Étape 2 · un sujet",h:"Sur chaque sujet, tu as ton avis",
+  html:()=>{const a=AXES.find(x=>x.id===LINE_SUBJ[state.subj]);return `<p>Prends un sujet. Toi, tu es pour, contre, ou sans avis. Les partis aussi : la figure montre leur vote réel à l'Assemblée, pour en haut, contre en bas.</p>
+  <div class="chips" role="group" aria-label="Choisir un sujet">${LINE_SUBJ.map((id,i)=>`<button data-subj="${i}" aria-pressed="${i===state.subj}">${AXES.find(x=>x.id===id).short}</button>`).join("")}</div>
+  <div class="fact"><strong>Pour :</strong> ${a.pour}<br><span class="muted">${a.date}</span><br>${a.note} <a href="${a.src}" target="_blank" rel="noopener">${a.srcName}</a></div>
+  <p style="margin-top:.8rem">Ta place sur la ligne ne dit pas ce que tu penses de chaque sujet. Celle des partis non plus.</p>`;}},
+ {e:"Étape 3 · tous les sujets",h:"Tes opinions ont autant de dimensions que de sujets",
+  html:()=>`<p>Chaque sujet sur lequel tu as un avis devient un axe, avec un bout + (pour) et un bout − (contre). Tous les axes passent par le centre, qui veut dire « sans avis ». Ici, ${N} sujets donnent ${N} axes.</p>
+  <p>Ce que tu penses n'est donc pas un point sur une ligne. C'est une position dans un espace à ${N} dimensions, et à une trentaine avec le questionnaire complet.</p>
+  <p>En mathématiques, ces axes sont tous perpendiculaires : ton avis sur un sujet ne décide pas de ton avis sur un autre. On ne peut en dessiner que deux sur une feuille, mais on peut en calculer autant qu'on veut. La gauche et la droite deviennent une direction parmi d'autres.</p>`},
+ {e:"Étape 4 · une personne",h:"Des opinions forment un vecteur",
+  html:()=>`<p>Prenons une personne. Son avis sur chaque sujet est une coordonnée : <b>+1</b> pour, <b>−1</b> contre, <b>0</b> sans avis. L'importance qu'elle donne à chaque sujet, de 0 à 3, sert de poids : plus l'anneau est grand, plus le sujet compte pour elle.</p>
+  <div class="math">exemple = (${AXES.map(a=>sgn(state.you[a.id].v)).join(", ")})<br><span class="muted">${AXES.map(a=>a.short).join(" · ")}</span></div>
+  <p style="margin-top:.8rem">Ensemble, ces ${N} coordonnées forment son vecteur. Il la décrit sujet par sujet, mieux qu'une étiquette. Le questionnaire construira le tien de la même façon.</p>`},
+ {e:"Étape 5 · les partis",h:"Les partis sont des vecteurs aussi",
+  html:()=>{const p=PARTIES.find(x=>x.id===state.party);return `<p>On applique la même règle aux partis, avec leurs votes à l'Assemblée : <b>+1</b> s'ils ont voté pour, <b>−1</b> contre, <b>0</b> s'ils se sont abstenus ou divisés. Chaque parti devient un vecteur dans le même espace. La figure les superpose, sujet par sujet : quand le point du parti tombe dans l'anneau, la personne et le parti sont du même côté.</p>${partyChips()}
+  <div class="math">${p.name} = (${vec(p.id).map(sgn).join(", ")})<br><span class="muted">${AXES.map(a=>a.short).join(" · ")}</span></div>
+  <p style="margin-top:.8rem">Change de parti : sur certains sujets ils sont du même côté, sur d'autres non.</p>
+  <p>Même chose pour chaque député : son vecteur, ce sont ses votes à lui. Il peut s'écarter de son groupe, comme les 14 députés Renaissance qui ont voté contre la loi Duplomb.</p>`;}},
+ {e:"Étape 6 · l'alignement",h:"Le produit scalaire mesure l'alignement",
+  html:()=>{const rk=rankAll(),pid=state.cmp||rk[0].p.id,p=PARTIES.find(x=>x.id===pid),r=similarity(pid),pv=vec(pid);
+   const terms=AXES.map((a,k)=>{const {v,w}=U(a.id);return w&&v&&pv[k]?`${w}×(${sgn(v)})×(${sgn(pv[k])})`:null;}).filter(Boolean);
+   return `<p>Sujet par sujet, on multiplie le choix de la personne par celui du parti et par son importance. D'accord, ça ajoute. Opposés, ça retire. Sans position, ça ne compte pas. On additionne, puis on divise par la longueur des deux vecteurs.</p>
+   <p>Le résultat est le cosinus de l'angle entre les deux : <b>+1</b> quand les vecteurs pointent dans la même direction, <b>0</b> quand ils sont perpendiculaires, <b>−1</b> quand ils sont opposés. Voici ce score pour cette personne avec chaque parti.</p>
+   <div class="rank" role="group" aria-label="Alignement avec chaque parti">${rk.map(({p:q,r:s})=>{const c=s?s.cos:0,w=Math.abs(c)*50;
+    return `<button data-cmp="${q.id}" aria-pressed="${q.id===pid}"><span>${q.name}</span><span class="bar"><span style="left:${c<0?50-w:50}%;width:${w}%;background:var(--p-${q.id})"></span></span><span class="num">${s?fmt(c):"—"}</span></button>`;}).join("")}</div>
+   <div class="math">${r?`exemple · ${p.name} = ${terms.join(" + ")||"0"} = <b>${r.dot}</b><br>cos θ = ${r.dot} ÷ (${r.nu.toFixed(2).replace(".",",")} × ${r.np.toFixed(2).replace(".",",")}) = <b>${fmt(r.cos)}</b>`:"Le calcul apparaît dès qu'un sujet a une position et une importance non nulle."}</div>
+   <p style="margin-top:.8rem">Aucun parti ne ressemble exactement à cette personne. Son favori, c'est le plus proche : celui dont le vecteur pointe le plus dans la direction de ses opinions. À toi maintenant : le questionnaire fait le même calcul avec tes réponses.</p>`;}}];
+
+const stepEl=document.getElementById("step"),dotsEl=document.getElementById("dots");
+STEPS.forEach((_,i)=>{const b=document.createElement("button");b.textContent=i+1;b.setAttribute("aria-label",`Étape ${i+1}`);b.onclick=()=>go(i);dotsEl.appendChild(b);});
+function renderStep(){document.getElementById("replay").hidden=state.step!==0;const S=STEPS[state.step];stepEl.innerHTML=`<div class="eyebrow">${S.e}</div><h2>${S.h}</h2>${S.html()}`;
+  [...dotsEl.children].forEach((b,i)=>i===state.step?b.setAttribute("aria-current","step"):b.removeAttribute("aria-current"));
+  document.getElementById("prev").disabled=state.step===0;document.getElementById("next").disabled=state.step===STEPS.length-1;}
+let cycle=0;
+function go(i){prevStep=state.step;state.step=clamp(i,0,STEPS.length-1);clearInterval(cycle);
+  if(state.step===1&&prevStep!==1){state.subj=0;if(!reduce)cycle=setInterval(()=>{state.subj++;if(state.subj>=LINE_SUBJ.length-1)clearInterval(cycle);renderStep();play(1000);},4200);}
+  renderStep();play(state.step===0?4200:state.step===2?1500:state.step===3||state.step===4?1800:1100);}
+document.getElementById("replay").onclick=()=>go(0);
+document.getElementById("prev").onclick=()=>go(state.step-1);
+document.getElementById("next").onclick=()=>go(state.step+1);
+document.addEventListener("keydown",e=>{if(e.target.closest("input,textarea"))return;if(e.key==="ArrowRight")go(state.step+1);if(e.key==="ArrowLeft")go(state.step-1);});
+stepEl.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;const d=b.dataset;prevStep=state.step;
+  if(d.goto!==undefined){go(+d.goto);return;}
+  if(d.subj!==undefined){clearInterval(cycle);state.subj=+d.subj;renderStep();play(1000);}
+  else if(d.party){state.party=d.party;renderStep();play(1800);}
+  else if(d.cmp){state.cmp=d.cmp;renderStep();play(700);}
+  else if(d.ax){const y=state.you[d.ax];if(d.v!==undefined)y.v=+d.v;if(d.w!==undefined)y.w=+d.w;renderStep();T=1;draw();
+    const f=stepEl.querySelector(`button[data-ax="${d.ax}"][${d.v!==undefined?"data-v":"data-w"}="${d.v??d.w}"]`);f&&f.focus();}});
+document.getElementById("srcs").innerHTML=AXES.map(a=>`<li>${a.short}, ${a.date} : <a href="${a.src}" target="_blank" rel="noopener">${a.srcName}</a></li>`).join("");
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>draw());
+new MutationObserver(()=>draw()).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+go(0);
+</script>

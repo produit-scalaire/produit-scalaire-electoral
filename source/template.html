@@ -1,0 +1,368 @@
+<title>Produit scalaire électoral</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Layout: one centred column that moves through three screens (start, question, results), like a polling booth. */
+:root{
+  --bg:#f6f7fa; --card:#ffffff; --ink:#0f1633; --muted:#565f7e; --line:#dde1ec;
+  --accent:#1b3fa6; --accent-ink:#ffffff; --accent-soft:#e7ecfa; --bleu:#1b3fa6; --blanc:#ffffff; --rouge:#e1000f; --warn:#b45309; --good:#1f7a4d;
+  --display:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --read:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0d1120; --card:#161b30; --ink:#e9ecf7; --muted:#9ba4c4; --line:#2a3150;
+  --accent:#8ea2ff; --accent-ink:#0d1120; --accent-soft:#232b52; --bleu:#4a66e0; --blanc:#e9ecf7; --rouge:#ef4150; --warn:#f0a35a; --good:#5fd19a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0d1120; --card:#161b30; --ink:#e9ecf7; --muted:#9ba4c4; --line:#2a3150;
+  --accent:#8ea2ff; --accent-ink:#0d1120; --accent-soft:#232b52; --bleu:#4a66e0; --blanc:#e9ecf7; --rouge:#ef4150; --warn:#f0a35a; --good:#5fd19a; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--display);font-size:16px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 56px}
+main{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0}
+h1{font-weight:800;font-size:clamp(2.1rem,6.5vw,3.4rem);line-height:1;letter-spacing:-.02em}
+h2{font-weight:800;font-size:1.5rem;line-height:1.15}
+h3{font-weight:800;font-size:1.05rem}
+p{margin:0}
+.lede{font-family:var(--read);font-size:1.15rem;color:var(--muted);max-width:60ch}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.btn{font-family:var(--display);font-weight:800;font-size:15px;border-radius:10px;padding:12px 18px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.ghost{border-color:transparent;color:var(--muted);padding-inline:8px}
+.btn:disabled{opacity:.4;cursor:default}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:2.5px solid var(--accent);outline-offset:2px}
+.lengths{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.length{text-align:left;display:flex;flex-direction:column;gap:4px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:16px;cursor:pointer;font-family:var(--display)}
+.length strong{font-size:1.2rem}
+.length span{color:var(--muted);font-size:14px}
+.length:hover{border-color:var(--accent)}
+.progress{height:6px;background:var(--line);border-radius:6px;overflow:hidden}
+.progress i{display:block;height:100%;background:var(--accent);transition:width .3s}
+.meta{display:flex;justify-content:space-between;gap:10px;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.situation{font-family:var(--read);font-size:1.12rem;line-height:1.6}
+.ask{font-weight:800;font-size:1.15rem}
+.options{display:flex;flex-direction:column;gap:10px}
+.opt{display:flex;gap:12px;align-items:flex-start;text-align:left;font-family:var(--display);font-size:15.5px;line-height:1.4;border:1.5px solid var(--line);border-radius:12px;padding:14px;background:var(--card);color:var(--ink);cursor:pointer}
+.opt .k{flex:none;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--muted);display:grid;place-items:center;font-family:var(--mono);font-size:12px}
+.opt[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.opt[aria-pressed="true"] .k{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.weights{display:flex;flex-wrap:wrap;gap:6px}
+.weights button{font-family:var(--display);font-size:13.5px;border:1.5px solid var(--line);border-radius:999px;padding:7px 12px;background:var(--card);color:var(--ink);cursor:pointer}
+.weights button[aria-pressed="true"]{border-color:var(--ink);background:var(--ink);color:var(--bg)}
+.label{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.04em}
+.bars{display:flex;flex-direction:column;gap:10px}
+.bar{display:grid;grid-template-columns:minmax(0,9.5rem) minmax(0,1fr) 3.6rem;gap:10px;align-items:center;font-size:14.5px}
+.bar .name{font-weight:800;overflow-wrap:anywhere}
+.track{height:14px;background:var(--line);border-radius:7px;overflow:hidden}
+.track i{display:block;height:100%;background:var(--accent);border-radius:7px}
+.track i{opacity:.55}.bar.top .track i{opacity:1}
+.tricolore{height:5px;border-radius:3px;background:linear-gradient(90deg,var(--bleu) 0 33.33%,var(--blanc) 33.33% 66.66%,var(--rouge) 66.66%);box-shadow:inset 0 0 0 1px var(--line)}
+.bar .val{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right}
+.bar small{grid-column:1/-1;color:var(--muted);font-size:12.5px;margin-top:-6px}
+.themes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.theme{border:1px solid var(--line);border-radius:10px;padding:12px;display:flex;flex-direction:column;gap:2px}
+.theme b{font-size:1.05rem}
+.theme span{color:var(--muted);font-size:13px}
+.pill{display:inline-block;font-family:var(--mono);font-size:11.5px;padding:2px 8px;border-radius:999px;border:1px solid currentColor}
+.pill.low{color:var(--warn)} .pill.mid{color:var(--accent)} .pill.high{color:var(--good)}
+details{border-top:1px solid var(--line);padding-top:12px}
+details:first-of-type{border-top:0;padding-top:0}
+summary{cursor:pointer;font-weight:800;list-style-position:outside}
+.detail{display:flex;flex-direction:column;gap:8px;padding:10px 0 4px;font-size:14.5px}
+.detail .you{font-family:var(--read)}
+.detail a{color:var(--accent)}
+.dots{font-family:var(--mono);letter-spacing:2px;color:var(--accent)}
+.method{font-size:14.5px;color:var(--muted);display:flex;flex-direction:column;gap:8px}
+.method p{max-width:65ch}
+.err{color:var(--warn)}
+
+.shell{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
+.masthead{display:flex;flex-direction:column;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.01em;font-size:1.05rem}
+.brand svg{flex:none}
+.brand .dl{margin-left:auto;font-weight:600;font-size:14px}
+.tabs{display:flex;gap:4px;padding:4px;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow-x:auto}
+.tabs button{flex:1 0 auto;font-family:var(--display);font-size:14.5px;font-weight:600;border:0;border-radius:9px;padding:10px 14px;background:transparent;color:var(--muted);cursor:pointer;white-space:nowrap}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--bg)}
+.tabs small{font-weight:400;opacity:.8}
+a{color:var(--accent)}
+.prose{display:flex;flex-direction:column;gap:14px;font-family:var(--read);font-size:1.06rem;line-height:1.65}
+.prose h1{font-family:var(--display);font-size:clamp(1.8rem,5vw,2.4rem)}
+.prose h2{font-family:var(--display);font-size:1.3rem;margin-top:14px}
+.prose ul{margin:0;padding-left:1.2rem;display:flex;flex-direction:column;gap:8px}
+.prose p,.prose li{max-width:66ch}
+.anim-intro{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.frame{width:100%;border:0;border-radius:14px;min-height:640px;display:block;background:var(--bg)}
+.wide{max-width:1160px}
+.foot{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;display:flex;flex-wrap:wrap;gap:6px 16px}
+.anim-end{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;font-weight:800;font-size:1.1rem}
+.anim-intro{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:8px}
+.teaser{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.tabs .short{display:none}
+@media (max-width:620px){.anim-intro .label{display:none}.anim-intro .btn{width:100%}.anim-intro{padding-bottom:10px;border-bottom:1px solid var(--line);box-shadow:0 6px 10px -8px rgba(0,0,0,.25)}}
+@media (max-width:620px){.tabs{overflow:visible}.tabs button{flex:1 1 0;padding:10px 6px;font-size:14px;white-space:normal}.tabs .long{display:none}.tabs .short{display:inline}
+ .brand{font-size:1rem}.brand .dl{font-size:13px;text-align:right;max-width:7.5rem}
+ .bar{grid-template-columns:minmax(0,7.5rem) minmax(0,1fr) 3.2rem}.frame{border-radius:0}
+ .shell.wide{margin-inline:calc(-1 * max(16px,env(safe-area-inset-left,0px)) + 4px)}}
+.options.guess{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px}
+.guess-card{border-left:4px solid var(--accent,currentColor)}
+.crow{display:grid;grid-template-columns:minmax(0,1fr) 3rem;gap:4px 10px;padding:10px 0;border-top:1px solid var(--line)}
+.cq{grid-column:1/-1;font-weight:700;font-size:14.5px}.cc{display:flex;flex-direction:column;gap:2px;font-size:13.5px;color:var(--muted);grid-column:1/-1}
+.cbar{position:relative;height:12px;background:var(--line);border-radius:6px;overflow:hidden;align-self:center}.cbar .mid{position:absolute;left:50%;top:0;bottom:0;width:2px;background:var(--muted)}
+.cbar i{position:absolute;top:0;bottom:0}.cbar i.pos{background:var(--good)}.cbar i.neg{background:#c98500}
+.cv{font-family:var(--mono);text-align:right;font-variant-numeric:tabular-nums}.csum{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;border-top:2px solid var(--ink);padding-top:10px}
+#calc-p{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 8px;margin-left:6px;max-width:100%}
+.askrow{display:flex;gap:10px;align-items:flex-start;justify-content:space-between}
+.info{flex:none;width:28px;height:28px;border-radius:50%;border:1.5px solid var(--accent);background:transparent;color:var(--accent);font:700 15px/1 var(--read);font-style:italic;cursor:pointer;margin-top:2px}
+.info[aria-expanded="true"]{background:var(--accent);color:var(--accent-ink)}
+.ctx{background:var(--accent-soft);border-radius:10px;padding:12px 14px;font-size:14.5px;line-height:1.5}
+</style>
+
+<div class="shell" id="shell">
+ <header class="masthead"><div class="tricolore" aria-hidden="true"></div>
+  <div class="brand"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path d="M4 26 L26 22" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/><path d="M4 26 L20 6" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/><path d="M12 24.6 A8 8 0 0 0 9 19.6" fill="none" stroke="var(--muted)" stroke-width="1.6"/></svg>
+   <span>Produit scalaire électoral</span>__DOWNLOAD_TOP__</div>
+  <nav class="tabs" role="tablist" aria-label="Sections">
+   <button role="tab" id="t-dimensions" data-tab="dimensions" aria-selected="true"><span class="long">Une ligne, ou tout un espace ?</span><span class="short">Introduction</span></button>
+   <button role="tab" id="t-questionnaire" data-tab="questionnaire" aria-selected="false">Questionnaire</button>
+
+   <button role="tab" id="t-apropos" data-tab="apropos" aria-selected="false"><span class="long">Intention et limites</span><span class="short">Limites</span></button>
+  </nav>
+ </header>
+ <section id="tab-dimensions" role="tabpanel" aria-labelledby="t-dimensions">
+  <div class="anim-intro"><p class="label">Avant de commencer : pourquoi gauche et droite ne suffisent pas. Six étapes, environ 3 minutes.</p><button class="btn primary" data-go="questionnaire">Passer au questionnaire →</button></div>
+  <iframe class="frame" id="anim" title="Animation : une ligne, ou tout un espace ?" srcdoc="__ANIM__" ></iframe>
+  <div class="anim-end"><p>Prêt à trouver votre propre vecteur ?</p><button class="btn primary" data-go="questionnaire">Commencer le questionnaire →</button></div>
+ </section>
+ <section id="tab-questionnaire" role="tabpanel" aria-labelledby="t-questionnaire" hidden>
+  <main id="app" aria-live="polite"><p class="lede">Chargement des questions…</p></main>
+ </section>
+ <section id="tab-apropos" role="tabpanel" aria-labelledby="t-apropos" hidden>
+  <article class="prose">__ABOUT__</article>
+ </section>
+ <div class="tricolore" aria-hidden="true" style="max-width:720px;margin:32px auto 0;height:3px"></div><footer class="foot"><span id="foot-version"></span><span>Aucune donnée collectée</span><span>Fonctionne hors connexion</span></footer>
+</div>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+const app=document.getElementById("app");
+/* LIEN DU FORMULAIRE DE CORRECTIONS : coller ici l'adresse du Google Form (laisser "" tant qu'il n'existe pas). */
+const FORM_URL="";
+function suiteHTML(){return `<div class="card">
+    <h3>Et maintenant ?</h3>
+    <p>Si cet exercice vous a fait réfléchir, partagez-le. Parlez-en autour d'un repas, avec quelqu'un qui ne pense pas comme vous. Servez-vous-en comme point de départ, pas comme conclusion.</p>
+    <p>Une position mal placée, une source fausse, une question mal posée ? Toute correction sera lue et étudiée${FORM_URL?` : <a href="${esc(FORM_URL)}" target="_blank" rel="noopener">proposer une correction</a>`:" (formulaire bientôt disponible)"}. Indiquez la référence de la question, visible sous chacune d'elles.</p>
+  </div>`;}
+const WEIGHTS=[["Pas important",0],["Un peu",1],["Important",2],["Essentiel",3]];
+const PRIOR=2; // weight of a neutral prior: a party with few known positions is pulled towards 0
+let DATA=null,S=null;
+
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+function agree(q,u,p){if(q.ordered&&q.options.length>2)return 1-2*Math.abs(u-p)/(q.options.length-1);return u===p?1:-1;}
+
+function scores(subset){
+  const out=DATA.parties.map(p=>({p,num:0,den:0,n:0,same:0}));
+  for(const a of S.answers){if(a.choice===null||a.w===0)continue;const q=DATA.byId[a.id];if(subset&&!subset(q))continue;
+    out.forEach(o=>{const pos=q.positions[o.p.id];if(pos===undefined)return;o.num+=a.w*agree(q,a.choice,pos);o.den+=a.w;o.n++;if(pos===a.choice)o.same++;});}
+  out.forEach(o=>{o.s=o.den?o.num/(o.den+PRIOR):null;o.pct=o.den?Math.round((o.num/o.den+1)*50):null;});
+  return out.sort((a,b)=>(b.s??-9)-(a.s??-9));
+}
+
+/* adaptive pick: the unanswered question that best separates the parties currently closest to you, balanced across themes */
+function pickNext(){
+  const done=new Set(S.answers.map(a=>a.id));const left=DATA.questions.filter(q=>!done.has(q.id));if(!left.length)return null;
+  if(Math.random()<0.2)return left[Math.floor(Math.random()*left.length)];
+  const ranked=scores().filter(o=>o.s!==null);const top=(ranked.length>=2?ranked.slice(0,4):DATA.parties.map(p=>({p}))).map(o=>o.p.id);
+  const themeCount={};S.answers.forEach(a=>{const t=DATA.byId[a.id].theme;themeCount[t]=(themeCount[t]||0)+1;});
+  const cand=[];
+  for(const q of left){const pos=top.map(id=>q.positions[id]).filter(v=>v!==undefined);
+    const distinct=new Set(pos).size;const known=Object.keys(q.positions).length;
+    const split=distinct>1?distinct+pos.length/4:0;            // does it separate the leading parties?
+    const spread=new Set(Object.values(q.positions)).size>1?1:0; // does it separate anyone at all?
+    const score=split*2+spread+known/10+q.reliability/3-(themeCount[q.theme]||0)*1.2;
+    cand.push([q,score]);}
+  // tirage pondéré : les questions utiles sortent plus souvent, mais jamais toujours les mêmes
+  const m=Math.max(...cand.map(c=>c[1]));const ws=cand.map(c=>Math.exp((c[1]-m)/1.5));
+  let r=Math.random()*ws.reduce((a,b)=>a+b,0);for(let k=0;k<cand.length;k++){r-=ws[k];if(r<=0)return cand[k][0];}
+  return cand[cand.length-1][0];
+}
+
+function start(n){S={target:Math.min(n,DATA.questions.length),answers:[],cur:null,choice:null,w:null,guess:undefined};S.cur=pickNext();renderQuestion();}
+function finish(){S.cur=null;if(S.guess===undefined)renderGuess();else renderResults();}
+function renderGuess(){
+  app.innerHTML=`
+  <p class="eyebrow">Avant votre résultat</p>
+  <h2>Selon vous, quel parti est le plus proche de vous ?</h2>
+  <p class="lede">Notez votre intuition, puis comparez-la à vos réponses.</p>
+  <div class="card">
+    <div class="options guess" role="group" aria-label="Votre pronostic">
+      ${DATA.parties.map(p=>`<button class="opt" data-g="${p.id}"><span>${esc(p.name)}</span></button>`).join("")}
+      <button class="opt" data-g=""><span>Je ne sais pas</span></button>
+    </div>
+  </div>
+  <button class="btn ghost" id="back" style="align-self:flex-start">← Retour</button>`;
+  document.getElementById("back").onclick=back;
+  app.querySelectorAll("[data-g]").forEach(b=>b.onclick=()=>{S.guess=b.dataset.g||null;renderResults();});
+}
+function guessHTML(all){
+  if(S.guess===undefined)return "";
+  const ranked=all.filter(o=>o.s!==null),best=ranked[0];
+  if(S.guess===null)return `<div class="card guess-card"><h3>Votre pronostic</h3><p>Vous ne saviez pas. Vos réponses, elles, penchent vers <strong>${esc(best.p.name)}</strong>. Est-ce que ça vous surprend ?</p></div>`;
+  const g=all.find(o=>o.p.id===S.guess),rank=ranked.indexOf(g)+1;
+  let msg;
+  if(g.s===null)msg=`Vos réponses ne touchent aucun sujet où la position de ce parti est connue. Continuez pour le savoir.`;
+  else if(rank===1)msg=`Vos réponses vous donnent raison : c'est bien le parti le plus proche. Reste à regarder les thèmes où il ne l'est pas.`;
+  else msg=`Sur vos réponses, il arrive <strong>${rank}<sup>e</sup></strong> sur ${ranked.length}, à ${g.pct} %, contre ${best.pct} % pour <strong>${esc(best.p.name)}</strong>. Qu'est-ce qui, dans vos choix, vous éloigne de lui ?`;
+  return `<div class="card guess-card"><h3>Votre pronostic : ${esc(g.p.name)}</h3><p>${msg}</p></div>`;
+}
+
+function renderStart(){
+  const n=DATA.questions.length;
+  app.innerHTML=`
+  <p class="eyebrow">Questionnaire · ${n} situations réelles</p>
+  <h1>Personne ne pense exactement comme vous.</h1>
+  <p class="lede">Ici, on part de vous : vos opinions, vos priorités. Chaque situation est tirée d'un vote ou d'une décision réelle.</p>
+  <div class="card">
+    <h3>Combien de temps avez-vous ?</h3>
+    <div class="lengths">
+      ${[[8,"4 minutes","8 questions"],[16,"8 minutes","16 questions"],[n,"Sans limite",`toutes les questions, ${n} aujourd’hui`]].filter(([k])=>k<=n).map(([k,a,b])=>`<button class="length" data-n="${k}"><strong>${a}</strong><span>${b}</span></button>`).join("")}
+    </div>
+    __DOWNLOAD2__
+  </div>
+  ${methodHTML()}`;
+  app.querySelectorAll("[data-n]").forEach(b=>b.onclick=()=>start(+b.dataset.n));
+}
+
+function methodHTML(){return `<div class="card teaser"><p>Pourquoi pas simplement gauche ou droite ?</p><div class="row"><button class="btn" data-go="dimensions">Revoir l'introduction</button><button class="btn ghost" data-go="apropos">Intention et limites</button></div></div>`;}
+
+function renderQuestion(){
+  const q=S.cur;if(!q)return finish();
+  const i=S.answers.length;
+  app.innerHTML=`
+  ${S.target>=DATA.questions.length?"":`<div class="progress" aria-hidden="true"><i style="width:${Math.round(100*i/S.target)}%"></i></div>`}
+  <div class="meta"><span>${S.edit!==undefined?"Modifier votre réponse":`Question ${i+1}${S.target>=DATA.questions.length?"":` sur ${S.target}`}`}</span><span>${esc(DATA.themes[q.theme])} · ${esc(q.date)}</span></div>
+  <div class="card">
+    <p class="situation">${esc(q.situation)}</p>
+    <div class="askrow"><p class="ask">${esc(q.question)}</p>${q.contexte?`<button class="info" id="info" aria-expanded="${!!S.info}" aria-controls="ctx" title="Contexte">i</button>`:""}</div>
+    ${q.contexte?`<p class="ctx" id="ctx" ${S.info?"":"hidden"}>${esc(q.contexte)}</p>`:""}
+    <div class="options" role="group" aria-label="Réponses possibles">
+      ${q.options.map((o,k)=>`<button class="opt" data-k="${k}" aria-pressed="${S.choice===k}"><span class="k">${"ABCD"[k]}</span><span>${esc(o)}</span></button>`).join("")}
+    </div>
+    <div><p class="label" style="margin-bottom:6px">Ce sujet compte pour vous :</p>
+    <div class="weights" role="group" aria-label="Importance">${WEIGHTS.map(([l,w])=>`<button data-w="${w}" aria-pressed="${S.w===w}">${l}</button>`).join("")}</div></div>
+    <div class="row" style="justify-content:space-between">
+      <button class="btn ghost" id="prev">← ${S.edit!==undefined?"Annuler":"Précédente"}</button>
+      <button class="btn ghost" id="skip">Passer cette question</button>
+      <button class="btn primary" id="ok" ${S.choice===null||S.w===null?"disabled":""}>Valider</button>
+    </div>
+  </div>
+  ${(i>=3||S.target>=DATA.questions.length&&i>=1)&&S.edit===undefined?`<button class="btn ghost" id="early" style="align-self:center">Voir mon résultat maintenant</button>`:""}`;
+  app.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{S.choice=+b.dataset.k;renderQuestion();});
+  app.querySelectorAll("[data-w]").forEach(b=>b.onclick=()=>{S.w=+b.dataset.w;renderQuestion();});
+  const ib=document.getElementById("info");if(ib)ib.onclick=()=>{S.info=!S.info;ib.setAttribute("aria-expanded",S.info);document.getElementById("ctx").hidden=!S.info;};
+  document.getElementById("ok").onclick=()=>commit(S.choice);
+  document.getElementById("skip").onclick=()=>commit(null);
+  document.getElementById("prev").onclick=back;
+  const e=document.getElementById("early");if(e)e.onclick=finish;
+}
+function back(){
+  if(S.edit!==undefined){S.edit=undefined;S.choice=null;S.w=null;return renderResults();}
+  if(!S.answers.length){S.choice=null;S.w=null;return renderStart();}
+  const a=S.answers.pop();S.cur=DATA.byId[a.id];S.choice=a.choice;S.w=a.choice===null?null:a.w;scrollTo({top:0});renderQuestion();}
+function editAnswer(k){const a=S.answers[k];S.edit=k;S.cur=DATA.byId[a.id];S.choice=a.choice;S.w=a.choice===null?null:a.w;scrollTo({top:0});renderQuestion();}
+function commit(choice){
+  if(S.edit!==undefined){S.answers[S.edit]={id:S.cur.id,choice,w:choice===null?0:S.w};S.edit=undefined;S.choice=null;S.w=null;return renderResults();}
+  S.answers.push({id:S.cur.id,choice,w:choice===null?0:S.w});S.choice=null;S.w=null;S.info=false;
+  S.cur=S.answers.length>=S.target?null:pickNext();scrollTo({top:0});renderQuestion();}
+
+function confidence(){const w=S.answers.reduce((s,a)=>s+a.w,0);
+  if(w<10)return ["low","Fiabilité faible","Répondez à plus de questions pour un résultat solide."];
+  if(w<22)return ["mid","Fiabilité moyenne","Le classement peut encore bouger."];
+  return ["high","Fiabilité bonne","Le classement est stable sur cette banque de questions."];}
+
+function calcRows(pid){
+  const p=DATA.parties.find(x=>x.id===pid);let num=0,den=0;
+  const rows=S.answers.filter(a=>a.choice!==null&&a.w>0&&DATA.byId[a.id].positions[pid]!==undefined).map(a=>{
+    const q=DATA.byId[a.id],pos=q.positions[pid],v=a.w*agree(q,a.choice,pos);num+=v;den+=a.w;
+    return `<div class="crow"><div class="cq">${esc(q.question)}</div>
+      <div class="cc"><span>Vous : <b>${esc(q.options[a.choice])}</b> · importance ${a.w}</span><span>${esc(p.name)} : <b>${esc(q.options[pos])}</b></span></div>
+      <div class="cbar"><span class="mid"></span><i class="${v>=0?"pos":"neg"}" style="width:${Math.abs(v)/3*50}%;${v>=0?"left:50%":"right:50%"}"></i></div>
+      <span class="cv">${v>0?"+":""}${Math.round(v*10)/10}</span></div>`;}).join("");
+  const pct=den?Math.round((num/den+1)*50):null;
+  document.getElementById("calc").innerHTML=rows+`<div class="csum"><span>Somme : <b>${num>0?"+":""}${Math.round(num*10)/10}</b> sur ${den} possibles</span><span>Alignement : <b>${pct===null?"–":pct+" %"}</b></span></div>`;
+}
+function renderResults(){
+  const all=scores(),answered=S.answers.filter(a=>a.choice!==null);
+  if(!answered.length){app.innerHTML=`<h2>Aucune réponse pour l'instant</h2><button class="btn primary" id="again">Recommencer</button>`;document.getElementById("again").onclick=renderStart;return;}
+  const [cl,ct,cd]=confidence();const best=all[0];
+  const themes=[...new Set(answered.map(a=>DATA.byId[a.id].theme))];
+  const left=DATA.questions.length-S.answers.length;
+  app.innerHTML=`
+  <p class="eyebrow">Votre résultat · ${answered.length} réponse${answered.length>1?"s":""}</p>
+  <h1>${best.s!==null&&best.s>0?`Le plus proche de vous&nbsp;: ${esc(best.p.name)}`:"Aucun parti ne se détache"}</h1>
+  <p><span class="pill ${cl}">${ct}</span> <span class="label">${cd}</span></p>
+  ${guessHTML(all)}
+  <div class="card">
+    <h3>Alignement global</h3>
+    <p class="label">100 % : mêmes choix sur toutes les questions communes. 50 % : neutre. 0 % : choix opposés.</p>
+    <div class="bars">${all.map((o,k)=>`<div class="bar ${k===0&&o.s>0?"top":""}"><span class="name">${esc(o.p.name)}</span>
+      <span class="track"><i style="width:${o.pct??0}%"></i></span><span class="val">${o.pct===null?"–":o.pct+" %"}</span>
+      <small>${o.n?`même choix sur ${o.same} des ${o.n} question${o.n>1?"s":""} où sa position est connue`:"position inconnue sur vos réponses"}</small></div>`).join("")}</div>
+  </div>
+  <div class="card">
+    <h3>Le calcul, avec vos réponses</h3>
+    <p class="label">Pour chaque question, votre importance multipliée par l'accord (+1 même choix, −1 choix opposé). La somme, rapportée au total possible, donne le pourcentage.</p>
+    <label class="label">Comparer avec <select id="calc-p">${all.filter(o=>o.n).map(o=>`<option value="${o.p.id}">${esc(o.p.name)}</option>`).join("")}</select></label>
+    <div id="calc"></div>
+  </div>
+  <div class="card">
+    <h3>Par thème</h3>
+    <p class="label">On peut être proche d'un parti sur le logement et d'un autre sur la santé. Un thème avec moins de 3 réponses reste indicatif.</p>
+    <div class="themes">${themes.map(t=>{const r=scores(q=>q.theme===t).filter(o=>o.s!==null);const n=answered.filter(a=>DATA.byId[a.id].theme===t).length;
+      const tops=r.length?r.filter(o=>Math.abs(o.s-r[0].s)<1e-9):[];
+      return `<div class="theme"><span>${esc(DATA.themes[t])} · ${n} réponse${n>1?"s":""}${n<3?" · indicatif":""}</span>
+        <b>${!tops.length||tops[0].s<=0?"Pas de parti proche":tops.length>3?`${tops.length} partis à égalité`:tops.map(o=>esc(o.p.name)).join(", ")}</b></div>`;}).join("")}</div>
+  </div>
+  <div class="card">
+    <h3>Question par question</h3>
+    ${answered.map(a=>{const q=DATA.byId[a.id];const k=S.answers.indexOf(a);const same=DATA.parties.filter(p=>q.positions[p.id]===a.choice).map(p=>p.name);
+      return `<details><summary>${esc(q.question)}</summary><div class="detail">
+        <p class="you">Votre choix : <strong>${esc(q.options[a.choice])}</strong> <button class="btn ghost" data-edit="${k}">Changer</button></p>
+        <p>${same.length?`Même choix que : <strong>${esc(same.join(", "))}</strong>`:"Aucun parti placé n'a fait ce choix."}</p>
+        ${q.contexte?`<p>${esc(q.contexte)}</p>`:""}<p>${esc(q.actor)}</p>${q.nuance?`<p class="label">${esc(q.nuance)}</p>`:""}
+        <p class="label">Réf. : ${esc(q.id)}</p><p><span class="dots" title="Fiabilité du placement des partis">${"●".repeat(q.reliability)}${"○".repeat(3-q.reliability)}</span> ${q.sources.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(" · ")}</p>
+      </div></details>`;}).join("")}
+  </div>
+  ${suiteHTML()}
+  <div class="row">
+    ${left?`<button class="btn primary" id="more">Continuer (${left} question${left>1?"s":""} de plus)</button>`:""}
+    <button class="btn" id="again">Recommencer</button>
+  </div>
+  ${methodHTML()}`;
+  const m=document.getElementById("more");if(m)m.onclick=()=>{S.target=DATA.questions.length;S.cur=pickNext();renderQuestion();};
+  document.getElementById("again").onclick=renderStart;
+  const cs=document.getElementById("calc-p");if(cs){cs.onchange=()=>calcRows(cs.value);calcRows(cs.value);}
+  app.querySelectorAll("[data-edit]").forEach(b=>b.onclick=()=>editAnswer(+b.dataset.edit));
+  scrollTo({top:0});
+}
+
+
+const TABS=["dimensions","questionnaire","apropos"];
+function showTab(t,push){if(!TABS.includes(t))t="dimensions";
+  TABS.forEach(x=>{document.getElementById("tab-"+x).hidden=x!==t;document.getElementById("t-"+x).setAttribute("aria-selected",x===t);});
+  document.getElementById("shell").classList.toggle("wide",t==="dimensions");
+  if(push&&location.hash!=="#"+t){try{history.replaceState(null,"","#"+t);}catch(e){}}
+  scrollTo({top:0});if(t==="dimensions")sizeAnim();}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-tab],[data-go]");if(!b)return;showTab(b.dataset.tab||b.dataset.go,true);});
+addEventListener("hashchange",()=>showTab(location.hash.slice(1)));
+let animRO=null;
+function sizeAnim(){const f=document.getElementById("anim");try{const d=f.contentDocument;if(!d||!d.body)return;
+  const fit=()=>{f.style.height=Math.max(640,d.documentElement.scrollHeight)+"px";};fit();
+  if(!animRO&&window.ResizeObserver){animRO=new ResizeObserver(fit);animRO.observe(d.body);}}catch(e){}}
+document.getElementById("anim").addEventListener("load",()=>{animRO=null;sizeAnim();});
+try{const d=JSON.parse(document.getElementById("data").textContent);
+  d.byId=Object.fromEntries(d.questions.map(q=>[q.id,q]));DATA=d;document.getElementById("foot-version").textContent=`${d.questions.length} questions · mise à jour le ${d.version.split("-").reverse().join("/")}`;renderStart();showTab(location.hash.slice(1));
+}catch(e){app.innerHTML=`<h2>Les questions n'ont pas pu être chargées</h2><p class="err">Le fichier semble incomplet. Téléchargez-le à nouveau.</p>`;}
+</script>

@@ -1,0 +1,37 @@
+# À propos de ce questionnaire : intention, méthode et limites
+
+## Notre intention
+Aucun questionnaire n'est neutre. Choisir les questions, c'est déjà choisir ce qui compte. Plutôt que de prétendre à une neutralité impossible, nous disons clairement quel choix nous avons fait.
+
+**Nous partons de la vie quotidienne et de la réalité matérielle** : se loger, travailler, se soigner, vieillir, apprendre, se déplacer, manger, payer ses factures, décider ensemble. Ce sont les domaines où les décisions politiques changent concrètement la vie de chacun.
+
+**Nous ne suivons pas l'agenda médiatique.** Les sujets les plus débattus à la télévision et sur les réseaux ne sont pas forcément ceux qui pèsent le plus sur le quotidien. Trop souvent, le débat public est pris en otage par quelques thèmes, imposés dans les termes de ceux qui ont intérêt à les mettre en avant. Nous refusons de nous enfermer dans ce cadre : ici, chaque domaine de la vie a le même poids, et chaque sujet est abordé par ses effets concrets plutôt que par les slogans.
+
+**Un outil d'analyse et d'aide à la décision, pas un absolu.** Le résultat n'est ni un verdict ni une vérité sur ce que vous êtes. Il sert à provoquer des questionnements : pourquoi suis-je proche de ce parti sur tel sujet et loin sur tel autre ? Rien de plus.
+
+## Notre méthode
+- **Des faits réels.** Chaque question part d'une situation réelle et datée : un vote à l'Assemblée nationale, une décision du gouvernement, une politique menée par une mairie. La source est indiquée sous chaque question.
+- **Des options réelles.** Chaque réponse possible correspond à ce qu'un acteur politique a réellement voté ou fait, pas à ce qu'il dit vouloir faire.
+- Pendant les questions, rien n'indique quel parti a fait quel choix, pour que vous répondiez sur le fond et non sur l'étiquette.
+- **Votre importance compte.** Vous indiquez à quel point chaque sujet compte pour vous. Le calcul en tient compte.
+- **Un calcul transparent.** Votre proximité avec chaque parti est mesurée par la similarité entre vos réponses et ses choix, pondérée par l'importance que vous donnez à chaque question. Le résultat est donné au global et par thème : on peut être proche d'un parti sur le travail et d'un autre sur l'environnement.
+
+## Les limites à garder en tête
+- **Le choix des questions reste le nôtre.** Une autre équipe aurait choisi d'autres situations et obtenu d'autres résultats. La liste complète des questions et des sources est consultable.
+- **Quels partis ?** Les onze groupes de l'Assemblée nationale élue en 2024 sont tous là : LFI, GDR (PCF), Écologistes, Socialistes, Ensemble pour la République (Renaissance), MoDem, Horizons, LIOT, Droite républicaine (LR), Union des droites pour la République (UDR) et RN. Les partis sans groupe, comme Reconquête, et les députés non inscrits n'y figurent pas : leurs votes sont trop peu nombreux pour être comparés de façon équitable. Quand la position d'un groupe sur un vote n'est pas connue avec certitude, elle est laissée vide et ne compte ni pour ni contre lui.
+- **Des votes récents, sauf exception.** Les questions s'appuient d'abord sur les votes de l'Assemblée élue en 2024 ou de la précédente. Pour une décision plus ancienne, seuls les partis qui existaient à l'époque sont placés, en suivant leur filiation (FN devenu RN, UMP devenue LR). Les autres restent sans position sur cette question.
+- **Toutes les opinions ne trouvent pas leur place.** Les réponses proposées viennent de votes et de choix réels. Une idée qui n'a jamais été soumise au vote ne peut donc pas apparaître, même si beaucoup de gens la partagent. Par exemple, on peut penser que l'âge de départ à la retraite devrait dépendre du métier, parce que certains métiers usent bien plus le corps que d'autres. Des dispositifs partiels existent (le compte de prévention de la pénibilité, les départs anticipés de certains métiers de la fonction publique), mais un âge de départ fixé métier par métier n'a jamais été voté en tant que tel. Ce questionnaire ne peut donc pas tout représenter : si votre position n'y figure pas, choisissez la plus proche ou passez la question.
+- **Les partis ne votent pas toujours d'un seul bloc.** Sur certains sujets, notamment de conscience, leurs députés se divisent. Nous indiquons ces nuances quand elles existent.
+- **Une mairie n'est pas tout un parti.** Quand une question s'appuie sur l'action d'une municipalité, elle montre ce qu'a fait cette mairie, pas forcément ce que feraient toutes les mairies du même parti. Un indice de fiabilité accompagne chaque question.
+- **Ce que fait un parti dans l'opposition n'est pas ce qu'il ferait au pouvoir.** Les votes d'opposition sont parfois tactiques.
+- **Le résultat n'est pas une consigne de vote.** Il indique de qui vous êtes le plus proche sur ces questions précises. Personne ne vous représentera parfaitement, et c'est normal.
+- **Plus vous répondez, plus le résultat est fiable.** Avec peu de réponses, l'indice de confiance affiché reste faible.
+
+## Collecte des données : aucune
+Ce questionnaire n'est pas un sondage. Il ne cherche pas à savoir ce que pensent les Français : il vous invite à réfléchir à ce que vous pensez, vous, et à voir de qui vous êtes proche.
+
+- **Rien n'est envoyé.** Tout le calcul se fait dans votre navigateur. Vos réponses ne quittent jamais votre appareil.
+- **Rien n'est enregistré.** Pas de compte, pas de base de données, pas de cookies, pas de mesure d'audience. Quand vous fermez la page, vos réponses disparaissent.
+- **Rien n'est revendu,** puisque rien n'est collecté.
+- **Ça marche hors connexion.** La page est un simple fichier autonome. Vous pouvez la télécharger et l'ouvrir sur votre ordinateur sans connexion internet : le résultat sera exactement le même. C'est aussi la meilleure façon de vérifier que rien ne sort de chez vous.
+- **Une précision honnête.** Si vous consultez la page en ligne, l'hébergeur du site peut conserver des journaux techniques de connexion, comme pour n'importe quel site. Ces journaux ne contiennent jamais vos réponses, et nous ne les exploitons pas. Pour éviter même cela, utilisez la version téléchargée.
