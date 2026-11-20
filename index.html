@@ -261,26 +261,26 @@ const PARTIES=[
  {id:&quot;MODEM&quot;,name:&quot;MoDem&quot;,x:5},{id:&quot;REN&quot;,name:&quot;Renaissance&quot;,x:6},{id:&quot;HOR&quot;,name:&quot;Horizons&quot;,x:7},
  {id:&quot;LR&quot;,name:&quot;LR&quot;,x:8},{id:&quot;UDR&quot;,name:&quot;UDR&quot;,x:9},{id:&quot;RN&quot;,name:&quot;RN&quot;,x:10}];
 const AXES=[
- {id:&quot;pest&quot;,short:&quot;Pesticides&quot;,pour:&quot;Réautoriser l'acétamipride, un insecticide interdit depuis 2018 (loi Duplomb)&quot;,date:&quot;8 juillet 2025&quot;,
-  p:{RN:1,UDR:1,LR:1,REN:1,MODEM:1,HOR:1,LIOT:1,LFI:-1,PS:-1,ECO:-1,PCF:-1},
-  note:&quot;Ici, la ligne tient : toute la gauche vote contre, tous les autres pour.&quot;,src:&quot;https://datan.fr/votes/legislature-17/vote_2957&quot;,srcName:&quot;datan.fr&quot;},
- {id:&quot;fin&quot;,short:&quot;Aide à mourir&quot;,pour:&quot;Créer un droit à l'aide à mourir, sous conditions strictes&quot;,date:&quot;27 mai 2025&quot;,
+ {id:&quot;pest&quot;,short:&quot;Interdire un pesticide&quot;,pour:&quot;Garder interdit l'acétamipride, un insecticide interdit en France depuis 2018 (contre la loi Duplomb)&quot;,date:&quot;8 juillet 2025&quot;,
+  p:{LFI:1,PS:1,ECO:1,PCF:1,RN:-1,UDR:-1,LR:-1,REN:-1,MODEM:-1,HOR:-1,LIOT:-1},
+  note:&quot;Ici, la ligne tient : toute la gauche vote pour garder l'interdiction, tous les autres pour la lever.&quot;,src:&quot;https://datan.fr/votes/legislature-17/vote_2957&quot;,srcName:&quot;datan.fr&quot;},
+ {id:&quot;fin&quot;,short:&quot;Légaliser l'aide à mourir&quot;,pour:&quot;Créer un droit à l'aide à mourir, sous conditions strictes&quot;,date:&quot;27 mai 2025&quot;,
   p:{LFI:1,PCF:1,ECO:1,PS:1,LIOT:1,MODEM:1,REN:1,HOR:1,LR:-1,UDR:-1,RN:-1},
   note:&quot;La coupure se déplace : elle passe entre le centre et la droite. Renaissance vote avec la gauche.&quot;,src:&quot;https://datan.fr/votes/legislature-17/vote_2107/explication_PA840665&quot;,srcName:&quot;datan.fr&quot;},
- {id:&quot;ret&quot;,short:&quot;Retraite à 64 ans&quot;,pour:&quot;Garder l'âge légal de départ à la retraite à 64 ans&quot;,date:&quot;2024-2025&quot;,
+ {id:&quot;ret&quot;,short:&quot;Garder la retraite à 64 ans&quot;,pour:&quot;Garder l'âge légal de départ à la retraite à 64 ans&quot;,date:&quot;2024-2025&quot;,
   p:{LFI:-1,PCF:-1,ECO:-1,PS:-1,LIOT:-1,RN:-1,MODEM:1,REN:1,HOR:1,LR:1},
   note:&quot;LFI, le PCF, le PS, les Écologistes, LIOT et le RN sont contre la retraite à 64 ans (suspension ou retour à 62 ans). Le bloc central et LR veulent la garder. Les deux bouts de la ligne se retrouvent du même côté.&quot;,src:&quot;https://www.publicsenat.fr/actualites/politique/lassemblee-nationale-valide-la-suspension-de-la-reforme-des-retraites&quot;,srcName:&quot;Public Sénat&quot;},
- {id:&quot;zfe&quot;,short:&quot;Supprimer les ZFE&quot;,pour:&quot;Supprimer partout les zones à faibles émissions&quot;,date:&quot;14 avril 2026&quot;,
-  p:{RN:1,UDR:1,LR:1,LFI:1,REN:-1,MODEM:-1,HOR:-1,PS:-1},
-  note:&quot;LFI vote avec le RN, l'UDR et LR pour supprimer les ZFE. Le PS se range avec le bloc central. La ligne zigzague.&quot;,src:&quot;https://lcp.fr/actualites/la-suppression-des-zfe-confirmee-lors-de-l-ultime-vote-sur-la-loi-de-simplification-a-l&quot;,srcName:&quot;LCP&quot;},
- {id:&quot;fra&quot;,short:&quot;Doubler franchises&quot;,pour:&quot;Doubler le reste à charge sur les médicaments et les consultations (franchises médicales)&quot;,date:&quot;29 octobre 2025&quot;,
-  p:{REN:1,MODEM:1,LFI:-1,ECO:-1,PS:-1,HOR:-1,RN:-1},
-  note:&quot;Renaissance et le MoDem défendent le doublement. Le RN vote avec le PS et les Écologistes pour le supprimer du budget, LFI demande la fin des franchises. Le centre est seul contre les deux bouts de la ligne.&quot;,src:&quot;https://lcp.fr/actualites/franchises-medicales-les-deputes-s-opposent-au-gouvernement-sur-l-extension-et-l&quot;,srcName:&quot;LCP&quot;}];
-const LINE_SUBJ=[&quot;zfe&quot;,&quot;ret&quot;,&quot;fra&quot;];
+ {id:&quot;repas&quot;,short:&quot;Repas étudiant à 1 €&quot;,pour:&quot;Le repas à 1 € au restaurant universitaire pour tous les étudiants, pas seulement les boursiers&quot;,date:&quot;23 janvier 2025&quot;,
+  p:{LFI:1,PCF:1,ECO:1,PS:1,LIOT:1,RN:1,HOR:-1},
+  note:&quot;La gauche, LIOT et le RN votent pour. Renaissance, le MoDem et LR s'abstiennent, Horizons vote contre. Les deux bouts de la ligne votent ensemble, le centre reste à part.&quot;,src:&quot;https://datan.fr/votes/legislature-17/vote_606&quot;,srcName:&quot;datan.fr&quot;},
+ {id:&quot;sup&quot;,short:&quot;Taxer les superprofits&quot;,pour:&quot;Une taxe exceptionnelle sur les superprofits des pétroliers et des sociétés d'autoroutes&quot;,date:&quot;23 juillet 2022&quot;,
+  p:{LFI:1,PCF:1,ECO:1,PS:1,LIOT:1,RN:1,REN:-1,MODEM:-1,HOR:-1},
+  note:&quot;La gauche, LIOT et le RN votent pour, le bloc central contre. Ce vote date de l'Assemblée précédente : l'UDR n'existait pas encore.&quot;,src:&quot;https://datan.fr/votes/legislature-16/vote_105&quot;,srcName:&quot;datan.fr&quot;}];
+const LINE_SUBJ=[&quot;pest&quot;,&quot;ret&quot;,&quot;repas&quot;];
 const N=AXES.length,vec=pid=>AXES.map(a=>a.p[pid]||0);
 
 /* rien n'est prérempli : chaque sujet attend une position et une importance */
-const state={step:0,subj:0,party:null,cmp:null,you:{pest:{v:-1,w:2},fin:{v:1,w:3},ret:{v:-1,w:1},zfe:{v:-1,w:1},fra:{v:-1,w:2}}}; /* une personne d'exemple : l'animation explique, le questionnaire viendra ensuite */
+const state={step:0,subj:0,party:null,cmp:null,you:{pest:{v:1,w:2},fin:{v:1,w:3},ret:{v:-1,w:1},repas:{v:1,w:1},sup:{v:-1,w:2}}}; /* une personne d'exemple : l'animation explique, le questionnaire viendra ensuite */
 const done=id=>state.you[id].v!==null&amp;&amp;state.you[id].w!==null;
 const U=id=>done(id)?state.you[id]:{v:0,w:0};
 const nDone=()=>AXES.filter(a=>done(a.id)).length;
