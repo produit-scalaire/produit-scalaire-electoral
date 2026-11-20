@@ -125,7 +125,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-off
   </div>
 
   <div class="sources">
-    <strong>Sources et méthode.</strong> Les 5 axes sont 5 votes réels de l'Assemblée. Un parti vaut +1 si son groupe a voté pour, −1 s'il a voté contre, 0 s'il s'est abstenu, s'est divisé ou n'a pas de position connue. L'hémicycle reprend les effectifs des groupes publiés par <a href="https://datan.fr/groupes" target="_blank" rel="noopener">datan.fr</a> (563 députés inscrits, sans les non-inscrits). Reconquête n'a pas de groupe à l'Assemblée et n'apparaît pas.
+    <strong>Sources et méthode.</strong> Les 5 axes sont 5 votes réels de l'Assemblée. Un parti vaut +1 si son groupe a voté pour, −1 s'il a voté contre, 0 s'il s'est abstenu, s'est divisé ou n'a pas de position connue. Le questionnaire, lui, nuance selon la part des députés du groupe qui a suivi le vote. L'hémicycle reprend les effectifs des groupes publiés par <a href="https://datan.fr/groupes" target="_blank" rel="noopener">datan.fr</a> (563 députés inscrits, sans les non-inscrits). Reconquête n'a pas de groupe à l'Assemblée et n'apparaît pas.
     <ul id="srcs"></ul>
   </div>
 </div>
@@ -296,7 +296,7 @@ const STEPS=[
   <p style="margin-top:.8rem">Ta place sur la ligne ne dit pas ce que tu penses de chaque sujet. Celle des partis non plus.</p>`;}},
  {e:"Étape 3 · tous les sujets",h:"Tes opinions ont autant de dimensions que de sujets",
   html:()=>`<p>Chaque sujet sur lequel tu as un avis devient un axe, avec un bout + (pour) et un bout − (contre). Tous les axes passent par le centre, qui veut dire « sans avis ». Ici, ${N} sujets donnent ${N} axes.</p>
-  <p>Ce que tu penses n'est donc pas un point sur une ligne. C'est une position dans un espace à ${N} dimensions, et à une trentaine avec le questionnaire complet.</p>
+  <p>Ce que tu penses n'est donc pas un point sur une ligne. C'est une position dans un espace à ${N} dimensions, et à __NQ__ dimensions avec toutes les questions du questionnaire.</p>
   <p>En mathématiques, ces axes sont tous perpendiculaires : ton avis sur un sujet ne décide pas de ton avis sur un autre. On ne peut en dessiner que deux sur une feuille, mais on peut en calculer autant qu'on veut. La gauche et la droite deviennent une direction parmi d'autres.</p>`},
  {e:"Étape 4 · une personne",h:"Des opinions forment un vecteur",
   html:()=>`<p>Prenons une personne. Son avis sur chaque sujet est une coordonnée : <b>+1</b> pour, <b>−1</b> contre, <b>0</b> sans avis. L'importance qu'elle donne à chaque sujet, de 0 à 3, sert de poids : plus l'anneau est grand, plus le sujet compte pour elle.</p>

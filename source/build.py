@@ -42,7 +42,7 @@ META=f'''<meta name="description" content="{html.escape(DESC)}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Quel parti vote vraiment comme vous ?">
 <meta name="twitter:description" content="{html.escape(DESC)}"><meta name="twitter:image" content="{PAGE_URL}preview.png">
 '''
-about=md(open(ROOT+'disclaimer.md').read().replace('__REPO__',REPO_URL))
+about=md(open(ROOT+'disclaimer.md').read().replace('__REPO__',REPO_URL).replace('__PAGE__',PAGE_URL))
 # sous-onglets : une section par titre de niveau 2
 SHORT={'Notre intention':'Intention','Notre méthode':'Méthode','Les limites à garder en tête':'Limites','Collecte des données : aucune':'Données','Remerciements':'Merci'}
 parts=re.split(r'(?=<h2>)',about)
@@ -55,7 +55,7 @@ if secs:
         panels.append(f'<div class="subpanel" data-subpanel="{i}"{"" if i==0 else " hidden"}>{sec}</div>')
     about=head+'<nav class="tabs subtabs" role="tablist" aria-label="Sous-sections">'+''.join(btns)+'</nav>'+''.join(panels)
 
-a=open(ROOT+'animation-axes.html').read()
+a=open(ROOT+'animation-axes.html').read().replace('__NQ__',str(len(d['questions'])))
 a=re.sub(r'<link[^>]*fonts\.(googleapis|gstatic)[^>]*>\s*','',a)
 a=re.sub(r'--display:[^;]*;','--display:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;',a)
 a=re.sub(r'--body:[^;]*;','--body:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;',a)
