@@ -93,7 +93,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-off
   <header>
     <div class="tricolore" aria-hidden="true"><i></i><i></i><i></i></div>
     <h1>Une ligne, <em>ou tout un espace ?</em></h1>
-    <p>On te classe à gauche ou à droite. Mais tes opinions ne tiennent pas sur une ligne : sur chaque sujet, tu as ton avis, et chaque sujet ajoute une direction. Ce que tu penses devient un vecteur. Les partis aussi, et on peut mesurer à quel point vous pointez dans le même sens.</p>
+    <p>On te classe à gauche ou à droite. Mais tes opinions ne tiennent pas sur une ligne : sur chaque sujet, tu as ton avis, et ici chaque sujet compte comme une dimension à part. Ce que tu penses devient un vecteur. Les votes des partis dessinent le leur, et on peut mesurer à quel point vous pointez dans le même sens.</p>
   </header>
 
   <div class="stage">
@@ -139,6 +139,7 @@ const AXES=[
   p:{LFI:1,PCF:1,ECO:1,PS:1,LIOT:1,RN:1,REN:-1,MODEM:-1,HOR:-1},
   note:"La gauche, LIOT et le RN votent pour, le bloc central contre. Ce vote date de l'Assemblée précédente : l'UDR n'existait pas encore.",src:"https://datan.fr/votes/legislature-16/vote_105",srcName:"datan.fr"}];
 const LINE_SUBJ=["pest","ret","repas"];
+const SHORTN={ECO:"Écolo",MODEM:"MoDem",REN:"Ren.",HOR:"Hor."}; /* sur téléphone, noms courts sur la ligne pour éviter les chevauchements */
 const N=AXES.length,vec=pid=>AXES.map(a=>a.p[pid]||0);
 
 /* rien n'est prérempli : chaque sujet attend une position et une importance */
@@ -210,16 +211,16 @@ function draw(){svg.replaceChildren();const s=state.step,ink=css("--ink"),mut=cs
     const tg=lineTargets(),a=AXES.find(x=>x.id===LINE_SUBJ[state.subj]);
     if(s>=1){const k=s===1?seg(T,0,.4):1;
       el("line",{x1:cx,y1:cy-170*k,x2:cx,y2:cy+170*k,stroke:css("--grid"),"stroke-width":1.5,"stroke-dasharray":"4 5"},g);
-      if(k>.9){txt("POUR · "+a.short.toUpperCase(),{x:cx,y:cy-182,class:"cap","text-anchor":"middle",fill:ink});
-        txt("CONTRE",{x:cx,y:cy+196,class:"cap","text-anchor":"middle"},g);}}
+      if(k>.9){const nr=matchMedia("(max-width:620px)").matches;txt("POUR · "+a.short.toUpperCase(),{x:cx,y:cy-(nr?240:182),class:"cap","text-anchor":"middle",fill:ink});
+        txt("CONTRE",{x:cx,y:cy+(nr?250:196),class:"cap","text-anchor":"middle"},g);}}
     const mv=s===1?seg(T,.25,1):1;
     dotY=PARTIES.map((_,i)=>s===2?dotY[i]:lerp(fromY[i],tg[i],mv));
     if(s>=1){el("polyline",{points:PARTIES.map((_,i)=>`${lineX[i]},${dotY[i]}`).join(" "),fill:"none",stroke:css("--accent"),"stroke-width":2,"stroke-linejoin":"round",opacity:.55*mv},g);}
     PARTIES.forEach((p,i)=>{const x=lineX[i],y=dotY[i],pop=s===0?seg(T,.82,.95):1,v=s>=1?(a.p[p.id]||0):1;
       if(v===0&&s>=1)el("circle",{cx:x,cy:y,r:8,fill:css("--panel"),stroke:css("--none"),"stroke-width":2,"stroke-dasharray":"3 2"},g);
       else el("circle",{cx:x,cy:y,r:9*pop,fill:css("--p-"+p.id),stroke:css("--panel"),"stroke-width":2},g);
-      const up=i%2===0,dy=(s>=1&&v<0)?(up?24:40):(up?-16:-32);
-      if(pop>.6)txt(p.name,{x,y:y+dy,class:"plabel","text-anchor":"middle",opacity:v===0&&s>=1?.6:1},g);});
+      const up=i%2===0,nar=matchMedia("(max-width:620px)").matches,gap=nar?28:16,dy=(s>=1&&v<0)?(up?24:24+gap):(up?-16:-16-gap);
+      if(pop>.6)txt(matchMedia("(max-width:620px)").matches?(SHORTN[p.id]||p.name):p.name,{x,y:y+dy,class:"plabel","text-anchor":"middle",opacity:v===0&&s>=1?.6:1},g);});
     if(s===0)txt("UNE SEULE COORDONNÉE POUR TOUT CE QUE TU PENSES",{x:cx,y:H-30,class:"cap","text-anchor":"middle",opacity:seg(T,.85,1)});
     if(s===1)txt("LA LIGNE BLEUE RELIE LES PARTIS DANS L'ORDRE GAUCHE → DROITE",{x:cx,y:H-14,class:"cap","text-anchor":"middle"});
     if(s<2)return;}
@@ -238,8 +239,8 @@ function drawRows(pid,prod){const ink=css("--ink"),mut=css("--muted"),X0=250,X1=
   [["−",X0],["0",XC],["+",X1]].forEach(([t,x])=>txt(t,{x,y:Y0-40,class:"sign","text-anchor":"middle"}));
   if(prod)txt("PRODUIT",{x:PX,y:Y0-42,class:"cap","text-anchor":"middle"});
   const lg=el("g",{transform:`translate(20,${Y0-46})`});
-  el("circle",{cx:6,cy:-4,r:6,fill:"none",stroke:css("--you"),"stroke-width":2.5},lg);txt("exemple",{x:18,y:0,class:"lab"},lg);
-  if(pid){el("circle",{cx:96,cy:-4,r:6,fill:pc},lg);txt(pname,{x:108,y:0,class:"lab"},lg);}
+  el("circle",{cx:6,cy:-4,r:6,fill:"none",stroke:css("--you"),"stroke-width":2.5},lg);const lt=txt("exemple",{x:18,y:0,class:"lab"},lg);
+  if(pid){let lx=96;try{lx=Math.max(96,18+lt.getComputedTextLength()+22);}catch(_){}el("circle",{cx:lx,cy:-4,r:6,fill:pc},lg);txt(pname,{x:lx+12,y:0,class:"lab"},lg);}
   let sum=0;
   AXES.forEach((a,k)=>{const y=Y0+k*RH,kk=seg(T,k*.07,k*.07+.4);
     if(k)el("line",{x1:20,y1:y-RH/2,x2:660,y2:y-RH/2,stroke:css("--faint"),"stroke-width":1});

@@ -239,7 +239,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-off
   <header>
     <div class=&quot;tricolore&quot; aria-hidden=&quot;true&quot;><i></i><i></i><i></i></div>
     <h1>Une ligne, <em>ou tout un espace ?</em></h1>
-    <p>On te classe à gauche ou à droite. Mais tes opinions ne tiennent pas sur une ligne : sur chaque sujet, tu as ton avis, et chaque sujet ajoute une direction. Ce que tu penses devient un vecteur. Les partis aussi, et on peut mesurer à quel point vous pointez dans le même sens.</p>
+    <p>On te classe à gauche ou à droite. Mais tes opinions ne tiennent pas sur une ligne : sur chaque sujet, tu as ton avis, et ici chaque sujet compte comme une dimension à part. Ce que tu penses devient un vecteur. Les votes des partis dessinent le leur, et on peut mesurer à quel point vous pointez dans le même sens.</p>
   </header>
 
   <div class=&quot;stage&quot;>
@@ -285,6 +285,7 @@ const AXES=[
   p:{LFI:1,PCF:1,ECO:1,PS:1,LIOT:1,RN:1,REN:-1,MODEM:-1,HOR:-1},
   note:&quot;La gauche, LIOT et le RN votent pour, le bloc central contre. Ce vote date de l'Assemblée précédente : l'UDR n'existait pas encore.&quot;,src:&quot;https://datan.fr/votes/legislature-16/vote_105&quot;,srcName:&quot;datan.fr&quot;}];
 const LINE_SUBJ=[&quot;pest&quot;,&quot;ret&quot;,&quot;repas&quot;];
+const SHORTN={ECO:&quot;Écolo&quot;,MODEM:&quot;MoDem&quot;,REN:&quot;Ren.&quot;,HOR:&quot;Hor.&quot;}; /* sur téléphone, noms courts sur la ligne pour éviter les chevauchements */
 const N=AXES.length,vec=pid=>AXES.map(a=>a.p[pid]||0);
 
 /* rien n'est prérempli : chaque sujet attend une position et une importance */
@@ -356,16 +357,16 @@ function draw(){svg.replaceChildren();const s=state.step,ink=css(&quot;--ink&quo
     const tg=lineTargets(),a=AXES.find(x=>x.id===LINE_SUBJ[state.subj]);
     if(s>=1){const k=s===1?seg(T,0,.4):1;
       el(&quot;line&quot;,{x1:cx,y1:cy-170*k,x2:cx,y2:cy+170*k,stroke:css(&quot;--grid&quot;),&quot;stroke-width&quot;:1.5,&quot;stroke-dasharray&quot;:&quot;4 5&quot;},g);
-      if(k>.9){txt(&quot;POUR · &quot;+a.short.toUpperCase(),{x:cx,y:cy-182,class:&quot;cap&quot;,&quot;text-anchor&quot;:&quot;middle&quot;,fill:ink});
-        txt(&quot;CONTRE&quot;,{x:cx,y:cy+196,class:&quot;cap&quot;,&quot;text-anchor&quot;:&quot;middle&quot;},g);}}
+      if(k>.9){const nr=matchMedia(&quot;(max-width:620px)&quot;).matches;txt(&quot;POUR · &quot;+a.short.toUpperCase(),{x:cx,y:cy-(nr?240:182),class:&quot;cap&quot;,&quot;text-anchor&quot;:&quot;middle&quot;,fill:ink});
+        txt(&quot;CONTRE&quot;,{x:cx,y:cy+(nr?250:196),class:&quot;cap&quot;,&quot;text-anchor&quot;:&quot;middle&quot;},g);}}
     const mv=s===1?seg(T,.25,1):1;
     dotY=PARTIES.map((_,i)=>s===2?dotY[i]:lerp(fromY[i],tg[i],mv));
     if(s>=1){el(&quot;polyline&quot;,{points:PARTIES.map((_,i)=>`${lineX[i]},${dotY[i]}`).join(&quot; &quot;),fill:&quot;none&quot;,stroke:css(&quot;--accent&quot;),&quot;stroke-width&quot;:2,&quot;stroke-linejoin&quot;:&quot;round&quot;,opacity:.55*mv},g);}
     PARTIES.forEach((p,i)=>{const x=lineX[i],y=dotY[i],pop=s===0?seg(T,.82,.95):1,v=s>=1?(a.p[p.id]||0):1;
       if(v===0&amp;&amp;s>=1)el(&quot;circle&quot;,{cx:x,cy:y,r:8,fill:css(&quot;--panel&quot;),stroke:css(&quot;--none&quot;),&quot;stroke-width&quot;:2,&quot;stroke-dasharray&quot;:&quot;3 2&quot;},g);
       else el(&quot;circle&quot;,{cx:x,cy:y,r:9*pop,fill:css(&quot;--p-&quot;+p.id),stroke:css(&quot;--panel&quot;),&quot;stroke-width&quot;:2},g);
-      const up=i%2===0,dy=(s>=1&amp;&amp;v<0)?(up?24:40):(up?-16:-32);
-      if(pop>.6)txt(p.name,{x,y:y+dy,class:&quot;plabel&quot;,&quot;text-anchor&quot;:&quot;middle&quot;,opacity:v===0&amp;&amp;s>=1?.6:1},g);});
+      const up=i%2===0,nar=matchMedia(&quot;(max-width:620px)&quot;).matches,gap=nar?28:16,dy=(s>=1&amp;&amp;v<0)?(up?24:24+gap):(up?-16:-16-gap);
+      if(pop>.6)txt(matchMedia(&quot;(max-width:620px)&quot;).matches?(SHORTN[p.id]||p.name):p.name,{x,y:y+dy,class:&quot;plabel&quot;,&quot;text-anchor&quot;:&quot;middle&quot;,opacity:v===0&amp;&amp;s>=1?.6:1},g);});
     if(s===0)txt(&quot;UNE SEULE COORDONNÉE POUR TOUT CE QUE TU PENSES&quot;,{x:cx,y:H-30,class:&quot;cap&quot;,&quot;text-anchor&quot;:&quot;middle&quot;,opacity:seg(T,.85,1)});
     if(s===1)txt(&quot;LA LIGNE BLEUE RELIE LES PARTIS DANS L'ORDRE GAUCHE → DROITE&quot;,{x:cx,y:H-14,class:&quot;cap&quot;,&quot;text-anchor&quot;:&quot;middle&quot;});
     if(s<2)return;}
@@ -384,8 +385,8 @@ function drawRows(pid,prod){const ink=css(&quot;--ink&quot;),mut=css(&quot;--mut
   [[&quot;−&quot;,X0],[&quot;0&quot;,XC],[&quot;+&quot;,X1]].forEach(([t,x])=>txt(t,{x,y:Y0-40,class:&quot;sign&quot;,&quot;text-anchor&quot;:&quot;middle&quot;}));
   if(prod)txt(&quot;PRODUIT&quot;,{x:PX,y:Y0-42,class:&quot;cap&quot;,&quot;text-anchor&quot;:&quot;middle&quot;});
   const lg=el(&quot;g&quot;,{transform:`translate(20,${Y0-46})`});
-  el(&quot;circle&quot;,{cx:6,cy:-4,r:6,fill:&quot;none&quot;,stroke:css(&quot;--you&quot;),&quot;stroke-width&quot;:2.5},lg);txt(&quot;exemple&quot;,{x:18,y:0,class:&quot;lab&quot;},lg);
-  if(pid){el(&quot;circle&quot;,{cx:96,cy:-4,r:6,fill:pc},lg);txt(pname,{x:108,y:0,class:&quot;lab&quot;},lg);}
+  el(&quot;circle&quot;,{cx:6,cy:-4,r:6,fill:&quot;none&quot;,stroke:css(&quot;--you&quot;),&quot;stroke-width&quot;:2.5},lg);const lt=txt(&quot;exemple&quot;,{x:18,y:0,class:&quot;lab&quot;},lg);
+  if(pid){let lx=96;try{lx=Math.max(96,18+lt.getComputedTextLength()+22);}catch(_){}el(&quot;circle&quot;,{cx:lx,cy:-4,r:6,fill:pc},lg);txt(pname,{x:lx+12,y:0,class:&quot;lab&quot;},lg);}
   let sum=0;
   AXES.forEach((a,k)=>{const y=Y0+k*RH,kk=seg(T,k*.07,k*.07+.4);
     if(k)el(&quot;line&quot;,{x1:20,y1:y-RH/2,x2:660,y2:y-RH/2,stroke:css(&quot;--faint&quot;),&quot;stroke-width&quot;:1});
