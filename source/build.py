@@ -26,7 +26,7 @@ def md(src):
 REPO_URL='https://github.com/produit-scalaire/produit-scalaire-electoral'
 about=md(open(ROOT+'disclaimer.md').read().replace('__REPO__',REPO_URL))
 # sous-onglets : une section par titre de niveau 2
-SHORT={'Notre intention':'Intention','Notre méthode':'Méthode','Les limites à garder en tête':'Limites','Collecte des données : aucune':'Données'}
+SHORT={'Notre intention':'Intention','Notre méthode':'Méthode','Les limites à garder en tête':'Limites','Collecte des données : aucune':'Données','Remerciements':'Merci'}
 parts=re.split(r'(?=<h2>)',about)
 head,secs=parts[0],parts[1:]
 if secs:

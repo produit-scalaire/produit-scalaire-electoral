@@ -37,3 +37,12 @@ Ce questionnaire n'est pas un sondage. Il ne cherche pas à savoir ce que pensen
 - **Rien n'est revendu,** puisque rien n'est collecté.
 - **Ça marche hors connexion.** La page est un simple fichier autonome. Vous pouvez la télécharger et l'ouvrir sur votre ordinateur sans connexion internet : le résultat sera exactement le même. C'est aussi la meilleure façon de vérifier que rien ne sort de chez vous.
 - **Une précision honnête.** Si vous consultez la page en ligne, l'hébergeur du site peut conserver des journaux techniques de connexion, comme pour n'importe quel site. Ces journaux ne contiennent jamais vos réponses, et nous ne les exploitons pas. Pour éviter même cela, utilisez la version téléchargée.
+
+## Remerciements
+Ce questionnaire n'existerait pas sans celles et ceux qui rendent l'information publique accessible, organisée et vérifiable. Merci à eux.
+- **[datan.fr](https://datan.fr)**, qui publie chaque scrutin de l'Assemblée nationale avec le vote de chaque groupe et de chaque député. C'est la source de la grande majorité des questions et des chiffres de cohésion des groupes.
+- **L'[Assemblée nationale](https://www.assemblee-nationale.fr)**, qui ouvre ses données (scrutins, amendements, comptes rendus) à tous.
+- **[LCP](https://lcp.fr)** et **[Public Sénat](https://www.publicsenat.fr)**, les chaînes parlementaires, pour leurs comptes rendus clairs des débats et des votes.
+- **L'[iFRAP](https://www.ifrap.org)**, pour son relevé des votes sur les principaux amendements du budget.
+- **La [Banque des Territoires](https://www.banquedesterritoires.fr)**, **[Reporterre](https://reporterre.net)**, **[Wikipédia](https://fr.wikipedia.org)** et le **[CESE](https://www.lecese.fr)** (conventions citoyennes), pour leurs articles et synthèses.
+- **La vidéo « [¿Usted es de izquierda o derecha?](https://www.youtube.com/watch?v=myqYO7I6MBA) » de la chaîne Magic Markers**, qui a inspiré l'idée de représenter les opinions politiques dans plusieurs dimensions plutôt que sur une seule ligne.
