@@ -23,7 +23,7 @@ def md(src):
     if ul: out.append('</ul>')
     return '\n'.join(out)
 # ADRESSE DU DÉPÔT PUBLIC : à changer ici seulement (texte « Méthode » et pied de page)
-REPO_URL='https://github.com/DanielMonta00/produit-scalaire-electoral'
+REPO_URL='https://github.com/produit-scalaire/produit-scalaire-electoral'
 about=md(open(ROOT+'disclaimer.md').read().replace('__REPO__',REPO_URL))
 # sous-onglets : une section par titre de niveau 2
 SHORT={'Notre intention':'Intention','Notre méthode':'Méthode','Les limites à garder en tête':'Limites','Collecte des données : aucune':'Données'}
