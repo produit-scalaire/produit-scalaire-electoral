@@ -28,6 +28,11 @@ h3{font-weight:800;font-size:1.05rem}
 p{margin:0}
 .lede{font-family:var(--read);font-size:1.15rem;color:var(--muted);max-width:60ch}
 .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.btn.big{font-size:1.1rem;padding:14px 26px}
+.subtabs{margin:6px 0 4px}
+.subtabs button{font-size:14px}
+.subpanel{display:flex;flex-direction:column;gap:14px}
+.subpanel[hidden]{display:none}
 .card.notice{border-left:4px solid var(--accent,currentColor)}
 .card.notice p{margin:0;font-family:var(--read);line-height:1.5}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:14px;min-width:0}
@@ -474,12 +479,12 @@ go(0);
  </section>
  <section id="tab-apropos" role="tabpanel" aria-labelledby="t-apropos" hidden>
   <article class="prose"><h1>À propos de ce questionnaire : intention, méthode et limites</h1>
-<h2>Notre intention</h2>
+<nav class="tabs subtabs" role="tablist" aria-label="Sous-sections"><button role="tab" data-sub="0" aria-selected="true">Intention</button><button role="tab" data-sub="1" aria-selected="false">Méthode</button><button role="tab" data-sub="2" aria-selected="false">Limites</button><button role="tab" data-sub="3" aria-selected="false">Données</button></nav><div class="subpanel" data-subpanel="0"><h2>Notre intention</h2>
 <p>Aucun questionnaire n'est neutre. Choisir les questions, c'est déjà choisir ce qui compte. Plutôt que de prétendre à une neutralité impossible, nous disons clairement quel choix nous avons fait.</p>
 <p><strong>Nous partons de la vie quotidienne et de la réalité matérielle</strong> : se loger, travailler, se soigner, vieillir, apprendre, se déplacer, manger, payer ses factures, décider ensemble. Ce sont les domaines où les décisions politiques changent concrètement la vie de chacun.</p>
 <p><strong>Nous ne suivons pas l'agenda médiatique.</strong> Les sujets les plus débattus à la télévision et sur les réseaux ne sont pas forcément ceux qui pèsent le plus sur le quotidien. Trop souvent, le débat public est pris en otage par quelques thèmes, imposés dans les termes de ceux qui ont intérêt à les mettre en avant. Nous refusons de nous enfermer dans ce cadre : ici, chaque domaine de la vie a le même poids, et chaque sujet est abordé par ses effets concrets plutôt que par les slogans.</p>
 <p><strong>Un outil d'analyse et d'aide à la décision, pas un absolu.</strong> Le résultat n'est ni un verdict ni une vérité sur ce que vous êtes. Il sert à provoquer des questionnements : pourquoi suis-je proche de ce parti sur tel sujet et loin sur tel autre ? Rien de plus.</p>
-<h2>Notre méthode</h2>
+</div><div class="subpanel" data-subpanel="1" hidden><h2>Notre méthode</h2>
 <ul>
 <li><strong>Des faits réels.</strong> Chaque question part d'une situation réelle et datée : un vote à l'Assemblée nationale, une décision du gouvernement, une politique menée par une mairie. La source est indiquée sous chaque question.</li>
 <li><strong>Des options réelles.</strong> Chaque réponse possible correspond à ce qu'un acteur politique a réellement voté ou fait, pas à ce qu'il dit vouloir faire.</li>
@@ -487,7 +492,7 @@ go(0);
 <li><strong>Votre importance compte.</strong> Vous indiquez à quel point chaque sujet compte pour vous. Le calcul en tient compte.</li>
 <li><strong>Un calcul transparent.</strong> Votre proximité avec chaque parti est mesurée par la similarité entre vos réponses et ses choix, pondérée par l'importance que vous donnez à chaque question. Le résultat est donné au global et par thème : on peut être proche d'un parti sur le travail et d'un autre sur l'environnement.</li>
 </ul>
-<h2>Les limites à garder en tête</h2>
+</div><div class="subpanel" data-subpanel="2" hidden><h2>Les limites à garder en tête</h2>
 <ul>
 <li><strong>Toutes les opinions ne trouvent pas leur place.</strong> Les réponses proposées viennent de votes et de choix réels. Une idée qui n'a jamais été soumise au vote ne peut donc pas apparaître, même si beaucoup de gens la partagent. Par exemple, en 2023, la <a href="https://www.lecese.fr/sites/default/files/documents/CCFV/Conventioncitoyenne_findevie_Synth%C3%A8se.pdf" target="_blank" rel="noopener">Convention citoyenne sur la fin de vie</a> (184 citoyens tirés au sort) s'est prononcée à 75,6 % pour une aide active à mourir. Parmi ses membres, 21,7 % voulaient un accès sans conditions médicales. Le texte voté par l'Assemblée en 2025 pose au contraire des conditions strictes : la question correspondante ne propose donc que « pour » ou « contre » ce texte, et la position d'un accès sans conditions n'y figure pas. Ce questionnaire ne peut donc pas tout représenter : si votre position n'y figure pas, choisissez la plus proche ou passez la question.</li>
 <li><strong>Le choix des questions reste le nôtre.</strong> Une autre équipe aurait choisi d'autres situations et obtenu d'autres résultats. La liste complète des questions et des sources est consultable.</li>
@@ -499,7 +504,7 @@ go(0);
 <li><strong>Le résultat n'est pas une consigne de vote.</strong> Il indique de qui vous êtes le plus proche sur ces questions précises. Personne ne vous représentera parfaitement, et c'est normal.</li>
 <li><strong>Plus vous répondez, plus le résultat est fiable.</strong> Avec peu de réponses, l'indice de confiance affiché reste faible.</li>
 </ul>
-<h2>Collecte des données : aucune</h2>
+</div><div class="subpanel" data-subpanel="3" hidden><h2>Collecte des données : aucune</h2>
 <p>Ce questionnaire n'est pas un sondage. Il ne cherche pas à savoir ce que pensent les Français : il vous invite à réfléchir à ce que vous pensez, vous, et à voir de qui vous êtes proche.</p>
 <ul>
 <li><strong>Rien n'est envoyé.</strong> Tout le calcul se fait dans votre navigateur. Vos réponses ne quittent jamais votre appareil.</li>
@@ -507,7 +512,7 @@ go(0);
 <li><strong>Rien n'est revendu,</strong> puisque rien n'est collecté.</li>
 <li><strong>Ça marche hors connexion.</strong> La page est un simple fichier autonome. Vous pouvez la télécharger et l'ouvrir sur votre ordinateur sans connexion internet : le résultat sera exactement le même. C'est aussi la meilleure façon de vérifier que rien ne sort de chez vous.</li>
 <li><strong>Une précision honnête.</strong> Si vous consultez la page en ligne, l'hébergeur du site peut conserver des journaux techniques de connexion, comme pour n'importe quel site. Ces journaux ne contiennent jamais vos réponses, et nous ne les exploitons pas. Pour éviter même cela, utilisez la version téléchargée.</li>
-</ul></article>
+</ul></div></article>
  </section>
  <div class="tricolore" aria-hidden="true" style="margin:32px 0 0;height:3px"></div><footer class="foot"><span id="foot-version"></span><span>Aucune donnée collectée</span><span>Fonctionne hors connexion</span></footer>
 </div>
@@ -594,6 +599,16 @@ function renderStart(){
   <p class="eyebrow">Simulateur de l'Assemblée nationale · ${n} votes et décisions réels</p>
   <h1>Personne ne pense exactement comme vous.</h1>
   <p class="lede">Prenez la place d'un député. On vous met face aux vrais votes, sans dire qui a voté quoi. Vous choisissez, vous dites ce qui compte pour vous, et on regarde quel parti a voté le plus comme vous.</p>
+  <div class="row"><button class="btn primary big" id="go">Commencer →</button></div>
+  ${methodHTML()}`;
+  document.getElementById("go").onclick=()=>{renderSetup();scrollTo({top:0});};
+}
+
+function renderSetup(){
+  const n=DATA.questions.length;
+  app.innerHTML=`
+  <p class="eyebrow">Avant la première question</p>
+  <h2>Deux choses à savoir</h2>
   <div class="card notice">
     <h3>Toutes les opinions ne trouvent pas leur place</h3>
     <p>Les réponses proposées viennent de votes et de choix réels. Une idée qui n'a jamais été soumise au vote ne peut donc pas apparaître, même si beaucoup de gens la partagent.</p>
@@ -608,8 +623,9 @@ function renderStart(){
     </div>
     <p class="label"><a href="" download="produit-scalaire-electoral.html" onclick="this.href=location.href.split('#')[0]">Téléchargez la page</a> pour l’utiliser hors connexion.</p>
   </div>
-  ${methodHTML()}`;
+  <div><button class="btn ghost" id="back">← Retour</button></div>`;
   app.querySelectorAll("[data-n]").forEach(b=>b.onclick=()=>start(+b.dataset.n));
+  document.getElementById("back").onclick=renderStart;
 }
 
 function methodHTML(){return `<div class="card teaser"><p>Pourquoi pas simplement gauche ou droite ?</p><div class="row"><button class="btn" data-go="dimensions">Revoir l'introduction</button><button class="btn ghost" data-go="apropos">Intention et limites</button></div></div>`;}
@@ -732,6 +748,7 @@ function showTab(t,push){if(!TABS.includes(t))t="dimensions";
   document.getElementById("shell").classList.toggle("wide",t==="dimensions");
   if(push&&location.hash!=="#"+t){try{history.replaceState(null,"","#"+t);}catch(e){}}
   scrollTo({top:0});if(t==="dimensions")sizeAnim();}
+document.addEventListener("click",e=>{const sb=e.target.closest("[data-sub]");if(sb){const nav=sb.parentElement,box=nav.parentElement;nav.querySelectorAll("[data-sub]").forEach(x=>x.setAttribute("aria-selected",x===sb?"true":"false"));box.querySelectorAll("[data-subpanel]").forEach(pn=>pn.hidden=pn.dataset.subpanel!==sb.dataset.sub);return;}});
 document.addEventListener("click",e=>{const b=e.target.closest("[data-tab],[data-go]");if(!b)return;showTab(b.dataset.tab||b.dataset.go,true);});
 addEventListener("hashchange",()=>showTab(location.hash.slice(1)));
 let animRO=null;

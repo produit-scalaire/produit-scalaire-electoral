@@ -23,6 +23,17 @@ def md(src):
     if ul: out.append('</ul>')
     return '\n'.join(out)
 about=md(open(ROOT+'disclaimer.md').read())
+# sous-onglets : une section par titre de niveau 2
+SHORT={'Notre intention':'Intention','Notre méthode':'Méthode','Les limites à garder en tête':'Limites','Collecte des données : aucune':'Données'}
+parts=re.split(r'(?=<h2>)',about)
+head,secs=parts[0],parts[1:]
+if secs:
+    btns=[];panels=[]
+    for i,sec in enumerate(secs):
+        h2t=re.match(r'<h2>(.*?)</h2>',sec).group(1);lab=SHORT.get(html.unescape(re.sub('<[^>]+>','',h2t)),h2t)
+        btns.append(f'<button role="tab" data-sub="{i}" aria-selected="{"true" if i==0 else "false"}">{lab}</button>')
+        panels.append(f'<div class="subpanel" data-subpanel="{i}"{"" if i==0 else " hidden"}>{sec}</div>')
+    about=head+'<nav class="tabs subtabs" role="tablist" aria-label="Sous-sections">'+''.join(btns)+'</nav>'+''.join(panels)
 
 a=open(ROOT+'animation-axes.html').read()
 a=re.sub(r'<link[^>]*fonts\.(googleapis|gstatic)[^>]*>\s*','',a)
