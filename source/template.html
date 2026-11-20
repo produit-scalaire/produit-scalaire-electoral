@@ -115,7 +115,10 @@ a{color:var(--accent)}
  .shell.wide{margin-inline:calc(-1 * max(16px,env(safe-area-inset-left,0px)) + 4px)}}
 .options.guess{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px}
 .guess-card{border-left:4px solid var(--accent,currentColor)}
-.crow{display:grid;grid-template-columns:minmax(0,1fr) 3rem;gap:4px 10px;padding:10px 0;border-top:1px solid var(--line)}
+.crow{padding:0;border-top:1px solid var(--line)}details.crow:first-of-type{border-top:0;padding-top:0}
+.crow>summary{display:grid;grid-template-columns:minmax(0,1fr) 3rem;gap:4px 10px;padding:10px 0;cursor:pointer;list-style:none}.crow>summary::-webkit-details-marker{display:none}
+.crow .more{grid-column:1/-1;font-size:13px;color:var(--accent);font-weight:600}.crow .more::before{content:"▸ "}.crow[open] .more::before{content:"▾ "}
+.crow .detail{padding:0 0 14px;font-size:14.5px;display:flex;flex-direction:column;gap:8px}.crow .detail p{margin:0}
 .cq{grid-column:1/-1;font-weight:700;font-size:14.5px}.cc{display:flex;flex-direction:column;gap:2px;font-size:13.5px;color:var(--muted);grid-column:1/-1}
 .cbar{position:relative;height:12px;background:var(--line);border-radius:6px;overflow:hidden;align-self:center}.cbar .mid{position:absolute;left:50%;top:0;bottom:0;width:2px;background:var(--muted)}
 .cbar i{position:absolute;top:0;bottom:0}.cbar i.pos{background:var(--good)}.cbar i.neg{background:#c98500}
@@ -310,16 +313,30 @@ function confidence(){const w=S.answers.reduce((s,a)=>s+a.w,0);
   if(w<22)return ["mid","Fiabilité moyenne","Le classement peut encore bouger."];
   return ["high","Fiabilité bonne","Le classement est stable sur cette banque de questions."];}
 
+function detailHTML(q,a,k){
+  const same=DATA.parties.filter(p=>q.positions[p.id]===a.choice).map(p=>p.name+(coh(q,p.id)<0.9&&q.split[p.id]?` (${Math.round(100*q.split[p.id][0]/q.split[p.id].reduce((x,y)=>x+y,0))} % du groupe)`:""));
+  return `<div class="detail">
+    <p>${same.length?`Même choix que vous : <strong>${esc(same.join(", "))}</strong>`:"Aucun parti placé n'a fait ce choix."}</p>
+    ${q.contexte?`<p>${esc(q.contexte)}</p>`:""}<p>${esc(q.actor)}</p>${q.nuance?`<p class="label">${esc(q.nuance)}</p>`:""}
+    <p class="label"><span class="dots" title="Fiabilité du placement des partis">${"●".repeat(q.reliability)}${"○".repeat(3-q.reliability)}</span> ${q.sources.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(" · ")} · réf. ${esc(q.id)}</p>
+    <p><button class="btn ghost" data-edit="${k}">Changer ma réponse</button></p></div>`;
+}
 function calcRows(pid){
   const p=DATA.parties.find(x=>x.id===pid);let num=0,den=0;
-  const rows=S.answers.filter(a=>a.choice!==null&&a.w>0&&DATA.byId[a.id].positions[pid]!==undefined).map(a=>{
-    const q=DATA.byId[a.id],pos=q.positions[pid],v=a.w*agree(q,a.choice,pos)*coh(q,pid);num+=v;const ct=coh(q,pid)<0.9?cohTxt(q,pid):"";den+=a.w;
-    return `<div class="crow"><div class="cq">${esc(q.question)}</div>
-      <div class="cc"><span>Vous : <b>${esc(q.options[a.choice])}</b> · importance ${a.w}</span><span>${esc(p.name)} : <b>${esc(q.options[pos])}</b>${ct?` <small>· divisé : ${ct}</small>`:""}</span></div>
-      <div class="cbar"><span class="mid"></span><i class="${v>=0?"pos":"neg"}" style="width:${Math.abs(v)/3*50}%;${v>=0?"left:50%":"right:50%"}"></i></div>
-      <span class="cv">${v>0?"+":""}${Math.round(v*10)/10}</span></div>`;}).join("");
+  const open=new Set([...document.querySelectorAll("#calc details[open]")].map(d=>d.dataset.q));
+  const rows=S.answers.filter(a=>a.choice!==null).map(a=>{
+    const q=DATA.byId[a.id],k=S.answers.indexOf(a),pos=q.positions[pid],known=pos!==undefined;
+    const v=known?a.w*agree(q,a.choice,pos)*coh(q,pid):0;if(known){num+=v;den+=a.w;}
+    const ct=known&&coh(q,pid)<0.9?cohTxt(q,pid):"";
+    return `<details class="crow" data-q="${esc(q.id)}" ${open.has(q.id)?"open":""}><summary>
+      <span class="cq">${esc(q.question)}</span>
+      <span class="cc"><span>Vous : <b>${esc(q.options[a.choice])}</b> · importance ${a.w}</span><span>${esc(p.name)} : ${known?`<b>${esc(q.options[pos])}</b>${ct?` <small>· divisé : ${ct}</small>`:""}`:"<i>position inconnue, ne compte pas</i>"}</span></span>
+      <span class="cbar"><span class="mid"></span><i class="${v>=0?"pos":"neg"}" style="width:${Math.abs(v)/3*50}%;${v>=0?"left:50%":"right:50%"}"></i></span>
+      <span class="cv">${v>0?"+":""}${Math.round(v*10)/10}</span><span class="more">Détails</span></summary>${detailHTML(q,a,k)}</details>`;}).join("");
   const pct=den?Math.round((num/den+1)*50):null;
-  document.getElementById("calc").innerHTML=rows+`<div class="csum"><span>Somme : <b>${num>0?"+":""}${Math.round(num*10)/10}</b> sur ${den} possibles</span><span>Alignement : <b>${pct===null?"–":pct+" %"}</b></span></div>`;
+  const box=document.getElementById("calc");
+  box.innerHTML=rows+`<div class="csum"><span>Somme : <b>${num>0?"+":""}${Math.round(num*10)/10}</b> sur ${den} possibles</span><span>Alignement : <b>${pct===null?"–":pct+" %"}</b></span></div>`;
+  box.querySelectorAll("[data-edit]").forEach(b=>b.onclick=()=>editAnswer(+b.dataset.edit));
 }
 function renderResults(){
   const all=scores(),answered=S.answers.filter(a=>a.choice!==null);
@@ -340,8 +357,8 @@ function renderResults(){
       <small>${o.n?`même choix sur ${o.same} des ${o.n} question${o.n>1?"s":""} où sa position est connue`:"position inconnue sur vos réponses"}</small></div>`).join("")}</div>
   </div>
   <div class="card">
-    <h3>Le calcul, avec vos réponses</h3>
-    <p class="label">Pour chaque question, votre importance multipliée par l'accord (+1 même choix, −1 choix opposé). Quand un groupe s'est divisé, l'accord est multiplié par sa cohésion : la part de ses députés qui ont voté comme lui, moins celle qui a voté contre. La somme, rapportée au total possible, donne le pourcentage.</p>
+    <h3>Vos réponses, question par question</h3>
+    <p class="label">Pour chaque question, votre importance multipliée par l'accord (+1 même choix, −1 choix opposé). Quand un groupe s'est divisé, l'accord est multiplié par sa cohésion : la part de ses députés qui ont voté comme lui, moins celle qui a voté contre. La somme, rapportée au total possible, donne le pourcentage. Touchez une question pour voir le contexte, les sources et changer votre réponse.</p>
     <label class="label">Comparer avec <select id="calc-p">${all.filter(o=>o.n).map(o=>`<option value="${o.p.id}">${esc(o.p.name)}</option>`).join("")}</select></label>
     <div id="calc"></div>
   </div>
@@ -352,16 +369,6 @@ function renderResults(){
       const tops=r.length?r.filter(o=>Math.abs(o.s-r[0].s)<1e-9):[];
       return `<div class="theme"><span>${esc(DATA.themes[t])} · ${n} réponse${n>1?"s":""}${n<3?" · indicatif":""}</span>
         <b>${!tops.length||tops[0].s<=0?"Pas de parti proche":tops.length>3?`${tops.length} partis à égalité`:tops.map(o=>esc(o.p.name)).join(", ")}</b></div>`;}).join("")}</div>
-  </div>
-  <div class="card">
-    <h3>Question par question</h3>
-    ${answered.map(a=>{const q=DATA.byId[a.id];const k=S.answers.indexOf(a);const same=DATA.parties.filter(p=>q.positions[p.id]===a.choice).map(p=>p.name+(coh(q,p.id)<0.9&&q.split[p.id]?` (${Math.round(100*q.split[p.id][0]/q.split[p.id].reduce((x,y)=>x+y,0))} % du groupe)`:""));
-      return `<details><summary>${esc(q.question)}</summary><div class="detail">
-        <p class="you">Votre choix : <strong>${esc(q.options[a.choice])}</strong> <button class="btn ghost" data-edit="${k}">Changer</button></p>
-        <p>${same.length?`Même choix que : <strong>${esc(same.join(", "))}</strong>`:"Aucun parti placé n'a fait ce choix."}</p>
-        ${q.contexte?`<p>${esc(q.contexte)}</p>`:""}<p>${esc(q.actor)}</p>${q.nuance?`<p class="label">${esc(q.nuance)}</p>`:""}
-        <p class="label">Réf. : ${esc(q.id)}</p><p><span class="dots" title="Fiabilité du placement des partis">${"●".repeat(q.reliability)}${"○".repeat(3-q.reliability)}</span> ${q.sources.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(" · ")}</p>
-      </div></details>`;}).join("")}
   </div>
   ${suiteHTML()}
   <div class="row">
