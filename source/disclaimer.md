@@ -15,6 +15,7 @@ Aucun questionnaire n'est neutre. Choisir les questions, c'est déjà choisir ce
 - Pendant les questions, rien n'indique quel parti a fait quel choix, pour que vous répondiez sur le fond et non sur l'étiquette.
 - **Votre importance compte.** Vous indiquez à quel point chaque sujet compte pour vous. Le calcul en tient compte.
 - **Un calcul transparent.** Votre proximité avec chaque parti est mesurée par la similarité entre vos réponses et ses choix, pondérée par l'importance que vous donnez à chaque question. Le résultat est donné au global et par thème : on peut être proche d'un parti sur le travail et d'un autre sur l'environnement.
+- **La fiabilité du résultat.** Elle dépend d'abord du nombre de questions auxquelles vous répondez sur l'ensemble de la banque : moins de 20, c'est un premier aperçu ; de 20 à 49, une tendance ; 50 ou plus, un portrait solide. On vérifie aussi la stabilité : si retirer une seule de vos réponses suffit à changer le parti en tête, le résultat est signalé comme fragile. À ne pas confondre avec les points ●●● affichés sous chaque question, qui indiquent à quel point le placement des partis sur ce vote est sûr.
 - **Tout est public et vérifiable.** Le code de la page, les questions, les positions des partis, les votes relevés et le calcul sont publiés en accès libre sur [GitHub](__REPO__). Chacun peut vérifier qu'aucun parti n'est avantagé, refaire le calcul et proposer une correction. C'est notre meilleure garantie de neutralité : vous n'avez pas à nous croire sur parole.
 
 ## Les limites à garder en tête

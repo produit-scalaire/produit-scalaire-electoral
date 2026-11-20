@@ -338,17 +338,25 @@ function commit(choice){
   S.answers.push({id:S.cur.id,choice,w:choice===null?0:S.w});S.choice=null;S.w=null;S.info=false;
   S.cur=S.answers.length>=S.target?null:pickNext();scrollTo({top:0});renderQuestion();}
 
-function confidence(){const w=S.answers.reduce((s,a)=>s+a.w,0);
-  if(w<10)return ["low","Fiabilité faible","Répondez à plus de questions pour un résultat solide."];
-  if(w<22)return ["mid","Fiabilité moyenne","Le classement peut encore bouger."];
-  return ["high","Fiabilité bonne","Le classement est stable sur cette banque de questions."];}
+/* Fiabilité du résultat : nombre de questions répondues sur la banque, puis test de stabilité
+   (le parti en tête change-t-il si l'on retire une seule de vos réponses ?) */
+function confidence(){
+  const N=DATA.questions.length,ans=S.answers.filter(a=>a.choice!==null&&a.w>0),n=ans.length;
+  const top=scores()[0].p.id;let fragile=false;
+  if(n>1){const saved=S.answers;for(const a of ans){S.answers=saved.filter(x=>x!==a);if(scores()[0].p.id!==top){fragile=true;break;}}S.answers=saved;}
+  let lvl=n<20?0:n<50?1:2;if(fragile&&lvl>1)lvl=1;
+  const tit=["Premier aperçu","Tendance","Portrait solide"][lvl],cls=["low","mid","high"][lvl];
+  const base=`${n} question${n>1?"s":""} sur ${N}.`;
+  const msg=[" Ce n'est qu'un début : continuez pour affiner le résultat."," Le classement peut encore bouger."," Le résultat repose sur une bonne partie des questions."][lvl];
+  const st=n>1?(fragile?" Résultat fragile : retirer une seule de vos réponses change le parti en tête.":" Résultat stable : retirer une seule réponse ne change pas le parti en tête."):"";
+  return [cls,tit,base+msg+st];}
 
 function detailHTML(q,a,k){
   const same=DATA.parties.filter(p=>q.positions[p.id]===a.choice).map(p=>p.name+(coh(q,p.id)<0.9&&q.split[p.id]?` (${Math.round(100*q.split[p.id][0]/q.split[p.id].reduce((x,y)=>x+y,0))} % du groupe)`:""));
   return `<div class="detail">
     <p>${same.length?`Même choix que vous : <strong>${esc(same.join(", "))}</strong>`:"Aucun parti placé n'a fait ce choix."}</p>
     ${q.contexte?`<p>${esc(q.contexte)}</p>`:""}<p>${esc(q.actor)}</p>${q.nuance?`<p class="label">${esc(q.nuance)}</p>`:""}
-    <p class="label"><span class="dots" title="Fiabilité du placement des partis">${"●".repeat(q.reliability)}${"○".repeat(3-q.reliability)}</span> ${q.sources.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(" · ")} · réf. ${esc(q.id)}</p>
+    <p class="label"><span class="dots" aria-hidden="true">${"●".repeat(q.reliability)}${"○".repeat(3-q.reliability)}</span> Placement des partis sur ce vote : ${["","incertain","assez sûr","sûr"][q.reliability]||"?"} · ${q.sources.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(" · ")} · réf. ${esc(q.id)}</p>
     <p><button class="btn ghost" data-edit="${k}">Changer ma réponse</button></p></div>`;
 }
 function calcRows(pid){
