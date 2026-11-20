@@ -60,7 +60,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2.5px solid v
 .weights{display:flex;flex-wrap:wrap;gap:6px}
 .weights button{font-family:var(--display);font-size:13.5px;border:1.5px solid var(--line);border-radius:999px;padding:7px 12px;background:var(--card);color:var(--ink);cursor:pointer}
 .weights button[aria-pressed="true"]{border-color:var(--ink);background:var(--ink);color:var(--bg)}
-.label{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.04em}
+.label{font-family:var(--display);font-size:13.5px;line-height:1.45;color:var(--muted)}
 .bars{display:flex;flex-direction:column;gap:10px}
 .bar{display:grid;grid-template-columns:minmax(0,9.5rem) minmax(0,1fr) 3.6rem;gap:10px;align-items:center;font-size:14.5px}
 .bar .name{font-weight:800;overflow-wrap:anywhere}
@@ -130,6 +130,35 @@ a{color:var(--accent)}
 .info{flex:none;width:28px;height:28px;border-radius:50%;border:1.5px solid var(--accent);background:transparent;color:var(--accent);font:700 15px/1 var(--read);font-style:italic;cursor:pointer;margin-top:2px}
 .info[aria-expanded="true"]{background:var(--accent);color:var(--accent-ink)}
 .ctx{background:var(--accent-soft);border-radius:10px;padding:12px 14px;font-size:14.5px;line-height:1.5}
+
+/* Lisibilité sur téléphone : textes plus grands, zones tactiles d'au moins 44 px */
+@media (max-width:620px){
+ body{font-size:17px}
+ .label{font-size:15px}
+ .eyebrow{font-size:12.5px}
+ .meta{font-family:var(--display);font-size:14px;flex-wrap:wrap;gap:2px 10px}
+ .lede{font-size:1.12rem;line-height:1.55}
+ .situation{font-size:1.12rem;line-height:1.6}
+ .tabs button{min-height:44px;font-size:15px}
+ .brand .dl{font-size:14px;padding:8px 0}
+ .opt{font-size:16.5px;padding:15px}.opt .k{width:28px;height:28px;font-size:13px}
+ .weights{gap:8px}.weights button{font-size:15px;padding:11px 14px;min-height:44px}
+ .info{width:40px;height:40px;font-size:17px}
+ .ctx{font-size:15.5px}
+ .length span{font-size:15px}
+ .bar{font-size:15.5px}.bar small{font-size:14px;margin-top:-4px}
+ .pill{font-size:13px;padding:3px 9px}
+ .cq{font-size:16px}.cc{font-size:15px}.crow .detail{font-size:15.5px}.crow .more{font-size:15px;padding:6px 0}
+ .detail{font-size:15.5px}
+ .card{padding:18px 16px}
+ .foot{font-size:14px;gap:8px 16px}.foot a{display:inline-block;padding:8px 0}
+ .btn{min-height:46px}
+ .card.notice p{font-size:16px;line-height:1.55}
+ .bar{grid-template-columns:minmax(0,1fr) 3.4rem;gap:4px 10px}.bar .name{grid-column:1/-1;overflow-wrap:normal;word-break:normal}.bar small{margin-top:0}
+ .theme span{font-size:14.5px}.theme b{font-size:16px}
+ .cc small{font-size:14px}
+ #calc-p{min-height:44px;font-size:16px}
+}
 </style>
 
 </head><body>
@@ -205,7 +234,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-off
 .chips button i{width:9px;height:9px;border-radius:50%;display:inline-block}
 .chips button[aria-pressed=&quot;true&quot;]{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink);font-weight:600}
 .fact{background:var(--panel);border:1px solid var(--grid);border-radius:10px;padding:12px 14px;font-size:14.5px}
-.fact a,.sources a{color:var(--p-HOR)}
+.fact a,.sources a{color:var(--accent)}
 .math{font-family:var(--mono);font-size:13px;background:var(--panel);border:1px solid var(--grid);border-radius:10px;padding:10px 12px;overflow-x:auto;line-height:1.7}
 .axes-list{margin:.2rem 0 .8rem;padding:0;list-style:none;display:flex;flex-direction:column;gap:4px;font-size:14px}
 .axes-list b{font-family:var(--mono);font-weight:600;font-size:12.5px}
@@ -233,6 +262,19 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-off
 .muted{color:var(--muted)}
 .sources{font-size:13px;color:var(--muted);border-top:1px solid var(--grid);padding-top:16px}
 .sources ul{margin:.4rem 0 0;padding-left:1.1rem}
+
+@media (max-width:620px){
+ body{font-size:17px}
+ .step p{line-height:1.6}
+ .btn{font-size:15.5px;padding:11px 20px;min-height:44px}
+ .stepnav{gap:10px}.stepnav>.btn{flex:1 1 0}.dots{order:-1;width:100%;justify-content:space-between}.dots button{width:44px;height:44px;font-size:15px}
+ figure .replay{font-size:14.5px;padding:9px 14px}
+ .chips{gap:8px}.chips button{font-size:15px;padding:9px 13px;min-height:42px}
+ .eyebrow{font-size:12.5px}
+ .fact{font-size:16px;line-height:1.55}
+ .math{font-size:14px}
+ .sources,.sources li{font-size:15px;line-height:1.55}.sources a{display:inline-block;padding:4px 0}
+}
 </style>
 
 <div class=&quot;wrap&quot;>
@@ -719,7 +761,7 @@ function renderResults(){
   ${guessHTML(all)}
   <div class="card">
     <h3>Alignement global</h3>
-    <p class="label">100 % : mêmes choix sur toutes les questions communes. 50 % : neutre. 0 % : choix opposés.</p>
+    <p class="label">100&nbsp;% : mêmes choix sur toutes les questions communes. 50&nbsp;% : neutre. 0&nbsp;% : choix opposés.</p>
     <div class="bars">${all.map((o,k)=>`<div class="bar ${k===0&&o.s>0?"top":""}"><span class="name">${esc(o.p.name)}</span>
       <span class="track"><i style="width:${o.pct??0}%"></i></span><span class="val">${o.pct===null?"–":o.pct+" %"}</span>
       <small>${o.n?`même choix sur ${o.same} des ${o.n} question${o.n>1?"s":""} où sa position est connue`:"position inconnue sur vos réponses"}</small></div>`).join("")}</div>
