@@ -17,7 +17,12 @@ def question_html(n, q):
     opts = q['options']
     rows = []
     for i, o in enumerate(opts):
-        who = [pname.get(p, p) for p in pname if q['positions'].get(p) == i]
+        sp = q.get('split', {})
+        def lab(p):
+            c = sp.get(p); n = pname.get(p, p)
+            if c and (c[0]-c[1])/sum(c) < 0.9: n += f" ({round(100*c[0]/sum(c))} % du groupe : {c[0]} dans ce sens, {c[1]} en sens inverse, {c[2]} abst.)"
+            return n
+        who = [lab(p) for p in pname if q['positions'].get(p) == i]
         who += [p for p, v in q['positions'].items() if v == i and p not in pname]
         rows.append(f'<tr><td class="opt"><b>{chr(65+i)}.</b> {e(o)}</td><td>{e(", ".join(who)) or "<span class=muted>aucun parti</span>"}</td></tr>')
     unknown = [pname[p] for p in pname if p not in q['positions']]
@@ -33,7 +38,7 @@ def question_html(n, q):
   <p class="meta">{e(q.get("date",""))} · réf. <code>{e(q["id"])}</code> · fiabilité <span class="dots">{"●"*r}{"○"*(3-r)}</span> {REL.get(r,"?")}</p>
   <p class="situation">{e(q["situation"])}</p>
   {ordered}<table><thead><tr><th>Réponse</th><th>Partis</th></tr></thead><tbody>{"".join(rows)}</tbody></table>
-  <p><b>Source du placement :</b> {e(q.get("actor",""))}</p>{nuance}
+  <p><b>Source du placement :</b> {e(q.get("actor",""))}</p>{nuance}{'<p class="note">Cohésion des groupes relevée sur datan.fr. Un groupe divisé pèse moins dans le calcul.</p>' if q.get('split') else ''}
   <p class="src">{src}</p>{ctx}
 </article>'''
 

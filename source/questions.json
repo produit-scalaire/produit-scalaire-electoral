@@ -94,7 +94,64 @@
      "url": "https://datan.fr/votes/legislature-17/vote_2957"
     }
    ],
-   "contexte": "La loi « Duplomb », du nom du sénateur qui l'a proposée, vise à « lever les contraintes » pesant sur les agriculteurs. Sa mesure la plus débattue permettait de réautoriser par dérogation l'acétamipride, un insecticide néonicotinoïde interdit en France depuis 2018 mais autorisé dans l'UE. Adoptée en juillet 2025, cette disposition a ensuite été censurée par le Conseil constitutionnel."
+   "contexte": "La loi « Duplomb », du nom du sénateur qui l'a proposée, vise à « lever les contraintes » pesant sur les agriculteurs. Sa mesure la plus débattue permettait de réautoriser par dérogation l'acétamipride, un insecticide néonicotinoïde interdit en France depuis 2018 mais autorisé dans l'UE. Adoptée en juillet 2025, cette disposition a ensuite été censurée par le Conseil constitutionnel.",
+   "split": {
+    "RN": [
+     119,
+     0,
+     2
+    ],
+    "UDR": [
+     16,
+     0,
+     0
+    ],
+    "LR": [
+     47,
+     0,
+     1
+    ],
+    "REN": [
+     64,
+     14,
+     10
+    ],
+    "MODEM": [
+     26,
+     9,
+     1
+    ],
+    "HOR": [
+     26,
+     3,
+     4
+    ],
+    "LFI": [
+     71,
+     0,
+     0
+    ],
+    "PS": [
+     65,
+     0,
+     0
+    ],
+    "ECO": [
+     38,
+     0,
+     0
+    ],
+    "PCF": [
+     17,
+     0,
+     0
+    ],
+    "LIOT": [
+     12,
+     3,
+     6
+    ]
+   }
   },
   {
    "id": "aide-mourir",
@@ -128,7 +185,64 @@
      "url": "https://datan.fr/votes/legislature-17/vote_2107/explication_PA840665"
     }
    ],
-   "contexte": "La proposition de loi crée un « droit à l'aide à mourir » : une personne majeure, atteinte d'une maladie grave et incurable en phase avancée, avec des souffrances réfractaires, pourrait demander une substance létale, après avis d'une équipe médicale. Un texte distinct renforce les soins palliatifs. L'examen se poursuit au Parlement."
+   "contexte": "La proposition de loi crée un « droit à l'aide à mourir » : une personne majeure, atteinte d'une maladie grave et incurable en phase avancée, avec des souffrances réfractaires, pourrait demander une substance létale, après avis d'une équipe médicale. Un texte distinct renforce les soins palliatifs. L'examen se poursuit au Parlement.",
+   "split": {
+    "LFI": [
+     62,
+     1,
+     3
+    ],
+    "PCF": [
+     12,
+     1,
+     3
+    ],
+    "ECO": [
+     33,
+     1,
+     1
+    ],
+    "PS": [
+     59,
+     4,
+     2
+    ],
+    "REN": [
+     64,
+     11,
+     14
+    ],
+    "MODEM": [
+     20,
+     9,
+     7
+    ],
+    "HOR": [
+     14,
+     13,
+     6
+    ],
+    "LR": [
+     34,
+     7,
+     8
+    ],
+    "UDR": [
+     16,
+     0,
+     0
+    ],
+    "RN": [
+     101,
+     19,
+     3
+    ],
+    "LIOT": [
+     11,
+     3,
+     9
+    ]
+   }
   },
   {
    "id": "airbnb",
@@ -162,7 +276,64 @@
     }
    ],
    "nuance": "LIOT : 5 voix pour, aucune contre.",
-   "contexte": "La loi de novembre 2024 donne aux maires de nouveaux outils contre la multiplication des meublés de tourisme : quotas, réduction du nombre de nuitées autorisées pour une résidence principale (jusqu'à 90 par an), et fin d'une partie de l'avantage fiscal dont bénéficiaient ces locations."
+   "contexte": "La loi de novembre 2024 donne aux maires de nouveaux outils contre la multiplication des meublés de tourisme : quotas, réduction du nombre de nuitées autorisées pour une résidence principale (jusqu'à 90 par an), et fin d'une partie de l'avantage fiscal dont bénéficiaient ces locations.",
+   "split": {
+    "LFI": [
+     24,
+     0,
+     0
+    ],
+    "PCF": [
+     5,
+     0,
+     0
+    ],
+    "ECO": [
+     16,
+     0,
+     0
+    ],
+    "PS": [
+     37,
+     0,
+     0
+    ],
+    "MODEM": [
+     5,
+     0,
+     0
+    ],
+    "REN": [
+     38,
+     0,
+     0
+    ],
+    "HOR": [
+     17,
+     0,
+     0
+    ],
+    "LR": [
+     18,
+     0,
+     0
+    ],
+    "UDR": [
+     3,
+     0,
+     0
+    ],
+    "RN": [
+     51,
+     1,
+     0
+    ],
+    "LIOT": [
+     5,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "passoires",
@@ -479,7 +650,54 @@
      "url": "https://lcp.fr/actualites/lutte-contre-le-narcotrafic-que-contient-la-reforme-qui-va-etre-definitivement-votee-par"
     }
    ],
-   "contexte": "La loi crée un parquet national anticriminalité organisée, des quartiers de prison de haute sécurité pour les plus gros trafiquants, un « dossier coffre » qui protège certaines techniques d'enquête de la consultation par la défense, et facilite l'expulsion des trafiquants de logements sociaux."
+   "contexte": "La loi crée un parquet national anticriminalité organisée, des quartiers de prison de haute sécurité pour les plus gros trafiquants, un « dossier coffre » qui protège certaines techniques d'enquête de la consultation par la défense, et facilite l'expulsion des trafiquants de logements sociaux.",
+   "split": {
+    "RN": [
+     109,
+     0,
+     0
+    ],
+    "REN": [
+     73,
+     0,
+     0
+    ],
+    "PS": [
+     63,
+     0,
+     1
+    ],
+    "LR": [
+     38,
+     0,
+     1
+    ],
+    "MODEM": [
+     36,
+     0,
+     0
+    ],
+    "HOR": [
+     33,
+     0,
+     0
+    ],
+    "UDR": [
+     13,
+     0,
+     0
+    ],
+    "LFI": [
+     60,
+     0,
+     0
+    ],
+    "LIOT": [
+     22,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "mineurs",
@@ -517,7 +735,64 @@
     }
    ],
    "nuance": "LIOT a voté pour à la majorité, mais divisé (14 pour, 3 abstentions, 6 contre).",
-   "contexte": "La loi crée une procédure de comparution immédiate pour les mineurs de 16 ans et plus, limite l'« excuse de minorité » qui divise les peines par deux, et prévoit une amende civile pour les parents qui ne se présentent pas aux audiences. Ses critiques défendent le primat de l'éducatif inscrit dans la justice des mineurs depuis 1945."
+   "contexte": "La loi crée une procédure de comparution immédiate pour les mineurs de 16 ans et plus, limite l'« excuse de minorité » qui divise les peines par deux, et prévoit une amende civile pour les parents qui ne se présentent pas aux audiences. Ses critiques défendent le primat de l'éducatif inscrit dans la justice des mineurs depuis 1945.",
+   "split": {
+    "RN": [
+     119,
+     0,
+     0
+    ],
+    "REN": [
+     80,
+     1,
+     4
+    ],
+    "LR": [
+     45,
+     0,
+     0
+    ],
+    "MODEM": [
+     31,
+     0,
+     0
+    ],
+    "HOR": [
+     32,
+     0,
+     0
+    ],
+    "UDR": [
+     16,
+     0,
+     0
+    ],
+    "LFI": [
+     67,
+     0,
+     0
+    ],
+    "PS": [
+     62,
+     0,
+     0
+    ],
+    "ECO": [
+     36,
+     0,
+     0
+    ],
+    "PCF": [
+     13,
+     0,
+     0
+    ],
+    "LIOT": [
+     14,
+     6,
+     3
+    ]
+   }
   },
   {
    "id": "consentement",
@@ -550,7 +825,59 @@
      "url": "https://datan.fr/votes/legislature-17/vote_3061"
     }
    ],
-   "contexte": "La loi d'octobre 2025 modifie le Code pénal : constitue une agression sexuelle ou un viol « tout acte sexuel non consenti ». Le consentement doit être libre, éclairé, spécifique, préalable et révocable, et ne peut se déduire du silence. Les critères de violence, contrainte, menace ou surprise restent."
+   "contexte": "La loi d'octobre 2025 modifie le Code pénal : constitue une agression sexuelle ou un viol « tout acte sexuel non consenti ». Le consentement doit être libre, éclairé, spécifique, préalable et révocable, et ne peut se déduire du silence. Les critères de violence, contrainte, menace ou surprise restent.",
+   "split": {
+    "REN": [
+     40,
+     0,
+     0
+    ],
+    "LFI": [
+     29,
+     0,
+     0
+    ],
+    "PS": [
+     22,
+     0,
+     0
+    ],
+    "LR": [
+     8,
+     0,
+     0
+    ],
+    "ECO": [
+     21,
+     0,
+     0
+    ],
+    "MODEM": [
+     12,
+     0,
+     0
+    ],
+    "HOR": [
+     16,
+     0,
+     0
+    ],
+    "RN": [
+     27,
+     0,
+     3
+    ],
+    "UDR": [
+     4,
+     0,
+     0
+    ],
+    "LIOT": [
+     6,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "retention",
@@ -716,7 +1043,54 @@
      "url": "https://datan.fr/votes/legislature-17/vote_9491"
     }
    ],
-   "contexte": "Le gaz de chauffage est soumis à une TVA de 20 %. Un amendement proposait de la passer à 5,5 %, le taux réduit des produits de première nécessité. Cette baisse coûterait plusieurs milliards d'euros par an à l'État."
+   "contexte": "Le gaz de chauffage est soumis à une TVA de 20 %. Un amendement proposait de la passer à 5,5 %, le taux réduit des produits de première nécessité. Cette baisse coûterait plusieurs milliards d'euros par an à l'État.",
+   "split": {
+    "RN": [
+     25,
+     0,
+     0
+    ],
+    "UDR": [
+     1,
+     0,
+     0
+    ],
+    "ECO": [
+     7,
+     0,
+     0
+    ],
+    "MODEM": [
+     4,
+     0,
+     0
+    ],
+    "PCF": [
+     4,
+     0,
+     0
+    ],
+    "LR": [
+     4,
+     0,
+     0
+    ],
+    "LFI": [
+     11,
+     0,
+     0
+    ],
+    "PS": [
+     4,
+     0,
+     0
+    ],
+    "REN": [
+     9,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "surete-transports",
@@ -753,7 +1127,59 @@
      "url": "https://www.brut.media/fr/articles/france/societe/palpations-cameras-pietons-la-nouvelle-loi-pour-renforcer-la-securite-dans-les-transports"
     }
    ],
-   "contexte": "La loi sur la sûreté dans les transports autorise les agents de sécurité de la SNCF et de la RATP à palper les voyageurs, à confisquer des objets dangereux, à porter des caméras-piétons et à intervenir aux abords des gares. Elle prévoit aussi l'expérimentation de caméras dans les bus."
+   "contexte": "La loi sur la sûreté dans les transports autorise les agents de sécurité de la SNCF et de la RATP à palper les voyageurs, à confisquer des objets dangereux, à porter des caméras-piétons et à intervenir aux abords des gares. Elle prévoit aussi l'expérimentation de caméras dans les bus.",
+   "split": {
+    "REN": [
+     38,
+     3,
+     0
+    ],
+    "RN": [
+     70,
+     0,
+     0
+    ],
+    "LR": [
+     24,
+     0,
+     0
+    ],
+    "HOR": [
+     14,
+     0,
+     0
+    ],
+    "MODEM": [
+     11,
+     0,
+     0
+    ],
+    "UDR": [
+     8,
+     0,
+     0
+    ],
+    "LFI": [
+     29,
+     0,
+     0
+    ],
+    "PS": [
+     14,
+     0,
+     1
+    ],
+    "ECO": [
+     5,
+     0,
+     4
+    ],
+    "LIOT": [
+     6,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "reseaux-sociaux",
@@ -794,7 +1220,59 @@
      "url": "https://lcp.fr/actualites/interdiction-des-reseaux-sociaux-aux-moins-de-15-ans-vote-a-l-assemblee-le-texte"
     }
    ],
-   "contexte": "La proposition de loi interdit l'inscription sur les réseaux sociaux avant 15 ans, avec une obligation de vérification de l'âge pour les plateformes. Ses critiques doutent de l'efficacité de la vérification et s'inquiètent pour la vie privée."
+   "contexte": "La proposition de loi interdit l'inscription sur les réseaux sociaux avant 15 ans, avec une obligation de vérification de l'âge pour les plateformes. Ses critiques doutent de l'efficacité de la vérification et s'inquiètent pour la vie privée.",
+   "split": {
+    "REN": [
+     46,
+     1,
+     0
+    ],
+    "MODEM": [
+     3,
+     0,
+     0
+    ],
+    "LR": [
+     5,
+     0,
+     0
+    ],
+    "HOR": [
+     9,
+     0,
+     0
+    ],
+    "RN": [
+     17,
+     0,
+     0
+    ],
+    "UDR": [
+     4,
+     0,
+     0
+    ],
+    "LFI": [
+     21,
+     0,
+     0
+    ],
+    "PS": [
+     10,
+     0,
+     0
+    ],
+    "ECO": [
+     3,
+     0,
+     0
+    ],
+    "PCF": [
+     2,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "chomage-rupture",
@@ -1021,7 +1499,59 @@
      "url": "https://datan.fr/votes/legislature-17/vote_9052"
     }
    ],
-   "contexte": "Le Nutri-Score, créé en 2017, classe les aliments de A (meilleure qualité nutritionnelle) à E. Il est facultatif. L'amendement le rendait obligatoire sur les emballages, sauf pour les produits sous appellation d'origine, avec une pénalité pour les fabricants récalcitrants."
+   "contexte": "Le Nutri-Score, créé en 2017, classe les aliments de A (meilleure qualité nutritionnelle) à E. Il est facultatif. L'amendement le rendait obligatoire sur les emballages, sauf pour les produits sous appellation d'origine, avec une pénalité pour les fabricants récalcitrants.",
+   "split": {
+    "REN": [
+     8,
+     1,
+     0
+    ],
+    "LFI": [
+     18,
+     0,
+     0
+    ],
+    "PS": [
+     10,
+     0,
+     0
+    ],
+    "ECO": [
+     11,
+     0,
+     0
+    ],
+    "MODEM": [
+     9,
+     0,
+     0
+    ],
+    "LIOT": [
+     2,
+     0,
+     0
+    ],
+    "PCF": [
+     1,
+     0,
+     0
+    ],
+    "RN": [
+     51,
+     0,
+     0
+    ],
+    "LR": [
+     6,
+     1,
+     0
+    ],
+    "UDR": [
+     4,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "marges-supermarches",
@@ -1054,7 +1584,59 @@
      "url": "https://datan.fr/votes/legislature-17/vote_1020"
     }
    ],
-   "contexte": "La marge brute est la différence entre le prix de vente et le prix d'achat, avant les frais de personnel, d'énergie ou de loyer. L'amendement plafonnait à 40 % la marge brute de la grande distribution sur les produits alimentaires."
+   "contexte": "La marge brute est la différence entre le prix de vente et le prix d'achat, avant les frais de personnel, d'énergie ou de loyer. L'amendement plafonnait à 40 % la marge brute de la grande distribution sur les produits alimentaires.",
+   "split": {
+    "LFI": [
+     19,
+     0,
+     0
+    ],
+    "PS": [
+     14,
+     0,
+     0
+    ],
+    "ECO": [
+     8,
+     0,
+     0
+    ],
+    "PCF": [
+     1,
+     0,
+     0
+    ],
+    "REN": [
+     21,
+     0,
+     0
+    ],
+    "LR": [
+     4,
+     0,
+     0
+    ],
+    "MODEM": [
+     6,
+     0,
+     0
+    ],
+    "HOR": [
+     7,
+     0,
+     0
+    ],
+    "LIOT": [
+     4,
+     1,
+     0
+    ],
+    "UDR": [
+     3,
+     0,
+     1
+    ]
+   }
   },
   {
    "id": "ultra-transformes",
@@ -1086,7 +1668,54 @@
      "url": "https://datan.fr/votes/legislature-17/vote_221"
     }
    ],
-   "contexte": "Les produits ultra-transformés, selon la classification scientifique NOVA, contiennent des ingrédients ou additifs industriels absents des cuisines (émulsifiants, arômes, etc.). L'amendement créait une contribution sur ces produits, reversée à l'Assurance maladie, sans en fixer le taux."
+   "contexte": "Les produits ultra-transformés, selon la classification scientifique NOVA, contiennent des ingrédients ou additifs industriels absents des cuisines (émulsifiants, arômes, etc.). L'amendement créait une contribution sur ces produits, reversée à l'Assurance maladie, sans en fixer le taux.",
+   "split": {
+    "PS": [
+     7,
+     0,
+     0
+    ],
+    "ECO": [
+     14,
+     0,
+     0
+    ],
+    "HOR": [
+     3,
+     0,
+     1
+    ],
+    "LIOT": [
+     2,
+     0,
+     0
+    ],
+    "RN": [
+     36,
+     0,
+     3
+    ],
+    "REN": [
+     16,
+     0,
+     0
+    ],
+    "LFI": [
+     30,
+     0,
+     0
+    ],
+    "MODEM": [
+     3,
+     0,
+     2
+    ],
+    "UDR": [
+     3,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "prix-planchers",
@@ -1117,7 +1746,49 @@
      "url": "https://datan.fr/votes/legislature-16/vote_3653"
     }
    ],
-   "contexte": "La proposition de loi imposait un prix minimum d'achat des produits agricoles, fixé par filière au niveau des coûts de production, en dessous duquel l'industrie et la grande distribution ne pourraient pas acheter. Elle a été adoptée en première lecture puis n'a pas abouti."
+   "contexte": "La proposition de loi imposait un prix minimum d'achat des produits agricoles, fixé par filière au niveau des coûts de production, en dessous duquel l'industrie et la grande distribution ne pourraient pas acheter. Elle a été adoptée en première lecture puis n'a pas abouti.",
+   "split": {
+    "LFI": [
+     42,
+     0,
+     0
+    ],
+    "PS": [
+     14,
+     0,
+     0
+    ],
+    "ECO": [
+     20,
+     0,
+     0
+    ],
+    "PCF": [
+     8,
+     0,
+     0
+    ],
+    "LIOT": [
+     4,
+     0,
+     0
+    ],
+    "REN": [
+     45,
+     0,
+     1
+    ],
+    "MODEM": [
+     14,
+     0,
+     0
+    ],
+    "HOR": [
+     6,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "repas-1-euro",
@@ -1147,7 +1818,44 @@
      "url": "https://datan.fr/votes/legislature-17/vote_606"
     }
    ],
-   "contexte": "Depuis 2021, les étudiants boursiers et ceux en précarité paient 1 € leur repas au restaurant universitaire, contre 3,30 € pour les autres. La proposition de loi l'ouvre à tous les étudiants, sans condition de ressources."
+   "contexte": "Depuis 2021, les étudiants boursiers et ceux en précarité paient 1 € leur repas au restaurant universitaire, contre 3,30 € pour les autres. La proposition de loi l'ouvre à tous les étudiants, sans condition de ressources.",
+   "split": {
+    "RN": [
+     24,
+     0,
+     0
+    ],
+    "LFI": [
+     32,
+     0,
+     0
+    ],
+    "PS": [
+     57,
+     0,
+     0
+    ],
+    "ECO": [
+     27,
+     0,
+     0
+    ],
+    "LIOT": [
+     4,
+     0,
+     0
+    ],
+    "PCF": [
+     4,
+     0,
+     0
+    ],
+    "HOR": [
+     3,
+     0,
+     1
+    ]
+   }
   },
   {
    "id": "ratios-soignants",
@@ -1176,7 +1884,39 @@
      "url": "https://datan.fr/votes/legislature-17/vote_600"
     }
    ],
-   "contexte": "La proposition de loi fixe un nombre minimum d'infirmiers et d'aides-soignants par lit ouvert ou par passage, selon la spécialité et la taille de l'établissement. Les ratios seraient fixés par décret, pour une entrée en vigueur en 2027."
+   "contexte": "La proposition de loi fixe un nombre minimum d'infirmiers et d'aides-soignants par lit ouvert ou par passage, selon la spécialité et la taille de l'établissement. Les ratios seraient fixés par décret, pour une entrée en vigueur en 2027.",
+   "split": {
+    "LFI": [
+     35,
+     0,
+     0
+    ],
+    "PS": [
+     62,
+     0,
+     0
+    ],
+    "LR": [
+     2,
+     0,
+     0
+    ],
+    "ECO": [
+     27,
+     0,
+     0
+    ],
+    "LIOT": [
+     4,
+     0,
+     0
+    ],
+    "PCF": [
+     6,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "alcools",
@@ -1209,7 +1949,59 @@
      "url": "https://datan.fr/votes/legislature-17/vote_232"
     }
    ],
-   "contexte": "Les boissons alcoolisées paient des droits d'accise, et celles de plus de 18 % une « cotisation sécurité sociale » en plus. L'amendement étendait cette cotisation à toutes les boissons alcoolisées, y compris la bière et le vin."
+   "contexte": "Les boissons alcoolisées paient des droits d'accise, et celles de plus de 18 % une « cotisation sécurité sociale » en plus. L'amendement étendait cette cotisation à toutes les boissons alcoolisées, y compris la bière et le vin.",
+   "split": {
+    "ECO": [
+     10,
+     0,
+     1
+    ],
+    "PS": [
+     7,
+     6,
+     1
+    ],
+    "PCF": [
+     3,
+     1,
+     1
+    ],
+    "MODEM": [
+     9,
+     0,
+     0
+    ],
+    "LIOT": [
+     2,
+     0,
+     0
+    ],
+    "LR": [
+     8,
+     0,
+     0
+    ],
+    "HOR": [
+     7,
+     0,
+     0
+    ],
+    "RN": [
+     56,
+     0,
+     0
+    ],
+    "UDR": [
+     3,
+     0,
+     0
+    ],
+    "REN": [
+     21,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "loyers-plafond",
@@ -1242,7 +2034,59 @@
      "url": "https://datan.fr/votes/legislature-16/vote_1762"
     }
    ],
-   "contexte": "L'indice de référence des loyers (IRL) sert à réviser chaque année les loyers en cours de bail. En 2022, face à l'inflation, sa hausse a été plafonnée à 3,5 %. La loi de 2023 a prolongé ce « bouclier loyer » d'un an. Des amendements proposant un gel ont été rejetés."
+   "contexte": "L'indice de référence des loyers (IRL) sert à réviser chaque année les loyers en cours de bail. En 2022, face à l'inflation, sa hausse a été plafonnée à 3,5 %. La loi de 2023 a prolongé ce « bouclier loyer » d'un an. Des amendements proposant un gel ont été rejetés.",
+   "split": {
+    "REN": [
+     112,
+     0,
+     0
+    ],
+    "RN": [
+     79,
+     0,
+     0
+    ],
+    "LR": [
+     13,
+     0,
+     0
+    ],
+    "MODEM": [
+     33,
+     0,
+     0
+    ],
+    "HOR": [
+     20,
+     0,
+     0
+    ],
+    "LIOT": [
+     2,
+     0,
+     0
+    ],
+    "LFI": [
+     65,
+     0,
+     0
+    ],
+    "PS": [
+     16,
+     0,
+     0
+    ],
+    "ECO": [
+     6,
+     0,
+     0
+    ],
+    "PCF": [
+     6,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "squat",
@@ -1275,7 +2119,59 @@
      "url": "https://datan.fr/votes/legislature-16/vote_1361"
     }
    ],
-   "contexte": "La loi de 2023 punit le squat d'un logement de 3 ans de prison et 45 000 € d'amende (contre 1 an et 15 000 € avant), étend l'infraction aux locaux commerciaux ou vides, accélère l'expulsion et sanctionne le locataire qui reste après un jugement d'expulsion."
+   "contexte": "La loi de 2023 punit le squat d'un logement de 3 ans de prison et 45 000 € d'amende (contre 1 an et 15 000 € avant), étend l'infraction aux locaux commerciaux ou vides, accélère l'expulsion et sanctionne le locataire qui reste après un jugement d'expulsion.",
+   "split": {
+    "REN": [
+     159,
+     0,
+     1
+    ],
+    "RN": [
+     84,
+     0,
+     0
+    ],
+    "LR": [
+     58,
+     0,
+     0
+    ],
+    "MODEM": [
+     38,
+     1,
+     2
+    ],
+    "HOR": [
+     29,
+     0,
+     0
+    ],
+    "LIOT": [
+     12,
+     0,
+     5
+    ],
+    "LFI": [
+     74,
+     0,
+     0
+    ],
+    "PS": [
+     29,
+     0,
+     0
+    ],
+    "PCF": [
+     20,
+     1,
+     0
+    ],
+    "ECO": [
+     22,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "bureaux-vacants",
@@ -1306,7 +2202,49 @@
      "url": "https://datan.fr/votes/legislature-16/vote_3442"
     }
    ],
-   "contexte": "Avec le télétravail, de nombreux bureaux restent vides. L'amendement créait une taxe sur ces bureaux vacants, de 17 % de la valeur locative la première année à 50 % à partir de la troisième, pour encourager leur transformation en logements."
+   "contexte": "Avec le télétravail, de nombreux bureaux restent vides. L'amendement créait une taxe sur ces bureaux vacants, de 17 % de la valeur locative la première année à 50 % à partir de la troisième, pour encourager leur transformation en logements.",
+   "split": {
+    "LFI": [
+     9,
+     0,
+     0
+    ],
+    "ECO": [
+     1,
+     0,
+     0
+    ],
+    "PS": [
+     2,
+     0,
+     0
+    ],
+    "REN": [
+     21,
+     0,
+     0
+    ],
+    "RN": [
+     16,
+     0,
+     0
+    ],
+    "LR": [
+     3,
+     0,
+     0
+    ],
+    "HOR": [
+     2,
+     0,
+     0
+    ],
+    "MODEM": [
+     7,
+     2,
+     0
+    ]
+   }
   },
   {
    "id": "conge-violences",
@@ -1338,7 +2276,54 @@
      "url": "https://datan.fr/votes/legislature-17/vote_8640"
     }
    ],
-   "contexte": "L'article créait un congé spécifique pour les salariés victimes de violences sexuelles, notamment pour accomplir des démarches médicales, judiciaires ou sociales, sans perte d'emploi. Les débats ont porté sur sa durée et son coût pour les employeurs."
+   "contexte": "L'article créait un congé spécifique pour les salariés victimes de violences sexuelles, notamment pour accomplir des démarches médicales, judiciaires ou sociales, sans perte d'emploi. Les débats ont porté sur sa durée et son coût pour les employeurs.",
+   "split": {
+    "REN": [
+     13,
+     0,
+     3
+    ],
+    "LFI": [
+     19,
+     0,
+     0
+    ],
+    "PS": [
+     21,
+     0,
+     0
+    ],
+    "LR": [
+     3,
+     0,
+     0
+    ],
+    "ECO": [
+     8,
+     0,
+     0
+    ],
+    "LIOT": [
+     3,
+     0,
+     0
+    ],
+    "PCF": [
+     4,
+     0,
+     0
+    ],
+    "RN": [
+     76,
+     2,
+     0
+    ],
+    "UDR": [
+     1,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "rsa-15h",
@@ -1371,7 +2356,59 @@
      "url": "https://datan.fr/votes/legislature-16/vote_2557"
     }
    ],
-   "contexte": "Le revenu de solidarité active (RSA) garantit un revenu minimum aux personnes sans ressources. La loi « plein emploi » de 2023 conditionne son versement à au moins 15 heures d'activités hebdomadaires (formation, stage, accompagnement), adaptées à la situation de chacun."
+   "contexte": "Le revenu de solidarité active (RSA) garantit un revenu minimum aux personnes sans ressources. La loi « plein emploi » de 2023 conditionne son versement à au moins 15 heures d'activités hebdomadaires (formation, stage, accompagnement), adaptées à la situation de chacun.",
+   "split": {
+    "REN": [
+     54,
+     0,
+     0
+    ],
+    "LR": [
+     11,
+     0,
+     0
+    ],
+    "MODEM": [
+     14,
+     0,
+     0
+    ],
+    "HOR": [
+     7,
+     0,
+     0
+    ],
+    "RN": [
+     3,
+     1,
+     0
+    ],
+    "LFI": [
+     5,
+     0,
+     0
+    ],
+    "PS": [
+     6,
+     0,
+     0
+    ],
+    "ECO": [
+     5,
+     0,
+     0
+    ],
+    "PCF": [
+     2,
+     0,
+     0
+    ],
+    "LIOT": [
+     6,
+     0,
+     1
+    ]
+   }
   },
   {
    "id": "smic-1500",
@@ -1404,7 +2441,59 @@
      "url": "https://datan.fr/votes/legislature-16/vote_44"
     }
    ],
-   "contexte": "Le SMIC est le salaire minimum légal, revalorisé chaque année selon l'inflation. En juillet 2022, il s'élevait à environ 1 329 € net par mois. L'amendement le portait à 1 500 € net dès août 2022."
+   "contexte": "Le SMIC est le salaire minimum légal, revalorisé chaque année selon l'inflation. En juillet 2022, il s'élevait à environ 1 329 € net par mois. L'amendement le portait à 1 500 € net dès août 2022.",
+   "split": {
+    "LFI": [
+     69,
+     0,
+     0
+    ],
+    "PS": [
+     19,
+     0,
+     0
+    ],
+    "ECO": [
+     17,
+     0,
+     0
+    ],
+    "PCF": [
+     12,
+     0,
+     0
+    ],
+    "LIOT": [
+     1,
+     0,
+     0
+    ],
+    "REN": [
+     114,
+     0,
+     0
+    ],
+    "RN": [
+     69,
+     0,
+     1
+    ],
+    "LR": [
+     19,
+     0,
+     0
+    ],
+    "MODEM": [
+     32,
+     0,
+     0
+    ],
+    "HOR": [
+     20,
+     0,
+     2
+    ]
+   }
   },
   {
    "id": "refus-cdi",
@@ -1436,7 +2525,54 @@
      "url": "https://datan.fr/votes/legislature-16/vote_210"
     }
    ],
-   "contexte": "L'amendement assimilait le refus d'un CDI proposé à la fin d'un CDD à une démission, qui ne donne pas droit au chômage. Il a été rejeté, mais la loi finale de décembre 2022 prévoit la perte de l'allocation après deux refus de CDI en douze mois."
+   "contexte": "L'amendement assimilait le refus d'un CDI proposé à la fin d'un CDD à une démission, qui ne donne pas droit au chômage. Il a été rejeté, mais la loi finale de décembre 2022 prévoit la perte de l'allocation après deux refus de CDI en douze mois.",
+   "split": {
+    "RN": [
+     82,
+     0,
+     0
+    ],
+    "LR": [
+     14,
+     0,
+     0
+    ],
+    "HOR": [
+     10,
+     0,
+     1
+    ],
+    "REN": [
+     103,
+     0,
+     0
+    ],
+    "LFI": [
+     43,
+     0,
+     0
+    ],
+    "PCF": [
+     5,
+     0,
+     0
+    ],
+    "ECO": [
+     12,
+     0,
+     0
+    ],
+    "MODEM": [
+     28,
+     2,
+     0
+    ],
+    "PS": [
+     6,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "cdhr",
@@ -1467,7 +2603,49 @@
      "url": "https://datan.fr/votes/legislature-17/vote_21"
     }
    ],
-   "contexte": "La contribution différentielle sur les hauts revenus garantit que les foyers aux revenus très élevés paient au moins 20 % d'impôt sur leur revenu. Créée pour 2025 de façon temporaire, elle concerne environ 24 000 foyers."
+   "contexte": "La contribution différentielle sur les hauts revenus garantit que les foyers aux revenus très élevés paient au moins 20 % d'impôt sur leur revenu. Créée pour 2025 de façon temporaire, elle concerne environ 24 000 foyers.",
+   "split": {
+    "RN": [
+     60,
+     5,
+     1
+    ],
+    "LFI": [
+     53,
+     1,
+     0
+    ],
+    "PS": [
+     37,
+     7,
+     0
+    ],
+    "ECO": [
+     17,
+     2,
+     1
+    ],
+    "MODEM": [
+     4,
+     2,
+     2
+    ],
+    "LIOT": [
+     3,
+     1,
+     0
+    ],
+    "PCF": [
+     8,
+     0,
+     0
+    ],
+    "HOR": [
+     4,
+     1,
+     1
+    ]
+   }
   },
   {
    "id": "tranches-impot",
@@ -1501,7 +2679,64 @@
      "url": "https://datan.fr/votes/legislature-17/vote_10"
     }
    ],
-   "contexte": "L'impôt sur le revenu compte 5 tranches, de 0 % à 45 %. L'amendement proposait 14 tranches, avec des taux plus bas pour les revenus moyens et plus élevés au sommet."
+   "contexte": "L'impôt sur le revenu compte 5 tranches, de 0 % à 45 %. L'amendement proposait 14 tranches, avec des taux plus bas pour les revenus moyens et plus élevés au sommet.",
+   "split": {
+    "LFI": [
+     48,
+     0,
+     0
+    ],
+    "PS": [
+     7,
+     0,
+     0
+    ],
+    "ECO": [
+     18,
+     0,
+     3
+    ],
+    "PCF": [
+     2,
+     0,
+     0
+    ],
+    "RN": [
+     56,
+     0,
+     0
+    ],
+    "REN": [
+     18,
+     0,
+     0
+    ],
+    "LR": [
+     15,
+     0,
+     0
+    ],
+    "MODEM": [
+     3,
+     0,
+     0
+    ],
+    "HOR": [
+     7,
+     0,
+     1
+    ],
+    "LIOT": [
+     5,
+     2,
+     0
+    ],
+    "UDR": [
+     2,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "velo-entreprise",
@@ -1535,7 +2770,64 @@
      "url": "https://datan.fr/votes/legislature-17/vote_273"
     }
    ],
-   "contexte": "Les entreprises qui mettent une flotte de vélos à la disposition de leurs salariés pour les trajets domicile-travail peuvent déduire une partie du coût de leur impôt. L'amendement supprimait ce crédit d'impôt, prolongé jusqu'en 2027."
+   "contexte": "Les entreprises qui mettent une flotte de vélos à la disposition de leurs salariés pour les trajets domicile-travail peuvent déduire une partie du coût de leur impôt. L'amendement supprimait ce crédit d'impôt, prolongé jusqu'en 2027.",
+   "split": {
+    "RN": [
+     65,
+     0,
+     0
+    ],
+    "UDR": [
+     2,
+     1,
+     1
+    ],
+    "REN": [
+     18,
+     0,
+     0
+    ],
+    "LFI": [
+     36,
+     0,
+     0
+    ],
+    "PS": [
+     22,
+     0,
+     0
+    ],
+    "LR": [
+     2,
+     0,
+     0
+    ],
+    "ECO": [
+     15,
+     0,
+     0
+    ],
+    "MODEM": [
+     5,
+     0,
+     0
+    ],
+    "HOR": [
+     15,
+     0,
+     0
+    ],
+    "LIOT": [
+     3,
+     0,
+     0
+    ],
+    "PCF": [
+     2,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "messageries",
@@ -1566,7 +2858,49 @@
      "url": "https://datan.fr/votes/legislature-17/vote_1102"
     }
    ],
-   "contexte": "Les messageries chiffrées « de bout en bout » ne permettent même pas à l'opérateur de lire les messages. L'amendement obligeait les opérateurs à fournir aux services de renseignement le contenu des correspondances visées par une autorisation, sans exiger de déchiffrement généralisé."
+   "contexte": "Les messageries chiffrées « de bout en bout » ne permettent même pas à l'opérateur de lire les messages. L'amendement obligeait les opérateurs à fournir aux services de renseignement le contenu des correspondances visées par une autorisation, sans exiger de déchiffrement généralisé.",
+   "split": {
+    "LR": [
+     7,
+     0,
+     0
+    ],
+    "UDR": [
+     3,
+     0,
+     0
+    ],
+    "RN": [
+     43,
+     0,
+     0
+    ],
+    "LFI": [
+     19,
+     0,
+     0
+    ],
+    "PS": [
+     23,
+     0,
+     0
+    ],
+    "ECO": [
+     14,
+     0,
+     0
+    ],
+    "MODEM": [
+     6,
+     3,
+     3
+    ],
+    "PCF": [
+     2,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "eau-gratuite",
@@ -1597,7 +2931,49 @@
      "url": "https://datan.fr/votes/legislature-16/vote_131"
     }
    ],
-   "contexte": "Le prix de l'eau est fixé par chaque commune ou intercommunalité. L'amendement proposait de rendre gratuits les 40 premiers litres par jour et par personne, la quantité jugée nécessaire aux besoins essentiels."
+   "contexte": "Le prix de l'eau est fixé par chaque commune ou intercommunalité. L'amendement proposait de rendre gratuits les 40 premiers litres par jour et par personne, la quantité jugée nécessaire aux besoins essentiels.",
+   "split": {
+    "LFI": [
+     55,
+     0,
+     0
+    ],
+    "PS": [
+     19,
+     0,
+     0
+    ],
+    "ECO": [
+     18,
+     0,
+     0
+    ],
+    "PCF": [
+     10,
+     0,
+     0
+    ],
+    "REN": [
+     120,
+     0,
+     0
+    ],
+    "LR": [
+     19,
+     1,
+     2
+    ],
+    "MODEM": [
+     32,
+     0,
+     0
+    ],
+    "HOR": [
+     20,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "menu-vegetarien",
@@ -1629,7 +3005,54 @@
      "url": "https://datan.fr/votes/legislature-16/vote_1370"
     }
    ],
-   "contexte": "La loi Climat de 2021 impose déjà un menu végétarien par semaine dans les cantines scolaires. L'amendement imposait une option végétarienne chaque jour dans tous les restaurants collectifs qui proposent déjà plusieurs plats."
+   "contexte": "La loi Climat de 2021 impose déjà un menu végétarien par semaine dans les cantines scolaires. L'amendement imposait une option végétarienne chaque jour dans tous les restaurants collectifs qui proposent déjà plusieurs plats.",
+   "split": {
+    "LFI": [
+     26,
+     0,
+     0
+    ],
+    "PS": [
+     7,
+     0,
+     0
+    ],
+    "PCF": [
+     5,
+     0,
+     0
+    ],
+    "ECO": [
+     21,
+     0,
+     0
+    ],
+    "REN": [
+     58,
+     10,
+     4
+    ],
+    "RN": [
+     35,
+     0,
+     0
+    ],
+    "LR": [
+     5,
+     0,
+     1
+    ],
+    "MODEM": [
+     14,
+     6,
+     2
+    ],
+    "HOR": [
+     6,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "ivg-constitution",
@@ -1662,7 +3085,59 @@
      "url": "https://datan.fr/votes/legislature-16/vote_3289"
     }
    ],
-   "contexte": "Depuis mars 2024, l'article 34 de la Constitution dit que la loi détermine les conditions dans lesquelles s'exerce la liberté garantie à la femme d'avoir recours à une interruption volontaire de grossesse. Modifier la Constitution demande une majorité des trois cinquièmes au Congrès ou un référendum."
+   "contexte": "Depuis mars 2024, l'article 34 de la Constitution dit que la loi détermine les conditions dans lesquelles s'exerce la liberté garantie à la femme d'avoir recours à une interruption volontaire de grossesse. Modifier la Constitution demande une majorité des trois cinquièmes au Congrès ou un référendum.",
+   "split": {
+    "REN": [
+     164,
+     0,
+     0
+    ],
+    "RN": [
+     46,
+     12,
+     14
+    ],
+    "LFI": [
+     75,
+     0,
+     0
+    ],
+    "LR": [
+     40,
+     15,
+     4
+    ],
+    "MODEM": [
+     47,
+     0,
+     2
+    ],
+    "PS": [
+     31,
+     0,
+     0
+    ],
+    "HOR": [
+     26,
+     0,
+     0
+    ],
+    "ECO": [
+     23,
+     0,
+     0
+    ],
+    "LIOT": [
+     19,
+     1,
+     2
+    ],
+    "PCF": [
+     20,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "reparation-homosexualite",
@@ -1695,7 +3170,59 @@
      "url": "https://datan.fr/votes/legislature-16/vote_3436"
     }
    ],
-   "contexte": "La France a dépénalisé l'homosexualité en 1791, mais une loi de 1942, maintenue après-guerre, a créé une majorité sexuelle différente pour les relations homosexuelles, abrogée seulement en 1982. Le Sénat avait retiré l'indemnisation ; l'Assemblée l'a rétablie, et la navette entre les deux chambres a continué."
+   "contexte": "La France a dépénalisé l'homosexualité en 1791, mais une loi de 1942, maintenue après-guerre, a créé une majorité sexuelle différente pour les relations homosexuelles, abrogée seulement en 1982. Le Sénat avait retiré l'indemnisation ; l'Assemblée l'a rétablie, et la navette entre les deux chambres a continué.",
+   "split": {
+    "REN": [
+     88,
+     0,
+     0
+    ],
+    "RN": [
+     56,
+     0,
+     0
+    ],
+    "LFI": [
+     47,
+     0,
+     0
+    ],
+    "LR": [
+     12,
+     0,
+     0
+    ],
+    "MODEM": [
+     33,
+     0,
+     0
+    ],
+    "PS": [
+     31,
+     0,
+     0
+    ],
+    "HOR": [
+     22,
+     0,
+     0
+    ],
+    "ECO": [
+     20,
+     0,
+     0
+    ],
+    "LIOT": [
+     12,
+     0,
+     0
+    ],
+    "PCF": [
+     10,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "videosurveillance-algo",
@@ -1727,7 +3254,54 @@
      "url": "https://datan.fr/votes/legislature-16/vote_1274"
     }
    ],
-   "contexte": "La loi JO 2024 a autorisé, à titre expérimental et sans reconnaissance faciale, l'analyse automatique des images de vidéoprotection et de drones lors de grands événements, pour détecter huit types de situations prédéfinies. L'expérimentation a ensuite été prolongée. Des ONG comme Amnesty International ont alerté sur les risques pour les libertés."
+   "contexte": "La loi JO 2024 a autorisé, à titre expérimental et sans reconnaissance faciale, l'analyse automatique des images de vidéoprotection et de drones lors de grands événements, pour détecter huit types de situations prédéfinies. L'expérimentation a ensuite été prolongée. Des ONG comme Amnesty International ont alerté sur les risques pour les libertés.",
+   "split": {
+    "REN": [
+     30,
+     0,
+     0
+    ],
+    "RN": [
+     10,
+     0,
+     0
+    ],
+    "LR": [
+     3,
+     0,
+     0
+    ],
+    "MODEM": [
+     9,
+     0,
+     0
+    ],
+    "HOR": [
+     6,
+     0,
+     0
+    ],
+    "LFI": [
+     6,
+     0,
+     0
+    ],
+    "PS": [
+     3,
+     0,
+     0
+    ],
+    "PCF": [
+     2,
+     0,
+     0
+    ],
+    "ECO": [
+     3,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "superprofits",
@@ -1759,7 +3333,54 @@
      "url": "https://datan.fr/votes/legislature-16/vote_105"
     }
    ],
-   "contexte": "L'amendement visait les entreprises pétrolières et gazières, le transport maritime et les sociétés d'autoroutes, pour 2022 et 2023. Ses auteurs estimaient la recette à environ 4 milliards d'euros pour le seul groupe TotalEnergies. Plusieurs pays européens ont créé des taxes de ce type à la même époque."
+   "contexte": "L'amendement visait les entreprises pétrolières et gazières, le transport maritime et les sociétés d'autoroutes, pour 2022 et 2023. Ses auteurs estimaient la recette à environ 4 milliards d'euros pour le seul groupe TotalEnergies. Plusieurs pays européens ont créé des taxes de ce type à la même époque.",
+   "split": {
+    "RN": [
+     35,
+     2,
+     1
+    ],
+    "LFI": [
+     37,
+     0,
+     0
+    ],
+    "PS": [
+     6,
+     0,
+     0
+    ],
+    "ECO": [
+     6,
+     0,
+     0
+    ],
+    "PCF": [
+     6,
+     0,
+     0
+    ],
+    "LIOT": [
+     3,
+     0,
+     1
+    ],
+    "REN": [
+     67,
+     0,
+     4
+    ],
+    "MODEM": [
+     22,
+     0,
+     0
+    ],
+    "HOR": [
+     12,
+     1,
+     0
+    ]
+   }
   },
   {
    "id": "renouvelables",
@@ -1791,7 +3412,54 @@
      "url": "https://datan.fr/votes/legislature-16/vote_823"
     }
    ],
-   "contexte": "La loi de mars 2023 crée des « zones d'accélération » définies avec les communes, raccourcit certains délais d'autorisation, impose des panneaux solaires sur les grands parkings et partage une partie des revenus avec les riverains. Les oppositions à ce vote venaient de motifs différents, voire opposés."
+   "contexte": "La loi de mars 2023 crée des « zones d'accélération » définies avec les communes, raccourcit certains délais d'autorisation, impose des panneaux solaires sur les grands parkings et partage une partie des revenus avec les riverains. Les oppositions à ce vote venaient de motifs différents, voire opposés.",
+   "split": {
+    "REN": [
+     166,
+     1,
+     0
+    ],
+    "MODEM": [
+     50,
+     1,
+     0
+    ],
+    "PS": [
+     28,
+     0,
+     2
+    ],
+    "HOR": [
+     23,
+     0,
+     5
+    ],
+    "LIOT": [
+     18,
+     0,
+     1
+    ],
+    "RN": [
+     87,
+     0,
+     0
+    ],
+    "LFI": [
+     70,
+     0,
+     0
+    ],
+    "LR": [
+     56,
+     1,
+     4
+    ],
+    "PCF": [
+     21,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "pnf-moyens",
@@ -1821,7 +3489,44 @@
      "url": "https://datan.fr/votes/legislature-16/vote_2857"
     }
    ],
-   "contexte": "Créé en 2013 après l'affaire Cahuzac, le Parquet national financier traite les affaires complexes de fraude fiscale, de corruption et d'atteintes à la probité. Selon l'amendement, une vingtaine de magistrats y suivaient environ 600 dossiers. L'OCDE avait critiqué le manque de moyens de la justice financière française."
+   "contexte": "Créé en 2013 après l'affaire Cahuzac, le Parquet national financier traite les affaires complexes de fraude fiscale, de corruption et d'atteintes à la probité. Selon l'amendement, une vingtaine de magistrats y suivaient environ 600 dossiers. L'OCDE avait critiqué le manque de moyens de la justice financière française.",
+   "split": {
+    "LFI": [
+     8,
+     0,
+     0
+    ],
+    "ECO": [
+     2,
+     0,
+     0
+    ],
+    "REN": [
+     26,
+     0,
+     0
+    ],
+    "RN": [
+     10,
+     0,
+     0
+    ],
+    "LR": [
+     2,
+     0,
+     0
+    ],
+    "MODEM": [
+     4,
+     0,
+     0
+    ],
+    "HOR": [
+     3,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "think-tanks",
@@ -1851,7 +3556,44 @@
      "url": "https://datan.fr/votes/legislature-16/vote_3576"
     }
    ],
-   "contexte": "La loi de juillet 2024 sur les ingérences étrangères crée un registre des personnes qui agissent pour le compte d'un État étranger auprès des décideurs publics, tenu par la Haute Autorité pour la transparence de la vie publique. L'amendement y ajoute l'obligation pour les laboratoires d'idées de déclarer leurs financements étrangers."
+   "contexte": "La loi de juillet 2024 sur les ingérences étrangères crée un registre des personnes qui agissent pour le compte d'un État étranger auprès des décideurs publics, tenu par la Haute Autorité pour la transparence de la vie publique. L'amendement y ajoute l'obligation pour les laboratoires d'idées de déclarer leurs financements étrangers.",
+   "split": {
+    "REN": [
+     41,
+     0,
+     0
+    ],
+    "RN": [
+     30,
+     0,
+     0
+    ],
+    "LR": [
+     3,
+     0,
+     0
+    ],
+    "MODEM": [
+     6,
+     0,
+     1
+    ],
+    "ECO": [
+     4,
+     0,
+     0
+    ],
+    "LIOT": [
+     3,
+     0,
+     0
+    ],
+    "LFI": [
+     14,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "tva-alimentation",
@@ -1882,7 +3624,49 @@
      "url": "https://datan.fr/votes/legislature-16/vote_1362"
     }
    ],
-   "contexte": "Les produits alimentaires sont soumis à une TVA réduite de 5,5 %. Le droit européen permet un taux nul sur certains produits depuis 2022. Le gouvernement de l'époque a préféré un « trimestre anti-inflation » négocié avec la grande distribution et des chèques ciblés."
+   "contexte": "Les produits alimentaires sont soumis à une TVA réduite de 5,5 %. Le droit européen permet un taux nul sur certains produits depuis 2022. Le gouvernement de l'époque a préféré un « trimestre anti-inflation » négocié avec la grande distribution et des chèques ciblés.",
+   "split": {
+    "RN": [
+     32,
+     0,
+     0
+    ],
+    "REN": [
+     72,
+     0,
+     0
+    ],
+    "LFI": [
+     16,
+     0,
+     0
+    ],
+    "MODEM": [
+     22,
+     0,
+     0
+    ],
+    "PS": [
+     12,
+     0,
+     0
+    ],
+    "HOR": [
+     6,
+     0,
+     0
+    ],
+    "PCF": [
+     3,
+     0,
+     0
+    ],
+    "ECO": [
+     22,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "isf",
@@ -1913,7 +3697,49 @@
      "url": "https://datan.fr/votes/legislature-16/vote_325"
     }
    ],
-   "contexte": "L'ISF taxait chaque année les patrimoines de plus de 1,3 million d'euros, actions comprises. Depuis 2018, l'impôt sur la fortune immobilière ne taxe que l'immobilier. Une évaluation de France Stratégie n'a pas permis de conclure que la suppression avait réorienté l'épargne vers les entreprises."
+   "contexte": "L'ISF taxait chaque année les patrimoines de plus de 1,3 million d'euros, actions comprises. Depuis 2018, l'impôt sur la fortune immobilière ne taxe que l'immobilier. Une évaluation de France Stratégie n'a pas permis de conclure que la suppression avait réorienté l'épargne vers les entreprises.",
+   "split": {
+    "LFI": [
+     56,
+     0,
+     0
+    ],
+    "PS": [
+     18,
+     0,
+     0
+    ],
+    "ECO": [
+     14,
+     0,
+     0
+    ],
+    "PCF": [
+     7,
+     0,
+     0
+    ],
+    "REN": [
+     96,
+     0,
+     0
+    ],
+    "LR": [
+     5,
+     0,
+     0
+    ],
+    "MODEM": [
+     31,
+     0,
+     0
+    ],
+    "HOR": [
+     21,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "abattement-dividendes",
@@ -1947,7 +3773,64 @@
      "url": "https://datan.fr/votes/legislature-17/vote_50"
     }
    ],
-   "contexte": "Depuis 2018, les dividendes sont taxés par défaut au prélèvement forfaitaire unique de 30 %. Les contribuables peuvent choisir le barème progressif, ce qui est souvent avantageux pour les revenus modestes, et bénéficient alors d'un abattement de 40 %."
+   "contexte": "Depuis 2018, les dividendes sont taxés par défaut au prélèvement forfaitaire unique de 30 %. Les contribuables peuvent choisir le barème progressif, ce qui est souvent avantageux pour les revenus modestes, et bénéficient alors d'un abattement de 40 %.",
+   "split": {
+    "LFI": [
+     51,
+     0,
+     0
+    ],
+    "PS": [
+     24,
+     0,
+     0
+    ],
+    "ECO": [
+     23,
+     0,
+     0
+    ],
+    "PCF": [
+     8,
+     0,
+     0
+    ],
+    "RN": [
+     74,
+     2,
+     0
+    ],
+    "REN": [
+     25,
+     0,
+     0
+    ],
+    "LR": [
+     9,
+     0,
+     0
+    ],
+    "MODEM": [
+     7,
+     0,
+     0
+    ],
+    "HOR": [
+     8,
+     0,
+     0
+    ],
+    "LIOT": [
+     2,
+     0,
+     0
+    ],
+    "UDR": [
+     3,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "successions",
@@ -1980,7 +3863,59 @@
      "url": "https://datan.fr/votes/legislature-16/vote_315"
     }
    ],
-   "contexte": "L'abattement de 100 000 € par parent et par enfant se renouvelle tous les quinze ans. Au-delà, les droits de succession en ligne directe vont de 5 % à 45 %. Le relèvement était une promesse de campagne de plusieurs candidats en 2022."
+   "contexte": "L'abattement de 100 000 € par parent et par enfant se renouvelle tous les quinze ans. Au-delà, les droits de succession en ligne directe vont de 5 % à 45 %. Le relèvement était une promesse de campagne de plusieurs candidats en 2022.",
+   "split": {
+    "RN": [
+     41,
+     0,
+     0
+    ],
+    "LR": [
+     4,
+     0,
+     0
+    ],
+    "LIOT": [
+     2,
+     0,
+     0
+    ],
+    "REN": [
+     55,
+     0,
+     1
+    ],
+    "LFI": [
+     34,
+     0,
+     0
+    ],
+    "MODEM": [
+     15,
+     0,
+     0
+    ],
+    "PS": [
+     7,
+     0,
+     0
+    ],
+    "HOR": [
+     13,
+     0,
+     0
+    ],
+    "ECO": [
+     6,
+     0,
+     0
+    ],
+    "PCF": [
+     4,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "souverainete-agricole",
@@ -2014,7 +3949,64 @@
      "url": "https://datan.fr/votes/legislature-17/vote_844"
     }
    ],
-   "contexte": "La loi, adoptée après les manifestations agricoles de 2024, vise le renouvellement des générations (la moitié des agriculteurs partiront à la retraite d'ici dix ans). Le Sénat y a ajouté un principe de « non-régression » de la souveraineté alimentaire et la dépénalisation de certaines atteintes non intentionnelles à l'environnement."
+   "contexte": "La loi, adoptée après les manifestations agricoles de 2024, vise le renouvellement des générations (la moitié des agriculteurs partiront à la retraite d'ici dix ans). Le Sénat y a ajouté un principe de « non-régression » de la souveraineté alimentaire et la dépénalisation de certaines atteintes non intentionnelles à l'environnement.",
+   "split": {
+    "MODEM": [
+     34,
+     0,
+     0
+    ],
+    "LIOT": [
+     20,
+     0,
+     2
+    ],
+    "LR": [
+     44,
+     0,
+     0
+    ],
+    "HOR": [
+     33,
+     0,
+     0
+    ],
+    "RN": [
+     121,
+     0,
+     0
+    ],
+    "UDR": [
+     16,
+     0,
+     0
+    ],
+    "REN": [
+     91,
+     0,
+     0
+    ],
+    "ECO": [
+     32,
+     0,
+     0
+    ],
+    "PCF": [
+     12,
+     0,
+     0
+    ],
+    "LFI": [
+     68,
+     0,
+     0
+    ],
+    "PS": [
+     48,
+     1,
+     0
+    ]
+   }
   },
   {
    "id": "aide-bio",
@@ -2045,7 +4037,49 @@
      "url": "https://datan.fr/votes/legislature-16/vote_2890"
     }
    ],
-   "contexte": "Les surfaces cultivées en bio ont fortement progressé jusqu'en 2021, puis la consommation a reculé avec l'inflation. Des producteurs ont dû vendre en conventionnel ou abandonner le label. L'État avait déjà débloqué des aides d'urgence en 2023."
+   "contexte": "Les surfaces cultivées en bio ont fortement progressé jusqu'en 2021, puis la consommation a reculé avec l'inflation. Des producteurs ont dû vendre en conventionnel ou abandonner le label. L'État avait déjà débloqué des aides d'urgence en 2023.",
+   "split": {
+    "LFI": [
+     12,
+     0,
+     0
+    ],
+    "LR": [
+     2,
+     0,
+     0
+    ],
+    "PS": [
+     2,
+     0,
+     0
+    ],
+    "ECO": [
+     3,
+     0,
+     0
+    ],
+    "PCF": [
+     2,
+     0,
+     0
+    ],
+    "LIOT": [
+     2,
+     0,
+     0
+    ],
+    "REN": [
+     14,
+     2,
+     0
+    ],
+    "MODEM": [
+     6,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "soignants-non-vaccines",
@@ -2078,7 +4112,59 @@
      "url": "https://datan.fr/votes/legislature-16/vote_1462"
     }
    ],
-   "contexte": "L'obligation vaccinale concernait les personnels des hôpitaux, des Ehpad et de l'aide à domicile. Environ 0,6 % d'entre eux avaient été suspendus. La Haute Autorité de santé a recommandé en mars 2023 de lever l'obligation, et la réintégration a eu lieu en mai 2023."
+   "contexte": "L'obligation vaccinale concernait les personnels des hôpitaux, des Ehpad et de l'aide à domicile. Environ 0,6 % d'entre eux avaient été suspendus. La Haute Autorité de santé a recommandé en mars 2023 de lever l'obligation, et la réintégration a eu lieu en mai 2023.",
+   "split": {
+    "RN": [
+     44,
+     0,
+     0
+    ],
+    "LFI": [
+     52,
+     0,
+     0
+    ],
+    "LR": [
+     11,
+     0,
+     0
+    ],
+    "PS": [
+     15,
+     1,
+     0
+    ],
+    "ECO": [
+     9,
+     0,
+     2
+    ],
+    "PCF": [
+     18,
+     0,
+     0
+    ],
+    "LIOT": [
+     7,
+     0,
+     0
+    ],
+    "REN": [
+     100,
+     0,
+     0
+    ],
+    "MODEM": [
+     25,
+     0,
+     0
+    ],
+    "HOR": [
+     11,
+     0,
+     0
+    ]
+   }
   },
   {
    "id": "solaire-parkings",
@@ -2110,7 +4196,54 @@
      "url": "https://datan.fr/votes/legislature-16/vote_736"
     }
    ],
-   "contexte": "L'obligation s'applique aux parkings extérieurs de plus de 1 500 m², avec des ombrières photovoltaïques sur au moins la moitié de la surface, selon un calendrier étalé jusqu'en 2028 selon la taille. Des dérogations existent pour raisons techniques, patrimoniales ou économiques."
+   "contexte": "L'obligation s'applique aux parkings extérieurs de plus de 1 500 m², avec des ombrières photovoltaïques sur au moins la moitié de la surface, selon un calendrier étalé jusqu'en 2028 selon la taille. Des dérogations existent pour raisons techniques, patrimoniales ou économiques.",
+   "split": {
+    "REN": [
+     23,
+     0,
+     0
+    ],
+    "MODEM": [
+     6,
+     0,
+     0
+    ],
+    "PS": [
+     3,
+     0,
+     0
+    ],
+    "HOR": [
+     2,
+     0,
+     0
+    ],
+    "ECO": [
+     6,
+     0,
+     1
+    ],
+    "PCF": [
+     1,
+     0,
+     0
+    ],
+    "LIOT": [
+     1,
+     0,
+     0
+    ],
+    "RN": [
+     4,
+     0,
+     0
+    ],
+    "LR": [
+     2,
+     0,
+     0
+    ]
+   }
   }
  ]
 }

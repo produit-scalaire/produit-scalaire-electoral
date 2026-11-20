@@ -18,7 +18,7 @@
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--display);font-size:16px;line-height:1.5;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 56px}
-main{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+main{max-width:860px;width:100%;margin:0 auto;display:flex;flex-direction:column;gap:20px}
 h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0}
 h1{font-weight:800;font-size:clamp(2.1rem,6.5vw,3.4rem);line-height:1;letter-spacing:-.02em}
 h2{font-weight:800;font-size:1.5rem;line-height:1.15}
@@ -80,7 +80,7 @@ summary{cursor:pointer;font-weight:800;list-style-position:outside}
 .method p{max-width:65ch}
 .err{color:var(--warn)}
 
-.shell{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
+.shell{max-width:1160px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
 .masthead{display:flex;flex-direction:column;gap:14px}
 .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.01em;font-size:1.05rem}
 .brand svg{flex:none}
@@ -90,11 +90,11 @@ summary{cursor:pointer;font-weight:800;list-style-position:outside}
 .tabs button[aria-selected="true"]{background:var(--ink);color:var(--bg)}
 .tabs small{font-weight:400;opacity:.8}
 a{color:var(--accent)}
-.prose{display:flex;flex-direction:column;gap:14px;font-family:var(--read);font-size:1.06rem;line-height:1.65}
+.prose{max-width:740px;width:100%;margin:0 auto;display:flex;flex-direction:column;gap:14px;font-family:var(--read);font-size:1.06rem;line-height:1.65}
 .prose h1{font-family:var(--display);font-size:clamp(1.8rem,5vw,2.4rem)}
 .prose h2{font-family:var(--display);font-size:1.3rem;margin-top:14px}
 .prose ul{margin:0;padding-left:1.2rem;display:flex;flex-direction:column;gap:8px}
-.prose p,.prose li{max-width:66ch}
+.prose p,.prose li{max-width:none}
 .anim-intro{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
 .frame{width:100%;border:0;border-radius:14px;min-height:640px;display:block;background:var(--bg)}
 .wide{max-width:1160px}
@@ -144,7 +144,7 @@ a{color:var(--accent)}
  <section id="tab-apropos" role="tabpanel" aria-labelledby="t-apropos" hidden>
   <article class="prose">__ABOUT__</article>
  </section>
- <div class="tricolore" aria-hidden="true" style="max-width:720px;margin:32px auto 0;height:3px"></div><footer class="foot"><span id="foot-version"></span><span>Aucune donnée collectée</span><span>Fonctionne hors connexion</span></footer>
+ <div class="tricolore" aria-hidden="true" style="margin:32px 0 0;height:3px"></div><footer class="foot"><span id="foot-version"></span><span>Aucune donnée collectée</span><span>Fonctionne hors connexion</span></footer>
 </div>
 
 <script id="data" type="application/json">__DATA__</script>
@@ -162,12 +162,15 @@ const PRIOR=2; // weight of a neutral prior: a party with few known positions is
 let DATA=null,S=null;
 
 function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+/* Cohésion : part nette du groupe qui a voté comme sa position ((avec − contre) / votants, abstentions comprises). 1 si inconnue. */
+function coh(q,pid){const c=q.split&&q.split[pid];if(!c)return 1;const t=c[0]+c[1]+c[2];return t?(c[0]-c[1])/t:1;}
+function cohTxt(q,pid){const c=q.split&&q.split[pid];if(!c)return "";const t=c[0]+c[1]+c[2];return `${Math.round(100*c[0]/t)} % du groupe (${c[0]} dans ce sens, ${c[1]} en sens inverse, ${c[2]} abst.)`;}
 function agree(q,u,p){if(q.ordered&&q.options.length>2)return 1-2*Math.abs(u-p)/(q.options.length-1);return u===p?1:-1;}
 
 function scores(subset){
   const out=DATA.parties.map(p=>({p,num:0,den:0,n:0,same:0}));
   for(const a of S.answers){if(a.choice===null||a.w===0)continue;const q=DATA.byId[a.id];if(subset&&!subset(q))continue;
-    out.forEach(o=>{const pos=q.positions[o.p.id];if(pos===undefined)return;o.num+=a.w*agree(q,a.choice,pos);o.den+=a.w;o.n++;if(pos===a.choice)o.same++;});}
+    out.forEach(o=>{const pos=q.positions[o.p.id];if(pos===undefined)return;o.num+=a.w*agree(q,a.choice,pos)*coh(q,o.p.id);o.den+=a.w;o.n++;if(pos===a.choice)o.same++;});}
   out.forEach(o=>{o.s=o.den?o.num/(o.den+PRIOR):null;o.pct=o.den?Math.round((o.num/o.den+1)*50):null;});
   return out.sort((a,b)=>(b.s??-9)-(a.s??-9));
 }
@@ -294,9 +297,9 @@ function confidence(){const w=S.answers.reduce((s,a)=>s+a.w,0);
 function calcRows(pid){
   const p=DATA.parties.find(x=>x.id===pid);let num=0,den=0;
   const rows=S.answers.filter(a=>a.choice!==null&&a.w>0&&DATA.byId[a.id].positions[pid]!==undefined).map(a=>{
-    const q=DATA.byId[a.id],pos=q.positions[pid],v=a.w*agree(q,a.choice,pos);num+=v;den+=a.w;
+    const q=DATA.byId[a.id],pos=q.positions[pid],v=a.w*agree(q,a.choice,pos)*coh(q,pid);num+=v;const ct=coh(q,pid)<0.9?cohTxt(q,pid):"";den+=a.w;
     return `<div class="crow"><div class="cq">${esc(q.question)}</div>
-      <div class="cc"><span>Vous : <b>${esc(q.options[a.choice])}</b> · importance ${a.w}</span><span>${esc(p.name)} : <b>${esc(q.options[pos])}</b></span></div>
+      <div class="cc"><span>Vous : <b>${esc(q.options[a.choice])}</b> · importance ${a.w}</span><span>${esc(p.name)} : <b>${esc(q.options[pos])}</b>${ct?` <small>· divisé : ${ct}</small>`:""}</span></div>
       <div class="cbar"><span class="mid"></span><i class="${v>=0?"pos":"neg"}" style="width:${Math.abs(v)/3*50}%;${v>=0?"left:50%":"right:50%"}"></i></div>
       <span class="cv">${v>0?"+":""}${Math.round(v*10)/10}</span></div>`;}).join("");
   const pct=den?Math.round((num/den+1)*50):null;
@@ -322,7 +325,7 @@ function renderResults(){
   </div>
   <div class="card">
     <h3>Le calcul, avec vos réponses</h3>
-    <p class="label">Pour chaque question, votre importance multipliée par l'accord (+1 même choix, −1 choix opposé). La somme, rapportée au total possible, donne le pourcentage.</p>
+    <p class="label">Pour chaque question, votre importance multipliée par l'accord (+1 même choix, −1 choix opposé). Quand un groupe s'est divisé, l'accord est multiplié par sa cohésion : la part de ses députés qui ont voté comme lui, moins celle qui a voté contre. La somme, rapportée au total possible, donne le pourcentage.</p>
     <label class="label">Comparer avec <select id="calc-p">${all.filter(o=>o.n).map(o=>`<option value="${o.p.id}">${esc(o.p.name)}</option>`).join("")}</select></label>
     <div id="calc"></div>
   </div>
@@ -336,7 +339,7 @@ function renderResults(){
   </div>
   <div class="card">
     <h3>Question par question</h3>
-    ${answered.map(a=>{const q=DATA.byId[a.id];const k=S.answers.indexOf(a);const same=DATA.parties.filter(p=>q.positions[p.id]===a.choice).map(p=>p.name);
+    ${answered.map(a=>{const q=DATA.byId[a.id];const k=S.answers.indexOf(a);const same=DATA.parties.filter(p=>q.positions[p.id]===a.choice).map(p=>p.name+(coh(q,p.id)<0.9&&q.split[p.id]?` (${Math.round(100*q.split[p.id][0]/q.split[p.id].reduce((x,y)=>x+y,0))} % du groupe)`:""));
       return `<details><summary>${esc(q.question)}</summary><div class="detail">
         <p class="you">Votre choix : <strong>${esc(q.options[a.choice])}</strong> <button class="btn ghost" data-edit="${k}">Changer</button></p>
         <p>${same.length?`Même choix que : <strong>${esc(same.join(", "))}</strong>`:"Aucun parti placé n'a fait ce choix."}</p>

@@ -8,6 +8,7 @@ data=json.dumps(d,ensure_ascii=False).replace('</','<\\/')
 
 def inline(s):
     s=html.escape(s,quote=False)
+    s=re.sub(r'\[([^\]]+)\]\((https?://[^)\s]+)\)',r'<a href="\2" target="_blank" rel="noopener">\1</a>',s)
     return re.sub(r'\*\*(.+?)\*\*',r'<strong>\1</strong>',s)
 def md(src):
     out=[];ul=False
