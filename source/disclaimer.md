@@ -45,5 +45,4 @@ Ce questionnaire n'existerait pas sans celles et ceux qui rendent l'information 
 - **L'[Assemblée nationale](https://www.assemblee-nationale.fr)**, qui ouvre ses données (scrutins, amendements, comptes rendus) à tous.
 - **[LCP](https://lcp.fr)** et **[Public Sénat](https://www.publicsenat.fr)**, les chaînes parlementaires, pour leurs comptes rendus clairs des débats et des votes.
 - **L'[iFRAP](https://www.ifrap.org)**, pour son relevé des votes sur les principaux amendements du budget.
-- **La [Banque des Territoires](https://www.banquedesterritoires.fr)**, **[Reporterre](https://reporterre.net)**, **[Wikipédia](https://fr.wikipedia.org)** et le **[CESE](https://www.lecese.fr)** (conventions citoyennes), pour leurs articles et synthèses.
 - **La vidéo « [¿Usted es de izquierda o derecha?](https://www.youtube.com/watch?v=myqYO7I6MBA) » de la chaîne Magic Markers**, qui a inspiré l'idée de représenter les opinions politiques dans plusieurs dimensions plutôt que sur une seule ligne.
