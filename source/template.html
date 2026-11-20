@@ -233,7 +233,7 @@ function renderStart(){
   </div>
   <div class="card">
     <h3>Combien de temps avez-vous ?</h3>
-    <p class="label" style="margin:0">Plus vous répondez à de questions, plus votre score est représentatif. Avec 10 questions, vous aurez une première idée. Avec 30 questions ou plus, le résultat sera bien plus solide.</p>
+    <p class="label" style="margin:0">Plus vous répondez à des questions, plus votre score est représentatif. Avec 10 questions, vous aurez une première idée. Avec 30 questions ou plus, le résultat sera bien plus solide.</p>
     <div class="lengths">
       ${[[10,"5 minutes","10 questions"],[30,"20 minutes","30 questions"],[n,"Sans limite",`toutes les questions, ${n} aujourd’hui`]].filter(([k])=>k<=n).map(([k,a,b])=>`<button class="length" data-n="${k}"><strong>${a}</strong><span>${b}</span></button>`).join("")}
     </div>
