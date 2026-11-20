@@ -59,7 +59,8 @@
   "societe": "Vivre ensemble",
   "ville": "La ville au quotidien",
   "consommer": "Consommer",
-  "probite": "Probité et transparence"
+  "probite": "Probité et transparence",
+  "services": "Services publics"
  },
  "questions": [
   {
@@ -5522,6 +5523,1552 @@
      8,
      0,
      1
+    ]
+   }
+  },
+  {
+   "id": "casier-amendes",
+   "theme": "justice",
+   "date": "15 juillet 2026",
+   "situation": "Certains délits, comme la conduite sans permis, l'usage de stupéfiants ou la vente à la sauvette, peuvent être punis d'une amende forfaitaire, sans passage devant un juge. Les inscrire au casier judiciaire permet de connaître les antécédents d'une personne ; ses opposants critiquent la multiplication de sanctions prononcées sans procès.",
+   "question": "Ces amendes :",
+   "options": [
+    "Inscrites au casier judiciaire",
+    "Pas d'inscription au casier"
+   ],
+   "positions": {
+    "RN": 0,
+    "REN": 0,
+    "LR": 0,
+    "MODEM": 0,
+    "HOR": 0,
+    "LIOT": 0,
+    "UDR": 0,
+    "LFI": 1,
+    "PS": 1,
+    "ECO": 1,
+    "PCF": 1
+   },
+   "actor": "Amendement du gouvernement au projet de loi sur l'ordre public, adopté le 15 juillet 2026 (148 pour, 68 contre).",
+   "nuance": "LIOT et l'UDR n'avaient que deux votants chacun.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-17/vote_8278"
+    }
+   ],
+   "contexte": "L'amende forfaitaire délictuelle sanctionne certains délits par une amende immédiate. L'inscription se ferait au bulletin n° 2 du casier, consultable par les juges et certaines administrations, et disparaîtrait trois ans après le paiement.",
+   "split": {
+    "RN": [
+     66,
+     0,
+     0
+    ],
+    "REN": [
+     30,
+     1,
+     0
+    ],
+    "LR": [
+     12,
+     0,
+     0
+    ],
+    "MODEM": [
+     17,
+     0,
+     0
+    ],
+    "HOR": [
+     13,
+     0,
+     0
+    ],
+    "LIOT": [
+     2,
+     0,
+     0
+    ],
+    "UDR": [
+     2,
+     0,
+     0
+    ],
+    "LFI": [
+     32,
+     0,
+     0
+    ],
+    "PS": [
+     16,
+     0,
+     0
+    ],
+    "ECO": [
+     12,
+     0,
+     0
+    ],
+    "PCF": [
+     6,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "rave-parties",
+   "theme": "justice",
+   "date": "8 juillet 2026",
+   "situation": "Des fêtes non déclarées rassemblent parfois des milliers de personnes sur des terrains privés ou agricoles. Durcir les sanctions contre leurs organisateurs et leurs participants protège riverains et propriétaires ; ses opposants jugent ces sanctions disproportionnées.",
+   "question": "Les rave-parties non déclarées :",
+   "options": [
+    "Sanctions durcies pour organisateurs et participants",
+    "Les règles actuelles"
+   ],
+   "positions": {
+    "RN": 0,
+    "REN": 0,
+    "LR": 0,
+    "MODEM": 0,
+    "HOR": 0,
+    "LIOT": 0,
+    "UDR": 0,
+    "LFI": 1,
+    "PS": 1,
+    "ECO": 1,
+    "PCF": 1
+   },
+   "actor": "Amendement du gouvernement au projet de loi sur l'ordre public, adopté le 8 juillet 2026 (142 pour, 80 contre).",
+   "nuance": "La gauche a voté contre, le reste de l'hémicycle pour.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-17/vote_8037"
+    }
+   ],
+   "contexte": "Une fête de plus de 500 personnes devait être déclarée en préfecture. L'amendement abaisse ce seuil à 250, fait de l'organisation d'une fête non déclarée un délit (2 ans de prison, 30 000 € d'amende), prévoit une amende de 500 € pour les participants et oblige les loueurs de matériel à tenir un registre de leurs clients.",
+   "split": {
+    "RN": [
+     54,
+     0,
+     0
+    ],
+    "REN": [
+     37,
+     2,
+     0
+    ],
+    "LR": [
+     11,
+     0,
+     0
+    ],
+    "MODEM": [
+     13,
+     0,
+     0
+    ],
+    "HOR": [
+     15,
+     0,
+     0
+    ],
+    "LIOT": [
+     5,
+     0,
+     0
+    ],
+    "UDR": [
+     6,
+     0,
+     0
+    ],
+    "LFI": [
+     37,
+     0,
+     0
+    ],
+    "PS": [
+     21,
+     0,
+     0
+    ],
+    "ECO": [
+     16,
+     0,
+     0
+    ],
+    "PCF": [
+     4,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "legitime-defense",
+   "theme": "justice",
+   "date": "7 juillet 2026",
+   "situation": "Quand un policier ou un gendarme fait usage de son arme, la justice apprécie au cas par cas si l'usage était justifié. Une présomption de légitime défense protège davantage les forces de l'ordre dans des situations dangereuses ; ses opposants craignent qu'elle rende plus difficile la mise en cause des tirs injustifiés.",
+   "question": "Pour les forces de l'ordre qui font usage de leur arme :",
+   "options": [
+    "Présumées en légitime défense",
+    "Appréciation au cas par cas, comme aujourd'hui"
+   ],
+   "positions": {
+    "RN": 0,
+    "REN": 0,
+    "LR": 0,
+    "MODEM": 0,
+    "HOR": 0,
+    "UDR": 0,
+    "LFI": 1,
+    "PS": 1,
+    "ECO": 1,
+    "PCF": 1
+   },
+   "actor": "Proposition de loi adoptée à l'Assemblée le 7 juillet 2026 (313 pour, 199 contre).",
+   "nuance": "LIOT était partagé (9 pour, 8 contre) et n'est pas placé. Une partie de Renaissance a voté contre (55 pour, 12 contre).",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-17/vote_7987"
+    }
+   ],
+   "contexte": "Le Code pénal prévoit déjà une présomption de légitime défense dans quelques cas, comme l'intrusion de nuit dans un domicile. Le texte l'étend aux policiers et gendarmes qui utilisent leur arme dans leurs fonctions : ce serait alors à l'accusation de prouver que l'usage n'était pas justifié.",
+   "split": {
+    "RN": [
+     122,
+     0,
+     0
+    ],
+    "REN": [
+     55,
+     12,
+     0
+    ],
+    "LR": [
+     48,
+     0,
+     0
+    ],
+    "MODEM": [
+     28,
+     1,
+     5
+    ],
+    "HOR": [
+     31,
+     0,
+     0
+    ],
+    "UDR": [
+     14,
+     0,
+     0
+    ],
+    "LFI": [
+     69,
+     0,
+     0
+    ],
+    "PS": [
+     62,
+     0,
+     0
+    ],
+    "ECO": [
+     29,
+     0,
+     0
+    ],
+    "PCF": [
+     17,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "courtes-peines",
+   "theme": "justice",
+   "date": "3 avril 2025",
+   "situation": "Depuis 2020, le juge ne peut plus prononcer de prison ferme de moins d'un mois, et les peines courtes sont en principe aménagées hors de prison (bracelet électronique, semi-liberté). Revenir là-dessus garantit que les peines prononcées sont exécutées ; ses opposants craignent d'aggraver la surpopulation des prisons.",
+   "question": "Les courtes peines de prison :",
+   "options": [
+    "Pouvoir les prononcer et les faire exécuter",
+    "Garder l'interdiction et les aménagements"
+   ],
+   "positions": {
+    "RN": 0,
+    "REN": 0,
+    "LR": 0,
+    "MODEM": 0,
+    "HOR": 0,
+    "LIOT": 0,
+    "UDR": 0,
+    "LFI": 1,
+    "PS": 1,
+    "ECO": 1,
+    "PCF": 1
+   },
+   "actor": "Proposition de loi adoptée à l'Assemblée le 3 avril 2025 (63 pour, 42 contre).",
+   "nuance": "Peu de députés présents. Le ministre de la Justice avait exprimé des réserves liées à la surpopulation carcérale.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-17/vote_1262"
+    }
+   ],
+   "contexte": "La réforme de la justice de 2019, appliquée depuis 2020, a interdit les peines de prison ferme de moins d'un mois et prévu que celles de moins de six mois soient en principe exécutées hors de prison. Les prisons françaises comptent plus de détenus que de places.",
+   "split": {
+    "RN": [
+     14,
+     0,
+     0
+    ],
+    "REN": [
+     4,
+     1,
+     2
+    ],
+    "LR": [
+     4,
+     0,
+     0
+    ],
+    "MODEM": [
+     6,
+     0,
+     0
+    ],
+    "HOR": [
+     29,
+     0,
+     0
+    ],
+    "LIOT": [
+     2,
+     0,
+     0
+    ],
+    "UDR": [
+     4,
+     0,
+     0
+    ],
+    "LFI": [
+     22,
+     0,
+     0
+    ],
+    "PS": [
+     8,
+     0,
+     0
+    ],
+    "ECO": [
+     7,
+     0,
+     0
+    ],
+    "PCF": [
+     3,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "mayotte",
+   "theme": "migrations",
+   "date": "6 février 2025",
+   "situation": "À Mayotte, un enfant né sur place ne devient français que si l'un de ses parents y résidait régulièrement depuis au moins trois mois, une règle déjà plus stricte que dans le reste de la France. La durcir ou la supprimer vise à réduire l'immigration vers l'île ; ses opposants y voient une remise en cause du droit du sol qui pourrait s'étendre au reste du pays.",
+   "question": "À Mayotte, le droit du sol :",
+   "options": [
+    "Le supprimer",
+    "Le durcir encore",
+    "Le garder tel quel"
+   ],
+   "positions": {
+    "RN": 0,
+    "UDR": 0,
+    "REN": 1,
+    "MODEM": 1,
+    "HOR": 1,
+    "LR": 1,
+    "LFI": 2,
+    "PS": 2,
+    "ECO": 2,
+    "PCF": 2
+   },
+   "actor": "Deux votes du 6 février 2025 : l'amendement supprimant le droit du sol à Mayotte est rejeté (119 pour, 132 contre), puis la loi qui le durcit est adoptée (162 pour, 93 contre).",
+   "nuance": "LR s'est abstenu sur la suppression et a voté le durcissement. LIOT, avec 2 ou 3 votants, n'est pas placé.",
+   "reliability": 3,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-17/vote_697"
+    },
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-17/vote_738"
+    }
+   ],
+   "contexte": "Depuis 2018, Mayotte a une règle à part pour l'accès à la nationalité des enfants nés sur l'île. La loi de 2025 exige que les deux parents, et non plus un seul, résident régulièrement à Mayotte, et allonge la durée de résidence demandée.",
+   "ordered": true
+  },
+  {
+   "id": "accord-algerie",
+   "theme": "migrations",
+   "date": "30 octobre 2025",
+   "situation": "Un accord de 1968 fixe des règles particulières pour l'entrée, le travail et le séjour des Algériens en France, plus favorables sur certains points et moins sur d'autres. Le dénoncer aligne leur situation sur le droit commun des étrangers ; ses opposants préfèrent le renégocier plutôt que de le rompre.",
+   "question": "L'accord franco-algérien de 1968 :",
+   "options": [
+    "Le dénoncer",
+    "Le garder ou le renégocier"
+   ],
+   "positions": {
+    "RN": 0,
+    "LR": 0,
+    "HOR": 0,
+    "UDR": 0,
+    "REN": 1,
+    "LFI": 1,
+    "PS": 1,
+    "ECO": 1,
+    "MODEM": 1,
+    "PCF": 1
+   },
+   "actor": "Proposition de résolution adoptée le 30 octobre 2025 à une voix près (185 pour, 184 contre). Elle n'a pas de portée juridique : seul le gouvernement peut dénoncer un accord.",
+   "nuance": "LIOT, avec 3 votants (2 pour, 1 contre), n'est pas placé.",
+   "reliability": 3,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-17/vote_3260"
+    }
+   ],
+   "contexte": "L'accord de 1968 crée un régime à part pour le séjour des Algériens : il facilite par exemple l'accès au titre de séjour de dix ans, mais ne donne pas accès à certains titres créés depuis. Le gouvernement souhaite le renégocier.",
+   "split": {
+    "RN": [
+     122,
+     0,
+     0
+    ],
+    "LR": [
+     26,
+     0,
+     0
+    ],
+    "HOR": [
+     17,
+     0,
+     0
+    ],
+    "UDR": [
+     15,
+     0,
+     0
+    ],
+    "REN": [
+     30,
+     0,
+     3
+    ],
+    "LFI": [
+     52,
+     0,
+     0
+    ],
+    "PS": [
+     53,
+     0,
+     0
+    ],
+    "ECO": [
+     32,
+     0,
+     0
+    ],
+    "MODEM": [
+     10,
+     0,
+     2
+    ],
+    "PCF": [
+     6,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "pub-malbouffe",
+   "theme": "sante",
+   "date": "4 novembre 2024",
+   "situation": "Les publicités pour les produits trop gras, sucrés ou salés sont nombreuses, y compris aux heures où les enfants regardent les écrans. Les taxer au profit de l'Assurance maladie incite à en réduire le volume face à la hausse de l'obésité ; ses opposants estiment que les industriels répercuteraient la taxe sur les prix et que la limite entre produits « nocifs » ou non est difficile à fixer.",
+   "question": "Ces publicités :",
+   "options": [
+    "Taxées au profit de l'Assurance maladie",
+    "Pas de taxe spécifique"
+   ],
+   "positions": {
+    "ECO": 0,
+    "LFI": 0,
+    "PS": 0,
+    "RN": 1,
+    "REN": 1,
+    "UDR": 1
+   },
+   "actor": "Amendement au budget de la Sécurité sociale 2025, rejeté le 4 novembre 2024 (42 pour, 53 contre).",
+   "nuance": "Le MoDem était partagé (3 pour, 2 contre). LR, Horizons, LIOT et le PCF avaient peu ou pas de votants.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-17/vote_228"
+    }
+   ],
+   "contexte": "La mesure reprenait une proposition de la Ligue contre le cancer. Ces publicités doivent déjà afficher un message sanitaire, comme « Pour votre santé, mangez au moins cinq fruits et légumes par jour ».",
+   "split": {
+    "ECO": [
+     8,
+     0,
+     0
+    ],
+    "LFI": [
+     23,
+     0,
+     0
+    ],
+    "PS": [
+     5,
+     1,
+     0
+    ],
+    "RN": [
+     34,
+     0,
+     0
+    ],
+    "REN": [
+     12,
+     2,
+     0
+    ],
+    "UDR": [
+     2,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "intermittents",
+   "theme": "argent",
+   "date": "23 octobre 2024",
+   "situation": "Les revenus des artistes et techniciens du spectacle varient beaucoup d'une année à l'autre, et un dispositif fiscal leur permet de lisser ces revenus sur plusieurs années. Le supprimer réduit une niche jugée coûteuse ; ses défenseurs rappellent qu'il compense l'irrégularité de ces métiers.",
+   "question": "Cet avantage fiscal :",
+   "options": [
+    "Supprimé",
+    "Maintenu"
+   ],
+   "positions": {
+    "RN": 0,
+    "UDR": 0,
+    "LR": 0,
+    "REN": 1,
+    "LFI": 1,
+    "PS": 1,
+    "ECO": 1,
+    "MODEM": 1,
+    "HOR": 1,
+    "PCF": 1,
+    "LIOT": 1
+   },
+   "actor": "Amendement au budget 2025, rejeté le 23 octobre 2024 (72 pour, 87 contre).",
+   "nuance": "LR a voté pour à 5 contre 1, avec 2 abstentions.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-17/vote_31"
+    }
+   ],
+   "contexte": "Selon l'auteur de l'amendement, 100 000 à 120 000 personnes en bénéficient, pour un coût estimé à plus d'un milliard d'euros par an. Ce dispositif fiscal est distinct du régime d'assurance chômage propre aux intermittents.",
+   "split": {
+    "RN": [
+     61,
+     0,
+     3
+    ],
+    "UDR": [
+     5,
+     0,
+     0
+    ],
+    "LR": [
+     5,
+     1,
+     2
+    ],
+    "REN": [
+     14,
+     0,
+     0
+    ],
+    "LFI": [
+     21,
+     0,
+     0
+    ],
+    "PS": [
+     18,
+     0,
+     0
+    ],
+    "ECO": [
+     13,
+     0,
+     0
+    ],
+    "MODEM": [
+     7,
+     0,
+     0
+    ],
+    "HOR": [
+     7,
+     0,
+     0
+    ],
+    "PCF": [
+     3,
+     0,
+     0
+    ],
+    "LIOT": [
+     2,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "loi-immigration",
+   "theme": "migrations",
+   "date": "19 décembre 2023",
+   "situation": "La loi immigration de 2023 durcit le regroupement familial et l'accès de certains étrangers aux prestations sociales, facilite les expulsions et ouvre une régularisation limitée pour des travailleurs sans papiers dans les métiers en tension. Ses partisans veulent mieux maîtriser l'immigration ; ses opposants contestent des mesures jugées discriminatoires, dont une partie a ensuite été censurée.",
+   "question": "Ce texte :",
+   "options": [
+    "L'adopter",
+    "Le rejeter"
+   ],
+   "positions": {
+    "REN": 0,
+    "RN": 0,
+    "LR": 0,
+    "MODEM": 0,
+    "HOR": 0,
+    "LFI": 1,
+    "PS": 1,
+    "ECO": 1,
+    "PCF": 1
+   },
+   "actor": "Texte final adopté le 19 décembre 2023 (349 pour, 186 contre). Le Conseil constitutionnel en a censuré une partie en janvier 2024.",
+   "nuance": "Une partie de Renaissance (20 contre, 17 abstentions) et du MoDem (15 abstentions) n'a pas suivi. LIOT était partagé.",
+   "reliability": 3,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_3213"
+    }
+   ],
+   "contexte": "Le projet du gouvernement a été durci au Sénat, rejeté par l'Assemblée en première lecture, puis réécrit en commission mixte paritaire. En janvier 2024, le Conseil constitutionnel a censuré plus d'un tiers des articles, dont les conditions de durée de séjour pour certaines prestations sociales.",
+   "split": {
+    "REN": [
+     131,
+     20,
+     17
+    ],
+    "RN": [
+     88,
+     0,
+     0
+    ],
+    "LR": [
+     62,
+     0,
+     0
+    ],
+    "MODEM": [
+     30,
+     5,
+     15
+    ],
+    "HOR": [
+     28,
+     2,
+     0
+    ],
+    "LFI": [
+     75,
+     0,
+     0
+    ],
+    "PS": [
+     31,
+     0,
+     0
+    ],
+    "ECO": [
+     23,
+     0,
+     0
+    ],
+    "PCF": [
+     21,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "espace-numerique",
+   "theme": "societe",
+   "date": "17 octobre 2023",
+   "situation": "Ce projet de loi permet de bannir des réseaux sociaux les auteurs de cyberharcèlement, impose aux sites pornographiques de vérifier l'âge de leurs visiteurs et crée une amende pour les outrages sexistes en ligne. Ses partisans veulent protéger les mineurs et les victimes ; ses opposants s'inquiètent pour les libertés et la protection des données lors des contrôles d'âge.",
+   "question": "Ces mesures :",
+   "options": [
+    "Les adopter",
+    "Les rejeter"
+   ],
+   "positions": {
+    "HOR": 0,
+    "LR": 0,
+    "REN": 0,
+    "LIOT": 0,
+    "MODEM": 0,
+    "PS": 0,
+    "LFI": 1
+   },
+   "actor": "Projet de loi adopté le 17 octobre 2023 (360 pour, 77 contre, 124 abstentions).",
+   "nuance": "Le RN, les Écologistes et le PCF se sont abstenus. La fin de l'anonymat en ligne et l'interdiction des VPN, proposées pendant les débats, n'ont pas été retenues.",
+   "reliability": 3,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_2796"
+    }
+   ],
+   "contexte": "Le texte vise à « sécuriser et réguler l'espace numérique ». Il renforce aussi les pouvoirs de l'Arcom pour bloquer les sites qui ne contrôlent pas l'âge et oblige les plateformes à retirer plus vite certains contenus.",
+   "split": {
+    "HOR": [
+     30,
+     0,
+     0
+    ],
+    "LR": [
+     61,
+     0,
+     0
+    ],
+    "REN": [
+     167,
+     0,
+     0
+    ],
+    "LIOT": [
+     21,
+     0,
+     0
+    ],
+    "MODEM": [
+     49,
+     0,
+     0
+    ],
+    "PS": [
+     31,
+     0,
+     0
+    ],
+    "LFI": [
+     75,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "creches",
+   "theme": "services",
+   "date": "28 novembre 2023",
+   "situation": "Les crèches privées à but lucratif accueillent une part croissante des jeunes enfants, avec des financements publics. Une commission d'enquête parlementaire permet d'examiner leur modèle économique et la qualité de l'accueil ; ses opposants estimaient qu'elle revenait à condamner d'avance tout un secteur.",
+   "question": "Une commission d'enquête sur les crèches :",
+   "options": [
+    "La créer",
+    "Ne pas la créer"
+   ],
+   "positions": {
+    "RN": 0,
+    "LFI": 0,
+    "PS": 0,
+    "HOR": 0,
+    "ECO": 0,
+    "PCF": 0,
+    "LIOT": 0,
+    "REN": 1,
+    "LR": 1,
+    "MODEM": 1
+   },
+   "actor": "Proposition de résolution adoptée le 28 novembre 2023 (178 pour, 161 contre).",
+   "nuance": "Horizons a voté pour (11 pour, 2 contre, 2 abstentions).",
+   "reliability": 3,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_3048"
+    }
+   ],
+   "contexte": "En 2022, la mort d'un bébé dans une crèche privée a lancé un débat sur les conditions d'accueil. La commission d'enquête, d'abord limitée aux crèches privées, a été élargie à l'ensemble des crèches.",
+   "split": {
+    "RN": [
+     46,
+     0,
+     0
+    ],
+    "LFI": [
+     68,
+     0,
+     0
+    ],
+    "PS": [
+     17,
+     0,
+     0
+    ],
+    "HOR": [
+     11,
+     2,
+     2
+    ],
+    "ECO": [
+     16,
+     0,
+     0
+    ],
+    "PCF": [
+     11,
+     0,
+     0
+    ],
+    "LIOT": [
+     9,
+     0,
+     3
+    ],
+    "REN": [
+     100,
+     0,
+     0
+    ],
+    "LR": [
+     30,
+     0,
+     2
+    ],
+    "MODEM": [
+     29,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "femmes-direction",
+   "theme": "travail",
+   "date": "5 juillet 2023",
+   "situation": "Dans la fonction publique, les femmes sont majoritaires parmi les agents mais minoritaires aux postes de direction. Imposer qu'à partir de 2026 la moitié des nominations à ces postes aillent à chaque sexe accélère l'égalité ; ses opposants préfèrent recruter seulement selon les compétences, sans quota.",
+   "question": "Pour les postes de direction de la fonction publique :",
+   "options": [
+    "Au moins 50 % de nominations de chaque sexe",
+    "Pas de quota"
+   ],
+   "positions": {
+    "REN": 0,
+    "LFI": 0,
+    "LR": 0,
+    "MODEM": 0,
+    "PS": 0,
+    "HOR": 0,
+    "ECO": 0,
+    "PCF": 0,
+    "LIOT": 0,
+    "RN": 1
+   },
+   "actor": "Texte final adopté le 5 juillet 2023 (119 pour, 35 contre).",
+   "nuance": "Le RN a été le seul groupe à voter contre.",
+   "reliability": 3,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_2137"
+    }
+   ],
+   "contexte": "Une loi de 2012 imposait déjà 40 % de chaque sexe parmi les premières nominations aux emplois de direction. Le texte relève ce seuil à 50 % à partir de 2026, sanctionne les employeurs publics sous les 40 % et prévoit des indicateurs annuels d'écart de salaire.",
+   "split": {
+    "REN": [
+     46,
+     0,
+     0
+    ],
+    "LFI": [
+     18,
+     0,
+     0
+    ],
+    "LR": [
+     10,
+     0,
+     0
+    ],
+    "MODEM": [
+     14,
+     0,
+     0
+    ],
+    "PS": [
+     8,
+     0,
+     0
+    ],
+    "HOR": [
+     6,
+     0,
+     0
+    ],
+    "ECO": [
+     7,
+     0,
+     0
+    ],
+    "PCF": [
+     4,
+     0,
+     0
+    ],
+    "LIOT": [
+     6,
+     0,
+     0
+    ],
+    "RN": [
+     35,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "prefectures",
+   "theme": "services",
+   "date": "31 octobre 2023",
+   "situation": "Obtenir un rendez-vous en préfecture, pour un titre de séjour par exemple, prend parfois des semaines, et beaucoup de démarches ne se font plus qu'en ligne. Ajouter 50 millions d'euros pour l'accueil physique des usagers améliore le service ; le gouvernement y était défavorable, l'amendement prenant ces crédits sur un autre programme du ministère.",
+   "question": "L'accueil en préfecture :",
+   "options": [
+    "50 millions d'euros de plus",
+    "Le budget prévu"
+   ],
+   "positions": {
+    "LFI": 0,
+    "REN": 1,
+    "MODEM": 1,
+    "HOR": 1
+   },
+   "actor": "Amendement au budget 2024, rejeté le 31 octobre 2023 (12 pour, 32 contre, 20 abstentions).",
+   "nuance": "Seuls 64 députés ont voté. Le RN s'est abstenu ; les autres groupes avaient un votant ou aucun.",
+   "reliability": 1,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_2826"
+    }
+   ],
+   "contexte": "Depuis 2017, les demandes de carte grise, de permis de conduire et d'une partie des titres de séjour passent par des plateformes en ligne. Le Défenseur des droits a signalé à plusieurs reprises les difficultés d'accès qui en résultent pour une partie des usagers.",
+   "split": {
+    "LFI": [
+     10,
+     0,
+     0
+    ],
+    "REN": [
+     23,
+     0,
+     0
+    ],
+    "MODEM": [
+     3,
+     0,
+     0
+    ],
+    "HOR": [
+     3,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "jets-prives",
+   "theme": "transports",
+   "date": "6 avril 2023",
+   "situation": "Les jets privés émettent, selon une ONG spécialisée, 5 à 14 fois plus de CO₂ par passager qu'un avion de ligne, et une partie des vols se fait à vide. Les interdire réduit ces émissions en touchant peu de personnes ; ses opposants mettent en avant une filière industrielle française et des emplois, et préfèrent miser sur la recherche pour une aviation moins polluante.",
+   "question": "Les vols en jet privé :",
+   "options": [
+    "Les interdire",
+    "Ne pas les interdire"
+   ],
+   "positions": {
+    "LFI": 0,
+    "ECO": 0,
+    "PS": 0,
+    "REN": 1,
+    "RN": 1,
+    "LR": 1,
+    "MODEM": 1,
+    "HOR": 1,
+    "LIOT": 1
+   },
+   "actor": "Proposition de loi d'interdiction vidée de son article principal par un amendement adopté le 6 avril 2023 (124 pour la suppression, 39 contre).",
+   "nuance": "Horizons et LIOT n'avaient que 4 et 2 votants, tous pour la suppression. Le PCF n'a pas voté.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_1403"
+    }
+   ],
+   "contexte": "Selon les auteurs de l'amendement, l'aviation d'affaires représente environ 17 % des mouvements de l'aviation civile française. Un député cite plus de 100 000 emplois directs et indirects dans le secteur. La proposition de loi visait à interdire ces vols pour des raisons climatiques.",
+   "split": {
+    "LFI": [
+     13,
+     0,
+     0
+    ],
+    "ECO": [
+     21,
+     0,
+     0
+    ],
+    "PS": [
+     4,
+     0,
+     1
+    ],
+    "REN": [
+     61,
+     0,
+     0
+    ],
+    "RN": [
+     32,
+     0,
+     0
+    ],
+    "LR": [
+     10,
+     0,
+     1
+    ],
+    "MODEM": [
+     13,
+     1,
+     3
+    ],
+    "HOR": [
+     4,
+     0,
+     0
+    ],
+    "LIOT": [
+     2,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "dons-organes-fin-de-vie",
+   "theme": "sante",
+   "date": "23 juin 2026",
+   "situation": "La loi sur l'aide à mourir pose la question des dons d'organes des personnes qui y auraient recours. Les interdire écarte tout risque de pression sur des patients ; ses opposants répondent que rien ne justifie de priver ces personnes d'un don qu'elles auraient choisi.",
+   "question": "Le don d'organes d'une personne ayant recours à l'aide à mourir :",
+   "options": [
+    "L'interdire",
+    "Le permettre, comme pour tout donneur"
+   ],
+   "positions": {
+    "LR": 0,
+    "RN": 0,
+    "UDR": 0,
+    "ECO": 1,
+    "MODEM": 1,
+    "LIOT": 1,
+    "HOR": 1,
+    "LFI": 1,
+    "PS": 1,
+    "REN": 1
+   },
+   "actor": "Amendement à la proposition de loi sur l'aide à mourir, rejeté le 23 juin 2026 (93 pour, 122 contre).",
+   "nuance": "Horizons a voté contre à 6 voix contre 2. Renaissance a voté contre à 19 voix contre 5. Le PCF n'avait qu'un votant.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-17/vote_7488"
+    }
+   ],
+   "contexte": "L'amendement prévoyait d'interdire tout prélèvement d'organes sur une personne ayant eu recours à l'aide à mourir. Le gouvernement et la commission s'y sont opposés, en estimant que les personnes éligibles à l'aide à mourir sont rarement en état de donner leurs organes.",
+   "split": {
+    "LR": [
+     16,
+     0,
+     0
+    ],
+    "RN": [
+     61,
+     2,
+     0
+    ],
+    "UDR": [
+     7,
+     0,
+     0
+    ],
+    "ECO": [
+     15,
+     0,
+     0
+    ],
+    "MODEM": [
+     13,
+     0,
+     1
+    ],
+    "LIOT": [
+     3,
+     0,
+     0
+    ],
+    "HOR": [
+     6,
+     2,
+     1
+    ],
+    "LFI": [
+     28,
+     0,
+     0
+    ],
+    "PS": [
+     34,
+     1,
+     0
+    ],
+    "REN": [
+     19,
+     5,
+     0
+    ]
+   }
+  },
+  {
+   "id": "parite-msa",
+   "theme": "alimentation",
+   "date": "22 janvier 2025",
+   "situation": "Les agriculteurs et salariés agricoles élisent leurs représentants à la Mutualité sociale agricole (MSA), leur caisse de sécurité sociale. Imposer des listes alternant femmes et hommes renforce la place des agricultrices, peu représentées dans ces instances ; ses opposants, qui se disent favorables à la parité, estiment qu'une règle stricte compliquerait la constitution de listes complètes.",
+   "question": "Pour les élections à la MSA :",
+   "options": [
+    "Listes paritaires obligatoires",
+    "Pas d'obligation de parité"
+   ],
+   "positions": {
+    "REN": 0,
+    "LFI": 0,
+    "PS": 0,
+    "HOR": 0,
+    "LIOT": 0,
+    "ECO": 0,
+    "LR": 0,
+    "RN": 1
+   },
+   "actor": "Amendement supprimant l'obligation de parité, rejeté le 22 janvier 2025 (54 pour, 68 contre).",
+   "nuance": "LR a voté contre l'amendement à 4 voix contre 1. L'UDR, le MoDem et le PCF avaient trois votants ou moins et ne sont pas placés.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-17/vote_585"
+    }
+   ],
+   "contexte": "La MSA gère la santé, la famille et la retraite du monde agricole. L'obligation de listes paritaires avait été ajoutée à une proposition de loi sur la démocratie agricole ; l'amendement voulait la retirer.",
+   "split": {
+    "REN": [
+     19,
+     0,
+     0
+    ],
+    "LFI": [
+     15,
+     0,
+     0
+    ],
+    "PS": [
+     13,
+     0,
+     0
+    ],
+    "HOR": [
+     6,
+     0,
+     0
+    ],
+    "LIOT": [
+     4,
+     0,
+     0
+    ],
+    "ECO": [
+     5,
+     0,
+     0
+    ],
+    "LR": [
+     4,
+     1,
+     0
+    ],
+    "RN": [
+     51,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "inscription-chomeurs",
+   "theme": "travail",
+   "date": "27 septembre 2023",
+   "situation": "Selon le gouvernement, seuls 40 % des allocataires du RSA étaient inscrits à Pôle emploi. Inscrire automatiquement toutes les personnes sans emploi, y compris au RSA ou suivies par une mission locale, permet de mieux les accompagner vers l'emploi ; ses opposants jugent cette inscription obligatoire infantilisante et contraire au libre choix des personnes.",
+   "question": "Les personnes sans emploi :",
+   "options": [
+    "Toutes inscrites automatiquement à France Travail",
+    "Inscription laissée au choix"
+   ],
+   "positions": {
+    "HOR": 0,
+    "LR": 0,
+    "REN": 0,
+    "MODEM": 0,
+    "RN": 1,
+    "LFI": 1,
+    "LIOT": 1,
+    "PS": 1,
+    "PCF": 1,
+    "ECO": 1
+   },
+   "actor": "Article 1 de la loi pour le plein emploi, adopté le 27 septembre 2023 (83 pour, 44 contre).",
+   "nuance": "Peu de députés présents. Le RN a voté contre en reprochant au texte de cibler les allocataires du RSA.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_2545"
+    }
+   ],
+   "contexte": "La loi pour le plein emploi a créé France Travail, qui remplace Pôle emploi. L'inscription automatique concerne les allocataires du RSA, les jeunes suivis par une mission locale et les personnes handicapées suivies par Cap emploi.",
+   "split": {
+    "HOR": [
+     7,
+     1,
+     0
+    ],
+    "LR": [
+     11,
+     0,
+     0
+    ],
+    "REN": [
+     56,
+     0,
+     0
+    ],
+    "MODEM": [
+     7,
+     0,
+     0
+    ],
+    "RN": [
+     16,
+     0,
+     0
+    ],
+    "LFI": [
+     14,
+     0,
+     0
+    ],
+    "LIOT": [
+     5,
+     0,
+     1
+    ],
+    "PS": [
+     4,
+     1,
+     0
+    ],
+    "PCF": [
+     2,
+     0,
+     0
+    ],
+    "ECO": [
+     2,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "chomage-conjoncture",
+   "theme": "travail",
+   "date": "4 octobre 2022",
+   "situation": "Les règles de l'assurance chômage étaient les mêmes quelle que soit la situation de l'emploi. Les durcir quand beaucoup de postes restent vacants, et les assouplir quand le chômage monte, incite au retour à l'emploi ; ses opposants y voient une baisse des droits des chômeurs décidée par décret.",
+   "question": "Les règles d'indemnisation du chômage :",
+   "options": [
+    "Varier selon la conjoncture",
+    "Rester les mêmes quelle que soit la conjoncture"
+   ],
+   "positions": {
+    "REN": 0,
+    "LR": 0,
+    "MODEM": 0,
+    "HOR": 0,
+    "RN": 1,
+    "LFI": 1,
+    "PS": 1,
+    "ECO": 1,
+    "PCF": 1,
+    "LIOT": 1
+   },
+   "actor": "Article 1 de la loi sur le marché du travail, adopté le 4 octobre 2022 (203 pour, 165 contre).",
+   "nuance": "LIOT a voté contre, avec 5 abstentions.",
+   "reliability": 3,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_208"
+    }
+   ],
+   "contexte": "Depuis février 2023, la durée d'indemnisation des nouveaux demandeurs d'emploi est réduite de 25 % lorsque le taux de chômage est bas, avec un minimum de six mois.",
+   "split": {
+    "REN": [
+     124,
+     0,
+     0
+    ],
+    "LR": [
+     22,
+     1,
+     4
+    ],
+    "MODEM": [
+     35,
+     0,
+     0
+    ],
+    "HOR": [
+     22,
+     0,
+     0
+    ],
+    "RN": [
+     68,
+     0,
+     0
+    ],
+    "LFI": [
+     51,
+     0,
+     0
+    ],
+    "PS": [
+     10,
+     0,
+     0
+    ],
+    "ECO": [
+     16,
+     0,
+     0
+    ],
+    "PCF": [
+     9,
+     0,
+     0
+    ],
+    "LIOT": [
+     9,
+     0,
+     5
+    ]
+   }
+  },
+  {
+   "id": "eoliennes-saturation",
+   "theme": "environnement",
+   "date": "7 décembre 2022",
+   "situation": "Dans certains territoires, les éoliennes terrestres sont très concentrées, alors que d'autres en comptent peu. Un indicateur de saturation par département permettrait à l'État d'en tenir compte avant d'autoriser de nouveaux parcs ; ses opposants craignaient qu'il crée de nouveaux contentieux.",
+   "question": "Avant d'autoriser de nouvelles éoliennes :",
+   "options": [
+    "Tenir compte d'un seuil de saturation par département",
+    "Pas d'indicateur de saturation"
+   ],
+   "positions": {
+    "RN": 0,
+    "LR": 0,
+    "PCF": 0,
+    "REN": 1,
+    "MODEM": 1,
+    "HOR": 1,
+    "LIOT": 1
+   },
+   "actor": "Amendement à la loi d'accélération des énergies renouvelables, rejeté le 7 décembre 2022 (81 pour, 85 contre).",
+   "nuance": "Les Écologistes étaient partagés (4 pour, 5 contre), le PS s'est abstenu et LFI n'a pas voté. Le rapporteur et le gouvernement avaient jugé l'idée « intéressante » mais mal placée dans le texte.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_672"
+    }
+   ],
+   "contexte": "La loi d'accélération des énergies renouvelables, adoptée début 2023, vise à raccourcir les délais d'installation des parcs éoliens et solaires. L'indicateur aurait mesuré, département par département, la densité d'éoliennes déjà installées.",
+   "split": {
+    "RN": [
+     48,
+     0,
+     0
+    ],
+    "LR": [
+     15,
+     1,
+     0
+    ],
+    "PCF": [
+     12,
+     0,
+     0
+    ],
+    "REN": [
+     57,
+     1,
+     0
+    ],
+    "MODEM": [
+     15,
+     0,
+     0
+    ],
+    "HOR": [
+     4,
+     0,
+     0
+    ],
+    "LIOT": [
+     3,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "reserve-parlementaire",
+   "theme": "probite",
+   "date": "8 novembre 2022",
+   "situation": "Jusqu'en 2017, chaque député disposait d'une enveloppe, la réserve parlementaire, pour subventionner des associations et des communes de sa circonscription. La rétablir rapproche les élus du terrain ; ses opposants y voient un système discrétionnaire et propice au clientélisme.",
+   "question": "La réserve parlementaire :",
+   "options": [
+    "La rétablir",
+    "Ne pas la rétablir"
+   ],
+   "positions": {
+    "LR": 0,
+    "RN": 0,
+    "LIOT": 0,
+    "PS": 0,
+    "HOR": 1,
+    "REN": 1,
+    "LFI": 1,
+    "MODEM": 1
+   },
+   "actor": "Amendement au budget rectificatif 2022, rejeté le 8 novembre 2022 (84 pour, 117 contre).",
+   "nuance": "Les Écologistes étaient partagés (4 pour, 4 contre) ; le PCF s'est abstenu.",
+   "reliability": 3,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_530"
+    }
+   ],
+   "contexte": "Supprimée par la loi pour la confiance dans la vie politique de 2017, la réserve a été en partie remplacée par un fonds pour le développement de la vie associative, réparti par l'administration après avis de commissions où siègent des élus.",
+   "split": {
+    "LR": [
+     23,
+     0,
+     0
+    ],
+    "RN": [
+     43,
+     0,
+     0
+    ],
+    "LIOT": [
+     4,
+     0,
+     0
+    ],
+    "PS": [
+     7,
+     0,
+     1
+    ],
+    "HOR": [
+     10,
+     2,
+     0
+    ],
+    "REN": [
+     54,
+     0,
+     0
+    ],
+    "LFI": [
+     26,
+     0,
+     0
+    ],
+    "MODEM": [
+     23,
+     0,
+     3
     ]
    }
   }
