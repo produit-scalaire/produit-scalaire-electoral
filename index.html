@@ -267,9 +267,9 @@ const AXES=[
  {id:&quot;fin&quot;,short:&quot;Aide à mourir&quot;,pour:&quot;Créer un droit à l'aide à mourir, sous conditions strictes&quot;,date:&quot;27 mai 2025&quot;,
   p:{LFI:1,PCF:1,ECO:1,PS:1,LIOT:1,MODEM:1,REN:1,HOR:1,LR:-1,UDR:-1,RN:-1},
   note:&quot;La coupure se déplace : elle passe entre le centre et la droite. Renaissance vote avec la gauche.&quot;,src:&quot;https://datan.fr/votes/legislature-17/vote_2107/explication_PA840665&quot;,srcName:&quot;datan.fr&quot;},
- {id:&quot;ret&quot;,short:&quot;Annuler les 64 ans&quot;,pour:&quot;Annuler le recul de l'âge de la retraite à 64 ans (le suspendre ou revenir à 62 ans)&quot;,date:&quot;2024-2025&quot;,
-  p:{LFI:1,PCF:1,ECO:1,PS:1,LIOT:1,RN:1,MODEM:-1,REN:-1,HOR:-1,LR:-1},
-  note:&quot;LFI, le PCF, le PS, les Écologistes, LIOT et le RN veulent annuler le passage de la retraite à 64 ans. Le bloc central et LR veulent le garder. Les deux bouts de la ligne se retrouvent du même côté.&quot;,src:&quot;https://www.publicsenat.fr/actualites/politique/lassemblee-nationale-valide-la-suspension-de-la-reforme-des-retraites&quot;,srcName:&quot;Public Sénat&quot;},
+ {id:&quot;ret&quot;,short:&quot;Retraite à 64 ans&quot;,pour:&quot;Garder l'âge légal de départ à la retraite à 64 ans&quot;,date:&quot;2024-2025&quot;,
+  p:{LFI:-1,PCF:-1,ECO:-1,PS:-1,LIOT:-1,RN:-1,MODEM:1,REN:1,HOR:1,LR:1},
+  note:&quot;LFI, le PCF, le PS, les Écologistes, LIOT et le RN sont contre la retraite à 64 ans (suspension ou retour à 62 ans). Le bloc central et LR veulent la garder. Les deux bouts de la ligne se retrouvent du même côté.&quot;,src:&quot;https://www.publicsenat.fr/actualites/politique/lassemblee-nationale-valide-la-suspension-de-la-reforme-des-retraites&quot;,srcName:&quot;Public Sénat&quot;},
  {id:&quot;zfe&quot;,short:&quot;Supprimer les ZFE&quot;,pour:&quot;Supprimer partout les zones à faibles émissions&quot;,date:&quot;14 avril 2026&quot;,
   p:{RN:1,UDR:1,LR:1,LFI:1,REN:-1,MODEM:-1,HOR:-1,PS:-1},
   note:&quot;LFI vote avec le RN, l'UDR et LR pour supprimer les ZFE. Le PS se range avec le bloc central. La ligne zigzague.&quot;,src:&quot;https://lcp.fr/actualites/la-suppression-des-zfe-confirmee-lors-de-l-ultime-vote-sur-la-loi-de-simplification-a-l&quot;,srcName:&quot;LCP&quot;},
@@ -280,7 +280,7 @@ const LINE_SUBJ=[&quot;zfe&quot;,&quot;ret&quot;,&quot;fra&quot;];
 const N=AXES.length,vec=pid=>AXES.map(a=>a.p[pid]||0);
 
 /* rien n'est prérempli : chaque sujet attend une position et une importance */
-const state={step:0,subj:0,party:&quot;PS&quot;,cmp:null,you:{pest:{v:-1,w:2},fin:{v:1,w:3},ret:{v:1,w:1},zfe:{v:-1,w:1},fra:{v:-1,w:2}}}; /* une personne d'exemple : l'animation explique, le questionnaire viendra ensuite */
+const state={step:0,subj:0,party:null,cmp:null,you:{pest:{v:-1,w:2},fin:{v:1,w:3},ret:{v:-1,w:1},zfe:{v:-1,w:1},fra:{v:-1,w:2}}}; /* une personne d'exemple : l'animation explique, le questionnaire viendra ensuite */
 const done=id=>state.you[id].v!==null&amp;&amp;state.you[id].w!==null;
 const U=id=>done(id)?state.you[id]:{v:0,w:0};
 const nDone=()=>AXES.filter(a=>done(a.id)).length;
@@ -427,7 +427,7 @@ const STEPS=[
   <div class=&quot;math&quot;>exemple = (${AXES.map(a=>sgn(state.you[a.id].v)).join(&quot;, &quot;)})<br><span class=&quot;muted&quot;>${AXES.map(a=>a.short).join(&quot; · &quot;)}</span></div>
   <p style=&quot;margin-top:.8rem&quot;>Ensemble, ces ${N} coordonnées forment son vecteur. Il la décrit sujet par sujet, mieux qu'une étiquette. Le questionnaire construira le tien de la même façon.</p>`},
  {e:&quot;Étape 5 · les partis&quot;,h:&quot;Les partis sont des vecteurs aussi&quot;,
-  html:()=>{const p=PARTIES.find(x=>x.id===state.party);return `<p>On applique la même règle aux partis, avec leurs votes à l'Assemblée : <b>+1</b> s'ils ont voté pour, <b>−1</b> contre, <b>0</b> s'ils se sont abstenus ou divisés. Chaque parti devient un vecteur dans le même espace. La figure les superpose, sujet par sujet : quand le point du parti tombe dans l'anneau, la personne et le parti sont du même côté.</p>${partyChips()}
+  html:()=>{const p=PARTIES.find(x=>x.id===state.party);if(!p)return `<p>On applique la même règle aux partis, avec leurs votes à l'Assemblée : <b>+1</b> s'ils ont voté pour, <b>−1</b> contre, <b>0</b> s'ils se sont abstenus ou divisés. Chaque parti devient un vecteur dans le même espace.</p>${partyChips()}<p style=&quot;margin-top:.8rem&quot;><b>Choisis un parti</b> pour voir son vecteur à côté de celui de la personne.</p>`;return `<p>On applique la même règle aux partis, avec leurs votes à l'Assemblée : <b>+1</b> s'ils ont voté pour, <b>−1</b> contre, <b>0</b> s'ils se sont abstenus ou divisés. Chaque parti devient un vecteur dans le même espace. La figure les superpose, sujet par sujet : quand le point du parti tombe dans l'anneau, la personne et le parti sont du même côté.</p>${partyChips()}
   <div class=&quot;math&quot;>${p.name} = (${vec(p.id).map(sgn).join(&quot;, &quot;)})<br><span class=&quot;muted&quot;>${AXES.map(a=>a.short).join(&quot; · &quot;)}</span></div>
   <p style=&quot;margin-top:.8rem&quot;>Change de parti : sur certains sujets ils sont du même côté, sur d'autres non.</p>
   <p>Même chose pour chaque député : son vecteur, ce sont ses votes à lui. Il peut s'écarter de son groupe, comme les 14 députés Renaissance qui ont voté contre la loi Duplomb.</p>`;}},
