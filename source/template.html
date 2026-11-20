@@ -26,6 +26,8 @@ h3{font-weight:800;font-size:1.05rem}
 p{margin:0}
 .lede{font-family:var(--read);font-size:1.15rem;color:var(--muted);max-width:60ch}
 .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.card.notice{border-left:4px solid var(--accent,currentColor)}
+.card.notice p{margin:0;font-family:var(--read);line-height:1.5}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:14px;min-width:0}
 .row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .btn{font-family:var(--display);font-weight:800;font-size:15px;border-radius:10px;padding:12px 18px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
@@ -221,13 +223,18 @@ function guessHTML(all){
 function renderStart(){
   const n=DATA.questions.length;
   app.innerHTML=`
-  <p class="eyebrow">Questionnaire · ${n} situations réelles</p>
+  <p class="eyebrow">Simulateur de l'Assemblée nationale · ${n} votes et décisions réels</p>
   <h1>Personne ne pense exactement comme vous.</h1>
-  <p class="lede">Ici, on part de vous : vos opinions, vos priorités. Chaque situation est tirée d'un vote ou d'une décision réelle.</p>
+  <p class="lede">Prenez la place d'un député. On vous met face aux vrais votes, sans dire qui a voté quoi. Vous choisissez, vous dites ce qui compte pour vous, et on regarde quel parti a voté le plus comme vous.</p>
+  <div class="card notice">
+    <h3>Toutes les opinions ne trouvent pas leur place</h3>
+    <p>Les réponses proposées viennent de votes et de choix réels. Une idée qui n'a jamais été soumise au vote ne peut donc pas apparaître, même si beaucoup de gens la partagent. Par exemple, on peut penser que l'âge de départ à la retraite devrait dépendre du métier, parce que certains métiers usent bien plus le corps que d'autres. Des dispositifs partiels existent (le compte de prévention de la pénibilité, les départs anticipés de certains métiers de la fonction publique), mais un âge de départ fixé métier par métier n'a jamais été voté en tant que tel.</p>
+    <p><strong>Si votre position n'y figure pas, choisissez la plus proche ou passez la question.</strong></p>
+  </div>
   <div class="card">
     <h3>Combien de temps avez-vous ?</h3>
     <div class="lengths">
-      ${[[8,"4 minutes","8 questions"],[16,"8 minutes","16 questions"],[n,"Sans limite",`toutes les questions, ${n} aujourd’hui`]].filter(([k])=>k<=n).map(([k,a,b])=>`<button class="length" data-n="${k}"><strong>${a}</strong><span>${b}</span></button>`).join("")}
+      ${[[10,"5 minutes","10 questions"],[40,"20 minutes","40 questions"],[n,"Sans limite",`toutes les questions, ${n} aujourd’hui`]].filter(([k])=>k<=n).map(([k,a,b])=>`<button class="length" data-n="${k}"><strong>${a}</strong><span>${b}</span></button>`).join("")}
     </div>
     __DOWNLOAD2__
   </div>
