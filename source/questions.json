@@ -162,7 +162,7 @@
    "question": "La loi devrait :",
    "options": [
     "Permettre une aide à mourir, sous conditions strictes",
-    "Développer les soins palliatifs, sans aide à mourir"
+    "Ne pas créer d'aide à mourir"
    ],
    "positions": {
     "LFI": 0,
@@ -171,14 +171,13 @@
     "PS": 0,
     "REN": 0,
     "MODEM": 0,
-    "HOR": 0,
     "LR": 1,
     "UDR": 1,
     "RN": 1,
     "LIOT": 0
    },
    "actor": "Proposition de loi sur l'aide à mourir, première lecture : 305 pour, 199 contre.",
-   "nuance": "Sujet de conscience : beaucoup de votes individuels différents. Horizons s'est presque coupé en deux (14 pour, 13 contre) et 19 députés RN ont voté pour. LIOT a voté pour à la majorité, mais divisé (11 pour, 9 abstentions, 3 contre).",
+   "nuance": "Sujet de conscience : beaucoup de votes individuels différents. Horizons, presque coupé en deux (14 pour, 13 contre), n'est pas placé, et 19 députés RN ont voté pour. LIOT a voté pour à la majorité, mais divisé (11 pour, 9 abstentions, 3 contre).",
    "reliability": 3,
    "sources": [
     {
@@ -217,11 +216,6 @@
      20,
      9,
      7
-    ],
-    "HOR": [
-     14,
-     13,
-     6
     ],
     "LR": [
      34,
@@ -408,7 +402,7 @@
    "id": "epargne",
    "theme": "travail",
    "date": "16 novembre 2026",
-   "situation": "Une partie de l'épargne salariale est bloquée cinq ans. La débloquer donne de l'argent tout de suite aux salariés concernés ; augmenter les salaires pèse sur les entreprises.",
+   "situation": "Une partie de l'épargne salariale est bloquée cinq ans. La débloquer donne de l'argent tout de suite aux salariés, mais entame leur épargne ; ses opposants préfèrent des hausses de salaire, qui pèsent sur les entreprises.",
    "question": "Pour le pouvoir d'achat :",
    "options": [
     "On permet de débloquer cette épargne",
@@ -779,7 +773,7 @@
     "PCF": 1
    },
    "actor": "Loi anti-fast fashion adoptée par 338 voix sans opposition. Le PS, les Écologistes, LFI et la plupart des communistes se sont abstenus, jugeant le texte trop affaibli (« une occasion manquée »).",
-   "nuance": "Le placement des partis qui ont voté pour est déduit du vote sans opposition.",
+   "nuance": "Le PS, les Écologistes, LFI et le PCF se sont abstenus en jugeant le texte trop faible : ils sont placés sur « aller plus loin », la raison donnée à leur abstention. Les groupes qui ont voté pour sont placés d'après ce vote sans opposition.",
    "reliability": 2,
    "sources": [
     {
@@ -1173,7 +1167,8 @@
     "PS": 1,
     "ECO": 1,
     "HOR": 1,
-    "LFI": 2
+    "LFI": 2,
+    "LIOT": 1
    },
    "actor": "Article 18 du budget de la Sécurité sociale 2026, largement rejeté en commission des affaires sociales. Renaissance et le MoDem l'ont défendu. Le RN, le PS, les Écologistes et LIOT ont fait adopter des amendements de suppression, Horizons l'a critiqué. LFI a demandé la fin des franchises.",
    "nuance": "Vote en commission, positions déduites des interventions et des amendements adoptés. LR s'est divisé.",
@@ -1198,7 +1193,6 @@
    ],
    "positions": {
     "RN": 0,
-    "UDR": 0,
     "ECO": 1,
     "MODEM": 1,
     "PCF": 1,
@@ -1207,8 +1201,8 @@
     "PS": 1,
     "REN": 1
    },
-   "actor": "Amendement du RN au budget 2027, rejeté (27 pour, 43 contre). Seuls le RN et l'UDR ont voté pour.",
-   "nuance": "Vote en séance avec peu de députés présents. Horizons s'est abstenu.",
+   "actor": "Amendement du RN au budget 2027, rejeté (27 pour, 43 contre). Le RN a voté pour, avec le seul député UDR présent.",
+   "nuance": "Vote en séance avec peu de députés présents. Horizons s'est abstenu. L'UDR, avec un seul votant, n'est pas placée.",
    "reliability": 3,
    "sources": [
     {
@@ -1220,11 +1214,6 @@
    "split": {
     "RN": [
      25,
-     0,
-     0
-    ],
-    "UDR": [
-     1,
      0,
      0
     ],
@@ -1362,7 +1351,7 @@
    "question": "Les réseaux sociaux avant 15 ans :",
    "options": [
     "On les interdit, avec vérification de l'âge",
-    "On régule les plateformes et on fait de la prévention"
+    "Pas d'interdiction pour l'instant : réguler les plateformes et prévenir"
    ],
    "positions": {
     "REN": 0,
@@ -1519,9 +1508,10 @@
     "PCF": 1,
     "MODEM": 1,
     "HOR": 1,
-    "LR": 1
+    "LR": 1,
+    "LIOT": 1
    },
-   "actor": "Amendement PS au budget de la Sécurité sociale 2026, adopté par tous les groupes sauf le RN, l'UDR et Renaissance.",
+   "actor": "Le gouvernement proposait cette taxe de 8 %. Un amendement PS au budget de la Sécurité sociale 2026 l'a supprimée, avec tous les groupes sauf le RN, l'UDR et Renaissance.",
    "nuance": "La position exacte du RN, de l'UDR et de Renaissance n'est pas détaillée dans la source : ils ne sont pas placés.",
    "reliability": 2,
    "sources": [
@@ -1659,13 +1649,12 @@
     "ECO": 0,
     "MODEM": 0,
     "LIOT": 0,
-    "PCF": 0,
     "RN": 1,
     "LR": 1,
     "UDR": 1
    },
    "actor": "Amendement au budget de la Sécurité sociale 2027, rejeté à une voix (62 pour, 63 contre).",
-   "nuance": "Horizons divisé (2 pour, 1 abstention, 1 contre). Un seul député GDR a voté.",
+   "nuance": "Horizons divisé (2 pour, 1 abstention, 1 contre). Le PCF, avec un seul votant, n'est pas placé.",
    "reliability": 2,
    "sources": [
     {
@@ -1705,11 +1694,6 @@
      0,
      0
     ],
-    "PCF": [
-     1,
-     0,
-     0
-    ],
     "RN": [
      51,
      0,
@@ -1741,7 +1725,6 @@
     "LFI": 0,
     "PS": 0,
     "ECO": 0,
-    "PCF": 0,
     "REN": 1,
     "LR": 1,
     "MODEM": 1,
@@ -1750,7 +1733,7 @@
     "UDR": 1
    },
    "actor": "Amendement rejeté (43 pour, 44 abstentions, 46 contre).",
-   "nuance": "Le RN s'est abstenu. Un seul député GDR a voté.",
+   "nuance": "Le RN s'est abstenu. Le PCF, avec un seul votant, n'est pas placé.",
    "reliability": 2,
    "sources": [
     {
@@ -1772,11 +1755,6 @@
     ],
     "ECO": [
      8,
-     0,
-     0
-    ],
-    "PCF": [
-     1,
      0,
      0
     ],
@@ -2104,7 +2082,6 @@
    ],
    "positions": {
     "ECO": 0,
-    "PS": 0,
     "PCF": 1,
     "MODEM": 1,
     "LIOT": 1,
@@ -2115,7 +2092,7 @@
     "REN": 1
    },
    "actor": "Amendement au budget de la Sécurité sociale 2025, rejeté (18 pour, 119 contre).",
-   "nuance": "Les socialistes étaient divisés (7 pour, 6 contre). LFI s'est abstenue.",
+   "nuance": "Les socialistes étaient divisés (7 pour, 6 contre) : ils ne sont pas placés. LFI s'est abstenue.",
    "reliability": 2,
    "sources": [
     {
@@ -2128,11 +2105,6 @@
     "ECO": [
      10,
      0,
-     1
-    ],
-    "PS": [
-     7,
-     6,
      1
     ],
     "PCF": [
@@ -2359,7 +2331,6 @@
    ],
    "positions": {
     "LFI": 0,
-    "ECO": 0,
     "PS": 0,
     "REN": 1,
     "RN": 1,
@@ -2368,7 +2339,7 @@
     "MODEM": 1
    },
    "actor": "Amendement LFI rejeté (15 pour, 51 contre), législature précédente.",
-   "nuance": "Peu de votants. LIOT divisé, GDR absent. L'UDR n'existait pas encore.",
+   "nuance": "Peu de votants. LIOT divisé, GDR absent. L'UDR n'existait pas encore. Les Écologistes, avec un seul votant, ne sont pas placés.",
    "reliability": 2,
    "sources": [
     {
@@ -2380,11 +2351,6 @@
    "split": {
     "LFI": [
      9,
-     0,
-     0
-    ],
-    "ECO": [
-     1,
      0,
      0
     ],
@@ -2438,16 +2404,19 @@
     "ECO": 0,
     "LIOT": 0,
     "PCF": 0,
-    "RN": 1,
-    "UDR": 1
+    "RN": 1
    },
-   "actor": "Article d'une proposition de loi sur les violences sexuelles, rejeté (74 pour, 77 contre).",
-   "nuance": "Horizons s'est abstenu, le MoDem n'a pas voté. Un seul député UDR a voté.",
+   "actor": "Article d'une proposition de loi sur les violences sexuelles, rejeté le 9 octobre 2026 (74 pour, 77 contre), puis adopté lors d'un second vote le 13 octobre 2026 (213 pour, 111 contre).",
+   "nuance": "Horizons s'est abstenu, le MoDem n'a pas voté. Un seul député UDR a voté : l'UDR n'est pas placée.",
    "reliability": 2,
    "sources": [
     {
      "name": "Datan, détail du scrutin",
      "url": "https://datan.fr/votes/legislature-17/vote_8640"
+    },
+    {
+     "name": "Datan, second vote",
+     "url": "https://datan.fr/votes/legislature-17/vote_8704"
     }
    ],
    "contexte": "L'article créait un congé spécifique pour les salariés victimes de violences sexuelles, notamment pour accomplir des démarches médicales, judiciaires ou sociales, sans perte d'emploi. Les débats ont porté sur sa durée et son coût pour les employeurs.",
@@ -2490,11 +2459,6 @@
     "RN": [
      76,
      2,
-     0
-    ],
-    "UDR": [
-     1,
-     0,
      0
     ]
    }
@@ -2599,7 +2563,6 @@
     "PS": 0,
     "ECO": 0,
     "PCF": 0,
-    "LIOT": 0,
     "REN": 1,
     "RN": 1,
     "LR": 1,
@@ -2607,7 +2570,7 @@
     "HOR": 1
    },
    "actor": "Amendement socialiste rejeté (121 pour, 255 contre), législature précédente.",
-   "nuance": "Un seul député LIOT a voté. L'UDR n'existait pas encore.",
+   "nuance": "Un seul député LIOT a voté. L'UDR n'existait pas encore. LIOT n'est donc pas placé.",
    "reliability": 2,
    "sources": [
     {
@@ -2634,11 +2597,6 @@
     ],
     "PCF": [
      12,
-     0,
-     0
-    ],
-    "LIOT": [
-     1,
      0,
      0
     ],
@@ -2763,13 +2721,12 @@
     "LFI": 0,
     "PS": 0,
     "ECO": 0,
-    "MODEM": 0,
     "LIOT": 0,
     "PCF": 0,
     "HOR": 1
    },
    "actor": "Article du budget 2025, adopté (191 pour, 35 contre).",
-   "nuance": "Renaissance et LR se sont majoritairement abstenus. Le MoDem était divisé (4 pour, 2 contre).",
+   "nuance": "Renaissance et LR se sont majoritairement abstenus. Le MoDem était partagé (4 pour, 2 contre, 2 abstentions) : il n'est pas placé.",
    "reliability": 2,
    "sources": [
     {
@@ -2798,11 +2755,6 @@
      17,
      2,
      1
-    ],
-    "MODEM": [
-     4,
-     2,
-     2
     ],
     "LIOT": [
      3,
@@ -2924,7 +2876,6 @@
    ],
    "positions": {
     "RN": 0,
-    "UDR": 0,
     "REN": 1,
     "LFI": 1,
     "PS": 1,
@@ -2936,7 +2887,7 @@
     "PCF": 1
    },
    "actor": "Amendement RN au budget 2025, rejeté (67 pour, 120 contre).",
-   "nuance": "",
+   "nuance": "L'UDR était partagée (2 pour, 1 contre, 1 abstention) : elle n'est pas placée.",
    "reliability": 3,
    "sources": [
     {
@@ -2950,11 +2901,6 @@
      65,
      0,
      0
-    ],
-    "UDR": [
-     2,
-     1,
-     1
     ],
     "REN": [
      18,
@@ -3171,7 +3117,7 @@
     "HOR": 1
    },
    "actor": "Amendement rejeté (76 pour, 120 contre), législature précédente.",
-   "nuance": "Renaissance était en partie divisé (10 pour, 58 contre). LIOT divisé. L'UDR n'existait pas encore.",
+   "nuance": "10 députés Renaissance ont voté pour, 58 contre. LIOT divisé. L'UDR n'existait pas encore.",
    "reliability": 2,
    "sources": [
     {
@@ -4356,13 +4302,11 @@
     "PS": 0,
     "HOR": 0,
     "ECO": 0,
-    "PCF": 0,
-    "LIOT": 0,
     "RN": 1,
     "LR": 1
    },
    "actor": "Article 11 de la loi d'accélération des énergies renouvelables, adopté (42 pour, 6 contre).",
-   "nuance": "LFI s'est abstenue. Peu de votants ; un seul député GDR et un seul LIOT. L'UDR n'existait pas encore.",
+   "nuance": "LFI s'est abstenue. Peu de votants ; un seul député GDR et un seul LIOT. L'UDR n'existait pas encore. Le PCF et LIOT ne sont donc pas placés.",
    "reliability": 2,
    "sources": [
     {
@@ -4396,16 +4340,6 @@
      6,
      0,
      1
-    ],
-    "PCF": [
-     1,
-     0,
-     0
-    ],
-    "LIOT": [
-     1,
-     0,
-     0
     ],
     "RN": [
      4,

@@ -392,7 +392,7 @@ function renderResults(){
   ${guessHTML(all)}
   <div class="card">
     <h3>Alignement global</h3>
-    <p class="label">100&nbsp;% : mêmes choix sur toutes les questions communes. 50&nbsp;% : neutre. 0&nbsp;% : choix opposés.</p>
+    <p class="label">100&nbsp;% : mêmes choix sur toutes les questions communes. 50&nbsp;% : neutre. 0&nbsp;% : choix opposés. Le classement tient aussi compte du nombre de vos réponses où la position du parti est connue : un parti connu sur peu de questions peut être classé sous un parti au pourcentage plus bas.</p>
     <div class="bars">${all.map((o,k)=>`<div class="bar ${k===0&&o.s>0?"top":""}"><span class="name">${esc(o.p.name)}</span>
       <span class="track"><i style="width:${o.pct??0}%"></i></span><span class="val">${o.pct===null?"–":o.pct+" %"}</span>
       <small>${o.n?`même choix sur ${o.same} des ${o.n} question${o.n>1?"s":""} où sa position est connue`:"position inconnue sur vos réponses"}</small></div>`).join("")}</div>
