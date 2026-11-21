@@ -1,5 +1,5 @@
 {
- "version": "2026-11-20",
+ "version": "2026-11-21",
  "parties": [
   {
    "id": "LFI",
@@ -7411,6 +7411,379 @@
      19,
      0,
      2
+    ]
+   }
+  },
+  {
+   "id": "score-carbone",
+   "theme": "consommer",
+   "date": "31 mars 2021",
+   "situation": "Un « score carbone » afficherait l'empreinte climatique des produits, comme le Nutri-Score. Il aide à choisir moins polluant ; ses critiques le jugent complexe à calculer pour les fabricants.",
+   "question": "Un score carbone sur les produits :",
+   "options": [
+    "Oui, après une phase d'essai",
+    "Non"
+   ],
+   "positions": {
+    "REN": 0,
+    "MODEM": 0,
+    "LR": 1
+   },
+   "actor": "Article 1 de la loi Climat et résilience, adopté le 31 mars 2021 (93 pour, 28 contre).",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN et les Écologistes n'avaient pas de groupe et ne sont pas placés. Le PS, LFI et le PCF ont voté contre en jugeant la mesure trop faible, car facultative pendant cinq ans : ils ne sont pas placés.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_3516"
+    }
+   ],
+   "contexte": "L'article prévoit d'expérimenter pendant cinq ans un affichage de l'impact environnemental des produits, en commençant par les vêtements, avant de le rendre éventuellement obligatoire. Il répondait à une demande de la Convention citoyenne pour le climat.",
+   "split": {
+    "REN": [
+     78,
+     0,
+     0
+    ],
+    "MODEM": [
+     4,
+     0,
+     0
+    ],
+    "LR": [
+     12,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "enquete-publique",
+   "theme": "environnement",
+   "date": "29 septembre 2020",
+   "situation": "Avant certains projets touchant l'environnement, une enquête publique recueille l'avis des habitants. La remplacer par une consultation en ligne accélère les projets ; ses opposants craignent d'exclure les personnes sans internet.",
+   "question": "Pour ces projets :",
+   "options": [
+    "Garder l'enquête publique",
+    "Permettre une simple consultation en ligne"
+   ],
+   "positions": {
+    "LR": 0,
+    "PS": 0,
+    "LFI": 0,
+    "PCF": 0,
+    "REN": 1
+   },
+   "actor": "Amendement supprimant cette possibilité dans la loi d'accélération et de simplification de l'action publique (ASAP), adopté le 29 septembre 2020 (55 pour, 53 contre).",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN et les Écologistes n'avaient pas de groupe et ne sont pas placés. Le MoDem était partagé (5 pour, 6 contre, 2 abstentions) ; LFI n'avait que 2 votants.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_2886"
+    }
+   ],
+   "contexte": "Le texte permettait au préfet de remplacer l'enquête publique par une participation du public par voie électronique pour certains projets soumis à autorisation environnementale. Selon le rapporteur, les projets visés étaient ceux qui présentent le moins d'enjeux pour l'environnement.",
+   "split": {
+    "LR": [
+     20,
+     0,
+     0
+    ],
+    "PS": [
+     4,
+     0,
+     0
+    ],
+    "LFI": [
+     2,
+     0,
+     0
+    ],
+    "PCF": [
+     5,
+     0,
+     0
+    ],
+    "REN": [
+     46,
+     2,
+     6
+    ]
+   }
+  },
+  {
+   "id": "biocarburants-palme",
+   "theme": "environnement",
+   "date": "16 octobre 2020",
+   "situation": "Les biocarburants ont des avantages fiscaux, y compris ceux à base d'huile de palme ou de soja, liées à la déforestation. Les exclure protège les forêts ; ses opposants notent que certains n'utilisent que des résidus.",
+   "question": "Ces biocarburants :",
+   "options": [
+    "Exclus des avantages fiscaux",
+    "Gardent leurs avantages"
+   ],
+   "positions": {
+    "LR": 0,
+    "PS": 0,
+    "LFI": 0,
+    "PCF": 0,
+    "REN": 1
+   },
+   "actor": "Amendement au budget 2021, adopté à une voix près le 16 octobre 2020 (33 pour, 32 contre).",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN et les Écologistes n'avaient pas de groupe et ne sont pas placés. Le MoDem s'est surtout abstenu ; LFI et le PCF n'avaient que 2 votants chacun. Peu de députés présents.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_2986"
+    }
+   ],
+   "contexte": "L'amendement visait aussi les PFAD, des résidus du raffinage de l'huile de palme alimentaire. Le gouvernement s'y opposait en estimant que ces résidus n'entraînent pas de déforestation supplémentaire.",
+   "split": {
+    "LR": [
+     11,
+     0,
+     0
+    ],
+    "PS": [
+     7,
+     0,
+     0
+    ],
+    "LFI": [
+     2,
+     0,
+     0
+    ],
+    "PCF": [
+     2,
+     0,
+     0
+    ],
+    "REN": [
+     30,
+     2,
+     0
+    ]
+   }
+  },
+  {
+   "id": "langues-regionales",
+   "theme": "societe",
+   "date": "8 avril 2021",
+   "situation": "Environ 170 000 élèves apprennent une langue régionale. Reconnaître l'enseignement « immersif », presque tout dans cette langue, aide à la transmettre ; ses opposants y voient un recul du français à l'école.",
+   "question": "L'enseignement en langue régionale :",
+   "options": [
+    "Reconnaître l'enseignement immersif",
+    "S'en tenir à l'enseignement bilingue"
+   ],
+   "positions": {
+    "REN": 0,
+    "LR": 0,
+    "MODEM": 0,
+    "PS": 0,
+    "PCF": 0,
+    "LFI": 1
+   },
+   "actor": "Proposition de loi sur les langues régionales, adoptée en deuxième lecture le 8 avril 2021 (247 pour, 76 contre). Le Conseil constitutionnel a ensuite censuré l'article sur l'enseignement immersif.",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN et les Écologistes n'avaient pas de groupe et ne sont pas placés. LaREM était partagé (100 pour, 57 contre, 12 abstentions) ; le gouvernement était réservé.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_3569"
+    }
+   ],
+   "contexte": "La loi oblige aussi les communes à participer au financement des écoles privées en langue régionale quand il n'existe pas d'offre publique, et autorise la signalétique bilingue. En mai 2021, le Conseil constitutionnel a jugé l'enseignement immersif contraire à la règle selon laquelle la langue de la République est le français.",
+   "split": {
+    "REN": [
+     100,
+     57,
+     12
+    ],
+    "LR": [
+     54,
+     0,
+     0
+    ],
+    "MODEM": [
+     17,
+     6,
+     5
+    ],
+    "PS": [
+     21,
+     0,
+     0
+    ],
+    "PCF": [
+     6,
+     0,
+     0
+    ],
+    "LFI": [
+     12,
+     1,
+     0
+    ]
+   }
+  },
+  {
+   "id": "passe-vaccinal",
+   "theme": "sante",
+   "date": "5 janvier 2022",
+   "situation": "Début 2022, le passe vaccinal devait remplacer le passe sanitaire : un test négatif ne suffisait plus pour les restaurants ou les trains. Il pousse à se vacciner ; ses opposants y voient une obligation déguisée.",
+   "question": "Le passe vaccinal :",
+   "options": [
+    "L'instaurer",
+    "Garder le passe sanitaire avec test"
+   ],
+   "positions": {
+    "REN": 0,
+    "MODEM": 0,
+    "LFI": 1,
+    "PCF": 1
+   },
+   "actor": "Projet de loi adopté en première lecture le 5 janvier 2022 (214 pour, 93 contre). Le passe vaccinal a été appliqué de janvier à mars 2022.",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN et les Écologistes n'avaient pas de groupe et ne sont pas placés. LR était divisé (28 pour, 24 contre, 22 abstentions) et le PS aussi (7 pour, 10 contre, 3 abstentions) : ils ne sont pas placés.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_4279"
+    }
+   ],
+   "contexte": "Le passe vaccinal s'appliquait à partir de 16 ans pour les bars, restaurants, activités de loisirs et transports interrégionaux. Il a été suspendu le 14 mars 2022.",
+   "split": {
+    "REN": [
+     134,
+     3,
+     0
+    ],
+    "MODEM": [
+     32,
+     0,
+     0
+    ],
+    "LFI": [
+     15,
+     0,
+     0
+    ],
+    "PCF": [
+     9,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "voile-universite",
+   "theme": "societe",
+   "date": "3 février 2021",
+   "situation": "Les signes religieux ostensibles sont interdits aux élèves jusqu'au lycée, pas aux étudiants. Étendre l'interdiction aux universités prolonge cette règle ; ses opposants rappellent que les étudiants sont adultes.",
+   "question": "À l'université publique :",
+   "options": [
+    "Interdire les signes religieux",
+    "Les autoriser, comme aujourd'hui"
+   ],
+   "positions": {
+    "LR": 0,
+    "REN": 1,
+    "PS": 1,
+    "MODEM": 1,
+    "LFI": 1
+   },
+   "actor": "Amendement au projet de loi confortant le respect des principes de la République, rejeté le 3 février 2021 (31 pour, 168 contre).",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN et les Écologistes n'avaient pas de groupe et ne sont pas placés. Le PCF n'avait que 2 votants.",
+   "reliability": 3,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_3352"
+    }
+   ],
+   "contexte": "La loi de 2004 interdit les signes religieux ostensibles aux élèves de l'enseignement public jusqu'au lycée. Les étudiants ne sont pas concernés, mais les agents publics, y compris à l'université, sont tenus à la neutralité.",
+   "split": {
+    "LR": [
+     22,
+     0,
+     0
+    ],
+    "REN": [
+     113,
+     7,
+     2
+    ],
+    "PS": [
+     15,
+     0,
+     0
+    ],
+    "MODEM": [
+     13,
+     0,
+     2
+    ],
+    "LFI": [
+     6,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "cumul-mandats",
+   "theme": "societe",
+   "date": "14 mars 2024",
+   "situation": "Depuis 2017, un parlementaire ne peut plus être aussi maire ou adjoint. Rétablir ce cumul le rapprocherait du terrain ; ses opposants jugent chaque fonction trop prenante pour être cumulée.",
+   "question": "Un parlementaire peut-il aussi être adjoint au maire :",
+   "options": [
+    "Oui, à nouveau",
+    "Non, on garde l'interdiction"
+   ],
+   "positions": {
+    "RN": 0,
+    "LR": 0,
+    "HOR": 0,
+    "LFI": 1,
+    "PS": 1
+   },
+   "actor": "Article 1 d'une proposition de loi organique, adopté le 14 mars 2024 (64 pour, 44 contre). Le texte n'a pas été adopté définitivement.",
+   "nuance": "Renaissance était partagé (11 pour, 12 contre, 7 abstentions) et n'est pas placé. Le MoDem et les Écologistes avaient 5 et 3 votants.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_3514"
+    }
+   ],
+   "contexte": "La loi de 2014, appliquée depuis 2017, interdit de cumuler un mandat de parlementaire avec une fonction exécutive locale (maire, adjoint, président ou vice-président de département ou de région). Le texte voulait autoriser à nouveau les fonctions d'adjoint et de vice-président.",
+   "split": {
+    "RN": [
+     21,
+     0,
+     0
+    ],
+    "LR": [
+     9,
+     0,
+     0
+    ],
+    "HOR": [
+     22,
+     0,
+     0
+    ],
+    "LFI": [
+     15,
+     0,
+     0
+    ],
+    "PS": [
+     10,
+     0,
+     0
     ]
    }
   }
