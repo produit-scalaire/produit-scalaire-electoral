@@ -1,5 +1,5 @@
 {
- "version": "2026-11-21",
+ "version": "2026-11-22",
  "parties": [
   {
    "id": "LFI",
@@ -7784,6 +7784,172 @@
      10,
      0,
      0
+    ]
+   }
+  },
+  {
+   "id": "encadrement-loyers",
+   "theme": "logement",
+   "date": "19 novembre 2026",
+   "situation": "Dans environ 70 communes, dont Paris, les loyers sont plafonnés. Prolonger cet encadrement modère les loyers ; ses opposants craignent qu'il réduise le nombre de logements mis en location.",
+   "question": "L'encadrement des loyers :",
+   "options": [
+    "Le prolonger",
+    "Y mettre fin"
+   ],
+   "positions": {
+    "LFI": 0,
+    "PS": 0,
+    "ECO": 0,
+    "MODEM": 0,
+    "LIOT": 0,
+    "PCF": 0,
+    "RN": 1,
+    "LR": 1,
+    "UDR": 1
+   },
+   "actor": "Proposition de loi adoptée définitivement le 19 novembre 2026 (148 pour, 95 contre), dans la version du Sénat, qui prolonge l'expérimentation de deux ans au lieu de la rendre permanente.",
+   "nuance": "Renaissance était partagé (6 pour, 7 contre) et Horizons s'est abstenu : ils ne sont pas placés. LR et l'UDR n'avaient que 4 et 2 votants.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-17/vote_10062"
+    },
+    {
+     "name": "Assemblée nationale, dossier législatif",
+     "url": "https://questions.assemblee-nationale.fr/dyn/17/dossiers/retrouver_confiance_equilibre_rapports_locatifs_17e"
+    },
+    {
+     "name": "Sénat, l'essentiel",
+     "url": "https://www.senat.fr/lessentiel/ppl25-217.pdf"
+    }
+   ],
+   "contexte": "L'encadrement expérimental devait s'arrêter le 23 novembre 2026. Selon le rapport d'évaluation, il a fait baisser les loyers de 2 à 4 % en deux ans, pour un coût estimé à 181 millions d'euros de recettes fiscales en moins par an. Le texte final le prolonge de deux ans, sans l'ouvrir à de nouvelles villes.",
+   "split": {
+    "LFI": [
+     35,
+     0,
+     0
+    ],
+    "PS": [
+     59,
+     0,
+     0
+    ],
+    "ECO": [
+     25,
+     0,
+     0
+    ],
+    "MODEM": [
+     9,
+     0,
+     0
+    ],
+    "LIOT": [
+     5,
+     0,
+     0
+    ],
+    "PCF": [
+     8,
+     0,
+     0
+    ],
+    "RN": [
+     82,
+     0,
+     0
+    ],
+    "LR": [
+     4,
+     0,
+     0
+    ],
+    "UDR": [
+     2,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "loi-pouvoir-achat",
+   "theme": "argent",
+   "date": "21 juillet 2022",
+   "situation": "En 2022, une loi a revalorisé de 4 % retraites et prestations sociales et permis des primes défiscalisées. Elle aide vite les ménages ; ses opposants préféraient des hausses de salaire durables.",
+   "question": "Cette loi :",
+   "options": [
+    "L'adopter",
+    "La rejeter"
+   ],
+   "positions": {
+    "REN": 0,
+    "RN": 0,
+    "LR": 0,
+    "MODEM": 0,
+    "HOR": 0,
+    "LIOT": 0,
+    "LFI": 1,
+    "ECO": 1,
+    "PCF": 1
+   },
+   "actor": "Projet de loi adopté en première lecture le 21 juillet 2022 (341 pour, 116 contre), promulgué le 16 août 2022.",
+   "nuance": "Le PS s'est abstenu (17 abstentions, 3 contre) : il n'est pas placé. L'UDR n'existait pas encore.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_81"
+    }
+   ],
+   "contexte": "La loi crée la « prime de partage de la valeur », exonérée de cotisations jusqu'à 3 000 € (6 000 € avec un accord d'intéressement), revalorise de 4 % les retraites et les prestations sociales et calcule l'allocation aux adultes handicapés sans tenir compte des revenus du conjoint.",
+   "split": {
+    "REN": [
+     136,
+     0,
+     0
+    ],
+    "RN": [
+     78,
+     0,
+     0
+    ],
+    "LR": [
+     54,
+     0,
+     0
+    ],
+    "MODEM": [
+     37,
+     0,
+     0
+    ],
+    "HOR": [
+     26,
+     0,
+     0
+    ],
+    "LIOT": [
+     5,
+     0,
+     0
+    ],
+    "LFI": [
+     74,
+     0,
+     0
+    ],
+    "ECO": [
+     21,
+     0,
+     0
+    ],
+    "PCF": [
+     18,
+     0,
+     4
     ]
    }
   }
