@@ -7,7 +7,8 @@ QP = os.path.join(here, 'questions.json')
 d = json.load(open(QP)); V = json.load(open(os.path.join(here, 'votes_groupes.json')))
 GROUPES = {'RE':'REN','EPR':'REN','RN':'RN','LFI-NUPES':'LFI','LFI-NFP':'LFI','LR':'LR','DR':'LR','DEM':'MODEM',
            'SOC':'PS','SOC-A':'PS','HOR':'HOR','ECOLO':'ECO','ECOS':'ECO','LIOT':'LIOT','GDR':'PCF','GDR-NUPES':'PCF','UDR':'UDR',
-           'SOC-NUPES':'PS','ECOLO-NUPES':'ECO','LAREM':'REN','MODEM':'MODEM','FI':'LFI'}  # + groupes de la 15e législature (filiation directe)
+           'SOC-NUPES':'PS','ECOLO-NUPES':'ECO','LAREM':'REN','MODEM':'MODEM','FI':'LFI','NG':'PS',
+           'SRC':'PS','SER':'PS','UMP':'LR','LES-REP':'LR'}  # + groupes des 14e et 15e législatures (filiation directe)
 done = 0
 for q in d['questions']:
     q.pop('split', None)

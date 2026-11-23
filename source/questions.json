@@ -1,5 +1,5 @@
 {
- "version": "2026-11-23",
+ "version": "2026-11-24",
  "parties": [
   {
    "id": "LFI",
@@ -7958,6 +7958,454 @@
      18,
      0,
      4
+    ]
+   }
+  },
+  {
+   "id": "hydrocarbures-2040",
+   "theme": "environnement",
+   "date": "10 octobre 2017",
+   "situation": "La France extrait encore un peu de pétrole et de gaz. Arrêter réduit les énergies fossiles ; ses opposants y voient un geste symbolique, coûteux en emplois et en importations.",
+   "question": "L'extraction de pétrole et de gaz en France :",
+   "options": [
+    "Arrêtée d'ici 2040, sans nouveaux permis",
+    "Autorisée à continuer"
+   ],
+   "positions": {
+    "REN": 0,
+    "MODEM": 0,
+    "PS": 0,
+    "LR": 1
+   },
+   "actor": "Loi mettant fin à la recherche et à l'exploitation des hydrocarbures, adoptée en première lecture le 10 octobre 2017 (388 pour, 92 contre).",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN n'avait pas de groupe et n'est pas placé. LFI et les communistes se sont abstenus : ils ne sont pas placés.",
+   "reliability": 3,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_139"
+    }
+   ],
+   "contexte": "La loi du 30 décembre 2017 interdit tout nouveau permis de recherche de pétrole ou de gaz, y compris de schiste, et prévoit la fin de leur exploitation en France en 2040. La production nationale ne couvrait qu'environ 1 % de la consommation.",
+   "split": {
+    "REN": [
+     297,
+     1,
+     1
+    ],
+    "MODEM": [
+     42,
+     0,
+     0
+    ],
+    "PS": [
+     27,
+     3,
+     0
+    ],
+    "LR": [
+     80,
+     5,
+     10
+    ]
+   }
+  },
+  {
+   "id": "mariage-pour-tous",
+   "theme": "societe",
+   "date": "23 avril 2013",
+   "situation": "Ouvrir le mariage et l'adoption aux couples de même sexe : pour ses partisans, c'est l'égalité des droits ; ses opposants voulaient les réserver aux couples homme-femme.",
+   "question": "Le mariage :",
+   "options": [
+    "Ouvert aux couples de même sexe",
+    "Réservé aux couples homme-femme"
+   ],
+   "positions": {
+    "PS": 0,
+    "ECO": 0,
+    "PCF": 0,
+    "LR": 1
+   },
+   "actor": "Loi ouvrant le mariage aux couples de personnes de même sexe, adoptée définitivement le 23 avril 2013 (331 pour, 225 contre).",
+   "nuance": "Vote de la législature 2012-2017 : seuls les groupes qui ont une suite directe sont placés (l'UMP est devenue LR, le groupe socialiste est le PS, le groupe GDR celui des communistes, le groupe écologiste les Écologistes) ; le FN, sans groupe, n'est pas placé. Le groupe GDR était partagé (9 pour, 4 contre, 1 abstention).",
+   "reliability": 3,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-14/vote_511"
+    }
+   ],
+   "contexte": "La loi du 17 mai 2013 ouvre le mariage et l'adoption aux couples de même sexe. Le Conseil constitutionnel l'a validée, et elle n'a pas été remise en cause depuis.",
+   "split": {
+    "PS": [
+     281,
+     4,
+     4
+    ],
+    "ECO": [
+     17,
+     0,
+     0
+    ],
+    "PCF": [
+     9,
+     4,
+     1
+    ],
+    "LR": [
+     183,
+     6,
+     5
+    ]
+   }
+  },
+  {
+   "id": "renseignement",
+   "theme": "societe",
+   "date": "5 mai 2015",
+   "situation": "Des algorithmes peuvent analyser les données de connexion chez les opérateurs pour repérer des menaces terroristes. Ses partisans y voient un outil de prévention ; ses opposants craignent une surveillance de masse.",
+   "question": "Cette surveillance automatisée :",
+   "options": [
+    "L'autoriser, sous contrôle d'une commission",
+    "Ne pas l'autoriser"
+   ],
+   "positions": {
+    "PS": 0,
+    "LR": 0,
+    "ECO": 1,
+    "PCF": 1
+   },
+   "actor": "Loi relative au renseignement, adoptée en première lecture le 5 mai 2015 (438 pour, 86 contre).",
+   "nuance": "Vote de la législature 2012-2017 : seuls les groupes qui ont une suite directe sont placés (l'UMP est devenue LR, le groupe socialiste est le PS, le groupe GDR celui des communistes, le groupe écologiste les Écologistes) ; le FN, sans groupe, n'est pas placé. Vote sur l'ensemble de la loi, pas seulement sur les algorithmes. Les deux grands groupes étaient en partie divisés : 35 UMP et 10 socialistes ont voté contre.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-14/vote_1109"
+    }
+   ],
+   "contexte": "La loi du 24 juillet 2015 encadre les techniques des services (écoutes, balises, « boîtes noires » chez les opérateurs), sur autorisation du Premier ministre et sous le contrôle d'une commission indépendante, la CNCTR. L'usage des algorithmes, d'abord expérimental, a été pérennisé en 2021.",
+   "split": {
+    "PS": [
+     252,
+     10,
+     17
+    ],
+    "LR": [
+     143,
+     35,
+     20
+    ],
+    "ECO": [
+     11,
+     5,
+     2
+    ],
+    "PCF": [
+     12,
+     3,
+     0
+    ]
+   }
+  },
+  {
+   "id": "ivg-14-semaines",
+   "theme": "societe",
+   "date": "23 février 2022",
+   "situation": "Le délai pour avorter était de 12 semaines. L'allonger évite à des femmes de partir à l'étranger ; ses opposants jugent l'intervention plus lourde et préféraient améliorer l'accès dans le délai existant.",
+   "question": "Le délai légal de l'IVG :",
+   "options": [
+    "14 semaines",
+    "12 semaines"
+   ],
+   "positions": {
+    "REN": 0,
+    "MODEM": 0,
+    "PS": 0,
+    "LFI": 0,
+    "PCF": 0,
+    "LR": 1
+   },
+   "actor": "Loi visant à renforcer le droit à l'avortement, adoptée définitivement le 23 février 2022 (135 pour, 47 contre).",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN n'avait pas de groupe et n'est pas placé. Peu de votants pour LFI (5) et les communistes (2). Une minorité de LaREM (11) et du MoDem (5) a voté contre.",
+   "reliability": 3,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_4414"
+    }
+   ],
+   "contexte": "La loi du 2 mars 2022 porte le délai de 12 à 14 semaines de grossesse et permet aux sages-femmes de pratiquer des IVG instrumentales. Depuis 2024, la liberté de recourir à l'IVG est aussi inscrite dans la Constitution.",
+   "split": {
+    "REN": [
+     86,
+     11,
+     4
+    ],
+    "MODEM": [
+     13,
+     5,
+     2
+    ],
+    "PS": [
+     15,
+     1,
+     0
+    ],
+    "LFI": [
+     5,
+     0,
+     0
+    ],
+    "PCF": [
+     2,
+     0,
+     0
+    ],
+    "LR": [
+     19,
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "securite-globale",
+   "theme": "justice",
+   "date": "24 novembre 2020",
+   "situation": "Une loi étend l'usage des drones et caméras-piétons policières et punit la diffusion d'images de policiers visant à leur nuire. Ses partisans veulent protéger les agents ; ses opposants craignent pour les libertés.",
+   "question": "Ces nouveaux pouvoirs :",
+   "options": [
+    "Les accorder",
+    "Ne pas les accorder"
+   ],
+   "positions": {
+    "REN": 0,
+    "LR": 0,
+    "MODEM": 0,
+    "PS": 1,
+    "LFI": 1,
+    "PCF": 1
+   },
+   "actor": "Proposition de loi « sécurité globale », adoptée en première lecture le 24 novembre 2020 (388 pour, 104 contre).",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN n'avait pas de groupe et n'est pas placé. Le MoDem a voté pour avec de nombreuses abstentions (33 pour, 18 abstentions, 5 contre). Vote sur l'ensemble du texte, qui portait aussi sur les polices municipales et la sécurité privée.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_3254"
+    }
+   ],
+   "contexte": "La loi du 25 mai 2021 a été en partie censurée par le Conseil constitutionnel, notamment l'article sur la diffusion d'images de policiers et celui sur les drones. Une loi de janvier 2022 a de nouveau autorisé les drones, avec davantage de garanties.",
+   "split": {
+    "REN": [
+     220,
+     10,
+     30
+    ],
+    "LR": [
+     99,
+     0,
+     4
+    ],
+    "MODEM": [
+     33,
+     5,
+     18
+    ],
+    "PS": [
+     29,
+     0,
+     0
+    ],
+    "LFI": [
+     17,
+     0,
+     0
+    ],
+    "PCF": [
+     16,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "loi-sante-2019",
+   "theme": "sante",
+   "date": "26 mars 2019",
+   "situation": "Une réforme supprime le numerus clausus, qui limitait le nombre d'étudiants en médecine, et réorganise les hôpitaux de proximité. Ses opposants la jugent insuffisante face aux déserts médicaux et à la crise de l'hôpital.",
+   "question": "Cette réforme de la santé :",
+   "options": [
+    "L'adopter",
+    "La rejeter"
+   ],
+   "positions": {
+    "REN": 0,
+    "MODEM": 0,
+    "LR": 1,
+    "PS": 1,
+    "LFI": 1,
+    "PCF": 1
+   },
+   "actor": "Loi relative à l'organisation et à la transformation du système de santé, adoptée en première lecture le 26 mars 2019 (349 pour, 172 contre).",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN n'avait pas de groupe et n'est pas placé. La droite et la gauche ont voté contre pour des raisons en partie différentes.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_1814"
+    }
+   ],
+   "contexte": "La loi du 24 juillet 2019 remplace le numerus clausus par des objectifs fixés par les universités et les agences régionales de santé, crée des « hôpitaux de proximité » et développe la télémédecine. Le nombre d'étudiants en médecine a augmenté, mais l'effet sur l'offre de soins prend une dizaine d'années.",
+   "split": {
+    "REN": [
+     292,
+     0,
+     1
+    ],
+    "MODEM": [
+     44,
+     0,
+     1
+    ],
+    "LR": [
+     94,
+     0,
+     10
+    ],
+    "PS": [
+     29,
+     0,
+     0
+    ],
+    "LFI": [
+     17,
+     0,
+     0
+    ],
+    "PCF": [
+     15,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "privatisation-adp",
+   "theme": "services",
+   "date": "14 mars 2019",
+   "situation": "L'État pourrait vendre sa majorité dans Aéroports de Paris (Roissy, Orly). Ses partisans veulent financer l'innovation ; ses opposants refusent de céder une infrastructure rentable et stratégique.",
+   "question": "Aéroports de Paris :",
+   "options": [
+    "Peut être privatisé",
+    "Reste contrôlé par l'État"
+   ],
+   "positions": {
+    "REN": 0,
+    "MODEM": 0,
+    "LR": 1,
+    "PS": 1,
+    "LFI": 1,
+    "PCF": 1
+   },
+   "actor": "Article 44 de la loi PACTE, adopté en nouvelle lecture le 14 mars 2019 (47 pour, 24 contre).",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN n'avait pas de groupe et n'est pas placé. Peu de députés présents : 2 votants communistes, 4 pour LFI et 4 pour le PS.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_1730"
+    },
+    {
+     "name": "Banque des Territoires, 15 mars 2019",
+     "url": "https://www.banquedesterritoires.fr/les-deputes-valident-la-privatisation-dadp-les-departements-sont-toujours-sur-les-rangs"
+    }
+   ],
+   "contexte": "La loi PACTE du 22 mai 2019 autorise la privatisation. Ses opposants ont lancé un référendum d'initiative partagée, qui a réuni environ 1,1 million de soutiens, loin des 4,7 millions requis. Le gouvernement a suspendu la vente en 2020, avec la crise sanitaire.",
+   "split": {
+    "REN": [
+     37,
+     0,
+     1
+    ],
+    "MODEM": [
+     6,
+     0,
+     1
+    ],
+    "LR": [
+     8,
+     1,
+     0
+    ],
+    "PS": [
+     4,
+     0,
+     0
+    ],
+    "LFI": [
+     4,
+     0,
+     0
+    ],
+    "PCF": [
+     2,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "parcoursup",
+   "theme": "services",
+   "date": "19 décembre 2017",
+   "situation": "Les formations classent les candidats selon des « attendus », au lieu du tirage au sort dans les filières saturées. Ses partisans y voient une meilleure orientation ; ses opposants, une sélection déguisée.",
+   "question": "L'entrée à l'université :",
+   "options": [
+    "Classement des candidats selon des attendus",
+    "Accès de droit pour tout bachelier, en ouvrant des places"
+   ],
+   "positions": {
+    "REN": 0,
+    "MODEM": 0,
+    "PS": 1,
+    "LFI": 1
+   },
+   "actor": "Loi relative à l'orientation et à la réussite des étudiants (Parcoursup), adoptée en première lecture le 19 décembre 2017 (361 pour, 129 contre).",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN n'avait pas de groupe et n'est pas placé. LR a voté contre en majorité (69 contre, 24 abstentions), mais certains de ses députés reprochaient au texte de ne pas aller assez loin : il n'est pas placé. Le vote des communistes n'a pas pu être vérifié.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Assemblée nationale, scrutin n° 351",
+     "url": "https://www.assemblee-nationale.fr/dyn/15/scrutins/351"
+    },
+    {
+     "name": "L'Etudiant, 19 décembre 2017",
+     "url": "https://www.letudiant.fr/educpros/actualite/orientation-et-reussite-des-etudiants-le-projet-de-loi-adopte-par-les-deputes.html"
+    }
+   ],
+   "contexte": "La loi du 8 mars 2018 met fin au tirage au sort et crée Parcoursup : chaque formation publie ses attendus et classe les candidats, et une université peut accepter un candidat à condition qu'il suive une remise à niveau (« oui si »). La licence reste ouverte à tout bachelier, dans la limite des places.",
+   "split": {
+    "REN": [
+     282,
+     0,
+     0
+    ],
+    "MODEM": [
+     42,
+     0,
+     0
+    ],
+    "PS": [
+     29,
+     0,
+     0
+    ],
+    "LFI": [
+     16,
+     0,
+     0
     ]
    }
   }
