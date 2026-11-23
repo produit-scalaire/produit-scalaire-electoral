@@ -1,5 +1,5 @@
 {
- "version": "2026-11-22",
+ "version": "2026-11-23",
  "parties": [
   {
    "id": "LFI",
@@ -5645,12 +5645,12 @@
   {
    "id": "legitime-defense",
    "theme": "justice",
-   "date": "7 juillet 2026",
-   "situation": "Quand un policier ou un gendarme fait usage de son arme, la justice apprécie au cas par cas si l'usage était justifié. Une présomption de légitime défense protège davantage les forces de l'ordre dans des situations dangereuses ; ses opposants craignent qu'elle rende plus difficile la mise en cause des tirs injustifiés.",
-   "question": "Pour les forces de l'ordre qui font usage de leur arme :",
+   "date": "20 novembre 2026",
+   "situation": "Quand policiers ou gendarmes tirent, la justice vérifie que le tir était nécessaire et proportionné. Une présomption d'usage légal les protège davantage ; ses opposants craignent qu'elle couvre des tirs injustifiés.",
+   "question": "Quand les forces de l'ordre tirent :",
    "options": [
-    "Présumées en légitime défense",
-    "Appréciation au cas par cas, comme aujourd'hui"
+    "Présumés avoir agi légalement",
+    "Appréciation au cas par cas, comme avant"
    ],
    "positions": {
     "RN": 0,
@@ -5664,16 +5664,24 @@
     "ECO": 1,
     "PCF": 1
    },
-   "actor": "Proposition de loi adoptée à l'Assemblée le 7 juillet 2026 (313 pour, 199 contre).",
+   "actor": "Proposition de loi adoptée à l'Assemblée le 7 juillet 2026 (313 pour, 199 contre), puis définitivement par le Sénat le 20 novembre 2026 (205 pour, 110 contre).",
    "nuance": "LIOT était partagé (9 pour, 8 contre) et n'est pas placé. Une partie de Renaissance a voté contre (55 pour, 12 contre).",
    "reliability": 2,
    "sources": [
     {
      "name": "Datan, détail du scrutin",
      "url": "https://datan.fr/votes/legislature-17/vote_7987"
+    },
+    {
+     "name": "Bondy Blog, adoption définitive au Sénat (20 novembre 2026)",
+     "url": "https://www.bondyblog.fr/politique/permis-de-tuer-la-loi-definitivement-adoptee/"
+    },
+    {
+     "name": "La Relève et La Peste, adoption définitive",
+     "url": "https://lareleveetlapeste.fr/permis-de-tuer-pour-les-policiers-la-loi-definitivement-adoptee/"
     }
    ],
-   "contexte": "Le Code pénal prévoit déjà une présomption de légitime défense dans quelques cas, comme l'intrusion de nuit dans un domicile. Le texte l'étend aux policiers et gendarmes qui utilisent leur arme dans leurs fonctions : ce serait alors à l'accusation de prouver que l'usage n'était pas justifié.",
+   "contexte": "Le code de la sécurité intérieure fixe les cas où policiers et gendarmes peuvent tirer, avec une exigence d'absolue nécessité et de stricte proportionnalité. Le texte les présume avoir respecté ces conditions ; la présomption tombe devant toute preuve contraire. Adopté définitivement en novembre 2026 sans modification, il doit encore passer devant le Conseil constitutionnel, saisi par la gauche.",
    "split": {
     "RN": [
      122,
