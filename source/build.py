@@ -24,6 +24,7 @@ def md(src):
     return '\n'.join(out)
 # ADRESSE DU DÉPÔT PUBLIC : à changer ici seulement (texte « Méthode » et pied de page)
 REPO_URL='https://github.com/produit-scalaire/produit-scalaire-electoral'
+FORM_URL='https://forms.gle/Qthg4NXZLyB2sAkR8'  # formulaire de retours (Google Forms)
 PAGE_URL='https://produit-scalaire.github.io/produit-scalaire-electoral/'
 # Lien à partager : changer le numéro de version pour forcer les applications à recharger l'aperçu
 SHARE_URL=PAGE_URL+'?v=2'
@@ -42,7 +43,7 @@ META=f'''<meta name="description" content="{html.escape(DESC)}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Quel parti vote vraiment comme vous ?">
 <meta name="twitter:description" content="{html.escape(DESC)}"><meta name="twitter:image" content="{PAGE_URL}preview.png">
 '''
-about=md(open(ROOT+'disclaimer.md').read().replace('__REPO__',REPO_URL).replace('__PAGE__',PAGE_URL))
+about=md(open(ROOT+'disclaimer.md').read().replace('__REPO__',REPO_URL).replace('__PAGE__',PAGE_URL).replace('__FORM__',FORM_URL))
 # sous-onglets : une section par titre de niveau 2
 SHORT={'Notre intention':'Intention','Notre méthode':'Méthode','Les limites à garder en tête':'Limites','Collecte des données : aucune':'Données','Remerciements':'Merci'}
 parts=re.split(r'(?=<h2>)',about)
@@ -68,7 +69,7 @@ anim=a.replace('&','&amp;').replace('"','&quot;')
 
 dl_top='<a class="dl" href="" download="produit-scalaire-electoral.html" onclick="this.href=location.href.split(\'#\')[0]">Télécharger la page</a>'
 dl2='<p class="label"><a href="" download="produit-scalaire-electoral.html" onclick="this.href=location.href.split(\'#\')[0]">Téléchargez la page</a> pour l’utiliser hors connexion.</p>'
-base=t.replace('__SHARE__',SHARE_URL).replace('__REPO__',REPO_URL).replace('__DATA__',data).replace('__ABOUT__',about).replace('__ANIM__',anim)
+base=t.replace('__SHARE__',SHARE_URL).replace('__FORM__',FORM_URL).replace('__REPO__',REPO_URL).replace('__DATA__',data).replace('__ABOUT__',about).replace('__ANIM__',anim)
 std=base.replace('__DOWNLOAD_TOP__',dl_top).replace('__DOWNLOAD2__',dl2)
 art=base.replace('__DOWNLOAD_TOP__','').replace('__DOWNLOAD2__','')
 open(os.path.join(here,'produit-scalaire-electoral.html'),'w').write('<!doctype html>\n<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'+META+std.replace('<div class="shell"','</head><body>\n<div class="shell"',1)+'\n</body></html>\n')

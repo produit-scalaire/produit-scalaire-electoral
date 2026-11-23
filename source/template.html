@@ -182,14 +182,14 @@ a{color:var(--accent)}
  <section id="tab-apropos" role="tabpanel" aria-labelledby="t-apropos" hidden>
   <article class="prose">__ABOUT__</article>
  </section>
- <div class="tricolore" aria-hidden="true" style="margin:32px 0 0;height:3px"></div><footer class="foot"><span id="foot-version"></span><span>Aucune donnée collectée</span><span>Fonctionne hors connexion</span><span><a href="__REPO__" target="_blank" rel="noopener">Code et données en accès libre</a></span></footer>
+ <div class="tricolore" aria-hidden="true" style="margin:32px 0 0;height:3px"></div><footer class="foot"><span id="foot-version"></span><span>Aucune donnée collectée</span><span>Fonctionne hors connexion</span><span><a href="__REPO__" target="_blank" rel="noopener">Code et données en accès libre</a></span><span>Une question, une suggestion, une correction ? <a href="__FORM__" target="_blank" rel="noopener">Écrivez-nous</a></span></footer>
 </div>
 
 <script id="data" type="application/json">__DATA__</script>
 <script>
 const app=document.getElementById("app");
 /* LIEN DU FORMULAIRE DE CORRECTIONS : coller ici l'adresse du Google Form (laisser "" tant qu'il n'existe pas). */
-const FORM_URL="";
+const FORM_URL="__FORM__";
 /* Lien partagé (avec ?v=… pour rafraîchir l'aperçu) : défini dans build.py (SHARE_URL) */
 const SHARE_URL="__SHARE__";
 function suiteHTML(){return `<div class="card">
