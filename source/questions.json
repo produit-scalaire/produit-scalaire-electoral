@@ -1,5 +1,5 @@
 {
- "version": "2026-11-24",
+ "version": "2026-11-25",
  "parties": [
   {
    "id": "LFI",
@@ -8406,6 +8406,301 @@
      0
     ]
    }
+  },
+  {
+   "id": "vols-courts",
+   "theme": "transports",
+   "date": "10 avril 2021",
+   "situation": "Supprimer les vols intérieurs quand le train fait le trajet en moins de 2h30 réduit les émissions. Ses opposants y voient une contrainte pour les voyageurs et les régions, pour un gain jugé faible.",
+   "question": "Ces vols courts :",
+   "options": [
+    "Les interdire",
+    "Les laisser"
+   ],
+   "positions": {
+    "REN": 0,
+    "MODEM": 0,
+    "LR": 1
+   },
+   "actor": "Article 36 de la loi Climat et résilience, adopté en première lecture le 10 avril 2021 (56 pour, 14 contre).",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN n'avait pas de groupe et n'est pas placé. Peu de députés présents. Le MoDem était partagé (6 pour, 4 contre). LFI et les communistes se sont abstenus ; ils voulaient étendre l'interdiction aux trajets de moins de 4 heures. Les socialistes étaient divisés.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_3617"
+    },
+    {
+     "name": "Banque des Territoires, 13 avril 2021",
+     "url": "https://www.banquedesterritoires.fr/projet-de-loi-climat-et-resilience-ecotaxe-ticpe-vols-courts-des-debats-apres-mais-peu-de"
+    }
+   ],
+   "contexte": "La loi Climat et résilience du 22 août 2021 interdit les vols intérieurs quand une alternative en train de moins de 2h30 existe, sauf pour les correspondances. Appliquée depuis 2023, elle ne concerne en pratique que trois liaisons au départ d'Orly : Bordeaux, Nantes et Lyon.",
+   "split": {
+    "REN": [
+     47,
+     0,
+     3
+    ],
+    "MODEM": [
+     6,
+     4,
+     0
+    ],
+    "LR": [
+     5,
+     0,
+     2
+    ]
+   }
+  },
+  {
+   "id": "prostitution-clients",
+   "theme": "societe",
+   "date": "4 décembre 2013",
+   "situation": "Punir d'une amende les clients de la prostitution vise à réduire la demande et l'exploitation. Ses opposants craignent que cela pousse les personnes prostituées vers plus de clandestinité et de danger.",
+   "question": "Les clients de la prostitution :",
+   "options": [
+    "Sanctionnés par une amende",
+    "Pas de sanction"
+   ],
+   "positions": {
+    "PS": 0,
+    "PCF": 0,
+    "LR": 1,
+    "ECO": 1
+   },
+   "actor": "Proposition de loi renforçant la lutte contre le système prostitutionnel, adoptée en première lecture le 4 décembre 2013 (268 pour, 138 contre).",
+   "nuance": "Vote de la législature 2012-2017 : seuls les groupes qui ont une suite directe sont placés (l'UMP est devenue LR, le groupe socialiste est le PS, le groupe GDR celui des communistes, le groupe écologiste les Écologistes) ; le FN, sans groupe, n'est pas placé. Vote sur l'ensemble du texte, qui supprimait aussi le délit de racolage. L'UMP a voté contre avec de nombreuses abstentions (101 contre, 42 abstentions, 11 pour).",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-14/vote_738"
+    }
+   ],
+   "contexte": "La loi du 13 avril 2016 punit l'achat d'un acte sexuel d'une amende de 1 500 €, supprime le délit de racolage et crée un parcours de sortie de la prostitution. Le Conseil constitutionnel l'a validée en 2019.",
+   "split": {
+    "PS": [
+     238,
+     5,
+     18
+    ],
+    "PCF": [
+     10,
+     0,
+     2
+    ],
+    "LR": [
+     101,
+     11,
+     42
+    ],
+    "ECO": [
+     12,
+     4,
+     1
+    ]
+   }
+  },
+  {
+   "id": "flat-tax",
+   "theme": "argent",
+   "date": "19 octobre 2017",
+   "situation": "Depuis 2018, dividendes, intérêts et plus-values sont taxés à 30 % au total, au lieu du barème de l'impôt. Ses partisans veulent encourager l'investissement ; ses opposants y voient un cadeau aux plus aisés.",
+   "question": "Les revenus du capital :",
+   "options": [
+    "Taxés à taux unique de 30 %",
+    "Taxés au barème, comme les salaires"
+   ],
+   "positions": {
+    "REN": 0,
+    "MODEM": 0,
+    "LR": 0,
+    "PS": 1,
+    "LFI": 1,
+    "PCF": 1
+   },
+   "actor": "Article 11 du budget 2018, créant le prélèvement forfaitaire unique, adopté en première lecture le 19 octobre 2017 (96 pour, 18 contre).",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN n'avait pas de groupe et n'est pas placé. Peu de députés présents ; LR a voté pour à la majorité (10 pour, 3 contre).",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_162"
+    }
+   ],
+   "contexte": "Le prélèvement forfaitaire unique, ou « flat tax », taxe les revenus du capital à 30 % : 12,8 % d'impôt et 17,2 % de prélèvements sociaux. Le contribuable peut encore choisir le barème s'il y gagne. Il a été créé en même temps que la transformation de l'ISF en impôt sur la seule fortune immobilière.",
+   "split": {
+    "REN": [
+     74,
+     1,
+     0
+    ],
+    "MODEM": [
+     9,
+     0,
+     0
+    ],
+    "LR": [
+     10,
+     3,
+     0
+    ],
+    "PS": [
+     6,
+     0,
+     0
+    ],
+    "LFI": [
+     4,
+     0,
+     0
+    ],
+    "PCF": [
+     3,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "taxe-habitation",
+   "theme": "argent",
+   "date": "21 octobre 2017",
+   "situation": "La taxe d'habitation finançait les communes. La supprimer rend du pouvoir d'achat aux ménages ; ses opposants craignent une perte d'autonomie locale et un coût de près de 20 milliards par an.",
+   "question": "La taxe d'habitation sur la résidence principale :",
+   "options": [
+    "La supprimer",
+    "La garder, en la réformant"
+   ],
+   "positions": {
+    "REN": 0,
+    "MODEM": 0,
+    "LR": 1,
+    "LFI": 1
+   },
+   "actor": "Article 3 du budget 2018, supprimant la taxe d'habitation pour 80 % des ménages, adopté en première lecture le 21 octobre 2017 (65 pour, 14 contre).",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN n'avait pas de groupe et n'est pas placé. Peu de députés présents. Les socialistes se sont abstenus et un seul communiste a voté : ils ne sont pas placés.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_174"
+    },
+    {
+     "name": "Banque des Territoires, 23 octobre 2017",
+     "url": "https://www.banquedesterritoires.fr/lassemblee-nationale-vote-la-suppression-partielle-de-la-taxe-dhabitation"
+    }
+   ],
+   "contexte": "La suppression a d'abord visé 80 % des ménages, de 2018 à 2020, puis tous les ménages en 2023 pour la résidence principale. Les communes sont compensées par l'État et par la part départementale de la taxe foncière. Elle reste due sur les résidences secondaires.",
+   "split": {
+    "REN": [
+     58,
+     0,
+     0
+    ],
+    "MODEM": [
+     5,
+     0,
+     0
+    ],
+    "LR": [
+     7,
+     0,
+     0
+    ],
+    "LFI": [
+     3,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "egalim",
+   "theme": "alimentation",
+   "date": "30 mai 2018",
+   "situation": "Une loi veut mieux payer les agriculteurs (prix tenant compte des coûts de production, promotions encadrées) et impose plus de bio dans les cantines. Ses opposants la jugent trop timide, sans interdiction du glyphosate.",
+   "question": "Cette loi agriculture et alimentation :",
+   "options": [
+    "L'adopter",
+    "La rejeter, jugée insuffisante"
+   ],
+   "positions": {
+    "REN": 0,
+    "MODEM": 0,
+    "PS": 1,
+    "LFI": 1,
+    "PCF": 1
+   },
+   "actor": "Loi Egalim, adoptée en première lecture le 30 mai 2018 (339 pour, 84 contre, 130 abstentions).",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN n'avait pas de groupe et n'est pas placé. LR s'est abstenu en majorité (90 abstentions, 11 contre) et n'est pas placé.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_729"
+    }
+   ],
+   "contexte": "La loi Egalim du 30 octobre 2018 relève de 10 % le seuil de revente à perte, encadre les promotions et fixe aux cantines un objectif de 50 % de produits de qualité, dont 20 % de bio. Le revenu agricole restant faible, deux autres lois Egalim ont suivi, en 2021 et 2023.",
+   "split": {
+    "REN": [
+     295,
+     0,
+     3
+    ],
+    "MODEM": [
+     43,
+     0,
+     1
+    ],
+    "PS": [
+     30,
+     0,
+     0
+    ],
+    "LFI": [
+     17,
+     0,
+     0
+    ],
+    "PCF": [
+     14,
+     0,
+     2
+    ]
+   }
+  },
+  {
+   "id": "tiers-payant",
+   "theme": "sante",
+   "date": "14 avril 2015",
+   "situation": "Avec le tiers payant, le patient n'avance pas les frais chez le médecin. Le généraliser facilite l'accès aux soins ; beaucoup de médecins s'y opposaient, craignant retards de paiement et lourdeurs administratives.",
+   "question": "Le tiers payant chez le médecin :",
+   "options": [
+    "Pour tous les patients",
+    "Au choix du médecin"
+   ],
+   "positions": {
+    "PS": 0,
+    "ECO": 0,
+    "LR": 1
+   },
+   "actor": "Loi de modernisation de notre système de santé, adoptée en première lecture le 14 avril 2015 (311 pour, 241 contre).",
+   "nuance": "Vote de la législature 2012-2017 : seuls les groupes qui ont une suite directe sont placés (l'UMP est devenue LR, le groupe socialiste est le PS, le groupe GDR celui des communistes, le groupe écologiste les Écologistes) ; le FN, sans groupe, n'est pas placé. Vote sur l'ensemble de la loi, dont le tiers payant était la mesure la plus discutée. Les communistes ont voté contre le texte, mais pas pour cette raison : ils ne sont pas placés.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Banque des Territoires, avril 2015",
+     "url": "https://www.banquedesterritoires.fr/lassemblee-adopte-le-projet-de-loi-sante-en-premiere-lecture"
+    },
+    {
+     "name": "Le Quotidien du médecin",
+     "url": "https://www.lequotidiendumedecin.fr/sante-societe/politique-de-sante/les-deputes-votent-en-premiere-lecture-la-loi-sante-et-sexpliquent-sur-le-tiers-payant"
+    }
+   ],
+   "contexte": "La loi du 26 janvier 2016 prévoyait le tiers payant pour tous les patients fin 2017. La généralisation obligatoire a été abandonnée en 2017 ; il reste obligatoire pour certains patients, comme ceux en affection de longue durée, les femmes enceintes ou les bénéficiaires de la complémentaire santé solidaire."
   }
  ]
 }
