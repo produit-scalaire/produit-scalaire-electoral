@@ -363,28 +363,26 @@
    "id": "retraites",
    "theme": "travail",
    "date": "2024-2025",
-   "situation": "L'âge légal de départ passe progressivement de 62 à 64 ans. Cela réduit le déficit des retraites et allonge le travail, notamment pour ceux qui ont commencé tôt.",
-   "question": "L'âge de départ :",
+   "situation": "La réforme de 2023 repousse l'âge de départ de 62 à 64 ans. Ses partisans veulent réduire le déficit ; ses opposants jugent injuste de travailler plus longtemps.",
+   "question": "Revenir à la retraite à 62 ans ?",
    "options": [
-    "Retour à 62 ans",
-    "On suspend la réforme pour l'instant",
-    "On garde 64 ans"
+    "Oui, retour à 62 ans",
+    "Non, on garde 64 ans"
    ],
-   "ordered": true,
    "positions": {
     "RN": 0,
     "LFI": 0,
     "PCF": 0,
-    "PS": 1,
-    "ECO": 1,
-    "REN": 2,
-    "HOR": 2,
-    "LR": 2,
-    "MODEM": 2,
-    "LIOT": 0
+    "LIOT": 0,
+    "PS": 0,
+    "ECO": 0,
+    "REN": 1,
+    "HOR": 1,
+    "LR": 1,
+    "MODEM": 1
    },
-   "actor": "Deux votes : en octobre 2024, la proposition du RN pour revenir à 62 ans est rejetée (119 pour, 197 contre). En novembre 2025, la suspension jusqu'en 2028 est adoptée (255 pour, 146 contre) : PS, Écologistes et RN votent pour ; LFI et PCF votent contre parce qu'ils veulent l'abrogation ; Horizons et la majorité de LR votent contre pour garder 64 ans.",
-   "nuance": "Renaissance s'est abstenu en majorité sur la suspension et un tiers du MoDem l'a votée. Le PS a voté contre la proposition du RN en 2024. LFI n'a pas pris part au vote de 2024. LIOT a porté en juin 2023 la proposition de loi d'abrogation du report à 64 ans. Sur la suspension de 2025 : le MoDem s'est surtout abstenu (11 pour, 18 abstentions) et l'UDR a voté contre ; l'UDR, qui s'était abstenue en 2024, n'est pas placée.",
+   "actor": "Réforme de 2023, contestée depuis : un retour à 62 ans proposé par le RN est rejeté en octobre 2024 (119 pour, 197 contre) ; la suspension de la hausse jusqu'en 2028 est adoptée en novembre 2025 (255 pour, 146 contre).",
+   "nuance": "Pour revenir à 62 ans : le RN (sa proposition de 2024), LFI et le PCF (qui veulent l'abrogation et ont voté contre la simple suspension en 2025), LIOT (auteur en 2023 d'une proposition d'abrogation), le PS et les Écologistes (qui demandent l'abrogation et ont voté la suspension en 2025 ; le PS avait voté contre la proposition du RN en 2024). Pour garder 64 ans : Horizons et la majorité de LR (contre la suspension), Renaissance et le MoDem (surtout abstenus sur la suspension). L'UDR, abstenue en 2024 et contre la suspension en 2025, n'est pas placée.",
    "reliability": 2,
    "sources": [
     {
@@ -396,7 +394,7 @@
      "url": "https://www.publicsenat.fr/actualites/politique/lassemblee-nationale-valide-la-suspension-de-la-reforme-des-retraites"
     }
    ],
-   "contexte": "La réforme de 2023 relève l'âge légal de départ de 62 à 64 ans d'ici 2030 et accélère l'allongement de la durée de cotisation. En 2024, une proposition de retour à 62 ans a été rejetée. Fin 2025, le budget de la Sécurité sociale a suspendu la hausse de l'âge jusqu'en 2028."
+   "contexte": "La réforme de 2023 relève l'âge légal de départ de 62 à 64 ans d'ici 2030 et allonge la durée de cotisation. En octobre 2024, un retour à 62 ans a été rejeté. Fin 2025, le budget de la Sécurité sociale a suspendu la hausse de l'âge jusqu'en 2028, sans revenir à 62 ans."
   },
   {
    "id": "epargne",
