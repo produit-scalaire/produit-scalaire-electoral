@@ -1,5 +1,5 @@
 {
- "version": "2026-11-25",
+ "version": "2026-11-26",
  "parties": [
   {
    "id": "LFI",
@@ -8701,6 +8701,223 @@
     }
    ],
    "contexte": "La loi du 26 janvier 2016 prévoyait le tiers payant pour tous les patients fin 2017. La généralisation obligatoire a été abandonnée en 2017 ; il reste obligatoire pour certains patients, comme ceux en affection de longue durée, les femmes enceintes ou les bénéficiaires de la complémentaire santé solidaire."
+  },
+  {
+   "id": "indexation-salaires",
+   "theme": "travail",
+   "date": "20 juillet 2022",
+   "situation": "En 2022, les prix montent de plus de 5 %. Indexer les salaires sur l'inflation protège le pouvoir d'achat ; ses opposants craignent une spirale des prix et un coût trop lourd pour les entreprises.",
+   "question": "Les salaires du privé :",
+   "options": [
+    "Indexés sur l'inflation",
+    "Négociés dans les entreprises et les branches"
+   ],
+   "positions": {
+    "LFI": 0,
+    "PS": 0,
+    "ECO": 0,
+    "PCF": 0,
+    "REN": 1,
+    "RN": 1,
+    "LR": 1,
+    "MODEM": 1,
+    "HOR": 1
+   },
+   "actor": "Amendement au projet de loi pouvoir d'achat, rejeté le 20 juillet 2022 (98 pour, 274 contre).",
+   "nuance": "Vote de la législature 2022-2024. LIOT était partagé (2 pour, 3 contre) et n'est pas placé.",
+   "reliability": 3,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-16/vote_40"
+    }
+   ],
+   "contexte": "L'amendement voulait relever automatiquement les salaires du privé au rythme des prix, comme le SMIC, qui l'est déjà par la loi. Il a été rejeté : seul le SMIC reste indexé, les autres salaires sont fixés par l'entreprise ou les accords de branche.",
+   "split": {
+    "LFI": [
+     63,
+     0,
+     0
+    ],
+    "PS": [
+     8,
+     1,
+     0
+    ],
+    "ECO": [
+     13,
+     0,
+     0
+    ],
+    "PCF": [
+     11,
+     0,
+     0
+    ],
+    "REN": [
+     118,
+     0,
+     0
+    ],
+    "RN": [
+     66,
+     0,
+     1
+    ],
+    "LR": [
+     27,
+     1,
+     0
+    ],
+    "MODEM": [
+     35,
+     0,
+     0
+    ],
+    "HOR": [
+     21,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "ordonnances-travail",
+   "theme": "travail",
+   "date": "28 novembre 2017",
+   "situation": "Les ordonnances de 2017 plafonnent les indemnités pour licenciement abusif et donnent plus de poids aux accords d'entreprise. Pour leurs partisans, cela encourage l'embauche ; pour leurs opposants, cela fragilise les salariés.",
+   "question": "Les indemnités pour licenciement abusif :",
+   "options": [
+    "Plafonnées selon l'ancienneté",
+    "Fixées librement par le juge"
+   ],
+   "positions": {
+    "REN": 0,
+    "LR": 0,
+    "MODEM": 0,
+    "PS": 1,
+    "LFI": 1,
+    "PCF": 1
+   },
+   "actor": "Loi ratifiant les ordonnances sur le travail, adoptée en première lecture le 28 novembre 2017 (463 pour, 74 contre).",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN n'avait pas de groupe et n'est pas placé. Vote sur l'ensemble des ordonnances, pas seulement sur le barème des indemnités.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_314"
+    }
+   ],
+   "contexte": "Les ordonnances de septembre 2017 créent un barème des indemnités prud'homales (de 1 à 20 mois de salaire selon l'ancienneté), fusionnent les instances du personnel en un comité social et économique et élargissent la place des accords d'entreprise. La Cour de cassation a validé le barème en 2022.",
+   "split": {
+    "REN": [
+     306,
+     0,
+     0
+    ],
+    "LR": [
+     82,
+     0,
+     15
+    ],
+    "MODEM": [
+     41,
+     0,
+     0
+    ],
+    "PS": [
+     30,
+     0,
+     0
+    ],
+    "LFI": [
+     17,
+     0,
+     0
+    ],
+    "PCF": [
+     16,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "plm-scrutin",
+   "theme": "ville",
+   "date": "9 avril 2025",
+   "situation": "À Paris, Lyon et Marseille, on votait par arrondissement. Une réforme crée un vote direct pour toute la ville. Ses partisans y voient plus de clarté ; ses opposants, une réforme de circonstance.",
+   "question": "Le conseil municipal :",
+   "options": [
+    "Élu directement sur toute la ville",
+    "Élu par arrondissement, comme avant"
+   ],
+   "positions": {
+    "RN": 0,
+    "REN": 0,
+    "LFI": 0,
+    "MODEM": 0,
+    "UDR": 0,
+    "PS": 1,
+    "ECO": 1,
+    "PCF": 1
+   },
+   "actor": "Proposition de loi adoptée en première lecture le 9 avril 2025 (183 pour, 53 contre), puis définitivement le 10 juillet 2025 (112 pour, 28 contre).",
+   "nuance": "Horizons s'est abstenu et LIOT était partagé : ils ne sont pas placés. LR a voté pour en première lecture (14 pour, 1 contre) mais contre en lecture définitive : il n'est pas placé. Peu de communistes présents (6).",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-17/vote_1330"
+    },
+    {
+     "name": "LCP, adoption définitive",
+     "url": "https://lcp.fr/actualites/municipales-a-paris-lyon-et-marseille-la-reforme-du-mode-de-scrutin-definitivement"
+    }
+   ],
+   "contexte": "La loi organise deux votes le même jour : l'un pour les conseils d'arrondissement, l'autre pour le conseil municipal, sur toute la ville. La liste arrivée en tête reçoit une prime de 25 % des sièges, au lieu de 50 % ailleurs. Validée par le Conseil constitutionnel, elle s'est appliquée aux municipales de 2026.",
+   "split": {
+    "RN": [
+     57,
+     0,
+     0
+    ],
+    "REN": [
+     28,
+     0,
+     2
+    ],
+    "LFI": [
+     50,
+     0,
+     0
+    ],
+    "MODEM": [
+     20,
+     1,
+     0
+    ],
+    "UDR": [
+     6,
+     0,
+     0
+    ],
+    "PS": [
+     22,
+     2,
+     0
+    ],
+    "ECO": [
+     20,
+     0,
+     0
+    ],
+    "PCF": [
+     6,
+     0,
+     0
+    ]
+   }
   }
  ]
 }
