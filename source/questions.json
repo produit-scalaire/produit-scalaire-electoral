@@ -1,5 +1,5 @@
 {
- "version": "2026-11-26",
+ "version": "2026-11-27",
  "parties": [
   {
    "id": "LFI",
@@ -8915,6 +8915,185 @@
     "PCF": [
      6,
      0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "secret-des-affaires",
+   "theme": "probite",
+   "date": "14 juin 2018",
+   "situation": "Une loi protège les informations confidentielles des entreprises contre l'espionnage et la concurrence déloyale. Ses partisans défendent l'innovation ; ses opposants craignent qu'elle freine les journalistes et les lanceurs d'alerte.",
+   "question": "Le secret des affaires :",
+   "options": [
+    "Protégé par une loi spécifique",
+    "Pas de protection renforcée"
+   ],
+   "positions": {
+    "REN": 0,
+    "LR": 0,
+    "MODEM": 0,
+    "PS": 1,
+    "LFI": 1,
+    "PCF": 1
+   },
+   "actor": "Loi sur la protection du secret des affaires, texte final adopté le 14 juin 2018 (61 pour, 21 contre).",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN n'avait pas de groupe et n'est pas placé. Peu de députés présents : 6 LR, 5 MoDem, 3 socialistes.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_950"
+    }
+   ],
+   "contexte": "La loi du 30 juillet 2018 transpose une directive européenne : une entreprise peut poursuivre celui qui obtient ou divulgue ses informations confidentielles. Des exceptions protègent la liberté de la presse et les lanceurs d'alerte, que les opposants jugeaient insuffisantes. Le Conseil constitutionnel l'a validée.",
+   "split": {
+    "REN": [
+     45,
+     0,
+     0
+    ],
+    "LR": [
+     6,
+     0,
+     0
+    ],
+    "MODEM": [
+     5,
+     1,
+     0
+    ],
+    "PS": [
+     3,
+     0,
+     0
+    ],
+    "LFI": [
+     10,
+     0,
+     0
+    ],
+    "PCF": [
+     6,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "anticasseurs",
+   "theme": "justice",
+   "date": "5 février 2019",
+   "situation": "Une loi permet des fouilles aux abords des manifestations, punit le fait d'y cacher son visage et prévoit des interdictions de manifester. Ses partisans visent les casseurs ; ses opposants craignent pour la liberté de manifester.",
+   "question": "Ces mesures :",
+   "options": [
+    "Les adopter",
+    "Les refuser"
+   ],
+   "positions": {
+    "REN": 0,
+    "LR": 0,
+    "MODEM": 0,
+    "PS": 1,
+    "LFI": 1,
+    "PCF": 1
+   },
+   "actor": "Loi « anticasseurs » visant à prévenir les violences lors des manifestations, adoptée en première lecture le 5 février 2019 (387 pour, 92 contre).",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN n'avait pas de groupe et n'est pas placé. 50 députés LaREM se sont abstenus (241 pour).",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_1662"
+    },
+    {
+     "name": "Banque des Territoires, 1er février 2019",
+     "url": "https://www.banquedesterritoires.fr/la-loi-anticasseurs-sujet-de-vives-tensions-lassemblee"
+    }
+   ],
+   "contexte": "La loi du 10 avril 2019 crée un délit de dissimulation du visage dans une manifestation et autorise des fouilles à ses abords. Le Conseil constitutionnel a censuré l'interdiction de manifester décidée par le préfet ; seul un juge peut désormais prononcer cette interdiction, comme peine.",
+   "split": {
+    "REN": [
+     241,
+     0,
+     50
+    ],
+    "LR": [
+     97,
+     2,
+     4
+    ],
+    "MODEM": [
+     37,
+     1,
+     4
+    ],
+    "PS": [
+     29,
+     0,
+     0
+    ],
+    "LFI": [
+     17,
+     0,
+     0
+    ],
+    "PCF": [
+     16,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "routes-90",
+   "theme": "transports",
+   "date": "11 septembre 2019",
+   "situation": "En 2018, la vitesse passe de 90 à 80 km/h sur les routes sans séparateur. Ses partisans comptent sur moins de morts ; ses opposants la jugent pénalisante pour les zones rurales.",
+   "question": "Routes nationales : revenir à 90 km/h ?",
+   "options": [
+    "Oui",
+    "Non, rester à 80 km/h"
+   ],
+   "positions": {
+    "LR": 0,
+    "PS": 0,
+    "REN": 1,
+    "MODEM": 1
+   },
+   "actor": "Amendement à la loi d'orientation des mobilités pour permettre aux préfets de revenir à 90 km/h sur les routes nationales, rejeté le 11 septembre 2019 (37 pour, 61 contre).",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN n'avait pas de groupe et n'est pas placé. Peu de députés présents (2 socialistes). LFI n'a pas voté.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_2066"
+    },
+    {
+     "name": "Banque des Territoires, 7 juin 2019",
+     "url": "https://www.banquedesterritoires.fr/lom-les-deputes-adoptent-le-versement-mobilite-et-assouplissent-les-80-kmh"
+    }
+   ],
+   "contexte": "La loi d'orientation des mobilités de décembre 2019 permet aux présidents de département, et aux maires sur leurs routes, de revenir à 90 km/h, ce que de nombreux départements ont fait. Les routes nationales gérées par l'État sont restées à 80 km/h.",
+   "split": {
+    "LR": [
+     24,
+     0,
+     0
+    ],
+    "PS": [
+     2,
+     0,
+     0
+    ],
+    "REN": [
+     51,
+     0,
+     1
+    ],
+    "MODEM": [
+     8,
+     1,
      0
     ]
    }
