@@ -1,5 +1,5 @@
 {
- "version": "2026-11-27",
+ "version": "2026-11-28",
  "parties": [
   {
    "id": "LFI",
@@ -9097,6 +9097,227 @@
      0
     ]
    }
+  },
+  {
+   "id": "florange",
+   "theme": "travail",
+   "date": "1er octobre 2013",
+   "situation": "Une grande entreprise qui ferme un site rentable devrait chercher un repreneur, sous peine de pénalité. Ses partisans veulent sauver des emplois industriels ; ses opposants y voient une atteinte à la liberté d'entreprendre.",
+   "question": "Avant une fermeture :",
+   "options": [
+    "Obligation de chercher un repreneur",
+    "Libre choix de l'entreprise"
+   ],
+   "positions": {
+    "PS": 0,
+    "ECO": 0,
+    "LR": 1
+   },
+   "actor": "Loi « Florange » visant à reconquérir l'économie réelle, adoptée en première lecture le 1er octobre 2013 (285 pour, 214 contre).",
+   "nuance": "Vote de la législature 2012-2017 : seuls les groupes qui ont une suite directe sont placés (l'UMP est devenue LR, le groupe socialiste est le PS, le groupe GDR celui des communistes, le groupe écologiste les Écologistes) ; le FN, sans groupe, n'est pas placé. Les communistes se sont abstenus et ne sont pas placés.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-14/vote_596"
+    },
+    {
+     "name": "Dalloz actualité, adoption définitive",
+     "url": "https://www.dalloz-actualite.fr/flash/adoption-definitive-de-proposition-de-loi-florange"
+    }
+   ],
+   "contexte": "La loi du 29 mars 2014 oblige les entreprises de plus de 1 000 salariés à chercher un repreneur avant de fermer un site. Le Conseil constitutionnel a censuré les pénalités prévues en cas de refus d'une offre sérieuse : il ne reste qu'une obligation de recherche.",
+   "split": {
+    "PS": [
+     255,
+     0,
+     0
+    ],
+    "ECO": [
+     15,
+     0,
+     0
+    ],
+    "LR": [
+     187,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "crime-ecocide",
+   "theme": "environnement",
+   "date": "17 avril 2021",
+   "situation": "La loi Climat crée un délit d'écocide pour les pollutions graves. Certains voulaient un « crime » d'écocide, plus lourdement puni ; d'autres jugent la notion floue et risquée pour les entreprises.",
+   "question": "Les atteintes graves à l'environnement :",
+   "options": [
+    "Un crime d'écocide",
+    "Le délit prévu par la loi suffit"
+   ],
+   "positions": {
+    "PS": 0,
+    "LFI": 0,
+    "REN": 1,
+    "MODEM": 1
+   },
+   "actor": "Amendement créant un crime d'écocide, rejeté le 17 avril 2021 (13 pour, 49 contre).",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN n'avait pas de groupe et n'est pas placé. Peu de députés présents (6 socialistes, 4 LFI). LR s'est abstenu.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_3728"
+    }
+   ],
+   "contexte": "La loi Climat et résilience de 2021 a créé un délit d'écocide : jusqu'à 10 ans de prison et 4,5 millions d'euros d'amende pour une pollution intentionnelle grave et durable. Le « crime » d'écocide, plus lourd, proposé par la Convention citoyenne pour le climat, n'a pas été retenu.",
+   "split": {
+    "PS": [
+     6,
+     0,
+     0
+    ],
+    "LFI": [
+     4,
+     0,
+     0
+    ],
+    "REN": [
+     38,
+     0,
+     0
+    ],
+    "MODEM": [
+     7,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "ecole-confiance",
+   "theme": "services",
+   "date": "19 février 2019",
+   "situation": "Une loi rend l'école obligatoire dès 3 ans, ce qui oblige les communes à financer aussi les maternelles privées, et regroupe certaines écoles avec le collège. Ses opposants dénoncent un texte peu concerté.",
+   "question": "Cette loi sur l'école :",
+   "options": [
+    "L'adopter",
+    "La rejeter"
+   ],
+   "positions": {
+    "REN": 0,
+    "MODEM": 0,
+    "LR": 1,
+    "PS": 1,
+    "LFI": 1,
+    "PCF": 1
+   },
+   "actor": "Loi pour une école de la confiance, adoptée en première lecture le 19 février 2019 (353 pour, 171 contre).",
+   "nuance": "Vote de la législature 2017-2022 : seuls les groupes qui existent encore sous le même nom ou un nom proche sont placés (LaREM est devenu Renaissance) ; le RN n'avait pas de groupe et n'est pas placé. La droite et la gauche ont voté contre pour des raisons en partie différentes.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Datan, détail du scrutin",
+     "url": "https://datan.fr/votes/legislature-15/vote_1709"
+    },
+    {
+     "name": "Banque des Territoires",
+     "url": "https://www.banquedesterritoires.fr/projet-de-loi-pour-une-ecole-de-la-confiance-les-dispositions-saillantes-pour-les-collectivites"
+    }
+   ],
+   "contexte": "La loi du 26 juillet 2019 abaisse l'âge de l'instruction obligatoire de 6 à 3 ans et impose la formation jusqu'à 18 ans. Le regroupement d'écoles et de collèges a été retiré par le Sénat. Les communes doivent depuis financer les maternelles privées sous contrat.",
+   "split": {
+    "REN": [
+     289,
+     0,
+     1
+    ],
+    "MODEM": [
+     44,
+     0,
+     0
+    ],
+    "LR": [
+     96,
+     1,
+     6
+    ],
+    "PS": [
+     29,
+     0,
+     0
+    ],
+    "LFI": [
+     17,
+     0,
+     0
+    ],
+    "PCF": [
+     14,
+     0,
+     2
+    ]
+   }
+  },
+  {
+   "id": "action-de-groupe",
+   "theme": "consommer",
+   "date": "3 juillet 2013",
+   "situation": "Une loi permet aux associations de consommateurs d'attaquer une entreprise au nom de nombreux clients lésés. Ses partisans veulent faciliter les recours ; ses opposants craignent des procédures abusives contre les entreprises.",
+   "question": "L'action de groupe des consommateurs :",
+   "options": [
+    "La créer",
+    "Ne pas la créer"
+   ],
+   "positions": {
+    "PS": 0,
+    "ECO": 0,
+    "LR": 1
+   },
+   "actor": "Loi consommation, adoptée en première lecture le 3 juillet 2013 (326 pour, 182 contre).",
+   "nuance": "Vote de la législature 2012-2017 : seuls les groupes qui ont une suite directe sont placés (l'UMP est devenue LR, le groupe socialiste est le PS, le groupe GDR celui des communistes, le groupe écologiste les Écologistes) ; le FN, sans groupe, n'est pas placé. Vote sur l'ensemble de la loi. L'UMP a voté contre, sauf 7 abstentions ; sur l'article créant l'action de groupe, elle s'était abstenue. Le vote des communistes n'est pas détaillé.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "MoneyVox, 3 juillet 2013",
+     "url": "https://www.moneyvox.fr/actu/38730/loi-consommation-le-projet-de-loi-autorisant-action-de-groupe-adopte-par-les-deputes"
+    },
+    {
+     "name": "MoneyVox, 26 juin 2013",
+     "url": "https://www.moneyvox.fr/actu/38559/loi-consommation-les-deputes-votent-action-de-groupe-en-premiere-lecture"
+    }
+   ],
+   "contexte": "La loi Hamon du 17 mars 2014 crée l'action de groupe, réservée aux associations agréées, et permet de résilier son assurance auto ou habitation à tout moment après un an. Les actions de groupe sont depuis restées peu nombreuses."
+  },
+  {
+   "id": "carte-regions",
+   "theme": "services",
+   "date": "23 juillet 2014",
+   "situation": "Une réforme fusionne des régions pour passer de 22 à 13 en métropole. Ses partisans veulent des régions plus fortes et des économies ; ses opposants les jugent trop grandes et éloignées des habitants.",
+   "question": "Le nombre de régions :",
+   "options": [
+    "Réduit à 13",
+    "Garder les 22 régions"
+   ],
+   "positions": {
+    "PS": 0,
+    "LR": 1,
+    "PCF": 1
+   },
+   "actor": "Loi relative à la délimitation des régions, adoptée en première lecture le 23 juillet 2014 (261 pour, 205 contre).",
+   "nuance": "Vote de la législature 2012-2017 : seuls les groupes qui ont une suite directe sont placés (l'UMP est devenue LR, le groupe socialiste est le PS, le groupe GDR celui des communistes, le groupe écologiste les Écologistes) ; le FN, sans groupe, n'est pas placé. Les écologistes se sont surtout abstenus et ne sont pas placés. Quelques députés socialistes et UMP se sont aussi abstenus.",
+   "reliability": 2,
+   "sources": [
+    {
+     "name": "Banque des Territoires, 23 juillet 2014",
+     "url": "https://www.banquedesterritoires.fr/les-deputes-ont-vote-le-premier-volet-de-la-reforme-territoriale"
+    },
+    {
+     "name": "Maire-info, 21 juillet 2014",
+     "url": "https://www.maire-info.com/lassemblee-nationale-adopte-lensembledu-texte-sur-les-nouvelles-regions-article2-17469"
+    }
+   ],
+   "contexte": "La loi du 16 janvier 2015 a créé 13 régions métropolitaines au 1er janvier 2016, par exemple Grand Est ou Nouvelle-Aquitaine. Les économies attendues ont été discutées depuis, et l'Alsace a obtenu en 2021 une collectivité européenne propre."
   }
  ]
 }
